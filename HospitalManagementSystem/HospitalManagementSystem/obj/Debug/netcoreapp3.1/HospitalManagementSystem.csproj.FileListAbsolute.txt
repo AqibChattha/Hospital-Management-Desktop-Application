@@ -1,0 +1,17 @@
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.csprojAssemblyReference.cache
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.MainForn.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.Properties.Resources.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddDoctor.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.csproj.GenerateResource.cache
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.AssemblyInfoInputs.cache
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.AssemblyInfo.cs
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\bin\Debug\netcoreapp3.1\HospitalManagementSystem.exe
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\bin\Debug\netcoreapp3.1\HospitalManagementSystem.deps.json
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\bin\Debug\netcoreapp3.1\HospitalManagementSystem.runtimeconfig.json
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\bin\Debug\netcoreapp3.1\HospitalManagementSystem.runtimeconfig.dev.json
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\bin\Debug\netcoreapp3.1\HospitalManagementSystem.dll
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\bin\Debug\netcoreapp3.1\HospitalManagementSystem.pdb
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.dll
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.pdb
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.genruntimeconfig.cache
