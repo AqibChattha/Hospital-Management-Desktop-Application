@@ -31,5 +31,17 @@ namespace HospitalManagementSystem
         {
             dataGridViewDoctors.Rows.Add(txtName.Text, txtCnic.Text, txtPhoneNo.Text, txtEmail.Text, comboBoxDep.SelectedItem.ToString());
         }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            comboBoxDep.Text = "";
+            comboBoxGender.Text = "";
+        }
     }
 }
