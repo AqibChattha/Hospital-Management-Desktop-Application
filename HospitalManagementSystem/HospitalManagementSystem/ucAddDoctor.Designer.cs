@@ -30,6 +30,7 @@ namespace HospitalManagementSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnAddInput = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
@@ -59,6 +60,7 @@ namespace HospitalManagementSystem
             this.deletebtns = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoctors)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +69,7 @@ namespace HospitalManagementSystem
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.numericUpDown1);
             this.panel1.Controls.Add(this.btnClearInput);
             this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.txtAddress);
@@ -90,6 +93,28 @@ namespace HospitalManagementSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(358, 538);
             this.panel1.TabIndex = 5;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(181, 229);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            150000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            15000,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(142, 23);
+            this.numericUpDown1.TabIndex = 9;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            15000,
+            0,
+            0,
+            0});
             // 
             // btnClearInput
             // 
@@ -290,6 +315,7 @@ namespace HospitalManagementSystem
             this.dataGridViewDoctors.RowTemplate.Height = 25;
             this.dataGridViewDoctors.Size = new System.Drawing.Size(613, 538);
             this.dataGridViewDoctors.TabIndex = 6;
+            this.dataGridViewDoctors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDoctors_CellContentClick);
             // 
             // name
             // 
@@ -348,6 +374,7 @@ namespace HospitalManagementSystem
             this.Size = new System.Drawing.Size(1014, 611);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoctors)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -385,5 +412,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.DataGridViewButtonColumn editbtns;
         private System.Windows.Forms.DataGridViewButtonColumn deletebtns;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
