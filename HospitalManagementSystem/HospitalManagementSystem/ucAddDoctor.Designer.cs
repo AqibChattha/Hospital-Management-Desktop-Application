@@ -30,12 +30,10 @@ namespace HospitalManagementSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnAddInput = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.comboBoxDep = new System.Windows.Forms.ComboBox();
-            this.comboBoxGender = new System.Windows.Forms.ComboBox();
+            this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
             this.txtCnic = new System.Windows.Forms.MaskedTextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -50,18 +48,20 @@ namespace HospitalManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridViewDoctors = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cnic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.editbtns = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.deletebtns = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.nupSalary = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cbQualification = new System.Windows.Forms.ComboBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoctors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,12 +69,16 @@ namespace HospitalManagementSystem
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.nupSalary);
             this.panel1.Controls.Add(this.btnClearInput);
             this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.txtAddress);
-            this.panel1.Controls.Add(this.comboBoxDep);
-            this.panel1.Controls.Add(this.comboBoxGender);
+            this.panel1.Controls.Add(this.cbQualification);
+            this.panel1.Controls.Add(this.cbDepartment);
             this.panel1.Controls.Add(this.txtPhoneNo);
             this.panel1.Controls.Add(this.txtCnic);
             this.panel1.Controls.Add(this.txtPassword);
@@ -82,46 +86,31 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(19, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(358, 538);
+            this.panel1.Size = new System.Drawing.Size(977, 538);
             this.panel1.TabIndex = 5;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(181, 229);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            150000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            15000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(142, 23);
-            this.numericUpDown1.TabIndex = 9;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            15000,
-            0,
-            0,
-            0});
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnClearInput
             // 
-            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnClearInput.Location = new System.Drawing.Point(181, 498);
+            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearInput.Location = new System.Drawing.Point(779, 488);
             this.btnClearInput.Name = "btnClearInput";
-            this.btnClearInput.Size = new System.Drawing.Size(75, 23);
+            this.btnClearInput.Size = new System.Drawing.Size(90, 30);
             this.btnClearInput.TabIndex = 7;
             this.btnClearInput.Text = "Clear";
             this.btnClearInput.UseVisualStyleBackColor = true;
@@ -129,56 +118,47 @@ namespace HospitalManagementSystem
             // 
             // btnAddInput
             // 
-            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAddInput.Location = new System.Drawing.Point(271, 498);
+            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddInput.Location = new System.Drawing.Point(875, 488);
             this.btnAddInput.Name = "btnAddInput";
-            this.btnAddInput.Size = new System.Drawing.Size(75, 23);
+            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
             this.btnAddInput.TabIndex = 8;
             this.btnAddInput.Text = "Add";
-            this.btnAddInput.UseVisualStyleBackColor = true;
+            this.btnAddInput.UseVisualStyleBackColor = false;
             this.btnAddInput.Click += new System.EventHandler(this.btnAddInput_Click);
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(11, 348);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(336, 123);
+            this.txtAddress.Size = new System.Drawing.Size(954, 123);
             this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "";
             // 
-            // comboBoxDep
+            // cbDepartment
             // 
-            this.comboBoxDep.FormattingEnabled = true;
-            this.comboBoxDep.Items.AddRange(new object[] {
+            this.cbDepartment.FormattingEnabled = true;
+            this.cbDepartment.Items.AddRange(new object[] {
             "Department of Neurology",
             "Department of Cardiology"});
-            this.comboBoxDep.Location = new System.Drawing.Point(9, 258);
-            this.comboBoxDep.Name = "comboBoxDep";
-            this.comboBoxDep.Size = new System.Drawing.Size(338, 23);
-            this.comboBoxDep.TabIndex = 2;
-            // 
-            // comboBoxGender
-            // 
-            this.comboBoxGender.FormattingEnabled = true;
-            this.comboBoxGender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBoxGender.Location = new System.Drawing.Point(190, 39);
-            this.comboBoxGender.Name = "comboBoxGender";
-            this.comboBoxGender.Size = new System.Drawing.Size(156, 23);
-            this.comboBoxGender.TabIndex = 2;
+            this.cbDepartment.Location = new System.Drawing.Point(708, 129);
+            this.cbDepartment.Name = "cbDepartment";
+            this.cbDepartment.Size = new System.Drawing.Size(257, 23);
+            this.cbDepartment.TabIndex = 2;
             // 
             // txtPhoneNo
             // 
-            this.txtPhoneNo.Location = new System.Drawing.Point(9, 115);
+            this.txtPhoneNo.Location = new System.Drawing.Point(450, 39);
             this.txtPhoneNo.Mask = "0000-0000000";
             this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.Size = new System.Drawing.Size(156, 23);
+            this.txtPhoneNo.Size = new System.Drawing.Size(222, 23);
             this.txtPhoneNo.TabIndex = 1;
             // 
             // txtCnic
             // 
-            this.txtCnic.Location = new System.Drawing.Point(190, 115);
+            this.txtCnic.Location = new System.Drawing.Point(245, 39);
             this.txtCnic.Mask = "00000-0000000-0";
             this.txtCnic.Name = "txtCnic";
             this.txtCnic.Size = new System.Drawing.Size(156, 23);
@@ -186,16 +166,16 @@ namespace HospitalManagementSystem
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(190, 187);
+            this.txtPassword.Location = new System.Drawing.Point(245, 131);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(157, 23);
             this.txtPassword.TabIndex = 0;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(9, 187);
+            this.txtEmail.Location = new System.Drawing.Point(12, 131);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(157, 23);
+            this.txtEmail.Size = new System.Drawing.Size(189, 23);
             this.txtEmail.TabIndex = 0;
             // 
             // label3
@@ -203,7 +183,7 @@ namespace HospitalManagementSystem
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(181, 24);
+            this.label3.Location = new System.Drawing.Point(490, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 21);
             this.label3.TabIndex = 0;
@@ -212,24 +192,24 @@ namespace HospitalManagementSystem
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(190, 161);
+            this.label8.Location = new System.Drawing.Point(241, 103);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 21);
+            this.label8.Size = new System.Drawing.Size(79, 21);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Password";
+            this.label8.Text = "Password:";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(11, 39);
+            this.txtName.Location = new System.Drawing.Point(11, 41);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(156, 23);
+            this.txtName.Size = new System.Drawing.Size(190, 23);
             this.txtName.TabIndex = 0;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(190, 13);
+            this.label10.Location = new System.Drawing.Point(6, 249);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 21);
             this.label10.TabIndex = 0;
@@ -249,27 +229,27 @@ namespace HospitalManagementSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(9, 161);
+            this.label4.Location = new System.Drawing.Point(6, 103);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 21);
+            this.label4.Size = new System.Drawing.Size(51, 21);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Email";
+            this.label4.Text = "Email:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(9, 234);
+            this.label7.Location = new System.Drawing.Point(703, 103);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 21);
+            this.label7.Size = new System.Drawing.Size(96, 21);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Department";
+            this.label7.Text = "Department:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(9, 91);
+            this.label6.Location = new System.Drawing.Point(446, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 21);
             this.label6.TabIndex = 0;
@@ -279,78 +259,21 @@ namespace HospitalManagementSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(190, 91);
+            this.label5.Location = new System.Drawing.Point(241, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 21);
+            this.label5.Size = new System.Drawing.Size(49, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = "CNIC";
+            this.label5.Text = "CNIC:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(5, 13);
+            this.label2.Location = new System.Drawing.Point(6, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 21);
+            this.label2.Size = new System.Drawing.Size(55, 21);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Name";
-            // 
-            // dataGridViewDoctors
-            // 
-            this.dataGridViewDoctors.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDoctors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name,
-            this.cnic,
-            this.phoneNo,
-            this.email,
-            this.department,
-            this.editbtns,
-            this.deletebtns});
-            this.dataGridViewDoctors.GridColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dataGridViewDoctors.Location = new System.Drawing.Point(383, 61);
-            this.dataGridViewDoctors.Name = "dataGridViewDoctors";
-            this.dataGridViewDoctors.RowTemplate.Height = 25;
-            this.dataGridViewDoctors.Size = new System.Drawing.Size(613, 538);
-            this.dataGridViewDoctors.TabIndex = 6;
-            this.dataGridViewDoctors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDoctors_CellContentClick);
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // cnic
-            // 
-            this.cnic.HeaderText = "CNIC";
-            this.cnic.Name = "cnic";
-            // 
-            // phoneNo
-            // 
-            this.phoneNo.HeaderText = "Phone Number";
-            this.phoneNo.Name = "phoneNo";
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            // 
-            // department
-            // 
-            this.department.HeaderText = "Department";
-            this.department.Name = "department";
-            // 
-            // editbtns
-            // 
-            this.editbtns.HeaderText = "Edit";
-            this.editbtns.Name = "editbtns";
-            // 
-            // deletebtns
-            // 
-            this.deletebtns.HeaderText = "Delete";
-            this.deletebtns.Name = "deletebtns";
+            this.label2.Text = "Name:";
             // 
             // label1
             // 
@@ -363,19 +286,123 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 7;
             this.label1.Text = "Add Doctor Information";
             // 
+            // nupSalary
+            // 
+            this.nupSalary.Location = new System.Drawing.Point(708, 39);
+            this.nupSalary.Name = "nupSalary";
+            this.nupSalary.Size = new System.Drawing.Size(257, 23);
+            this.nupSalary.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(703, 13);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 21);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Salary:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(446, 103);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(101, 21);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Qualification:";
+            // 
+            // cbQualification
+            // 
+            this.cbQualification.FormattingEnabled = true;
+            this.cbQualification.Items.AddRange(new object[] {
+            "Department of Neurology",
+            "Department of Cardiology"});
+            this.cbQualification.Location = new System.Drawing.Point(450, 129);
+            this.cbQualification.Name = "cbQualification";
+            this.cbQualification.Size = new System.Drawing.Size(222, 23);
+            this.cbQualification.TabIndex = 2;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(81, 251);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(51, 19);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(138, 251);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(63, 19);
+            this.radioButton2.TabIndex = 10;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(245, 218);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(118, 21);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Working Hours:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(245, 249);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 21);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "From";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(400, 249);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(24, 21);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "to";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(428, 248);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Location = new System.Drawing.Point(296, 248);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker2.TabIndex = 11;
+            // 
             // ucAddDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridViewDoctors);
             this.Controls.Add(this.panel1);
             this.Name = "ucAddDoctor";
             this.Size = new System.Drawing.Size(1014, 611);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDoctors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,8 +414,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.Button btnAddInput;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.ComboBox comboBoxDep;
-        private System.Windows.Forms.ComboBox comboBoxGender;
+        private System.Windows.Forms.ComboBox cbDepartment;
         private System.Windows.Forms.MaskedTextBox txtPhoneNo;
         private System.Windows.Forms.MaskedTextBox txtCnic;
         private System.Windows.Forms.TextBox txtPassword;
@@ -403,15 +429,17 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridViewDoctors;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cnic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn department;
-        private System.Windows.Forms.DataGridViewButtonColumn editbtns;
-        private System.Windows.Forms.DataGridViewButtonColumn deletebtns;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nupSalary;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.ComboBox cbQualification;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -29,7 +29,6 @@ namespace HospitalManagementSystem
 
         private void btnAddInput_Click(object sender, EventArgs e)
         {
-            dataGridViewDoctors.Rows.Add(txtName.Text, txtCnic.Text, txtPhoneNo.Text, txtEmail.Text, comboBoxDep.SelectedItem.ToString());
         }
 
         private void btnClearInput_Click(object sender, EventArgs e)
@@ -40,11 +39,15 @@ namespace HospitalManagementSystem
             txtEmail.Text = "";
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
-            comboBoxDep.Text = "";
-            comboBoxGender.Text = "";
+            cbDepartment.Text = "";
         }
 
         private void dataGridViewDoctors_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
