@@ -27,29 +27,18 @@ namespace HospitalManagementSystem
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
+            if (!MainForn.main_Panel.Controls.Contains(ucNursesData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucNursesData.Instence);
+                ucNursesData.Instence.Dock = DockStyle.Fill;
+                ucNursesData.Instence.BringToFront();
+            }
+            else
+            {
+                ucNursesData.Instence.BringToFront();
+            }
         }
     }
 }

@@ -67,14 +67,21 @@ namespace HospitalManagementSystem
             }
         }
 
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            panel.Controls.Clear();
+        }
+
         private void btnEmployees_Click(object sender, EventArgs e)
         {
             showSubMenu(panelDoctorsSubMenu);
             panelSideSlecectedShow.Height = btnEmployees.Height;
             panelSideSlecectedShow.Top = btnEmployees.Top;
         }
-        #region DoctorsSubMenu
-        private void btnViewDoctor_Click(object sender, EventArgs e)
+        #region EmployeesSubMenu
+
+        private void btnDoctor_Click(object sender, EventArgs e)
         {
             hideSubMenu();
             if (!panel.Controls.Contains(ucDoctorsData.Instence))
@@ -87,37 +94,54 @@ namespace HospitalManagementSystem
             {
                 ucDoctorsData.Instence.BringToFront();
             }
-            main_Panel = panel;
         }
 
-        private void btnAddDoctor_Click(object sender, EventArgs e)
+        private void btnNurse_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAddNurse.Instence))
+            if (!panel.Controls.Contains(ucNursesData.Instence))
             {
-                panel.Controls.Add(ucAddNurse.Instence);
-                ucAddNurse.Instence.Dock = DockStyle.Fill;
-                ucAddNurse.Instence.BringToFront();
+                panel.Controls.Add(ucNursesData.Instence);
+                ucNursesData.Instence.Dock = DockStyle.Fill;
+                ucNursesData.Instence.BringToFront();
             }
             else
             {
-                ucAddNurse.Instence.BringToFront();
+                ucNursesData.Instence.BringToFront();
             }
         }
 
-        private void btnUpdateDoctor_Click(object sender, EventArgs e)
+        private void btnLabTechnician_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+
+        }
+
+        private void btnSurgeon_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+
+        }
+
+        private void btnPharmacist_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+
+        }
+
+        private void btnReceptionist_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+        private void btnAdmin_Click(object sender, EventArgs e)
         {
             hideSubMenu();
         }
 
-        private void btnRemoveDoctor_Click(object sender, EventArgs e)
+        private void btnOtherLaborers_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-        }
 
-        private void btnDoctorAttendence_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
         }
         #endregion
 
@@ -199,5 +223,6 @@ namespace HospitalManagementSystem
         {
             Application.Exit();
         }
+
     }
 }
