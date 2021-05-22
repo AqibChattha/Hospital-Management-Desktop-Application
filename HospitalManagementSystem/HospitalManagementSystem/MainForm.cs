@@ -90,6 +90,16 @@ namespace HospitalManagementSystem
         private void btnAddDoctor_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucAddNurse.Instence))
+            {
+                panel.Controls.Add(ucAddNurse.Instence);
+                ucAddNurse.Instence.Dock = DockStyle.Fill;
+                ucAddNurse.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddNurse.Instence.BringToFront();
+            }
         }
 
         private void btnUpdateDoctor_Click(object sender, EventArgs e)

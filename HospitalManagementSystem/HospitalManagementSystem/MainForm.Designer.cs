@@ -53,9 +53,9 @@ namespace HospitalManagementSystem
             this.panelDoctorsSubMenu = new System.Windows.Forms.Panel();
             this.btnDoctorAttendence = new System.Windows.Forms.Button();
             this.btnRemoveDoctor = new System.Windows.Forms.Button();
-            this.btnUpdateDoctor = new System.Windows.Forms.Button();
-            this.btnAddDoctor = new System.Windows.Forms.Button();
-            this.btnViewDoctor = new System.Windows.Forms.Button();
+            this.btnLabTechnician = new System.Windows.Forms.Button();
+            this.btnNurse = new System.Windows.Forms.Button();
+            this.btnDoctor = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -402,9 +402,9 @@ namespace HospitalManagementSystem
             this.panelDoctorsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
             this.panelDoctorsSubMenu.Controls.Add(this.btnDoctorAttendence);
             this.panelDoctorsSubMenu.Controls.Add(this.btnRemoveDoctor);
-            this.panelDoctorsSubMenu.Controls.Add(this.btnUpdateDoctor);
-            this.panelDoctorsSubMenu.Controls.Add(this.btnAddDoctor);
-            this.panelDoctorsSubMenu.Controls.Add(this.btnViewDoctor);
+            this.panelDoctorsSubMenu.Controls.Add(this.btnLabTechnician);
+            this.panelDoctorsSubMenu.Controls.Add(this.btnNurse);
+            this.panelDoctorsSubMenu.Controls.Add(this.btnDoctor);
             this.panelDoctorsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDoctorsSubMenu.Location = new System.Drawing.Point(0, 222);
             this.panelDoctorsSubMenu.Name = "panelDoctorsSubMenu";
@@ -445,56 +445,56 @@ namespace HospitalManagementSystem
             this.btnRemoveDoctor.UseVisualStyleBackColor = true;
             this.btnRemoveDoctor.Click += new System.EventHandler(this.btnRemoveDoctor_Click);
             // 
-            // btnUpdateDoctor
+            // btnLabTechnician
             // 
-            this.btnUpdateDoctor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUpdateDoctor.FlatAppearance.BorderSize = 0;
-            this.btnUpdateDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdateDoctor.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateDoctor.Location = new System.Drawing.Point(0, 80);
-            this.btnUpdateDoctor.Name = "btnUpdateDoctor";
-            this.btnUpdateDoctor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnUpdateDoctor.Size = new System.Drawing.Size(233, 40);
-            this.btnUpdateDoctor.TabIndex = 4;
-            this.btnUpdateDoctor.Text = "Update Employee\'s Info";
-            this.btnUpdateDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdateDoctor.UseVisualStyleBackColor = true;
-            this.btnUpdateDoctor.Click += new System.EventHandler(this.btnUpdateDoctor_Click);
+            this.btnLabTechnician.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLabTechnician.FlatAppearance.BorderSize = 0;
+            this.btnLabTechnician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLabTechnician.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLabTechnician.ForeColor = System.Drawing.Color.White;
+            this.btnLabTechnician.Location = new System.Drawing.Point(0, 80);
+            this.btnLabTechnician.Name = "btnLabTechnician";
+            this.btnLabTechnician.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnLabTechnician.Size = new System.Drawing.Size(233, 40);
+            this.btnLabTechnician.TabIndex = 4;
+            this.btnLabTechnician.Text = "Lab Technician";
+            this.btnLabTechnician.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLabTechnician.UseVisualStyleBackColor = true;
+            this.btnLabTechnician.Click += new System.EventHandler(this.btnUpdateDoctor_Click);
             // 
-            // btnAddDoctor
+            // btnNurse
             // 
-            this.btnAddDoctor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddDoctor.FlatAppearance.BorderSize = 0;
-            this.btnAddDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddDoctor.ForeColor = System.Drawing.Color.White;
-            this.btnAddDoctor.Location = new System.Drawing.Point(0, 40);
-            this.btnAddDoctor.Name = "btnAddDoctor";
-            this.btnAddDoctor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnAddDoctor.Size = new System.Drawing.Size(233, 40);
-            this.btnAddDoctor.TabIndex = 3;
-            this.btnAddDoctor.Text = "Nurses";
-            this.btnAddDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddDoctor.UseVisualStyleBackColor = true;
-            this.btnAddDoctor.Click += new System.EventHandler(this.btnAddDoctor_Click);
+            this.btnNurse.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNurse.FlatAppearance.BorderSize = 0;
+            this.btnNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNurse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNurse.ForeColor = System.Drawing.Color.White;
+            this.btnNurse.Location = new System.Drawing.Point(0, 40);
+            this.btnNurse.Name = "btnNurse";
+            this.btnNurse.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnNurse.Size = new System.Drawing.Size(233, 40);
+            this.btnNurse.TabIndex = 3;
+            this.btnNurse.Text = "Nurses";
+            this.btnNurse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNurse.UseVisualStyleBackColor = true;
+            this.btnNurse.Click += new System.EventHandler(this.btnAddDoctor_Click);
             // 
-            // btnViewDoctor
+            // btnDoctor
             // 
-            this.btnViewDoctor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnViewDoctor.FlatAppearance.BorderSize = 0;
-            this.btnViewDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnViewDoctor.ForeColor = System.Drawing.Color.White;
-            this.btnViewDoctor.Location = new System.Drawing.Point(0, 0);
-            this.btnViewDoctor.Name = "btnViewDoctor";
-            this.btnViewDoctor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnViewDoctor.Size = new System.Drawing.Size(233, 40);
-            this.btnViewDoctor.TabIndex = 2;
-            this.btnViewDoctor.Text = "Doctors";
-            this.btnViewDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewDoctor.UseVisualStyleBackColor = true;
-            this.btnViewDoctor.Click += new System.EventHandler(this.btnViewDoctor_Click);
+            this.btnDoctor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDoctor.FlatAppearance.BorderSize = 0;
+            this.btnDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDoctor.ForeColor = System.Drawing.Color.White;
+            this.btnDoctor.Location = new System.Drawing.Point(0, 0);
+            this.btnDoctor.Name = "btnDoctor";
+            this.btnDoctor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnDoctor.Size = new System.Drawing.Size(233, 40);
+            this.btnDoctor.TabIndex = 2;
+            this.btnDoctor.Text = "Doctors";
+            this.btnDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoctor.UseVisualStyleBackColor = true;
+            this.btnDoctor.Click += new System.EventHandler(this.btnViewDoctor_Click);
             // 
             // btnEmployees
             // 
@@ -579,18 +579,18 @@ namespace HospitalManagementSystem
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(250, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1014, 611);
+            this.panel.Size = new System.Drawing.Size(906, 611);
             this.panel.TabIndex = 2;
             // 
             // MainForn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 611);
+            this.ClientSize = new System.Drawing.Size(1156, 611);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1280, 650);
+            this.MinimumSize = new System.Drawing.Size(1150, 650);
             this.Name = "MainForn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HMS";
@@ -629,9 +629,9 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panelDoctorsSubMenu;
         private System.Windows.Forms.Button btnDoctorAttendence;
         private System.Windows.Forms.Button btnRemoveDoctor;
-        private System.Windows.Forms.Button btnUpdateDoctor;
-        private System.Windows.Forms.Button btnAddDoctor;
-        private System.Windows.Forms.Button btnViewDoctor;
+        private System.Windows.Forms.Button btnLabTechnician;
+        private System.Windows.Forms.Button btnNurse;
+        private System.Windows.Forms.Button btnDoctor;
         private System.Windows.Forms.Button btnEmployees;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnExit;

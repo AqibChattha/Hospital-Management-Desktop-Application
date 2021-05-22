@@ -10,6 +10,9 @@
     <Compile Update="ucAddDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucAddNurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ucDoctorsData.cs">
       <SubType>UserControl</SubType>
     </Compile>
