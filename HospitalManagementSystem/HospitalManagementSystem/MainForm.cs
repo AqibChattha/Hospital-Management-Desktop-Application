@@ -12,10 +12,12 @@ namespace HospitalManagementSystem
 {
     public partial class MainForn : Form
     {
+        public static Panel main_Panel;
         public MainForn()
         {
             InitializeComponent();
             customizeDesign();
+            main_Panel = panel;
 
         }
 
@@ -75,16 +77,17 @@ namespace HospitalManagementSystem
         private void btnViewDoctor_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAddDoctor.Instence))
+            if (!panel.Controls.Contains(ucDoctorsData.Instence))
             {
-                panel.Controls.Add(ucAddDoctor.Instence);
-                ucAddDoctor.Instence.Dock = DockStyle.Fill;
-                ucAddDoctor.Instence.BringToFront();
+                panel.Controls.Add(ucDoctorsData.Instence);
+                ucDoctorsData.Instence.Dock = DockStyle.Fill;
+                ucDoctorsData.Instence.BringToFront();
             }
             else
             {
-                ucAddDoctor.Instence.BringToFront();
+                ucDoctorsData.Instence.BringToFront();
             }
+            main_Panel = panel;
         }
 
         private void btnAddDoctor_Click(object sender, EventArgs e)

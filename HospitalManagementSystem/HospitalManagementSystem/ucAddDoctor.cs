@@ -27,10 +27,6 @@ namespace HospitalManagementSystem
             InitializeComponent();
         }
 
-        private void btnAddInput_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnClearInput_Click(object sender, EventArgs e)
         {
             txtName.Text = "";
@@ -42,14 +38,18 @@ namespace HospitalManagementSystem
             cbDepartment.Text = "";
         }
 
-        private void dataGridViewDoctors_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            if (!MainForn.main_Panel.Controls.Contains(ucDoctorsData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucDoctorsData.Instence);
+                ucDoctorsData.Instence.Dock = DockStyle.Fill;
+                ucDoctorsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucDoctorsData.Instence.BringToFront();
+            }
         }
     }
 }
