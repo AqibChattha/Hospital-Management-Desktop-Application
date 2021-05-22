@@ -10,5 +10,8 @@
     <Compile Update="ucAddDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucDoctorsData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

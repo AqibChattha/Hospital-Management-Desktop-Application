@@ -30,9 +30,15 @@ namespace HospitalManagementSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.nupSalary = new System.Windows.Forms.NumericUpDown();
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnAddInput = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
+            this.cbQualification = new System.Windows.Forms.ComboBox();
             this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
             this.txtCnic = new System.Windows.Forms.MaskedTextBox();
@@ -41,25 +47,19 @@ namespace HospitalManagementSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.nupSalary = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cbQualification = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).BeginInit();
             this.SuspendLayout();
@@ -104,6 +104,51 @@ namespace HospitalManagementSystem
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Location = new System.Drawing.Point(296, 248);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker2.TabIndex = 11;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(428, 248);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker1.TabIndex = 11;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(138, 251);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(63, 19);
+            this.radioButton2.TabIndex = 10;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(81, 251);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(51, 19);
+            this.radioButton1.TabIndex = 10;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // nupSalary
+            // 
+            this.nupSalary.Location = new System.Drawing.Point(708, 39);
+            this.nupSalary.Name = "nupSalary";
+            this.nupSalary.Size = new System.Drawing.Size(257, 23);
+            this.nupSalary.TabIndex = 9;
+            // 
             // btnClearInput
             // 
             this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -136,6 +181,17 @@ namespace HospitalManagementSystem
             this.txtAddress.Size = new System.Drawing.Size(954, 123);
             this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "";
+            // 
+            // cbQualification
+            // 
+            this.cbQualification.FormattingEnabled = true;
+            this.cbQualification.Items.AddRange(new object[] {
+            "Department of Neurology",
+            "Department of Cardiology"});
+            this.cbQualification.Location = new System.Drawing.Point(450, 129);
+            this.cbQualification.Name = "cbQualification";
+            this.cbQualification.Size = new System.Drawing.Size(222, 23);
+            this.cbQualification.TabIndex = 2;
             // 
             // cbDepartment
             // 
@@ -205,6 +261,36 @@ namespace HospitalManagementSystem
             this.txtName.Size = new System.Drawing.Size(190, 23);
             this.txtName.TabIndex = 0;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(400, 249);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(24, 21);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "to";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(245, 249);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(47, 21);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "From";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(245, 218);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(118, 21);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Working Hours:";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -235,6 +321,16 @@ namespace HospitalManagementSystem
             this.label4.TabIndex = 0;
             this.label4.Text = "Email:";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(446, 103);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(101, 21);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Qualification:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -244,6 +340,16 @@ namespace HospitalManagementSystem
             this.label7.Size = new System.Drawing.Size(96, 21);
             this.label7.TabIndex = 0;
             this.label7.Text = "Department:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(703, 13);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 21);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Salary:";
             // 
             // label6
             // 
@@ -285,112 +391,6 @@ namespace HospitalManagementSystem
             this.label1.Size = new System.Drawing.Size(235, 30);
             this.label1.TabIndex = 7;
             this.label1.Text = "Add Doctor Information";
-            // 
-            // nupSalary
-            // 
-            this.nupSalary.Location = new System.Drawing.Point(708, 39);
-            this.nupSalary.Name = "nupSalary";
-            this.nupSalary.Size = new System.Drawing.Size(257, 23);
-            this.nupSalary.TabIndex = 9;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(703, 13);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 21);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Salary:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(446, 103);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 21);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Qualification:";
-            // 
-            // cbQualification
-            // 
-            this.cbQualification.FormattingEnabled = true;
-            this.cbQualification.Items.AddRange(new object[] {
-            "Department of Neurology",
-            "Department of Cardiology"});
-            this.cbQualification.Location = new System.Drawing.Point(450, 129);
-            this.cbQualification.Name = "cbQualification";
-            this.cbQualification.Size = new System.Drawing.Size(222, 23);
-            this.cbQualification.TabIndex = 2;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(81, 251);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(51, 19);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(138, 251);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(63, 19);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(245, 218);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 21);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Working Hours:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(245, 249);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(47, 21);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "From";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(400, 249);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(24, 21);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "to";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(428, 248);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(97, 23);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(296, 248);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(97, 23);
-            this.dateTimePicker2.TabIndex = 11;
             // 
             // ucAddDoctor
             // 

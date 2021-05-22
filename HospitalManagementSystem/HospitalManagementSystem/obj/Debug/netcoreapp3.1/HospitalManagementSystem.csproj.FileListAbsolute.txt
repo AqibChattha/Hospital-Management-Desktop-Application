@@ -33,3 +33,4 @@ E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\ob
 E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.pdb
 E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.genruntimeconfig.cache
 E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.LogInForm.resources
+E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucDoctorsData.resources
