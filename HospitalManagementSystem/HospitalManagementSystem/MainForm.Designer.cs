@@ -579,18 +579,18 @@ namespace HospitalManagementSystem
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(250, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1014, 611);
+            this.panel.Size = new System.Drawing.Size(824, 611);
             this.panel.TabIndex = 2;
             // 
             // MainForn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 611);
+            this.ClientSize = new System.Drawing.Size(1074, 611);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1280, 650);
+            this.MinimumSize = new System.Drawing.Size(1090, 650);
             this.Name = "MainForn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HMS";
