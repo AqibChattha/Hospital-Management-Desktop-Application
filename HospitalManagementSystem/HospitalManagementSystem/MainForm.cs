@@ -30,6 +30,7 @@ namespace HospitalManagementSystem
             panelLabSubMenu.Visible = false;
             panelRecordSubMenu.Visible = false;
             panelCapitalSubMenu.Visible = false;
+            panelUnitsSubMenu.Visible = false;
         }
 
         private void hideSubMenu()
@@ -318,6 +319,17 @@ namespace HospitalManagementSystem
         private void btnAddUnit_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucAddUnits.Instence))
+            {
+                panel.Controls.Add(ucAddUnits.Instence);
+                ucAddUnits.Instence.Dock = DockStyle.Fill;
+                ucAddUnits.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddUnits.Instence.BringToFront();
+            }
+            main_Panel = panel;
         }
 
         private void btnViewUnit_Click(object sender, EventArgs e)

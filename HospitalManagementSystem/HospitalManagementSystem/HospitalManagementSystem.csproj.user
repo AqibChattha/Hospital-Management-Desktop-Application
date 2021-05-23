@@ -55,5 +55,8 @@
     <Compile Update="ucSurgeonsData.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucAddUnits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
