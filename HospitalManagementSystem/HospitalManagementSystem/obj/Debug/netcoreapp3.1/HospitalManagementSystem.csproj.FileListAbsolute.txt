@@ -51,3 +51,4 @@ C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManageme
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucReceptionistsData.resources
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucSurgeonsData.resources
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucHome.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAcknowledgeTest.resources

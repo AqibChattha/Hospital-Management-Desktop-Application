@@ -54,6 +54,10 @@ namespace HospitalManagementSystem
             {
                 panelCapitalSubMenu.Visible = false;
             }
+            if (panelUnitsSubMenu.Visible == true)
+            {
+                panelUnitsSubMenu.Visible = false;
+            }
         }
 
         private void showSubMenu(Panel subMenu)
@@ -233,6 +237,17 @@ namespace HospitalManagementSystem
         private void btnAddTest_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucAcknowledgeTest.Instence))
+            {
+                panel.Controls.Add(ucAcknowledgeTest.Instence);
+                ucAcknowledgeTest.Instence.Dock = DockStyle.Fill;
+                ucAcknowledgeTest.Instence.BringToFront();
+            }
+            else
+            {
+                ucAcknowledgeTest.Instence.BringToFront();
+            }
+            main_Panel = panel;
         }
 
         private void btnViewTests_Click(object sender, EventArgs e)
@@ -291,6 +306,23 @@ namespace HospitalManagementSystem
                 ucHome.Instence.BringToFront();
             }
             main_Panel = panel;
+        }
+
+        private void btnUnits_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelUnitsSubMenu);
+            panelSideSlecectedShow.Height = btnCapital.Height;
+            panelSideSlecectedShow.Top = btnCapital.Top;
+        }
+
+        private void btnAddUnit_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnViewUnit_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
         }
     }
 }

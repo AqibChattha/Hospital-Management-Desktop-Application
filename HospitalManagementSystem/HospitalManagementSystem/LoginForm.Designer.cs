@@ -39,13 +39,18 @@ namespace HospitalManagementSystem
             this.txtPasswordField = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEmailField = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(162)))));
+            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.Controls.Add(this.linkLabel1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.chboxPass);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -55,9 +60,10 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtEmailField);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(517, 389);
+            this.panel1.Size = new System.Drawing.Size(377, 505);
             this.panel1.TabIndex = 0;
             // 
             // chboxPass
@@ -65,7 +71,8 @@ namespace HospitalManagementSystem
             this.chboxPass.AutoSize = true;
             this.chboxPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chboxPass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.chboxPass.Location = new System.Drawing.Point(98, 227);
+            this.chboxPass.ForeColor = System.Drawing.Color.White;
+            this.chboxPass.Location = new System.Drawing.Point(40, 332);
             this.chboxPass.Name = "chboxPass";
             this.chboxPass.Size = new System.Drawing.Size(112, 21);
             this.chboxPass.TabIndex = 9;
@@ -76,7 +83,8 @@ namespace HospitalManagementSystem
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(98, 200);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(40, 305);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 15);
             this.label4.TabIndex = 7;
@@ -85,7 +93,8 @@ namespace HospitalManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(98, 114);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(40, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 15);
             this.label3.TabIndex = 6;
@@ -93,12 +102,14 @@ namespace HospitalManagementSystem
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Silver;
+            this.btnExit.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Location = new System.Drawing.Point(98, 309);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(36, 463);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(297, 28);
+            this.btnExit.Size = new System.Drawing.Size(99, 30);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -106,13 +117,15 @@ namespace HospitalManagementSystem
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLogin.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(98, 263);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(229, 463);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(297, 31);
+            this.btnLogin.Size = new System.Drawing.Size(104, 30);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -120,9 +133,11 @@ namespace HospitalManagementSystem
             // 
             // txtPasswordField
             // 
-            this.txtPasswordField.Location = new System.Drawing.Point(98, 174);
+            this.txtPasswordField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPasswordField.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPasswordField.Location = new System.Drawing.Point(40, 279);
             this.txtPasswordField.Name = "txtPasswordField";
-            this.txtPasswordField.Size = new System.Drawing.Size(297, 23);
+            this.txtPasswordField.Size = new System.Drawing.Size(297, 20);
             this.txtPasswordField.TabIndex = 3;
             this.txtPasswordField.UseSystemPasswordChar = true;
             // 
@@ -130,7 +145,8 @@ namespace HospitalManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(184, 130);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(36, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 30);
             this.label2.TabIndex = 2;
@@ -138,32 +154,57 @@ namespace HospitalManagementSystem
             // 
             // txtEmailField
             // 
-            this.txtEmailField.Location = new System.Drawing.Point(98, 88);
+            this.txtEmailField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmailField.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmailField.Location = new System.Drawing.Point(40, 177);
             this.txtEmailField.Name = "txtEmailField";
-            this.txtEmailField.Size = new System.Drawing.Size(297, 23);
+            this.txtEmailField.Size = new System.Drawing.Size(297, 20);
             this.txtEmailField.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(135, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(109, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(198, 36);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(36, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(243, 335);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(94, 15);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Register Patient?";
+            // 
             // LogInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 388);
+            this.ClientSize = new System.Drawing.Size(377, 505);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LogInForm";
             this.Text = "LogInForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,7 +213,6 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtEmailField;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPasswordField;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnExit;
@@ -180,5 +220,8 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.CheckBox chboxPass;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

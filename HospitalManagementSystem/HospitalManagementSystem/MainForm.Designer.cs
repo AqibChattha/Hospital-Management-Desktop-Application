@@ -31,6 +31,10 @@ namespace HospitalManagementSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForn));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelUnitsSubMenu = new System.Windows.Forms.Panel();
+            this.btnViewUnit = new System.Windows.Forms.Button();
+            this.btnAddUnit = new System.Windows.Forms.Button();
+            this.btnUnits = new System.Windows.Forms.Button();
             this.panelSideSlecectedShow = new System.Windows.Forms.Panel();
             this.panelCapitalSubMenu = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -65,6 +69,7 @@ namespace HospitalManagementSystem
             this.panelMenuLogo = new System.Windows.Forms.Panel();
             this.panel = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
+            this.panelUnitsSubMenu.SuspendLayout();
             this.panelCapitalSubMenu.SuspendLayout();
             this.panelRecordSubMenu.SuspendLayout();
             this.panelLabSubMenu.SuspendLayout();
@@ -76,6 +81,8 @@ namespace HospitalManagementSystem
             // 
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(162)))));
+            this.panelMenu.Controls.Add(this.panelUnitsSubMenu);
+            this.panelMenu.Controls.Add(this.btnUnits);
             this.panelMenu.Controls.Add(this.panelSideSlecectedShow);
             this.panelMenu.Controls.Add(this.panelCapitalSubMenu);
             this.panelMenu.Controls.Add(this.btnCapital);
@@ -96,6 +103,71 @@ namespace HospitalManagementSystem
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(250, 561);
             this.panelMenu.TabIndex = 1;
+            // 
+            // panelUnitsSubMenu
+            // 
+            this.panelUnitsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
+            this.panelUnitsSubMenu.Controls.Add(this.btnViewUnit);
+            this.panelUnitsSubMenu.Controls.Add(this.btnAddUnit);
+            this.panelUnitsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUnitsSubMenu.Location = new System.Drawing.Point(0, 1159);
+            this.panelUnitsSubMenu.Name = "panelUnitsSubMenu";
+            this.panelUnitsSubMenu.Size = new System.Drawing.Size(233, 81);
+            this.panelUnitsSubMenu.TabIndex = 26;
+            // 
+            // btnViewUnit
+            // 
+            this.btnViewUnit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnViewUnit.FlatAppearance.BorderSize = 0;
+            this.btnViewUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewUnit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnViewUnit.ForeColor = System.Drawing.Color.White;
+            this.btnViewUnit.Location = new System.Drawing.Point(0, 40);
+            this.btnViewUnit.Name = "btnViewUnit";
+            this.btnViewUnit.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnViewUnit.Size = new System.Drawing.Size(233, 40);
+            this.btnViewUnit.TabIndex = 3;
+            this.btnViewUnit.Text = "View Unit";
+            this.btnViewUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnViewUnit.UseVisualStyleBackColor = true;
+            this.btnViewUnit.Click += new System.EventHandler(this.btnViewUnit_Click);
+            // 
+            // btnAddUnit
+            // 
+            this.btnAddUnit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddUnit.FlatAppearance.BorderSize = 0;
+            this.btnAddUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUnit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddUnit.ForeColor = System.Drawing.Color.White;
+            this.btnAddUnit.Location = new System.Drawing.Point(0, 0);
+            this.btnAddUnit.Name = "btnAddUnit";
+            this.btnAddUnit.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnAddUnit.Size = new System.Drawing.Size(233, 40);
+            this.btnAddUnit.TabIndex = 2;
+            this.btnAddUnit.Text = "Add Unit";
+            this.btnAddUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddUnit.UseVisualStyleBackColor = true;
+            this.btnAddUnit.Click += new System.EventHandler(this.btnAddUnit_Click);
+            // 
+            // btnUnits
+            // 
+            this.btnUnits.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUnits.FlatAppearance.BorderSize = 0;
+            this.btnUnits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUnits.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUnits.ForeColor = System.Drawing.Color.White;
+            this.btnUnits.Image = ((System.Drawing.Image)(resources.GetObject("btnUnits.Image")));
+            this.btnUnits.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnits.Location = new System.Drawing.Point(0, 1114);
+            this.btnUnits.Name = "btnUnits";
+            this.btnUnits.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnUnits.Size = new System.Drawing.Size(233, 45);
+            this.btnUnits.TabIndex = 25;
+            this.btnUnits.Text = "Units";
+            this.btnUnits.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUnits.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUnits.UseVisualStyleBackColor = true;
+            this.btnUnits.Click += new System.EventHandler(this.btnUnits_Click);
             // 
             // panelSideSlecectedShow
             // 
@@ -582,7 +654,7 @@ namespace HospitalManagementSystem
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 1114);
+            this.btnExit.Location = new System.Drawing.Point(0, 1240);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(233, 45);
@@ -597,7 +669,7 @@ namespace HospitalManagementSystem
             // 
             this.panelExitMargin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(162)))));
             this.panelExitMargin.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelExitMargin.Location = new System.Drawing.Point(0, 1159);
+            this.panelExitMargin.Location = new System.Drawing.Point(0, 1285);
             this.panelExitMargin.Name = "panelExitMargin";
             this.panelExitMargin.Size = new System.Drawing.Size(233, 17);
             this.panelExitMargin.TabIndex = 12;
@@ -634,6 +706,7 @@ namespace HospitalManagementSystem
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HMS";
             this.panelMenu.ResumeLayout(false);
+            this.panelUnitsSubMenu.ResumeLayout(false);
             this.panelCapitalSubMenu.ResumeLayout(false);
             this.panelRecordSubMenu.ResumeLayout(false);
             this.panelLabSubMenu.ResumeLayout(false);
@@ -679,6 +752,10 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button btnOtherEmployees;
         private System.Windows.Forms.Button btnReceptionist;
+        private System.Windows.Forms.Panel panelUnitsSubMenu;
+        private System.Windows.Forms.Button btnAddUnit;
+        private System.Windows.Forms.Button btnUnits;
+        private System.Windows.Forms.Button btnViewUnit;
     }
 }
 
