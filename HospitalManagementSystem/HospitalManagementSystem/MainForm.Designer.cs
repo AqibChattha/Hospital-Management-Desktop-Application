@@ -53,7 +53,7 @@ namespace HospitalManagementSystem
             this.panelDoctorsSubMenu = new System.Windows.Forms.Panel();
             this.btnDoctorAttendence = new System.Windows.Forms.Button();
             this.btnRemoveDoctor = new System.Windows.Forms.Button();
-            this.btnLabTechnician = new System.Windows.Forms.Button();
+            this.btnPharmacist = new System.Windows.Forms.Button();
             this.btnNurse = new System.Windows.Forms.Button();
             this.btnDoctor = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
@@ -402,7 +402,7 @@ namespace HospitalManagementSystem
             this.panelDoctorsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
             this.panelDoctorsSubMenu.Controls.Add(this.btnDoctorAttendence);
             this.panelDoctorsSubMenu.Controls.Add(this.btnRemoveDoctor);
-            this.panelDoctorsSubMenu.Controls.Add(this.btnLabTechnician);
+            this.panelDoctorsSubMenu.Controls.Add(this.btnPharmacist);
             this.panelDoctorsSubMenu.Controls.Add(this.btnNurse);
             this.panelDoctorsSubMenu.Controls.Add(this.btnDoctor);
             this.panelDoctorsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -445,22 +445,22 @@ namespace HospitalManagementSystem
             this.btnRemoveDoctor.UseVisualStyleBackColor = true;
             this.btnRemoveDoctor.Click += new System.EventHandler(this.btnRemoveDoctor_Click);
             // 
-            // btnLabTechnician
+            // btnPharmacist
             // 
-            this.btnLabTechnician.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLabTechnician.FlatAppearance.BorderSize = 0;
-            this.btnLabTechnician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLabTechnician.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLabTechnician.ForeColor = System.Drawing.Color.White;
-            this.btnLabTechnician.Location = new System.Drawing.Point(0, 80);
-            this.btnLabTechnician.Name = "btnLabTechnician";
-            this.btnLabTechnician.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnLabTechnician.Size = new System.Drawing.Size(233, 40);
-            this.btnLabTechnician.TabIndex = 4;
-            this.btnLabTechnician.Text = "Lab Technician";
-            this.btnLabTechnician.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLabTechnician.UseVisualStyleBackColor = true;
-            this.btnLabTechnician.Click += new System.EventHandler(this.btnUpdateDoctor_Click);
+            this.btnPharmacist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPharmacist.FlatAppearance.BorderSize = 0;
+            this.btnPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPharmacist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPharmacist.ForeColor = System.Drawing.Color.White;
+            this.btnPharmacist.Location = new System.Drawing.Point(0, 80);
+            this.btnPharmacist.Name = "btnPharmacist";
+            this.btnPharmacist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPharmacist.Size = new System.Drawing.Size(233, 40);
+            this.btnPharmacist.TabIndex = 4;
+            this.btnPharmacist.Text = "Pharmacists";
+            this.btnPharmacist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPharmacist.UseVisualStyleBackColor = true;
+            this.btnPharmacist.Click += new System.EventHandler(this.btnUpdateDoctor_Click);
             // 
             // btnNurse
             // 
@@ -629,7 +629,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panelDoctorsSubMenu;
         private System.Windows.Forms.Button btnDoctorAttendence;
         private System.Windows.Forms.Button btnRemoveDoctor;
-        private System.Windows.Forms.Button btnLabTechnician;
+        private System.Windows.Forms.Button btnPharmacist;
         private System.Windows.Forms.Button btnNurse;
         private System.Windows.Forms.Button btnDoctor;
         private System.Windows.Forms.Button btnEmployees;

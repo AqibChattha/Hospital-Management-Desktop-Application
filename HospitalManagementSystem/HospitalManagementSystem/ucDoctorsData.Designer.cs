@@ -67,6 +67,7 @@ namespace HospitalManagementSystem
             this.dataGridViewDoctors.RowTemplate.Height = 25;
             this.dataGridViewDoctors.Size = new System.Drawing.Size(788, 447);
             this.dataGridViewDoctors.TabIndex = 7;
+            this.dataGridViewDoctors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDoctors_CellContentClick);
             // 
             // name
             // 

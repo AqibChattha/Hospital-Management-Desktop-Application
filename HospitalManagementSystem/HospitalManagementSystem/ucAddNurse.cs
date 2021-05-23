@@ -51,5 +51,38 @@ namespace HospitalManagementSystem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dateTimePicker1.Value = DateTime.Today;
+            dateTimePicker2.Value = DateTime.Today;
+            cbDepartment.Text = "";
+            cbQualification.Text = "";
+            cbNurseType.Text = "";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            nupSalary.Value = 0;
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

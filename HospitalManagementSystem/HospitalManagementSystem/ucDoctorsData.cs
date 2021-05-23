@@ -40,5 +40,10 @@ namespace HospitalManagementSystem
                 ucAddDoctor.Instence.BringToFront();
             }
         }
+
+        private void dataGridViewDoctors_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

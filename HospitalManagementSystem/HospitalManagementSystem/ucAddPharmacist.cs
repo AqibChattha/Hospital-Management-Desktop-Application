@@ -8,26 +8,31 @@ using System.Windows.Forms;
 
 namespace HospitalManagementSystem
 {
-    public partial class ucAddDoctor : UserControl
+    public partial class ucAddPharmacist : UserControl
     {
-        private static ucAddDoctor _instence;
-        public static ucAddDoctor Instence
+        private static ucAddPharmacist _instence;
+        public static ucAddPharmacist Instence
         {
             get
             {
                 if (_instence == null)
                 {
-                    _instence = new ucAddDoctor();
+                    _instence = new ucAddPharmacist();
                 }
                 return _instence;
             }
         }
-        public ucAddDoctor()
+        public ucAddPharmacist()
         {
             InitializeComponent();
         }
 
-        private void btnClearInput_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
             txtName.Text = "";
             txtCnic.Text = "";
@@ -37,27 +42,12 @@ namespace HospitalManagementSystem
             txtAddress.Text = "";
             cbDepartment.Text = "";
             dateTimePicker1.Value = DateTime.Today;
-            dateTimePicker2.Value =DateTime.Today;
+            dateTimePicker2.Value = DateTime.Today;
             cbDepartment.Text = "";
             cbQualification.Text = "";
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             nupSalary.Value = 0;
-
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            if (!MainForn.main_Panel.Controls.Contains(ucDoctorsData.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucDoctorsData.Instence);
-                ucDoctorsData.Instence.Dock = DockStyle.Fill;
-                ucDoctorsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucDoctorsData.Instence.BringToFront();
-            }
         }
     }
 }

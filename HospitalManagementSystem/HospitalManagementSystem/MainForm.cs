@@ -108,6 +108,16 @@ namespace HospitalManagementSystem
         private void btnUpdateDoctor_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucAddPharmacist.Instence))
+            {
+                panel.Controls.Add(ucAddPharmacist.Instence);
+                ucAddPharmacist.Instence.Dock = DockStyle.Fill;
+                ucAddPharmacist.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddPharmacist.Instence.BringToFront();
+            }
         }
 
         private void btnRemoveDoctor_Click(object sender, EventArgs e)
