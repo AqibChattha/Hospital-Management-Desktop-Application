@@ -73,8 +73,9 @@ namespace HospitalManagementSystem
             panelSideSlecectedShow.Height = btnEmployees.Height;
             panelSideSlecectedShow.Top = btnEmployees.Top;
         }
-        #region DoctorsSubMenu
-        private void btnViewDoctor_Click(object sender, EventArgs e)
+        #region EmployeesSubMenu
+
+        private void btnDoctor_Click(object sender, EventArgs e)
         {
             hideSubMenu();
             if (!panel.Controls.Contains(ucDoctorsData.Instence))
@@ -88,46 +89,65 @@ namespace HospitalManagementSystem
                 ucDoctorsData.Instence.BringToFront();
             }
             main_Panel = panel;
+
         }
 
-        private void btnAddDoctor_Click(object sender, EventArgs e)
+        private void btnNurse_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAddNurse.Instence))
+            if (!panel.Controls.Contains(ucNursesData.Instence))
             {
-                panel.Controls.Add(ucAddNurse.Instence);
-                ucAddNurse.Instence.Dock = DockStyle.Fill;
-                ucAddNurse.Instence.BringToFront();
+                panel.Controls.Add(ucNursesData.Instence);
+                ucNursesData.Instence.Dock = DockStyle.Fill;
+                ucNursesData.Instence.BringToFront();
             }
             else
             {
-                ucAddNurse.Instence.BringToFront();
+                ucNursesData.Instence.BringToFront();
             }
+            main_Panel = panel;
+
         }
 
-        private void btnUpdateDoctor_Click(object sender, EventArgs e)
+        private void btnPharmacist_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAddPharmacist.Instence))
+            if (!panel.Controls.Contains(ucPharmacistData.Instence))
             {
-                panel.Controls.Add(ucAddPharmacist.Instence);
-                ucAddPharmacist.Instence.Dock = DockStyle.Fill;
-                ucAddPharmacist.Instence.BringToFront();
+                panel.Controls.Add(ucPharmacistData.Instence);
+                ucPharmacistData.Instence.Dock = DockStyle.Fill;
+                ucPharmacistData.Instence.BringToFront();
             }
             else
             {
-                ucAddPharmacist.Instence.BringToFront();
+                ucPharmacistData.Instence.BringToFront();
             }
+            main_Panel = panel;
+
         }
 
-        private void btnRemoveDoctor_Click(object sender, EventArgs e)
+        private void btnLaboratoryTechnician_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+
         }
 
-        private void btnDoctorAttendence_Click(object sender, EventArgs e)
+        private void btnReceptionist_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+
+        }
+
+        private void btnOtherEmployees_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+
         }
         #endregion
 

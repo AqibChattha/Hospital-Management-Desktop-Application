@@ -34,7 +34,6 @@ namespace HospitalManagementSystem
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,7 +52,7 @@ namespace HospitalManagementSystem
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.nudSalary = new System.Windows.Forms.NumericUpDown();
+            this.nupSalary = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
@@ -63,7 +62,7 @@ namespace HospitalManagementSystem
             this.panelAddDoctorInfo = new System.Windows.Forms.Panel();
             this.dtpDoctor = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).BeginInit();
             this.panelAddDoctorInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,44 +79,17 @@ namespace HospitalManagementSystem
             // 
             // label2
             // 
-//<<<<<<< HEAD
-//            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-//            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-//            this.dateTimePicker2.Location = new System.Drawing.Point(296, 248);
-//            this.dateTimePicker2.Name = "dateTimePicker2";
-//            this.dateTimePicker2.Size = new System.Drawing.Size(97, 23);
-//            this.dateTimePicker2.TabIndex = 11;
-//            this.dateTimePicker2.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
-//=======
-//            this.label2.AutoSize = true;
-//            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-//            this.label2.Location = new System.Drawing.Point(6, 13);
-//            this.label2.Name = "label2";
-//            this.label2.Size = new System.Drawing.Size(55, 21);
-//            this.label2.TabIndex = 0;
-//            this.label2.Text = "Name:";
-//>>>>>>> 7462760648e5deb09938149561dd06efd1eae599
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 20;
             // 
             // label5
             // 
-//<<<<<<< HEAD
-//            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-//            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-//            this.dateTimePicker1.Location = new System.Drawing.Point(428, 248);
-//            this.dateTimePicker1.Name = "dateTimePicker1";
-//            this.dateTimePicker1.Size = new System.Drawing.Size(97, 23);
-//            this.dateTimePicker1.TabIndex = 11;
-//            this.dateTimePicker1.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
-//=======
-//            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-//            this.label5.AutoSize = true;
-//            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-//            this.label5.Location = new System.Drawing.Point(200, 13);
-//            this.label5.Name = "label5";
-//            this.label5.Size = new System.Drawing.Size(49, 21);
-//            this.label5.TabIndex = 0;
-//            this.label5.Text = "CNIC:";
-//>>>>>>> 7462760648e5deb09938149561dd06efd1eae599
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.TabIndex = 19;
             // 
             // label6
             // 
@@ -140,30 +112,6 @@ namespace HospitalManagementSystem
             this.label11.Size = new System.Drawing.Size(56, 21);
             this.label11.TabIndex = 0;
             this.label11.Text = "Salary:";
-            // 
-            // label7
-            // 
-//<<<<<<< HEAD
-//            this.nupSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-//            this.nupSalary.Location = new System.Drawing.Point(587, 39);
-//            this.nupSalary.Maximum = new decimal(new int[] {
-//            200000,
-//            0,
-//            0,
-//            0});
-//            this.nupSalary.Name = "nupSalary";
-//            this.nupSalary.Size = new System.Drawing.Size(186, 23);
-//            this.nupSalary.TabIndex = 9;
-//=======
-//            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-//            this.label7.AutoSize = true;
-//            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-//            this.label7.Location = new System.Drawing.Point(580, 90);
-//            this.label7.Name = "label7";
-//            this.label7.Size = new System.Drawing.Size(96, 21);
-//            this.label7.TabIndex = 0;
-//            this.label7.Text = "Department:";
-//>>>>>>> 7462760648e5deb09938149561dd06efd1eae599
             // 
             // label12
             // 
@@ -208,30 +156,10 @@ namespace HospitalManagementSystem
             // 
             // txtName
             // 
-//<<<<<<< HEAD
-//            this.cbQualification.Anchor = System.Windows.Forms.AnchorStyles.Top;
-//            this.cbQualification.AutoCompleteCustomSource.AddRange(new string[] {
-//            "MSC",
-//            "MPhill",
-//            "Phd",
-//            "NeueoSergen",
-//            "Department of Neurology"});
-//            this.cbQualification.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-//            this.cbQualification.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-//            this.cbQualification.FormattingEnabled = true;
-//            this.cbQualification.Items.AddRange(new object[] {
-//            "Department of Neurology",
-//            "Department of Cardiology"});
-//            this.cbQualification.Location = new System.Drawing.Point(366, 129);
-//            this.cbQualification.Name = "cbQualification";
-//            this.cbQualification.Size = new System.Drawing.Size(189, 23);
-//            this.cbQualification.TabIndex = 2;
-//=======
-//            this.txtName.Location = new System.Drawing.Point(11, 41);
-//            this.txtName.Name = "txtName";
-//            this.txtName.Size = new System.Drawing.Size(159, 23);
-//            this.txtName.TabIndex = 0;
-//>>>>>>> 7462760648e5deb09938149561dd06efd1eae599
+            this.txtName.Location = new System.Drawing.Point(32, 39);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(137, 23);
+            this.txtName.TabIndex = 17;
             // 
             // label8
             // 
@@ -370,13 +298,13 @@ namespace HospitalManagementSystem
             this.label13.TabIndex = 14;
             this.label13.Text = "Working Hours:";
             // 
-            // nudSalary
+            // nupSalary
             // 
-            this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSalary.Location = new System.Drawing.Point(584, 192);
-            this.nudSalary.Name = "nudSalary";
-            this.nudSalary.Size = new System.Drawing.Size(186, 23);
-            this.nudSalary.TabIndex = 9;
+            this.nupSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nupSalary.Location = new System.Drawing.Point(584, 192);
+            this.nupSalary.Name = "nupSalary";
+            this.nupSalary.Size = new System.Drawing.Size(186, 23);
+            this.nupSalary.TabIndex = 9;
             // 
             // label14
             // 
@@ -456,7 +384,7 @@ namespace HospitalManagementSystem
             this.panelAddDoctorInfo.Controls.Add(this.label15);
             this.panelAddDoctorInfo.Controls.Add(this.radioButton1);
             this.panelAddDoctorInfo.Controls.Add(this.label14);
-            this.panelAddDoctorInfo.Controls.Add(this.nudSalary);
+            this.panelAddDoctorInfo.Controls.Add(this.nupSalary);
             this.panelAddDoctorInfo.Controls.Add(this.label13);
             this.panelAddDoctorInfo.Controls.Add(this.btnCancel);
             this.panelAddDoctorInfo.Controls.Add(this.btnClearInput);
@@ -476,7 +404,6 @@ namespace HospitalManagementSystem
             this.panelAddDoctorInfo.Controls.Add(this.label4);
             this.panelAddDoctorInfo.Controls.Add(this.label12);
             this.panelAddDoctorInfo.Controls.Add(this.label16);
-            this.panelAddDoctorInfo.Controls.Add(this.label7);
             this.panelAddDoctorInfo.Controls.Add(this.label11);
             this.panelAddDoctorInfo.Controls.Add(this.label6);
             this.panelAddDoctorInfo.Controls.Add(this.label5);
@@ -515,7 +442,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.panelAddDoctorInfo);
             this.Name = "ucAddDoctor";
             this.Size = new System.Drawing.Size(824, 611);
-            ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).EndInit();
             this.panelAddDoctorInfo.ResumeLayout(false);
             this.panelAddDoctorInfo.PerformLayout();
             this.ResumeLayout(false);
@@ -529,7 +456,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
@@ -548,7 +474,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NumericUpDown nudSalary;
+        private System.Windows.Forms.NumericUpDown nupSalary;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label15;

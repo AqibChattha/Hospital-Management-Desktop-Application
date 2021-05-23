@@ -58,20 +58,5 @@ namespace HospitalManagementSystem
             radioButton2.Checked = false;
             nupSalary.Value = 0;
         }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

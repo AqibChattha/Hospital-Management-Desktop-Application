@@ -31,6 +31,8 @@ namespace HospitalManagementSystem
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbNurseType = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -62,8 +64,7 @@ namespace HospitalManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cbNurseType = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +77,6 @@ namespace HospitalManagementSystem
             this.label1.Size = new System.Drawing.Size(227, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Nurse Information";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -85,6 +85,7 @@ namespace HospitalManagementSystem
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cbNurseType);
             this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.dateTimePicker2);
@@ -120,7 +121,28 @@ namespace HospitalManagementSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(886, 521);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cbNurseType
+            // 
+            this.cbNurseType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbNurseType.FormattingEnabled = true;
+            this.cbNurseType.Items.AddRange(new object[] {
+            "OperationStaff",
+            "AdministrativeStaff"});
+            this.cbNurseType.Location = new System.Drawing.Point(245, 219);
+            this.cbNurseType.Name = "cbNurseType";
+            this.cbNurseType.Size = new System.Drawing.Size(175, 23);
+            this.cbNurseType.TabIndex = 17;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(171, 218);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 21);
+            this.label16.TabIndex = 16;
+            this.label16.Text = "Type:";
             // 
             // button1
             // 
@@ -157,7 +179,6 @@ namespace HospitalManagementSystem
             this.dateTimePicker2.Size = new System.Drawing.Size(96, 23);
             this.dateTimePicker2.TabIndex = 0;
             this.dateTimePicker2.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // dateTimePicker1
             // 
@@ -192,7 +213,6 @@ namespace HospitalManagementSystem
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // nupSalary
             // 
@@ -330,7 +350,6 @@ namespace HospitalManagementSystem
             this.label15.Size = new System.Drawing.Size(18, 15);
             this.label15.TabIndex = 0;
             this.label15.Text = "to";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label14
             // 
@@ -341,7 +360,6 @@ namespace HospitalManagementSystem
             this.label14.Size = new System.Drawing.Size(35, 15);
             this.label14.TabIndex = 0;
             this.label14.Text = "From";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label13
             // 
@@ -352,7 +370,6 @@ namespace HospitalManagementSystem
             this.label13.Size = new System.Drawing.Size(118, 21);
             this.label13.TabIndex = 0;
             this.label13.Text = "Working Hours:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label10
             // 
@@ -363,7 +380,6 @@ namespace HospitalManagementSystem
             this.label10.Size = new System.Drawing.Size(64, 21);
             this.label10.TabIndex = 0;
             this.label10.Text = "Gender:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -445,27 +461,18 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
-            // label16
+            // btnCancel
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(171, 218);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(45, 21);
-            this.label16.TabIndex = 16;
-            this.label16.Text = "Type:";
-            // 
-            // cbNurseType
-            // 
-            this.cbNurseType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbNurseType.FormattingEnabled = true;
-            this.cbNurseType.Items.AddRange(new object[] {
-            "OperationStaff",
-            "AdministrativeStaff"});
-            this.cbNurseType.Location = new System.Drawing.Point(245, 219);
-            this.cbNurseType.Name = "cbNurseType";
-            this.cbNurseType.Size = new System.Drawing.Size(175, 23);
-            this.cbNurseType.TabIndex = 17;
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Location = new System.Drawing.Point(589, 479);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(90, 30);
+            this.btnCancel.TabIndex = 15;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // ucAddNurse
             // 
@@ -521,5 +528,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cbNurseType;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

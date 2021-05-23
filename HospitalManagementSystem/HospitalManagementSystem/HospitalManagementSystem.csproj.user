@@ -22,5 +22,8 @@
     <Compile Update="ucNursesData.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucPharmacistData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

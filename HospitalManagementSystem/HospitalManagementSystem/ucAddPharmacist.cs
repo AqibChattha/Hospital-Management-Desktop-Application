@@ -49,5 +49,20 @@ namespace HospitalManagementSystem
             radioButton2.Checked = false;
             nupSalary.Value = 0;
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+            if (!MainForn.main_Panel.Controls.Contains(ucPharmacistData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucPharmacistData.Instence);
+                ucPharmacistData.Instence.Dock = DockStyle.Fill;
+                ucPharmacistData.Instence.BringToFront();
+            }
+            else
+            {
+                ucPharmacistData.Instence.BringToFront();
+            }
+        }
     }
 }

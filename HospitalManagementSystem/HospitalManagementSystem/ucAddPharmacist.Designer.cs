@@ -29,7 +29,7 @@ namespace HospitalManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelAddPharmacistInfo = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -64,52 +64,54 @@ namespace HospitalManagementSystem
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.panelAddPharmacistInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelAddPharmacistInfo
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelAddPharmacistInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.nupSalary);
-            this.panel1.Controls.Add(this.btnClearInput);
-            this.panel1.Controls.Add(this.btnAddInput);
-            this.panel1.Controls.Add(this.txtAddress);
-            this.panel1.Controls.Add(this.cbQualification);
-            this.panel1.Controls.Add(this.cbDepartment);
-            this.panel1.Controls.Add(this.txtPhoneNo);
-            this.panel1.Controls.Add(this.txtCnic);
-            this.panel1.Controls.Add(this.txtPassword);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txtName);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(11, 55);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(886, 520);
-            this.panel1.TabIndex = 7;
+            this.panelAddPharmacistInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAddPharmacistInfo.Controls.Add(this.btnCancel);
+            this.panelAddPharmacistInfo.Controls.Add(this.button4);
+            this.panelAddPharmacistInfo.Controls.Add(this.button2);
+            this.panelAddPharmacistInfo.Controls.Add(this.button1);
+            this.panelAddPharmacistInfo.Controls.Add(this.button3);
+            this.panelAddPharmacistInfo.Controls.Add(this.dateTimePicker2);
+            this.panelAddPharmacistInfo.Controls.Add(this.dateTimePicker1);
+            this.panelAddPharmacistInfo.Controls.Add(this.radioButton2);
+            this.panelAddPharmacistInfo.Controls.Add(this.radioButton1);
+            this.panelAddPharmacistInfo.Controls.Add(this.nupSalary);
+            this.panelAddPharmacistInfo.Controls.Add(this.btnClearInput);
+            this.panelAddPharmacistInfo.Controls.Add(this.btnAddInput);
+            this.panelAddPharmacistInfo.Controls.Add(this.txtAddress);
+            this.panelAddPharmacistInfo.Controls.Add(this.cbQualification);
+            this.panelAddPharmacistInfo.Controls.Add(this.cbDepartment);
+            this.panelAddPharmacistInfo.Controls.Add(this.txtPhoneNo);
+            this.panelAddPharmacistInfo.Controls.Add(this.txtCnic);
+            this.panelAddPharmacistInfo.Controls.Add(this.txtPassword);
+            this.panelAddPharmacistInfo.Controls.Add(this.txtEmail);
+            this.panelAddPharmacistInfo.Controls.Add(this.label3);
+            this.panelAddPharmacistInfo.Controls.Add(this.label8);
+            this.panelAddPharmacistInfo.Controls.Add(this.txtName);
+            this.panelAddPharmacistInfo.Controls.Add(this.label15);
+            this.panelAddPharmacistInfo.Controls.Add(this.label14);
+            this.panelAddPharmacistInfo.Controls.Add(this.label13);
+            this.panelAddPharmacistInfo.Controls.Add(this.label10);
+            this.panelAddPharmacistInfo.Controls.Add(this.label9);
+            this.panelAddPharmacistInfo.Controls.Add(this.label4);
+            this.panelAddPharmacistInfo.Controls.Add(this.label12);
+            this.panelAddPharmacistInfo.Controls.Add(this.label7);
+            this.panelAddPharmacistInfo.Controls.Add(this.label11);
+            this.panelAddPharmacistInfo.Controls.Add(this.label6);
+            this.panelAddPharmacistInfo.Controls.Add(this.label5);
+            this.panelAddPharmacistInfo.Controls.Add(this.label2);
+            this.panelAddPharmacistInfo.Location = new System.Drawing.Point(11, 55);
+            this.panelAddPharmacistInfo.Name = "panelAddPharmacistInfo";
+            this.panelAddPharmacistInfo.Size = new System.Drawing.Size(886, 520);
+            this.panelAddPharmacistInfo.TabIndex = 7;
             // 
             // button4
             // 
@@ -462,16 +464,29 @@ namespace HospitalManagementSystem
             this.label1.Text = "Add Pharmacist Information";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.Location = new System.Drawing.Point(595, 476);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(90, 30);
+            this.btnCancel.TabIndex = 17;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // ucAddPharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelAddPharmacistInfo);
             this.Name = "ucAddPharmacist";
             this.Size = new System.Drawing.Size(924, 607);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelAddPharmacistInfo.ResumeLayout(false);
+            this.panelAddPharmacistInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupSalary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -480,7 +495,7 @@ namespace HospitalManagementSystem
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelAddPharmacistInfo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
@@ -515,5 +530,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
