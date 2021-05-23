@@ -8,25 +8,29 @@ using System.Windows.Forms;
 
 namespace HospitalManagementSystem
 {
-    public partial class ucAddUnits : UserControl
+    public partial class ucAddPatient : UserControl
     {
-        private static ucAddUnits _instence;
-        public static ucAddUnits Instence
+
+        private static ucAddPatient _instence;
+        public static ucAddPatient Instence
         {
             get
             {
                 if (_instence == null)
                 {
-                    _instence = new ucAddUnits();
+                    _instence = new ucAddPatient();
                 }
                 return _instence;
             }
         }
-        public ucAddUnits()
+        public ucAddPatient()
         {
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

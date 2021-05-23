@@ -16,6 +16,9 @@
     <Compile Update="ucAddOtherEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucAddPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ucAddPharmacist.cs">
       <SubType>UserControl</SubType>
     </Compile>

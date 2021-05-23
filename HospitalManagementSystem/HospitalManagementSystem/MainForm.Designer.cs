@@ -34,7 +34,10 @@ namespace HospitalManagementSystem
             this.panelUnitsSubMenu = new System.Windows.Forms.Panel();
             this.btnViewUnit = new System.Windows.Forms.Button();
             this.btnAddUnit = new System.Windows.Forms.Button();
+
             this.btnUnits = new System.Windows.Forms.Button();
+
+
             this.panelSideSlecectedShow = new System.Windows.Forms.Panel();
             this.panelCapitalSubMenu = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -65,7 +68,6 @@ namespace HospitalManagementSystem
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.panelExitMargin = new System.Windows.Forms.Panel();
             this.panelMenuLogo = new System.Windows.Forms.Panel();
             this.panel = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
@@ -83,6 +85,9 @@ namespace HospitalManagementSystem
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(162)))));
             this.panelMenu.Controls.Add(this.panelUnitsSubMenu);
             this.panelMenu.Controls.Add(this.btnUnits);
+
+
+
             this.panelMenu.Controls.Add(this.panelSideSlecectedShow);
             this.panelMenu.Controls.Add(this.panelCapitalSubMenu);
             this.panelMenu.Controls.Add(this.btnCapital);
@@ -96,12 +101,11 @@ namespace HospitalManagementSystem
             this.panelMenu.Controls.Add(this.btnEmployees);
             this.panelMenu.Controls.Add(this.btnHome);
             this.panelMenu.Controls.Add(this.btnExit);
-            this.panelMenu.Controls.Add(this.panelExitMargin);
             this.panelMenu.Controls.Add(this.panelMenuLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(250, 561);
+            this.panelMenu.Size = new System.Drawing.Size(250, 609);
             this.panelMenu.TabIndex = 1;
             // 
             // panelUnitsSubMenu
@@ -112,7 +116,9 @@ namespace HospitalManagementSystem
             this.panelUnitsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUnitsSubMenu.Location = new System.Drawing.Point(0, 1159);
             this.panelUnitsSubMenu.Name = "panelUnitsSubMenu";
+
             this.panelUnitsSubMenu.Size = new System.Drawing.Size(233, 81);
+
             this.panelUnitsSubMenu.TabIndex = 26;
             // 
             // btnViewUnit
@@ -122,15 +128,19 @@ namespace HospitalManagementSystem
             this.btnViewUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewUnit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewUnit.ForeColor = System.Drawing.Color.White;
+
             this.btnViewUnit.Location = new System.Drawing.Point(0, 40);
             this.btnViewUnit.Name = "btnViewUnit";
             this.btnViewUnit.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnViewUnit.Size = new System.Drawing.Size(233, 40);
+
             this.btnViewUnit.TabIndex = 3;
             this.btnViewUnit.Text = "View Unit";
             this.btnViewUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewUnit.UseVisualStyleBackColor = true;
             this.btnViewUnit.Click += new System.EventHandler(this.btnViewUnit_Click);
+
+
             // 
             // btnAddUnit
             // 
@@ -142,11 +152,15 @@ namespace HospitalManagementSystem
             this.btnAddUnit.Location = new System.Drawing.Point(0, 0);
             this.btnAddUnit.Name = "btnAddUnit";
             this.btnAddUnit.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+
             this.btnAddUnit.Size = new System.Drawing.Size(233, 40);
+
+
             this.btnAddUnit.TabIndex = 2;
             this.btnAddUnit.Text = "Add Unit";
             this.btnAddUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddUnit.UseVisualStyleBackColor = true;
+
             this.btnAddUnit.Click += new System.EventHandler(this.btnAddUnit_Click);
             // 
             // btnUnits
@@ -168,6 +182,8 @@ namespace HospitalManagementSystem
             this.btnUnits.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUnits.UseVisualStyleBackColor = true;
             this.btnUnits.Click += new System.EventHandler(this.btnUnits_Click);
+
+
             // 
             // panelSideSlecectedShow
             // 
@@ -654,26 +670,23 @@ namespace HospitalManagementSystem
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
             this.btnExit.Location = new System.Drawing.Point(0, 1240);
+
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(233, 45);
+            this.btnExit.Size = new System.Drawing.Size(233, 46);
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = " Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // panelExitMargin
-            // 
-            this.panelExitMargin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(162)))));
-            this.panelExitMargin.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelExitMargin.Location = new System.Drawing.Point(0, 1285);
-            this.panelExitMargin.Name = "panelExitMargin";
-            this.panelExitMargin.Size = new System.Drawing.Size(233, 17);
-            this.panelExitMargin.TabIndex = 12;
-            // 
+        
+
+      
+
+
             // panelMenuLogo
             // 
             this.panelMenuLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMenuLogo.BackgroundImage")));
@@ -690,14 +703,14 @@ namespace HospitalManagementSystem
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(250, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(824, 561);
+            this.panel.Size = new System.Drawing.Size(824, 609);
             this.panel.TabIndex = 2;
             // 
             // MainForn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 561);
+            this.ClientSize = new System.Drawing.Size(1074, 609);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -747,15 +760,18 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnEmployees;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Panel panelExitMargin;
         private System.Windows.Forms.Panel panelMenuLogo;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button btnOtherEmployees;
         private System.Windows.Forms.Button btnReceptionist;
-        private System.Windows.Forms.Panel panelUnitsSubMenu;
+
+       private System.Windows.Forms.Panel panelUnitsSubMenu;
         private System.Windows.Forms.Button btnAddUnit;
         private System.Windows.Forms.Button btnUnits;
         private System.Windows.Forms.Button btnViewUnit;
+ 
+    
+
     }
 }
 

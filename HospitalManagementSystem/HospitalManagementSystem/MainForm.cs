@@ -335,6 +335,8 @@ namespace HospitalManagementSystem
         private void btnViewUnit_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-        }
+
+
+       }
     }
 }
