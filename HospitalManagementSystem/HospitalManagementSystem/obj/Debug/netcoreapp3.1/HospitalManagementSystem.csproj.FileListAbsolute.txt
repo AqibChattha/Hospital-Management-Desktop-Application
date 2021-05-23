@@ -42,3 +42,12 @@ C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManageme
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucDoctorsData.resources
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucNursesData.resources
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucPharmacistData.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddLaboratoryTechnician.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddOtherEmployee.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddReceptionist.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddSurgeon.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucLaboratoryTechniciansData.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucOtherStaffData.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucReceptionistsData.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucSurgeonsData.resources
+C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucHome.resources

@@ -79,7 +79,7 @@ namespace HospitalManagementSystem
             this.btnRegisterNurse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegisterNurse.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegisterNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterNurse.Location = new System.Drawing.Point(672, 561);
+            this.btnRegisterNurse.Location = new System.Drawing.Point(672, 511);
             this.btnRegisterNurse.Name = "btnRegisterNurse";
             this.btnRegisterNurse.Size = new System.Drawing.Size(132, 30);
             this.btnRegisterNurse.TabIndex = 14;
@@ -107,7 +107,7 @@ namespace HospitalManagementSystem
             this.dtvNurses.Location = new System.Drawing.Point(17, 93);
             this.dtvNurses.Name = "dtvNurses";
             this.dtvNurses.RowTemplate.Height = 25;
-            this.dtvNurses.Size = new System.Drawing.Size(788, 447);
+            this.dtvNurses.Size = new System.Drawing.Size(788, 397);
             this.dtvNurses.TabIndex = 13;
             // 
             // name
@@ -171,7 +171,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.btnRegisterNurse);
             this.Controls.Add(this.dtvNurses);
             this.Name = "ucNursesData";
-            this.Size = new System.Drawing.Size(824, 611);
+            this.Size = new System.Drawing.Size(824, 561);
             ((System.ComponentModel.ISupportInitialize)(this.dtvNurses)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

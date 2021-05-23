@@ -17,8 +17,10 @@ namespace HospitalManagementSystem
         {
             InitializeComponent();
             customizeDesign();
+            panel.Controls.Add(ucHome.Instence);
+            ucHome.Instence.Dock = DockStyle.Fill;
+            ucHome.Instence.BringToFront();
             main_Panel = panel;
-
         }
 
         private void customizeDesign()
@@ -129,24 +131,67 @@ namespace HospitalManagementSystem
         private void btnLaboratoryTechnician_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucLaboratoryTechniciansData.Instence))
+            {
+                panel.Controls.Add(ucLaboratoryTechniciansData.Instence);
+                ucLaboratoryTechniciansData.Instence.Dock = DockStyle.Fill;
+                ucLaboratoryTechniciansData.Instence.BringToFront();
+            }
+            else
+            {
+                ucLaboratoryTechniciansData.Instence.BringToFront();
+            }
+            main_Panel = panel;
 
+        }
+
+        private void btnSurgeon_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            if (!panel.Controls.Contains(ucSurgeonsData.Instence))
+            {
+                panel.Controls.Add(ucSurgeonsData.Instence);
+                ucSurgeonsData.Instence.Dock = DockStyle.Fill;
+                ucSurgeonsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucSurgeonsData.Instence.BringToFront();
+            }
+            main_Panel = panel;
         }
 
         private void btnReceptionist_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-
-        }
-
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
+            if (!panel.Controls.Contains(ucReceptionistsData.Instence))
+            {
+                panel.Controls.Add(ucReceptionistsData.Instence);
+                ucReceptionistsData.Instence.Dock = DockStyle.Fill;
+                ucReceptionistsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucReceptionistsData.Instence.BringToFront();
+            }
+            main_Panel = panel;
 
         }
 
         private void btnOtherEmployees_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucOtherStaffData.Instence))
+            {
+                panel.Controls.Add(ucOtherStaffData.Instence);
+                ucOtherStaffData.Instence.Dock = DockStyle.Fill;
+                ucOtherStaffData.Instence.BringToFront();
+            }
+            else
+            {
+                ucOtherStaffData.Instence.BringToFront();
+            }
+            main_Panel = panel;
 
         }
         #endregion
@@ -228,6 +273,24 @@ namespace HospitalManagementSystem
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            panelSideSlecectedShow.Height = btnHome.Height;
+            panelSideSlecectedShow.Top = btnHome.Top;
+            if (!panel.Controls.Contains(ucHome.Instence))
+            {
+                panel.Controls.Add(ucHome.Instence);
+                ucHome.Instence.Dock = DockStyle.Fill;
+                ucHome.Instence.BringToFront();
+            }
+            else
+            {
+                ucHome.Instence.BringToFront();
+            }
+            main_Panel = panel;
         }
     }
 }

@@ -49,14 +49,12 @@ namespace HospitalManagementSystem
             txtEmail.Text = "";
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
-            dateTimePicker1.Value = DateTime.Today;
-            dateTimePicker2.Value = DateTime.Today;
-            cbDepartment.Text = "";
+            dtpStartTime.Value = DateTime.Today;
+            dtpEndTime.Value = DateTime.Today;
             cbQualification.Text = "";
-            cbNurseType.Text = "";
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-            nupSalary.Value = 0;
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
         }
     }
 }

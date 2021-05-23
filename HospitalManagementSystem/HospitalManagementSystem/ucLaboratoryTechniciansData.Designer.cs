@@ -1,7 +1,7 @@
 ﻿
 namespace HospitalManagementSystem
 {
-    partial class ucPharmacistData
+    partial class ucLaboratoryTechniciansData
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,11 @@ namespace HospitalManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtvPharmacist = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtSearchLabTech = new System.Windows.Forms.TextBox();
+            this.btnRegisterLabTech = new System.Windows.Forms.Button();
+            this.dtvLabTech = new System.Windows.Forms.DataGridView();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cnic = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,21 +42,59 @@ namespace HospitalManagementSystem
             this.view = new System.Windows.Forms.DataGridViewButtonColumn();
             this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSearchPharmacist = new System.Windows.Forms.TextBox();
-            this.btnRegisterPharmacist = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtvPharmacist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTech)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtvPharmacist
+            // label16
             // 
-            this.dtvPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(297, 25);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(224, 30);
+            this.label16.TabIndex = 22;
+            this.label16.Text = "Laboratory Technicians";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(561, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Search";
+            // 
+            // txtSearchLabTech
+            // 
+            this.txtSearchLabTech.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchLabTech.Location = new System.Drawing.Point(607, 58);
+            this.txtSearchLabTech.Name = "txtSearchLabTech";
+            this.txtSearchLabTech.Size = new System.Drawing.Size(199, 23);
+            this.txtSearchLabTech.TabIndex = 20;
+            // 
+            // btnRegisterLabTech
+            // 
+            this.btnRegisterLabTech.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegisterLabTech.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRegisterLabTech.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegisterLabTech.Location = new System.Drawing.Point(623, 505);
+            this.btnRegisterLabTech.Name = "btnRegisterLabTech";
+            this.btnRegisterLabTech.Size = new System.Drawing.Size(182, 30);
+            this.btnRegisterLabTech.TabIndex = 19;
+            this.btnRegisterLabTech.Text = "Register Laboratory Technician";
+            this.btnRegisterLabTech.UseVisualStyleBackColor = false;
+            this.btnRegisterLabTech.Click += new System.EventHandler(this.btnRegisterLabTech_Click);
+            // 
+            // dtvLabTech
+            // 
+            this.dtvLabTech.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtvPharmacist.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dtvPharmacist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvPharmacist.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtvLabTech.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtvLabTech.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvLabTech.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
             this.cnic,
             this.phoneNo,
@@ -61,12 +103,12 @@ namespace HospitalManagementSystem
             this.view,
             this.edit,
             this.delete});
-            this.dtvPharmacist.GridColor = System.Drawing.Color.Gainsboro;
-            this.dtvPharmacist.Location = new System.Drawing.Point(17, 93);
-            this.dtvPharmacist.Name = "dtvPharmacist";
-            this.dtvPharmacist.RowTemplate.Height = 25;
-            this.dtvPharmacist.Size = new System.Drawing.Size(788, 397);
-            this.dtvPharmacist.TabIndex = 8;
+            this.dtvLabTech.GridColor = System.Drawing.Color.Gainsboro;
+            this.dtvLabTech.Location = new System.Drawing.Point(18, 87);
+            this.dtvLabTech.Name = "dtvLabTech";
+            this.dtvLabTech.RowTemplate.Height = 25;
+            this.dtvLabTech.Size = new System.Drawing.Size(788, 397);
+            this.dtvLabTech.TabIndex = 18;
             // 
             // name
             // 
@@ -119,60 +161,18 @@ namespace HospitalManagementSystem
             this.delete.Name = "delete";
             this.delete.Width = 46;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(362, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Pharmacists";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(560, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 15);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Search";
-            // 
-            // txtSearchPharmacist
-            // 
-            this.txtSearchPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchPharmacist.Location = new System.Drawing.Point(606, 64);
-            this.txtSearchPharmacist.Name = "txtSearchPharmacist";
-            this.txtSearchPharmacist.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchPharmacist.TabIndex = 13;
-            // 
-            // btnRegisterPharmacist
-            // 
-            this.btnRegisterPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegisterPharmacist.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRegisterPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterPharmacist.Location = new System.Drawing.Point(672, 511);
-            this.btnRegisterPharmacist.Name = "btnRegisterPharmacist";
-            this.btnRegisterPharmacist.Size = new System.Drawing.Size(132, 30);
-            this.btnRegisterPharmacist.TabIndex = 16;
-            this.btnRegisterPharmacist.Text = "Register Pharmacist";
-            this.btnRegisterPharmacist.UseVisualStyleBackColor = false;
-            this.btnRegisterPharmacist.Click += new System.EventHandler(this.btnRegisterPharmacist_Click);
-            // 
-            // ucPharmacistData
+            // ucLaboratoryTechniciansData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnRegisterPharmacist);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtSearchPharmacist);
-            this.Controls.Add(this.dtvPharmacist);
-            this.Name = "ucPharmacistData";
+            this.Controls.Add(this.txtSearchLabTech);
+            this.Controls.Add(this.btnRegisterLabTech);
+            this.Controls.Add(this.dtvLabTech);
+            this.Name = "ucLaboratoryTechniciansData";
             this.Size = new System.Drawing.Size(824, 561);
-            ((System.ComponentModel.ISupportInitialize)(this.dtvPharmacist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTech)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +180,11 @@ namespace HospitalManagementSystem
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtvPharmacist;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSearchLabTech;
+        private System.Windows.Forms.Button btnRegisterLabTech;
+        private System.Windows.Forms.DataGridView dtvLabTech;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn cnic;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNo;
@@ -189,9 +193,5 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.DataGridViewButtonColumn view;
         private System.Windows.Forms.DataGridViewButtonColumn edit;
         private System.Windows.Forms.DataGridViewButtonColumn delete;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSearchPharmacist;
-        private System.Windows.Forms.Button btnRegisterPharmacist;
     }
 }

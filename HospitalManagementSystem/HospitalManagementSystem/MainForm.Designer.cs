@@ -51,6 +51,8 @@ namespace HospitalManagementSystem
             this.btnViewPatient = new System.Windows.Forms.Button();
             this.btnPatients = new System.Windows.Forms.Button();
             this.panelDoctorsSubMenu = new System.Windows.Forms.Panel();
+            this.btnOtherEmployees = new System.Windows.Forms.Button();
+            this.btnReceptionist = new System.Windows.Forms.Button();
             this.btnSurgeon = new System.Windows.Forms.Button();
             this.btnLaboratoryTechnician = new System.Windows.Forms.Button();
             this.btnPharmacist = new System.Windows.Forms.Button();
@@ -62,9 +64,6 @@ namespace HospitalManagementSystem
             this.panelExitMargin = new System.Windows.Forms.Panel();
             this.panelMenuLogo = new System.Windows.Forms.Panel();
             this.panel = new System.Windows.Forms.Panel();
-            this.btnReceptionist = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnOtherEmployees = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelCapitalSubMenu.SuspendLayout();
             this.panelRecordSubMenu.SuspendLayout();
@@ -95,7 +94,7 @@ namespace HospitalManagementSystem
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(250, 611);
+            this.panelMenu.Size = new System.Drawing.Size(250, 561);
             this.panelMenu.TabIndex = 1;
             // 
             // panelSideSlecectedShow
@@ -111,7 +110,7 @@ namespace HospitalManagementSystem
             this.panelCapitalSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
             this.panelCapitalSubMenu.Controls.Add(this.button9);
             this.panelCapitalSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCapitalSubMenu.Location = new System.Drawing.Point(0, 1103);
+            this.panelCapitalSubMenu.Location = new System.Drawing.Point(0, 1064);
             this.panelCapitalSubMenu.Name = "panelCapitalSubMenu";
             this.panelCapitalSubMenu.Size = new System.Drawing.Size(233, 50);
             this.panelCapitalSubMenu.TabIndex = 24;
@@ -142,7 +141,7 @@ namespace HospitalManagementSystem
             this.btnCapital.ForeColor = System.Drawing.Color.White;
             this.btnCapital.Image = ((System.Drawing.Image)(resources.GetObject("btnCapital.Image")));
             this.btnCapital.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapital.Location = new System.Drawing.Point(0, 1058);
+            this.btnCapital.Location = new System.Drawing.Point(0, 1019);
             this.btnCapital.Name = "btnCapital";
             this.btnCapital.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnCapital.Size = new System.Drawing.Size(233, 45);
@@ -158,7 +157,7 @@ namespace HospitalManagementSystem
             this.panelRecordSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
             this.panelRecordSubMenu.Controls.Add(this.button7);
             this.panelRecordSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelRecordSubMenu.Location = new System.Drawing.Point(0, 1008);
+            this.panelRecordSubMenu.Location = new System.Drawing.Point(0, 969);
             this.panelRecordSubMenu.Name = "panelRecordSubMenu";
             this.panelRecordSubMenu.Size = new System.Drawing.Size(233, 50);
             this.panelRecordSubMenu.TabIndex = 22;
@@ -189,7 +188,7 @@ namespace HospitalManagementSystem
             this.btnRecord.ForeColor = System.Drawing.Color.White;
             this.btnRecord.Image = ((System.Drawing.Image)(resources.GetObject("btnRecord.Image")));
             this.btnRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecord.Location = new System.Drawing.Point(0, 963);
+            this.btnRecord.Location = new System.Drawing.Point(0, 924);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnRecord.Size = new System.Drawing.Size(233, 45);
@@ -207,7 +206,7 @@ namespace HospitalManagementSystem
             this.panelLabSubMenu.Controls.Add(this.btnViewTests);
             this.panelLabSubMenu.Controls.Add(this.btnAddTest);
             this.panelLabSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLabSubMenu.Location = new System.Drawing.Point(0, 839);
+            this.panelLabSubMenu.Location = new System.Drawing.Point(0, 800);
             this.panelLabSubMenu.Name = "panelLabSubMenu";
             this.panelLabSubMenu.Size = new System.Drawing.Size(233, 124);
             this.panelLabSubMenu.TabIndex = 20;
@@ -272,7 +271,7 @@ namespace HospitalManagementSystem
             this.btnLaboratory.ForeColor = System.Drawing.Color.White;
             this.btnLaboratory.Image = ((System.Drawing.Image)(resources.GetObject("btnLaboratory.Image")));
             this.btnLaboratory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLaboratory.Location = new System.Drawing.Point(0, 794);
+            this.btnLaboratory.Location = new System.Drawing.Point(0, 755);
             this.btnLaboratory.Name = "btnLaboratory";
             this.btnLaboratory.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnLaboratory.Size = new System.Drawing.Size(233, 45);
@@ -292,7 +291,7 @@ namespace HospitalManagementSystem
             this.panelPatientsSubMenu.Controls.Add(this.btnAddPatient);
             this.panelPatientsSubMenu.Controls.Add(this.btnViewPatient);
             this.panelPatientsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPatientsSubMenu.Location = new System.Drawing.Point(0, 590);
+            this.panelPatientsSubMenu.Location = new System.Drawing.Point(0, 551);
             this.panelPatientsSubMenu.Name = "panelPatientsSubMenu";
             this.panelPatientsSubMenu.Size = new System.Drawing.Size(233, 204);
             this.panelPatientsSubMenu.TabIndex = 18;
@@ -389,7 +388,7 @@ namespace HospitalManagementSystem
             this.btnPatients.ForeColor = System.Drawing.Color.White;
             this.btnPatients.Image = ((System.Drawing.Image)(resources.GetObject("btnPatients.Image")));
             this.btnPatients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPatients.Location = new System.Drawing.Point(0, 545);
+            this.btnPatients.Location = new System.Drawing.Point(0, 506);
             this.btnPatients.Name = "btnPatients";
             this.btnPatients.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnPatients.Size = new System.Drawing.Size(233, 45);
@@ -404,7 +403,6 @@ namespace HospitalManagementSystem
             // 
             this.panelDoctorsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
             this.panelDoctorsSubMenu.Controls.Add(this.btnOtherEmployees);
-            this.panelDoctorsSubMenu.Controls.Add(this.btnAdmin);
             this.panelDoctorsSubMenu.Controls.Add(this.btnReceptionist);
             this.panelDoctorsSubMenu.Controls.Add(this.btnSurgeon);
             this.panelDoctorsSubMenu.Controls.Add(this.btnLaboratoryTechnician);
@@ -414,8 +412,42 @@ namespace HospitalManagementSystem
             this.panelDoctorsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDoctorsSubMenu.Location = new System.Drawing.Point(0, 222);
             this.panelDoctorsSubMenu.Name = "panelDoctorsSubMenu";
-            this.panelDoctorsSubMenu.Size = new System.Drawing.Size(233, 323);
+            this.panelDoctorsSubMenu.Size = new System.Drawing.Size(233, 284);
             this.panelDoctorsSubMenu.TabIndex = 16;
+            // 
+            // btnOtherEmployees
+            // 
+            this.btnOtherEmployees.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOtherEmployees.FlatAppearance.BorderSize = 0;
+            this.btnOtherEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOtherEmployees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOtherEmployees.ForeColor = System.Drawing.Color.White;
+            this.btnOtherEmployees.Location = new System.Drawing.Point(0, 240);
+            this.btnOtherEmployees.Name = "btnOtherEmployees";
+            this.btnOtherEmployees.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnOtherEmployees.Size = new System.Drawing.Size(233, 40);
+            this.btnOtherEmployees.TabIndex = 9;
+            this.btnOtherEmployees.Text = "Other staff";
+            this.btnOtherEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOtherEmployees.UseVisualStyleBackColor = true;
+            this.btnOtherEmployees.Click += new System.EventHandler(this.btnOtherEmployees_Click);
+            // 
+            // btnReceptionist
+            // 
+            this.btnReceptionist.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReceptionist.FlatAppearance.BorderSize = 0;
+            this.btnReceptionist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReceptionist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReceptionist.ForeColor = System.Drawing.Color.White;
+            this.btnReceptionist.Location = new System.Drawing.Point(0, 200);
+            this.btnReceptionist.Name = "btnReceptionist";
+            this.btnReceptionist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnReceptionist.Size = new System.Drawing.Size(233, 40);
+            this.btnReceptionist.TabIndex = 7;
+            this.btnReceptionist.Text = "Receptionists";
+            this.btnReceptionist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReceptionist.UseVisualStyleBackColor = true;
+            this.btnReceptionist.Click += new System.EventHandler(this.btnReceptionist_Click);
             // 
             // btnSurgeon
             // 
@@ -432,6 +464,7 @@ namespace HospitalManagementSystem
             this.btnSurgeon.Text = "Surgeons";
             this.btnSurgeon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSurgeon.UseVisualStyleBackColor = true;
+            this.btnSurgeon.Click += new System.EventHandler(this.btnSurgeon_Click);
             // 
             // btnLaboratoryTechnician
             // 
@@ -538,6 +571,7 @@ namespace HospitalManagementSystem
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnExit
             // 
@@ -548,7 +582,7 @@ namespace HospitalManagementSystem
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 1153);
+            this.btnExit.Location = new System.Drawing.Point(0, 1114);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(233, 45);
@@ -563,7 +597,7 @@ namespace HospitalManagementSystem
             // 
             this.panelExitMargin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(162)))));
             this.panelExitMargin.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelExitMargin.Location = new System.Drawing.Point(0, 1198);
+            this.panelExitMargin.Location = new System.Drawing.Point(0, 1159);
             this.panelExitMargin.Name = "panelExitMargin";
             this.panelExitMargin.Size = new System.Drawing.Size(233, 17);
             this.panelExitMargin.TabIndex = 12;
@@ -584,69 +618,18 @@ namespace HospitalManagementSystem
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(250, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(906, 611);
+            this.panel.Size = new System.Drawing.Size(824, 561);
             this.panel.TabIndex = 2;
-            // 
-            // btnReceptionist
-            // 
-            this.btnReceptionist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReceptionist.FlatAppearance.BorderSize = 0;
-            this.btnReceptionist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReceptionist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnReceptionist.ForeColor = System.Drawing.Color.White;
-            this.btnReceptionist.Location = new System.Drawing.Point(0, 200);
-            this.btnReceptionist.Name = "btnReceptionist";
-            this.btnReceptionist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnReceptionist.Size = new System.Drawing.Size(233, 40);
-            this.btnReceptionist.TabIndex = 7;
-            this.btnReceptionist.Text = "Receptionists";
-            this.btnReceptionist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReceptionist.UseVisualStyleBackColor = true;
-            this.btnReceptionist.Click += new System.EventHandler(this.btnReceptionist_Click);
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdmin.FlatAppearance.BorderSize = 0;
-            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 240);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnAdmin.Size = new System.Drawing.Size(233, 40);
-            this.btnAdmin.TabIndex = 8;
-            this.btnAdmin.Text = "Admins";
-            this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // btnOtherEmployees
-            // 
-            this.btnOtherEmployees.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOtherEmployees.FlatAppearance.BorderSize = 0;
-            this.btnOtherEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOtherEmployees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOtherEmployees.ForeColor = System.Drawing.Color.White;
-            this.btnOtherEmployees.Location = new System.Drawing.Point(0, 280);
-            this.btnOtherEmployees.Name = "btnOtherEmployees";
-            this.btnOtherEmployees.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnOtherEmployees.Size = new System.Drawing.Size(233, 40);
-            this.btnOtherEmployees.TabIndex = 9;
-            this.btnOtherEmployees.Text = "Other staff";
-            this.btnOtherEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOtherEmployees.UseVisualStyleBackColor = true;
-            this.btnOtherEmployees.Click += new System.EventHandler(this.btnOtherEmployees_Click);
             // 
             // MainForn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 611);
+            this.ClientSize = new System.Drawing.Size(1074, 561);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1150, 650);
+            this.MinimumSize = new System.Drawing.Size(1090, 600);
             this.Name = "MainForn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HMS";
@@ -695,7 +678,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panelMenuLogo;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Button btnOtherEmployees;
-        private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Button btnReceptionist;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace HospitalManagementSystem
 {
-    partial class ucAddNurse
+    partial class ucAddReceptionist
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,11 +29,10 @@ namespace HospitalManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnClearReceptionistInput = new System.Windows.Forms.Button();
+            this.btnAddReceptionistInput = new System.Windows.Forms.Button();
             this.dtpEndTime = new System.Windows.Forms.DateTimePicker();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.dtpStartTime = new System.Windows.Forms.DateTimePicker();
@@ -63,19 +62,10 @@ namespace HospitalManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(292, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Add Nurse Information";
             // 
             // panel1
             // 
@@ -84,8 +74,8 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnClearReceptionistInput);
+            this.panel1.Controls.Add(this.btnAddReceptionistInput);
             this.panel1.Controls.Add(this.dtpEndTime);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
             this.panel1.Controls.Add(this.dtpStartTime);
@@ -115,10 +105,11 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(19, 61);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Location = new System.Drawing.Point(19, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(787, 488);
-            this.panel1.TabIndex = 6;
+            this.panel1.TabIndex = 8;
             // 
             // btnCancel
             // 
@@ -133,31 +124,30 @@ namespace HospitalManagementSystem
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button1
+            // btnClearReceptionistInput
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(584, 436);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 30);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClearReceptionistInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearReceptionistInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearReceptionistInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearReceptionistInput.Location = new System.Drawing.Point(584, 436);
+            this.btnClearReceptionistInput.Name = "btnClearReceptionistInput";
+            this.btnClearReceptionistInput.Size = new System.Drawing.Size(90, 30);
+            this.btnClearReceptionistInput.TabIndex = 15;
+            this.btnClearReceptionistInput.Text = "Clear";
+            this.btnClearReceptionistInput.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAddReceptionistInput
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(680, 436);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 30);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAddReceptionistInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddReceptionistInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddReceptionistInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddReceptionistInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddReceptionistInput.Location = new System.Drawing.Point(680, 436);
+            this.btnAddReceptionistInput.Name = "btnAddReceptionistInput";
+            this.btnAddReceptionistInput.Size = new System.Drawing.Size(90, 30);
+            this.btnAddReceptionistInput.TabIndex = 14;
+            this.btnAddReceptionistInput.Text = "Add";
+            this.btnAddReceptionistInput.UseVisualStyleBackColor = false;
             // 
             // dtpEndTime
             // 
@@ -229,7 +219,7 @@ namespace HospitalManagementSystem
             // 
             this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearInput.Location = new System.Drawing.Point(1364, 874);
+            this.btnClearInput.Location = new System.Drawing.Point(1949, 1260);
             this.btnClearInput.Name = "btnClearInput";
             this.btnClearInput.Size = new System.Drawing.Size(90, 30);
             this.btnClearInput.TabIndex = 7;
@@ -241,7 +231,7 @@ namespace HospitalManagementSystem
             this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddInput.Location = new System.Drawing.Point(1460, 874);
+            this.btnAddInput.Location = new System.Drawing.Point(2045, 1260);
             this.btnAddInput.Name = "btnAddInput";
             this.btnAddInput.Size = new System.Drawing.Size(90, 30);
             this.btnAddInput.TabIndex = 8;
@@ -313,7 +303,7 @@ namespace HospitalManagementSystem
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(782, 24);
+            this.label3.Location = new System.Drawing.Point(1074, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 21);
             this.label3.TabIndex = 0;
@@ -465,14 +455,24 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
-            // ucAddNurse
+            // label1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(292, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(285, 30);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Add Receptionist Information";
+            // 
+            // ucAddReceptionist
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "ucAddNurse";
+            this.Name = "ucAddReceptionist";
             this.Size = new System.Drawing.Size(824, 561);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -484,9 +484,12 @@ namespace HospitalManagementSystem
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnClearReceptionistInput;
+        private System.Windows.Forms.Button btnAddReceptionistInput;
         private System.Windows.Forms.DateTimePicker dtpEndTime;
+        private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
         private System.Windows.Forms.DateTimePicker dtpStartTime;
         private System.Windows.Forms.RadioButton rbtnFemale;
         private System.Windows.Forms.RadioButton rbtnMale;
@@ -514,9 +517,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
+        private System.Windows.Forms.Label label1;
     }
 }
