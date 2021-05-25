@@ -33,16 +33,8 @@ namespace HospitalManagementSystem
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearchLabTech = new System.Windows.Forms.TextBox();
             this.btnRegisterLabTech = new System.Windows.Forms.Button();
-            this.dtvLabTech = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cnic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.view = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTech)).BeginInit();
+            this.dtvLabTechnician = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTechnician)).BeginInit();
             this.SuspendLayout();
             // 
             // label16
@@ -87,92 +79,29 @@ namespace HospitalManagementSystem
             this.btnRegisterLabTech.UseVisualStyleBackColor = false;
             this.btnRegisterLabTech.Click += new System.EventHandler(this.btnRegisterLabTech_Click);
             // 
-            // dtvLabTech
+            // dtvLabTechnician
             // 
-            this.dtvLabTech.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtvLabTech.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dtvLabTech.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvLabTech.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name,
-            this.cnic,
-            this.phoneNo,
-            this.email,
-            this.department,
-            this.view,
-            this.edit,
-            this.delete});
-            this.dtvLabTech.GridColor = System.Drawing.Color.Gainsboro;
-            this.dtvLabTech.Location = new System.Drawing.Point(18, 87);
-            this.dtvLabTech.Name = "dtvLabTech";
-            this.dtvLabTech.RowTemplate.Height = 25;
-            this.dtvLabTech.Size = new System.Drawing.Size(788, 397);
-            this.dtvLabTech.TabIndex = 18;
-            // 
-            // name
-            // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // cnic
-            // 
-            this.cnic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cnic.HeaderText = "CNIC";
-            this.cnic.Name = "cnic";
-            // 
-            // phoneNo
-            // 
-            this.phoneNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.phoneNo.HeaderText = "Phone Number";
-            this.phoneNo.Name = "phoneNo";
-            // 
-            // email
-            // 
-            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            // 
-            // department
-            // 
-            this.department.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.department.HeaderText = "Department";
-            this.department.Name = "department";
-            // 
-            // view
-            // 
-            this.view.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.view.HeaderText = "View";
-            this.view.Name = "view";
-            this.view.Width = 38;
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.HeaderText = "Edit";
-            this.edit.Name = "edit";
-            this.edit.Width = 33;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.HeaderText = "Delete";
-            this.delete.Name = "delete";
-            this.delete.Width = 46;
+            this.dtvLabTechnician.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtvLabTechnician.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvLabTechnician.Location = new System.Drawing.Point(16, 90);
+            this.dtvLabTechnician.Name = "dtvLabTechnician";
+            this.dtvLabTechnician.RowTemplate.Height = 25;
+            this.dtvLabTechnician.Size = new System.Drawing.Size(789, 409);
+            this.dtvLabTechnician.TabIndex = 23;
             // 
             // ucLaboratoryTechniciansData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dtvLabTechnician);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearchLabTech);
             this.Controls.Add(this.btnRegisterLabTech);
-            this.Controls.Add(this.dtvLabTech);
             this.Name = "ucLaboratoryTechniciansData";
             this.Size = new System.Drawing.Size(824, 561);
-            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTech)).EndInit();
+            this.Load += new System.EventHandler(this.ucLaboratoryTechniciansData_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTechnician)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,14 +113,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearchLabTech;
         private System.Windows.Forms.Button btnRegisterLabTech;
-        private System.Windows.Forms.DataGridView dtvLabTech;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cnic;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn department;
-        private System.Windows.Forms.DataGridViewButtonColumn view;
-        private System.Windows.Forms.DataGridViewButtonColumn edit;
-        private System.Windows.Forms.DataGridViewButtonColumn delete;
+        private System.Windows.Forms.DataGridView dtvLabTechnician;
     }
 }

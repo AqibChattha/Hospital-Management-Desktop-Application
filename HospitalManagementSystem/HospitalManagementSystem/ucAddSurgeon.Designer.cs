@@ -165,9 +165,9 @@ namespace HospitalManagementSystem
             this.dtpDateOfBirth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(584, 39);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(614, 39);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
-            this.dtpDateOfBirth.Size = new System.Drawing.Size(186, 23);
+            this.dtpDateOfBirth.Size = new System.Drawing.Size(156, 23);
             this.dtpDateOfBirth.TabIndex = 11;
             this.dtpDateOfBirth.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
@@ -210,9 +210,9 @@ namespace HospitalManagementSystem
             // 
             this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nudSalary.Location = new System.Drawing.Point(584, 119);
+            this.nudSalary.Location = new System.Drawing.Point(614, 119);
             this.nudSalary.Name = "nudSalary";
-            this.nudSalary.Size = new System.Drawing.Size(186, 23);
+            this.nudSalary.Size = new System.Drawing.Size(156, 23);
             this.nudSalary.TabIndex = 9;
             // 
             // btnClearInput
@@ -256,19 +256,19 @@ namespace HospitalManagementSystem
             this.cbQualification.Items.AddRange(new object[] {
             "Department of Neurology",
             "Department of Cardiology"});
-            this.cbQualification.Location = new System.Drawing.Point(366, 118);
+            this.cbQualification.Location = new System.Drawing.Point(403, 118);
             this.cbQualification.Name = "cbQualification";
-            this.cbQualification.Size = new System.Drawing.Size(189, 23);
+            this.cbQualification.Size = new System.Drawing.Size(174, 23);
             this.cbQualification.TabIndex = 2;
             // 
             // txtPhoneNo
             // 
             this.txtPhoneNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPhoneNo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPhoneNo.Location = new System.Drawing.Point(366, 39);
+            this.txtPhoneNo.Location = new System.Drawing.Point(401, 39);
             this.txtPhoneNo.Mask = "0000-0000000";
             this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.Size = new System.Drawing.Size(189, 23);
+            this.txtPhoneNo.Size = new System.Drawing.Size(174, 23);
             this.txtPhoneNo.TabIndex = 1;
             // 
             // txtCnic
@@ -278,7 +278,7 @@ namespace HospitalManagementSystem
             this.txtCnic.Location = new System.Drawing.Point(204, 39);
             this.txtCnic.Mask = "00000-0000000-0";
             this.txtCnic.Name = "txtCnic";
-            this.txtCnic.Size = new System.Drawing.Size(125, 23);
+            this.txtCnic.Size = new System.Drawing.Size(159, 23);
             this.txtCnic.TabIndex = 1;
             // 
             // txtPassword
@@ -287,7 +287,7 @@ namespace HospitalManagementSystem
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.Location = new System.Drawing.Point(204, 118);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(125, 23);
+            this.txtPassword.Size = new System.Drawing.Size(159, 23);
             this.txtPassword.TabIndex = 0;
             // 
             // txtEmail
@@ -395,7 +395,7 @@ namespace HospitalManagementSystem
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(362, 90);
+            this.label12.Location = new System.Drawing.Point(401, 90);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(101, 21);
             this.label12.TabIndex = 0;
@@ -406,7 +406,7 @@ namespace HospitalManagementSystem
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(580, 90);
+            this.label7.Location = new System.Drawing.Point(611, 90);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 21);
             this.label7.TabIndex = 0;
@@ -417,7 +417,7 @@ namespace HospitalManagementSystem
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(580, 13);
+            this.label11.Location = new System.Drawing.Point(609, 13);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(100, 21);
             this.label11.TabIndex = 0;
@@ -428,7 +428,7 @@ namespace HospitalManagementSystem
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(362, 13);
+            this.label6.Location = new System.Drawing.Point(401, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 21);
             this.label6.TabIndex = 0;

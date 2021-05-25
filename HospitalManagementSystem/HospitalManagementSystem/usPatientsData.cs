@@ -8,40 +8,14 @@ using System.Windows.Forms;
 
 namespace HospitalManagementSystem
 {
-    public partial class ucNursesData : UserControl
+    public partial class usPatientsData : UserControl
     {
-        private static ucNursesData _instence;
-        public static ucNursesData Instence
-        {
-            get
-            {
-                if (_instence == null)
-                {
-                    _instence = new ucNursesData();
-                }
-                return _instence;
-            }
-        }
-        public ucNursesData()
+        public usPatientsData()
         {
             InitializeComponent();
         }
 
-        private void btnRegisterNurse_Click(object sender, EventArgs e)
-        {
-            if (!MainForn.main_Panel.Controls.Contains(ucAddNurse.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAddNurse.Instence);
-                ucAddNurse.Instence.Dock = DockStyle.Fill;
-                ucAddNurse.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddNurse.Instence.BringToFront();
-            }
-        }
-
-        private void ucNursesData_Load(object sender, EventArgs e)
+        private void usPatientsData_Load(object sender, EventArgs e)
         {
             DataGridViewImageColumn cellDelete = new DataGridViewImageColumn();
             cellDelete.ImageLayout = DataGridViewImageCellLayout.Zoom;
@@ -83,7 +57,7 @@ namespace HospitalManagementSystem
             cellEmail.AutoSizeMode = DataGridViewAutoSizeColumnMode.NotSet;
 
             DataGridViewTextBoxColumn cellDepartment = new DataGridViewTextBoxColumn();
-            cellDepartment.HeaderText = "Age";
+            cellDepartment.HeaderText = "Department";
             cellDepartment.Selected = false;
             cellDepartment.AutoSizeMode = DataGridViewAutoSizeColumnMode.NotSet;
 
@@ -92,22 +66,35 @@ namespace HospitalManagementSystem
             cellGender.Selected = false;
             cellGender.AutoSizeMode = DataGridViewAutoSizeColumnMode.NotSet;
 
-            dtvNurse.Columns.Add(cellName);
-            dtvNurse.Columns.Add(cellCnic);
-            dtvNurse.Columns.Add(cellPhNo);
-            dtvNurse.Columns.Add(cellEmail);
-            dtvNurse.Columns.Add(cellDepartment);
-            dtvNurse.Columns.Add(cellGender);
-            dtvNurse.Columns.Add(cellDelete);
-            dtvNurse.Columns.Add(cellView);
-            dtvNurse.Columns.Add(cellEdit);
+            dtvPatients.Columns.Add(cellName);
+            dtvPatients.Columns.Add(cellCnic);
+            dtvPatients.Columns.Add(cellPhNo);
+            dtvPatients.Columns.Add(cellEmail);
+            dtvPatients.Columns.Add(cellDepartment);
+            dtvPatients.Columns.Add(cellGender);
+            dtvPatients.Columns.Add(cellDelete);
+            dtvPatients.Columns.Add(cellView);
+            dtvPatients.Columns.Add(cellEdit);
 
-            dtvNurse.Rows.Add("", "", "", "", "", "", Image.FromFile("E:/New Folder/Hospital Management System/Icons/delete.png"), Image.FromFile("E:/New Folder/Hospital Management System/Icons/view.png"), Image.FromFile("E:/New Folder/Hospital Management System/Icons/edit.png"));
+            dtvPatients.Rows.Add("", "", "", "", "", "", Image.FromFile("E:/New Folder/Hospital Management System/Icons/delete.png"), Image.FromFile("E:/New Folder/Hospital Management System/Icons/view.png"), Image.FromFile("E:/New Folder/Hospital Management System/Icons/edit.png"));
 
-            dtvNurse.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtvNurse.AllowUserToAddRows = false;
-            dtvNurse.ReadOnly = true;
-            
+            dtvPatients.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtvPatients.AllowUserToAddRows = false;
+            dtvPatients.ReadOnly = true;
+        }
+
+        private void btnRegisterPatient_Click(object sender, EventArgs e)
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddPatient.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddPatient.Instence);
+                ucAddPatient.Instence.Dock = DockStyle.Fill;
+                ucAddPatient.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddPatient.Instence.BringToFront();
+            }
         }
     }
 }

@@ -140,6 +140,7 @@ namespace HospitalManagementSystem
             // 
             this.btnAddReceptionistInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddReceptionistInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddReceptionistInput.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddReceptionistInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddReceptionistInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddReceptionistInput.Location = new System.Drawing.Point(680, 436);
