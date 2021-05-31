@@ -651,6 +651,7 @@ namespace HospitalManagementSystem
             this.panelMenuLogo.Name = "panelMenuLogo";
             this.panelMenuLogo.Size = new System.Drawing.Size(233, 132);
             this.panelMenuLogo.TabIndex = 1;
+            this.panelMenuLogo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelMenuLogo_MouseClick);
             // 
             // panel
             // 

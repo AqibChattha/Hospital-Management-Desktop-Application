@@ -211,11 +211,38 @@ namespace HospitalManagementSystem
         private void btnViewPatient_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            panelSideSlecectedShow.Height = btnHome.Height;
+            panelSideSlecectedShow.Top = btnHome.Top;
+            if (!panel.Controls.Contains(ucPatientsData.Instence))
+            {
+                panel.Controls.Add(ucPatientsData.Instence);
+                ucPatientsData.Instence.Dock = DockStyle.Fill;
+                ucPatientsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucPatientsData.Instence.BringToFront();
+            }
+            main_Panel = panel;
         }
 
         private void btnAddPatient_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            panelSideSlecectedShow.Height = btnHome.Height;
+            panelSideSlecectedShow.Top = btnHome.Top;
+            if (!panel.Controls.Contains(ucAddPatient.Instence))
+            {
+                panel.Controls.Add(ucAddPatient.Instence);
+                ucAddPatient.Instence.Dock = DockStyle.Fill;
+                ucAddPatient.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddPatient.Instence.BringToFront();
+            }
+            main_Panel = panel;
+
         }
 
         private void btnUpdatePatient_Click(object sender, EventArgs e)
@@ -335,8 +362,36 @@ namespace HospitalManagementSystem
         private void btnViewUnit_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucUnitsData.Instence))
+            {
+                panel.Controls.Add(ucUnitsData.Instence);
+                ucUnitsData.Instence.Dock = DockStyle.Fill;
+                ucUnitsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucUnitsData.Instence.BringToFront();
+            }
+            main_Panel = panel;
 
+        }
 
-       }
+        private void panelMenuLogo_MouseClick(object sender, MouseEventArgs e)
+        {
+            hideSubMenu();
+            panelSideSlecectedShow.Height = btnHome.Height;
+            panelSideSlecectedShow.Top = btnHome.Top;
+            if (!panel.Controls.Contains(ucHome.Instence))
+            {
+                panel.Controls.Add(ucHome.Instence);
+                ucHome.Instence.Dock = DockStyle.Fill;
+                ucHome.Instence.BringToFront();
+            }
+            else
+            {
+                ucHome.Instence.BringToFront();
+            }
+            main_Panel = panel;
+        }
     }
 }

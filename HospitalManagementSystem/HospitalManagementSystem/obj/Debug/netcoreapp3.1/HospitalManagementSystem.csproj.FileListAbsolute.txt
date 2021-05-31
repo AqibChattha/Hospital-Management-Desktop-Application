@@ -68,4 +68,5 @@ E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\ob
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddPatient.resources
 C:\Users\aqiba\Documents\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddUnits.resources
 E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucAddPatient.resources
-E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.usPatientsData.resources
+E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucUnitsData.resources
+E:\New Folder\CS162S21GID06\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\netcoreapp3.1\HospitalManagementSystem.ucPatientsData.resources

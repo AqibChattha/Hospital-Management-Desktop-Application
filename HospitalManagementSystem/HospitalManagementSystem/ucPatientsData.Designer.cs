@@ -1,7 +1,7 @@
 ﻿
 namespace HospitalManagementSystem
 {
-    partial class usPatientsData
+    partial class ucPatientsData
     {
         /// <summary> 
         /// Required designer variable.

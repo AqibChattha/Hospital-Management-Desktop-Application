@@ -74,7 +74,6 @@ namespace HospitalManagementSystem
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -88,7 +87,7 @@ namespace HospitalManagementSystem
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(287, 16);
+            this.label1.Location = new System.Drawing.Point(267, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 30);
             this.label1.TabIndex = 0;
@@ -96,6 +95,7 @@ namespace HospitalManagementSystem
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.numericUpDown1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label22);
@@ -108,7 +108,7 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Location = new System.Drawing.Point(15, 94);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 153);
+            this.panel1.Size = new System.Drawing.Size(754, 153);
             this.panel1.TabIndex = 1;
             // 
             // numericUpDown1
@@ -160,9 +160,9 @@ namespace HospitalManagementSystem
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(654, 72);
+            this.button4.Location = new System.Drawing.Point(653, 72);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 31);
+            this.button4.Size = new System.Drawing.Size(93, 31);
             this.button4.TabIndex = 7;
             this.button4.Text = "Clear...";
             this.button4.UseVisualStyleBackColor = true;
@@ -171,7 +171,7 @@ namespace HospitalManagementSystem
             // 
             this.btnAddWard.Location = new System.Drawing.Point(654, 109);
             this.btnAddWard.Name = "btnAddWard";
-            this.btnAddWard.Size = new System.Drawing.Size(114, 31);
+            this.btnAddWard.Size = new System.Drawing.Size(93, 31);
             this.btnAddWard.TabIndex = 7;
             this.btnAddWard.Text = "Add...";
             this.btnAddWard.UseVisualStyleBackColor = true;
@@ -203,7 +203,7 @@ namespace HospitalManagementSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(15, 61);
+            this.label5.Location = new System.Drawing.Point(15, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 30);
             this.label5.TabIndex = 2;
@@ -241,6 +241,7 @@ namespace HospitalManagementSystem
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button1);
@@ -249,7 +250,7 @@ namespace HospitalManagementSystem
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(15, 307);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(792, 153);
+            this.panel2.Size = new System.Drawing.Size(754, 153);
             this.panel2.TabIndex = 1;
             // 
             // label7
@@ -276,7 +277,7 @@ namespace HospitalManagementSystem
             // 
             this.button1.Location = new System.Drawing.Point(654, 72);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 31);
+            this.button1.Size = new System.Drawing.Size(93, 31);
             this.button1.TabIndex = 7;
             this.button1.Text = "Clear...";
             this.button1.UseVisualStyleBackColor = true;
@@ -285,7 +286,7 @@ namespace HospitalManagementSystem
             // 
             this.button5.Location = new System.Drawing.Point(654, 109);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 31);
+            this.button5.Size = new System.Drawing.Size(93, 31);
             this.button5.TabIndex = 7;
             this.button5.Text = "Add...";
             this.button5.UseVisualStyleBackColor = true;
@@ -307,6 +308,7 @@ namespace HospitalManagementSystem
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.button2);
@@ -315,7 +317,7 @@ namespace HospitalManagementSystem
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Location = new System.Drawing.Point(15, 518);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(792, 153);
+            this.panel3.Size = new System.Drawing.Size(754, 153);
             this.panel3.TabIndex = 1;
             // 
             // label10
@@ -342,7 +344,7 @@ namespace HospitalManagementSystem
             // 
             this.button2.Location = new System.Drawing.Point(654, 72);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 31);
+            this.button2.Size = new System.Drawing.Size(93, 31);
             this.button2.TabIndex = 7;
             this.button2.Text = "Clear...";
             this.button2.UseVisualStyleBackColor = true;
@@ -351,7 +353,7 @@ namespace HospitalManagementSystem
             // 
             this.button6.Location = new System.Drawing.Point(654, 109);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(114, 31);
+            this.button6.Size = new System.Drawing.Size(93, 31);
             this.button6.TabIndex = 7;
             this.button6.Text = "Add...";
             this.button6.UseVisualStyleBackColor = true;
@@ -373,6 +375,7 @@ namespace HospitalManagementSystem
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.button3);
@@ -381,7 +384,7 @@ namespace HospitalManagementSystem
             this.panel4.Controls.Add(this.textBox3);
             this.panel4.Location = new System.Drawing.Point(15, 726);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(792, 153);
+            this.panel4.Size = new System.Drawing.Size(754, 153);
             this.panel4.TabIndex = 1;
             // 
             // label13
@@ -408,7 +411,7 @@ namespace HospitalManagementSystem
             // 
             this.button3.Location = new System.Drawing.Point(654, 72);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 31);
+            this.button3.Size = new System.Drawing.Size(93, 31);
             this.button3.TabIndex = 7;
             this.button3.Text = "Clear...";
             this.button3.UseVisualStyleBackColor = true;
@@ -417,7 +420,7 @@ namespace HospitalManagementSystem
             // 
             this.button7.Location = new System.Drawing.Point(654, 109);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(114, 31);
+            this.button7.Size = new System.Drawing.Size(93, 31);
             this.button7.TabIndex = 7;
             this.button7.Text = "Add...";
             this.button7.UseVisualStyleBackColor = true;
@@ -439,6 +442,7 @@ namespace HospitalManagementSystem
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.label17);
             this.panel5.Controls.Add(this.button8);
@@ -447,7 +451,7 @@ namespace HospitalManagementSystem
             this.panel5.Controls.Add(this.textBox4);
             this.panel5.Location = new System.Drawing.Point(15, 936);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(792, 153);
+            this.panel5.Size = new System.Drawing.Size(754, 156);
             this.panel5.TabIndex = 1;
             // 
             // label16
@@ -474,7 +478,7 @@ namespace HospitalManagementSystem
             // 
             this.button8.Location = new System.Drawing.Point(654, 72);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(114, 31);
+            this.button8.Size = new System.Drawing.Size(93, 31);
             this.button8.TabIndex = 7;
             this.button8.Text = "Clear...";
             this.button8.UseVisualStyleBackColor = true;
@@ -483,7 +487,7 @@ namespace HospitalManagementSystem
             // 
             this.button9.Location = new System.Drawing.Point(654, 109);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(114, 31);
+            this.button9.Size = new System.Drawing.Size(93, 31);
             this.button9.TabIndex = 7;
             this.button9.Text = "Add...";
             this.button9.UseVisualStyleBackColor = true;
@@ -513,20 +517,12 @@ namespace HospitalManagementSystem
             this.label18.TabIndex = 2;
             this.label18.Text = "Department:";
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 1089);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(807, 120);
-            this.panel6.TabIndex = 3;
-            // 
             // ucAddUnits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.Controls.Add(this.panel6);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
@@ -539,7 +535,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "ucAddUnits";
-            this.Size = new System.Drawing.Size(790, 544);
+            this.Size = new System.Drawing.Size(715, 493);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -601,7 +597,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.RichTextBox richTextBox4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label22;
     }

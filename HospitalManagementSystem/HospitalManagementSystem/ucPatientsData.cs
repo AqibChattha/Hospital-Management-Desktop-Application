@@ -8,9 +8,21 @@ using System.Windows.Forms;
 
 namespace HospitalManagementSystem
 {
-    public partial class usPatientsData : UserControl
+    public partial class ucPatientsData : UserControl
     {
-        public usPatientsData()
+        private static ucPatientsData _instence;
+        public static ucPatientsData Instence
+        {
+            get
+            {
+                if (_instence == null)
+                {
+                    _instence = new ucPatientsData();
+                }
+                return _instence;
+            }
+        }
+        public ucPatientsData()
         {
             InitializeComponent();
         }

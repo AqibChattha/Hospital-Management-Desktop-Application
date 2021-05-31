@@ -61,7 +61,10 @@
     <Compile Update="ucAddUnits.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="usPatientsData.cs">
+    <Compile Update="ucUnitsData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucPatientsData.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

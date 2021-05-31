@@ -43,6 +43,7 @@ namespace HospitalManagementSystem
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             nupSalary.Value = 0;
+            
 
         }
 
