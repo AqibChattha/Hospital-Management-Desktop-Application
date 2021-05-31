@@ -4,10 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csOtherStaff:csStaff
+    class csHospital
     {
-        public String JobDescription { get; set; }
-        
-
     }
 }

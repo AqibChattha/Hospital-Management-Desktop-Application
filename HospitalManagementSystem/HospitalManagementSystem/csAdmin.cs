@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csAdmin
+    class csAdmin:csAdministrativeStaff
     {
         public void AddDoctor (){ }
         public void ViewDoctor() { }

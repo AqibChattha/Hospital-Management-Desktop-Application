@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csDoctor
+    class csDoctor:csStaff
     {
         public String Email { get; set; }
         public String Password { get; set; }

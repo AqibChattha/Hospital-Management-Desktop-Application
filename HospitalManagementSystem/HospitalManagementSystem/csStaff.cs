@@ -4,11 +4,12 @@ using System.Text;
 
 namespace HospitalManagementSystem 
 {
-    class csStaff  
+    class csStaff : csPerson 
     {
+        
         public String Staff_Id { get; set; }
         public DateTime Working_Hours { get; set; }
         public int Salary { get; set; }
-
+       
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csReceptionist
+    class csReceptionist:csAdministrativeStaff
     {
         public void AddPatient() { }
         public void UpdatePatient() { }

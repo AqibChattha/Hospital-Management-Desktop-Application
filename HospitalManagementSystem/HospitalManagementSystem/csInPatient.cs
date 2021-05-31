@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csInPatient
+    class csInPatient:csPatient
     {
         public List<String> Issue { get; set; }
         public List<String> AffectedArea { get; set; }

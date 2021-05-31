@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csSurgeon
+    class csSurgeon:csDoctor
     {
         public int Experience { get; set; }
 

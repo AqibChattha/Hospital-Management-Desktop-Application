@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csIllStaff
+    class csIllStaff:csPatient
     {
         public String Staff_Type { get; set; }
         public String Staff_Id { get; set; }
