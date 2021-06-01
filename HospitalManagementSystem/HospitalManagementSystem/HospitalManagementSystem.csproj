@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\email.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Resources\email.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>

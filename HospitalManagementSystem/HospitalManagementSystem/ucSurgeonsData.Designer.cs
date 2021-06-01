@@ -29,11 +29,19 @@ namespace HospitalManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSurgeonsData));
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearchSurgeon = new System.Windows.Forms.TextBox();
             this.btnRegisterSurgeon = new System.Windows.Forms.Button();
             this.dtvSurgeons = new System.Windows.Forms.DataGridView();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCnic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colView = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colEdit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colDelete = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtvSurgeons)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,12 +94,75 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtvSurgeons.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtvSurgeons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvSurgeons.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colName,
+            this.colCnic,
+            this.colPhoneNumber,
+            this.colGender,
+            this.colView,
+            this.colEdit,
+            this.colDelete});
             this.dtvSurgeons.GridColor = System.Drawing.Color.Gainsboro;
             this.dtvSurgeons.Location = new System.Drawing.Point(18, 87);
             this.dtvSurgeons.Name = "dtvSurgeons";
             this.dtvSurgeons.RowTemplate.Height = 25;
             this.dtvSurgeons.Size = new System.Drawing.Size(788, 397);
             this.dtvSurgeons.TabIndex = 18;
+            // 
+            // colName
+            // 
+            this.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
+            // 
+            // colCnic
+            // 
+            this.colCnic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colCnic.HeaderText = "Cnic";
+            this.colCnic.Name = "colCnic";
+            this.colCnic.ReadOnly = true;
+            // 
+            // colPhoneNumber
+            // 
+            this.colPhoneNumber.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colPhoneNumber.HeaderText = "Phone Number";
+            this.colPhoneNumber.Name = "colPhoneNumber";
+            this.colPhoneNumber.ReadOnly = true;
+            // 
+            // colGender
+            // 
+            this.colGender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colGender.HeaderText = "Gender";
+            this.colGender.Name = "colGender";
+            this.colGender.ReadOnly = true;
+            // 
+            // colView
+            // 
+            this.colView.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colView.HeaderText = "";
+            this.colView.Image = ((System.Drawing.Image)(resources.GetObject("colView.Image")));
+            this.colView.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.colView.Name = "colView";
+            this.colView.Width = 21;
+            // 
+            // colEdit
+            // 
+            this.colEdit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colEdit.HeaderText = "";
+            this.colEdit.Image = ((System.Drawing.Image)(resources.GetObject("colEdit.Image")));
+            this.colEdit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.colEdit.Name = "colEdit";
+            this.colEdit.Width = 21;
+            // 
+            // colDelete
+            // 
+            this.colDelete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colDelete.HeaderText = "";
+            this.colDelete.Image = ((System.Drawing.Image)(resources.GetObject("colDelete.Image")));
+            this.colDelete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.colDelete.Name = "colDelete";
+            this.colDelete.Width = 21;
             // 
             // ucSurgeonsData
             // 
@@ -104,7 +175,6 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.dtvSurgeons);
             this.Name = "ucSurgeonsData";
             this.Size = new System.Drawing.Size(824, 561);
-            this.Load += new System.EventHandler(this.ucSurgeonsData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtvSurgeons)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,5 +188,12 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.TextBox txtSearchSurgeon;
         private System.Windows.Forms.Button btnRegisterSurgeon;
         private System.Windows.Forms.DataGridView dtvSurgeons;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCnic;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPhoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGender;
+        private System.Windows.Forms.DataGridViewImageColumn colView;
+        private System.Windows.Forms.DataGridViewImageColumn colEdit;
+        private System.Windows.Forms.DataGridViewImageColumn colDelete;
     }
 }

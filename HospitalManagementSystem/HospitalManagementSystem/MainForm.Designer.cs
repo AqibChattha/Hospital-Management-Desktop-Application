@@ -47,7 +47,6 @@ namespace HospitalManagementSystem
             this.btnAddTest = new System.Windows.Forms.Button();
             this.btnLaboratory = new System.Windows.Forms.Button();
             this.panelPatientsSubMenu = new System.Windows.Forms.Panel();
-            this.btnPatientAttendence = new System.Windows.Forms.Button();
             this.btnRemovePatient = new System.Windows.Forms.Button();
             this.btnUpdatePatient = new System.Windows.Forms.Button();
             this.btnAddPatient = new System.Windows.Forms.Button();
@@ -117,7 +116,7 @@ namespace HospitalManagementSystem
             this.btnViewUnit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewUnit.FlatAppearance.BorderSize = 0;
             this.btnViewUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewUnit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnViewUnit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewUnit.ForeColor = System.Drawing.Color.White;
             this.btnViewUnit.Location = new System.Drawing.Point(0, 40);
             this.btnViewUnit.Name = "btnViewUnit";
@@ -134,7 +133,6 @@ namespace HospitalManagementSystem
             this.btnAddUnit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAddUnit.FlatAppearance.BorderSize = 0;
             this.btnAddUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUnit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddUnit.ForeColor = System.Drawing.Color.White;
             this.btnAddUnit.Location = new System.Drawing.Point(0, 0);
             this.btnAddUnit.Name = "btnAddUnit";
@@ -151,7 +149,7 @@ namespace HospitalManagementSystem
             this.btnUnits.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUnits.FlatAppearance.BorderSize = 0;
             this.btnUnits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUnits.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUnits.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUnits.ForeColor = System.Drawing.Color.White;
             this.btnUnits.Image = ((System.Drawing.Image)(resources.GetObject("btnUnits.Image")));
             this.btnUnits.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +187,7 @@ namespace HospitalManagementSystem
             this.button9.Dock = System.Windows.Forms.DockStyle.Top;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(0, 0);
             this.button9.Name = "button9";
@@ -206,7 +204,7 @@ namespace HospitalManagementSystem
             this.btnCapital.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCapital.FlatAppearance.BorderSize = 0;
             this.btnCapital.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapital.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCapital.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCapital.ForeColor = System.Drawing.Color.White;
             this.btnCapital.Image = ((System.Drawing.Image)(resources.GetObject("btnCapital.Image")));
             this.btnCapital.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,7 +234,7 @@ namespace HospitalManagementSystem
             this.button7.Dock = System.Windows.Forms.DockStyle.Top;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(0, 0);
             this.button7.Name = "button7";
@@ -253,7 +251,7 @@ namespace HospitalManagementSystem
             this.btnRecord.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRecord.FlatAppearance.BorderSize = 0;
             this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecord.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRecord.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRecord.ForeColor = System.Drawing.Color.White;
             this.btnRecord.Image = ((System.Drawing.Image)(resources.GetObject("btnRecord.Image")));
             this.btnRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -284,7 +282,7 @@ namespace HospitalManagementSystem
             this.btnTestsHistory.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTestsHistory.FlatAppearance.BorderSize = 0;
             this.btnTestsHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestsHistory.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTestsHistory.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTestsHistory.ForeColor = System.Drawing.Color.White;
             this.btnTestsHistory.Location = new System.Drawing.Point(0, 40);
             this.btnTestsHistory.Name = "btnTestsHistory";
@@ -300,7 +298,7 @@ namespace HospitalManagementSystem
             this.btnAddTest.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAddTest.FlatAppearance.BorderSize = 0;
             this.btnAddTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddTest.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddTest.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddTest.ForeColor = System.Drawing.Color.White;
             this.btnAddTest.Location = new System.Drawing.Point(0, 0);
             this.btnAddTest.Name = "btnAddTest";
@@ -317,7 +315,7 @@ namespace HospitalManagementSystem
             this.btnLaboratory.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLaboratory.FlatAppearance.BorderSize = 0;
             this.btnLaboratory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLaboratory.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLaboratory.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLaboratory.ForeColor = System.Drawing.Color.White;
             this.btnLaboratory.Image = ((System.Drawing.Image)(resources.GetObject("btnLaboratory.Image")));
             this.btnLaboratory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,7 +333,6 @@ namespace HospitalManagementSystem
             // panelPatientsSubMenu
             // 
             this.panelPatientsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
-            this.panelPatientsSubMenu.Controls.Add(this.btnPatientAttendence);
             this.panelPatientsSubMenu.Controls.Add(this.btnRemovePatient);
             this.panelPatientsSubMenu.Controls.Add(this.btnUpdatePatient);
             this.panelPatientsSubMenu.Controls.Add(this.btnAddPatient);
@@ -346,27 +343,12 @@ namespace HospitalManagementSystem
             this.panelPatientsSubMenu.Size = new System.Drawing.Size(233, 204);
             this.panelPatientsSubMenu.TabIndex = 18;
             // 
-            // btnPatientAttendence
-            // 
-            this.btnPatientAttendence.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPatientAttendence.FlatAppearance.BorderSize = 0;
-            this.btnPatientAttendence.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPatientAttendence.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPatientAttendence.ForeColor = System.Drawing.Color.White;
-            this.btnPatientAttendence.Location = new System.Drawing.Point(0, 160);
-            this.btnPatientAttendence.Name = "btnPatientAttendence";
-            this.btnPatientAttendence.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnPatientAttendence.Size = new System.Drawing.Size(233, 40);
-            this.btnPatientAttendence.TabIndex = 6;
-            this.btnPatientAttendence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPatientAttendence.UseVisualStyleBackColor = true;
-            // 
             // btnRemovePatient
             // 
             this.btnRemovePatient.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRemovePatient.FlatAppearance.BorderSize = 0;
             this.btnRemovePatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemovePatient.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRemovePatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemovePatient.ForeColor = System.Drawing.Color.White;
             this.btnRemovePatient.Location = new System.Drawing.Point(0, 120);
             this.btnRemovePatient.Name = "btnRemovePatient";
@@ -383,7 +365,7 @@ namespace HospitalManagementSystem
             this.btnUpdatePatient.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUpdatePatient.FlatAppearance.BorderSize = 0;
             this.btnUpdatePatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdatePatient.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdatePatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdatePatient.ForeColor = System.Drawing.Color.White;
             this.btnUpdatePatient.Location = new System.Drawing.Point(0, 80);
             this.btnUpdatePatient.Name = "btnUpdatePatient";
@@ -400,7 +382,7 @@ namespace HospitalManagementSystem
             this.btnAddPatient.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAddPatient.FlatAppearance.BorderSize = 0;
             this.btnAddPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddPatient.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddPatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAddPatient.ForeColor = System.Drawing.Color.White;
             this.btnAddPatient.Location = new System.Drawing.Point(0, 40);
             this.btnAddPatient.Name = "btnAddPatient";
@@ -417,7 +399,7 @@ namespace HospitalManagementSystem
             this.btnViewPatient.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewPatient.FlatAppearance.BorderSize = 0;
             this.btnViewPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPatient.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnViewPatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnViewPatient.ForeColor = System.Drawing.Color.White;
             this.btnViewPatient.Location = new System.Drawing.Point(0, 0);
             this.btnViewPatient.Name = "btnViewPatient";
@@ -434,7 +416,7 @@ namespace HospitalManagementSystem
             this.btnPatients.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPatients.FlatAppearance.BorderSize = 0;
             this.btnPatients.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPatients.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPatients.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPatients.ForeColor = System.Drawing.Color.White;
             this.btnPatients.Image = ((System.Drawing.Image)(resources.GetObject("btnPatients.Image")));
             this.btnPatients.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -470,7 +452,7 @@ namespace HospitalManagementSystem
             this.btnOtherEmployees.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOtherEmployees.FlatAppearance.BorderSize = 0;
             this.btnOtherEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOtherEmployees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOtherEmployees.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnOtherEmployees.ForeColor = System.Drawing.Color.White;
             this.btnOtherEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnOtherEmployees.Image")));
             this.btnOtherEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -489,7 +471,7 @@ namespace HospitalManagementSystem
             this.btnReceptionist.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReceptionist.FlatAppearance.BorderSize = 0;
             this.btnReceptionist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReceptionist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReceptionist.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnReceptionist.ForeColor = System.Drawing.Color.White;
             this.btnReceptionist.Image = ((System.Drawing.Image)(resources.GetObject("btnReceptionist.Image")));
             this.btnReceptionist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -508,7 +490,7 @@ namespace HospitalManagementSystem
             this.btnSurgeon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSurgeon.FlatAppearance.BorderSize = 0;
             this.btnSurgeon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSurgeon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSurgeon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSurgeon.ForeColor = System.Drawing.Color.White;
             this.btnSurgeon.Image = ((System.Drawing.Image)(resources.GetObject("btnSurgeon.Image")));
             this.btnSurgeon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -527,7 +509,7 @@ namespace HospitalManagementSystem
             this.btnLaboratoryTechnician.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLaboratoryTechnician.FlatAppearance.BorderSize = 0;
             this.btnLaboratoryTechnician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLaboratoryTechnician.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLaboratoryTechnician.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLaboratoryTechnician.ForeColor = System.Drawing.Color.White;
             this.btnLaboratoryTechnician.Image = ((System.Drawing.Image)(resources.GetObject("btnLaboratoryTechnician.Image")));
             this.btnLaboratoryTechnician.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -546,7 +528,7 @@ namespace HospitalManagementSystem
             this.btnPharmacist.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPharmacist.FlatAppearance.BorderSize = 0;
             this.btnPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPharmacist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPharmacist.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPharmacist.ForeColor = System.Drawing.Color.White;
             this.btnPharmacist.Image = ((System.Drawing.Image)(resources.GetObject("btnPharmacist.Image")));
             this.btnPharmacist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -565,7 +547,7 @@ namespace HospitalManagementSystem
             this.btnNurse.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNurse.FlatAppearance.BorderSize = 0;
             this.btnNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNurse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNurse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNurse.ForeColor = System.Drawing.Color.White;
             this.btnNurse.Image = ((System.Drawing.Image)(resources.GetObject("btnNurse.Image")));
             this.btnNurse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -585,7 +567,7 @@ namespace HospitalManagementSystem
             this.btnDoctor.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDoctor.FlatAppearance.BorderSize = 0;
             this.btnDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDoctor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDoctor.ForeColor = System.Drawing.Color.White;
             this.btnDoctor.Image = ((System.Drawing.Image)(resources.GetObject("btnDoctor.Image")));
             this.btnDoctor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -604,7 +586,7 @@ namespace HospitalManagementSystem
             this.btnEmployees.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEmployees.FlatAppearance.BorderSize = 0;
             this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployees.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEmployees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnEmployees.ForeColor = System.Drawing.Color.White;
             this.btnEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployees.Image")));
             this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -624,7 +606,7 @@ namespace HospitalManagementSystem
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 132);
@@ -643,7 +625,7 @@ namespace HospitalManagementSystem
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -673,6 +655,7 @@ namespace HospitalManagementSystem
             this.panel.AutoScroll = true;
             this.panel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel.Location = new System.Drawing.Point(250, 0);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(824, 609);
@@ -716,7 +699,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnAddTest;
         private System.Windows.Forms.Button btnLaboratory;
         private System.Windows.Forms.Panel panelPatientsSubMenu;
-        private System.Windows.Forms.Button btnPatientAttendence;
         private System.Windows.Forms.Button btnRemovePatient;
         private System.Windows.Forms.Button btnUpdatePatient;
         private System.Windows.Forms.Button btnAddPatient;
