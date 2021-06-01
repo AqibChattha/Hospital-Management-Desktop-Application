@@ -6,4 +6,12 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\email.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\email.jpg" />
+  </ItemGroup>
+
 </Project>

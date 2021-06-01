@@ -51,6 +51,9 @@ namespace HospitalManagementSystem
             // 
             // dtvNurse
             // 
+            this.dtvNurse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtvNurse.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtvNurse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtvNurse.Location = new System.Drawing.Point(16, 92);

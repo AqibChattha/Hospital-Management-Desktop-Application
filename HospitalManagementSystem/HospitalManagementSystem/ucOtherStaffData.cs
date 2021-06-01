@@ -102,7 +102,10 @@ namespace HospitalManagementSystem
             dtvOtherStaff.Columns.Add(cellView);
             dtvOtherStaff.Columns.Add(cellEdit);
 
-            dtvOtherStaff.Rows.Add("", "", "", "", "", "", Image.FromFile("E:/New Folder/Hospital Management System/Icons/delete.png"), Image.FromFile("E:/New Folder/Hospital Management System/Icons/view.png"), Image.FromFile("E:/New Folder/Hospital Management System/Icons/edit.png"));
+            var btmp1 = new Bitmap(Images.view);
+            var btmp2 = new Bitmap(Images.edit);
+            var btmp3 = new Bitmap(Images.delete);
+            dtvOtherStaff.Rows.Add("", "", "", "", "", "", btmp1, btmp2, btmp3);
 
             dtvOtherStaff.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtvOtherStaff.AllowUserToAddRows = false;

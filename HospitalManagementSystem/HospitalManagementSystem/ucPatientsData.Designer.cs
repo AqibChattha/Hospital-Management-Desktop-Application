@@ -68,6 +68,9 @@ namespace HospitalManagementSystem
             // 
             // dtvPatients
             // 
+            this.dtvPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtvPatients.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtvPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtvPatients.Location = new System.Drawing.Point(15, 96);
@@ -89,7 +92,7 @@ namespace HospitalManagementSystem
             this.btnRegisterPatient.UseVisualStyleBackColor = false;
             this.btnRegisterPatient.Click += new System.EventHandler(this.btnRegisterPatient_Click);
             // 
-            // usPatientsData
+            // ucPatientsData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,7 +101,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearchSurgeon);
             this.Controls.Add(this.label16);
-            this.Name = "usPatientsData";
+            this.Name = "ucPatientsData";
             this.Size = new System.Drawing.Size(824, 561);
             this.Load += new System.EventHandler(this.usPatientsData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtvPatients)).EndInit();

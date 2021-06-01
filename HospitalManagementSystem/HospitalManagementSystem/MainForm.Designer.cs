@@ -472,13 +472,15 @@ namespace HospitalManagementSystem
             this.btnOtherEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOtherEmployees.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnOtherEmployees.ForeColor = System.Drawing.Color.White;
+            this.btnOtherEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnOtherEmployees.Image")));
+            this.btnOtherEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOtherEmployees.Location = new System.Drawing.Point(0, 240);
             this.btnOtherEmployees.Name = "btnOtherEmployees";
-            this.btnOtherEmployees.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnOtherEmployees.Size = new System.Drawing.Size(233, 40);
             this.btnOtherEmployees.TabIndex = 9;
             this.btnOtherEmployees.Text = "Other staff";
             this.btnOtherEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOtherEmployees.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOtherEmployees.UseVisualStyleBackColor = true;
             this.btnOtherEmployees.Click += new System.EventHandler(this.btnOtherEmployees_Click);
             // 
@@ -489,13 +491,15 @@ namespace HospitalManagementSystem
             this.btnReceptionist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReceptionist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnReceptionist.ForeColor = System.Drawing.Color.White;
+            this.btnReceptionist.Image = ((System.Drawing.Image)(resources.GetObject("btnReceptionist.Image")));
+            this.btnReceptionist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReceptionist.Location = new System.Drawing.Point(0, 200);
             this.btnReceptionist.Name = "btnReceptionist";
-            this.btnReceptionist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnReceptionist.Size = new System.Drawing.Size(233, 40);
             this.btnReceptionist.TabIndex = 7;
             this.btnReceptionist.Text = "Receptionists";
             this.btnReceptionist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReceptionist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReceptionist.UseVisualStyleBackColor = true;
             this.btnReceptionist.Click += new System.EventHandler(this.btnReceptionist_Click);
             // 
@@ -506,13 +510,15 @@ namespace HospitalManagementSystem
             this.btnSurgeon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSurgeon.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSurgeon.ForeColor = System.Drawing.Color.White;
+            this.btnSurgeon.Image = ((System.Drawing.Image)(resources.GetObject("btnSurgeon.Image")));
+            this.btnSurgeon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSurgeon.Location = new System.Drawing.Point(0, 160);
             this.btnSurgeon.Name = "btnSurgeon";
-            this.btnSurgeon.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnSurgeon.Size = new System.Drawing.Size(233, 40);
             this.btnSurgeon.TabIndex = 6;
             this.btnSurgeon.Text = "Surgeons";
             this.btnSurgeon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSurgeon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSurgeon.UseVisualStyleBackColor = true;
             this.btnSurgeon.Click += new System.EventHandler(this.btnSurgeon_Click);
             // 
@@ -523,13 +529,15 @@ namespace HospitalManagementSystem
             this.btnLaboratoryTechnician.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLaboratoryTechnician.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLaboratoryTechnician.ForeColor = System.Drawing.Color.White;
+            this.btnLaboratoryTechnician.Image = ((System.Drawing.Image)(resources.GetObject("btnLaboratoryTechnician.Image")));
+            this.btnLaboratoryTechnician.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLaboratoryTechnician.Location = new System.Drawing.Point(0, 120);
             this.btnLaboratoryTechnician.Name = "btnLaboratoryTechnician";
-            this.btnLaboratoryTechnician.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnLaboratoryTechnician.Size = new System.Drawing.Size(233, 40);
             this.btnLaboratoryTechnician.TabIndex = 5;
             this.btnLaboratoryTechnician.Text = "Laboratory technicians";
             this.btnLaboratoryTechnician.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLaboratoryTechnician.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLaboratoryTechnician.UseVisualStyleBackColor = true;
             this.btnLaboratoryTechnician.Click += new System.EventHandler(this.btnLaboratoryTechnician_Click);
             // 
@@ -540,13 +548,15 @@ namespace HospitalManagementSystem
             this.btnPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPharmacist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPharmacist.ForeColor = System.Drawing.Color.White;
+            this.btnPharmacist.Image = ((System.Drawing.Image)(resources.GetObject("btnPharmacist.Image")));
+            this.btnPharmacist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPharmacist.Location = new System.Drawing.Point(0, 80);
             this.btnPharmacist.Name = "btnPharmacist";
-            this.btnPharmacist.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnPharmacist.Size = new System.Drawing.Size(233, 40);
             this.btnPharmacist.TabIndex = 4;
             this.btnPharmacist.Text = "Pharmacists";
             this.btnPharmacist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPharmacist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPharmacist.UseVisualStyleBackColor = true;
             this.btnPharmacist.Click += new System.EventHandler(this.btnPharmacist_Click);
             // 
@@ -557,13 +567,16 @@ namespace HospitalManagementSystem
             this.btnNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNurse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNurse.ForeColor = System.Drawing.Color.White;
+            this.btnNurse.Image = ((System.Drawing.Image)(resources.GetObject("btnNurse.Image")));
+            this.btnNurse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNurse.Location = new System.Drawing.Point(0, 40);
             this.btnNurse.Name = "btnNurse";
-            this.btnNurse.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnNurse.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnNurse.Size = new System.Drawing.Size(233, 40);
             this.btnNurse.TabIndex = 3;
             this.btnNurse.Text = "Nurses";
             this.btnNurse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNurse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNurse.UseVisualStyleBackColor = true;
             this.btnNurse.Click += new System.EventHandler(this.btnNurse_Click);
             // 
@@ -574,13 +587,15 @@ namespace HospitalManagementSystem
             this.btnDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDoctor.ForeColor = System.Drawing.Color.White;
+            this.btnDoctor.Image = ((System.Drawing.Image)(resources.GetObject("btnDoctor.Image")));
+            this.btnDoctor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoctor.Location = new System.Drawing.Point(0, 0);
             this.btnDoctor.Name = "btnDoctor";
-            this.btnDoctor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnDoctor.Size = new System.Drawing.Size(233, 40);
             this.btnDoctor.TabIndex = 2;
             this.btnDoctor.Text = "Doctors";
             this.btnDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoctor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDoctor.UseVisualStyleBackColor = true;
             this.btnDoctor.Click += new System.EventHandler(this.btnDoctor_Click);
             // 

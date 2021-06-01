@@ -27,6 +27,9 @@ namespace HospitalManagementSystem
             InitializeComponent();
         }
 
+        private void ucAddUnits_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
