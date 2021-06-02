@@ -208,22 +208,10 @@ namespace HospitalManagementSystem
             panelSideSlecectedShow.Top = btnPatients.Top;
         }
         #region PatientsSubMenu
-        private void btnViewPatient_Click(object sender, EventArgs e)
+
+        private void btnPatientQueue_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            panelSideSlecectedShow.Height = btnHome.Height;
-            panelSideSlecectedShow.Top = btnHome.Top;
-            if (!panel.Controls.Contains(ucPatientsData.Instence))
-            {
-                panel.Controls.Add(ucPatientsData.Instence);
-                ucPatientsData.Instence.Dock = DockStyle.Fill;
-                ucPatientsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucPatientsData.Instence.BringToFront();
-            }
-            main_Panel = panel;
         }
 
         private void btnAddPatient_Click(object sender, EventArgs e)

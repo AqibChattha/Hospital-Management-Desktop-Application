@@ -26,11 +26,32 @@ namespace HospitalManagementSystem
         public ucAddPatient()
         {
             InitializeComponent();
+            cbPatientType.SelectedIndex = 0;
+            panel1.Visible = true;
+            panel3.Visible = false;
+            panel4.Visible = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void cbPatientType_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cbPatientType.SelectedIndex == 0)
+            {
+                panel1.Visible = true;
+                panel3.Visible = false;
+                panel4.Visible = false;
+            }
+            if (cbPatientType.SelectedIndex == 1)
+            {
+                panel3.Visible = true;
+                panel1.Visible = false;
+                panel4.Visible = false;
+            }
+            if (cbPatientType.SelectedIndex == 2)
+            {
+                panel4.Visible = true;
+                panel1.Visible = false;
+                panel3.Visible = false;
+            }
         }
     }
 }

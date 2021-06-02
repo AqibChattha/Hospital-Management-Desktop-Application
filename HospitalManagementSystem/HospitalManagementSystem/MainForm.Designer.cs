@@ -50,7 +50,7 @@ namespace HospitalManagementSystem
             this.btnRemovePatient = new System.Windows.Forms.Button();
             this.btnUpdatePatient = new System.Windows.Forms.Button();
             this.btnAddPatient = new System.Windows.Forms.Button();
-            this.btnViewPatient = new System.Windows.Forms.Button();
+            this.btnPatientQueue = new System.Windows.Forms.Button();
             this.btnPatients = new System.Windows.Forms.Button();
             this.panelDoctorsSubMenu = new System.Windows.Forms.Panel();
             this.btnOtherEmployees = new System.Windows.Forms.Button();
@@ -336,7 +336,7 @@ namespace HospitalManagementSystem
             this.panelPatientsSubMenu.Controls.Add(this.btnRemovePatient);
             this.panelPatientsSubMenu.Controls.Add(this.btnUpdatePatient);
             this.panelPatientsSubMenu.Controls.Add(this.btnAddPatient);
-            this.panelPatientsSubMenu.Controls.Add(this.btnViewPatient);
+            this.panelPatientsSubMenu.Controls.Add(this.btnPatientQueue);
             this.panelPatientsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPatientsSubMenu.Location = new System.Drawing.Point(0, 551);
             this.panelPatientsSubMenu.Name = "panelPatientsSubMenu";
@@ -394,22 +394,22 @@ namespace HospitalManagementSystem
             this.btnAddPatient.UseVisualStyleBackColor = true;
             this.btnAddPatient.Click += new System.EventHandler(this.btnAddPatient_Click);
             // 
-            // btnViewPatient
+            // btnPatientQueue
             // 
-            this.btnViewPatient.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnViewPatient.FlatAppearance.BorderSize = 0;
-            this.btnViewPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewPatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnViewPatient.ForeColor = System.Drawing.Color.White;
-            this.btnViewPatient.Location = new System.Drawing.Point(0, 0);
-            this.btnViewPatient.Name = "btnViewPatient";
-            this.btnViewPatient.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnViewPatient.Size = new System.Drawing.Size(233, 40);
-            this.btnViewPatient.TabIndex = 2;
-            this.btnViewPatient.Text = "View Patients";
-            this.btnViewPatient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewPatient.UseVisualStyleBackColor = true;
-            this.btnViewPatient.Click += new System.EventHandler(this.btnViewPatient_Click);
+            this.btnPatientQueue.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPatientQueue.FlatAppearance.BorderSize = 0;
+            this.btnPatientQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPatientQueue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPatientQueue.ForeColor = System.Drawing.Color.White;
+            this.btnPatientQueue.Location = new System.Drawing.Point(0, 0);
+            this.btnPatientQueue.Name = "btnPatientQueue";
+            this.btnPatientQueue.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPatientQueue.Size = new System.Drawing.Size(233, 40);
+            this.btnPatientQueue.TabIndex = 2;
+            this.btnPatientQueue.Text = "Patients Queue";
+            this.btnPatientQueue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPatientQueue.UseVisualStyleBackColor = true;
+            this.btnPatientQueue.Click += new System.EventHandler(this.btnPatientQueue_Click);
             // 
             // btnPatients
             // 
@@ -702,7 +702,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnRemovePatient;
         private System.Windows.Forms.Button btnUpdatePatient;
         private System.Windows.Forms.Button btnAddPatient;
-        private System.Windows.Forms.Button btnViewPatient;
+        private System.Windows.Forms.Button btnPatientQueue;
         private System.Windows.Forms.Button btnPatients;
         private System.Windows.Forms.Panel panelDoctorsSubMenu;
         private System.Windows.Forms.Button btnSurgeon;
