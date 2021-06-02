@@ -6,8 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\Ahtisham Ul Haq\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Ahtisham Ul Haq\\.nuget\\packages"
+      "C:\\Users\\aqiba\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\aqiba\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

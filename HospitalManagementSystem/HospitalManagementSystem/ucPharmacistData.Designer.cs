@@ -31,10 +31,6 @@ namespace HospitalManagementSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPharmacistData));
             this.dtvPharmacist = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSearchPharmacist = new System.Windows.Forms.TextBox();
-            this.btnRegisterPharmacist = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,10 @@ namespace HospitalManagementSystem
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearchPharmacist = new System.Windows.Forms.TextBox();
+            this.btnRegisterPharmacist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPharmacist)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,53 +61,11 @@ namespace HospitalManagementSystem
             this.Column6,
             this.Column7});
             this.dtvPharmacist.GridColor = System.Drawing.Color.Gainsboro;
-            this.dtvPharmacist.Location = new System.Drawing.Point(17, 93);
+            this.dtvPharmacist.Location = new System.Drawing.Point(16, 92);
             this.dtvPharmacist.Name = "dtvPharmacist";
             this.dtvPharmacist.RowTemplate.Height = 25;
-            this.dtvPharmacist.Size = new System.Drawing.Size(788, 397);
+            this.dtvPharmacist.Size = new System.Drawing.Size(790, 420);
             this.dtvPharmacist.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(362, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Pharmacists";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(560, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 15);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Search";
-            // 
-            // txtSearchPharmacist
-            // 
-            this.txtSearchPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchPharmacist.Location = new System.Drawing.Point(606, 64);
-            this.txtSearchPharmacist.Name = "txtSearchPharmacist";
-            this.txtSearchPharmacist.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchPharmacist.TabIndex = 13;
-            // 
-            // btnRegisterPharmacist
-            // 
-            this.btnRegisterPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegisterPharmacist.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRegisterPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterPharmacist.Location = new System.Drawing.Point(672, 511);
-            this.btnRegisterPharmacist.Name = "btnRegisterPharmacist";
-            this.btnRegisterPharmacist.Size = new System.Drawing.Size(132, 30);
-            this.btnRegisterPharmacist.TabIndex = 16;
-            this.btnRegisterPharmacist.Text = "Register Pharmacist";
-            this.btnRegisterPharmacist.UseVisualStyleBackColor = false;
-            this.btnRegisterPharmacist.Click += new System.EventHandler(this.btnRegisterPharmacist_Click);
             // 
             // Column1
             // 
@@ -163,6 +121,48 @@ namespace HospitalManagementSystem
             this.Column7.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Column7.Name = "Column7";
             this.Column7.Width = 21;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(344, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 30);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Pharmacists";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(559, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 15);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Search";
+            // 
+            // txtSearchPharmacist
+            // 
+            this.txtSearchPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchPharmacist.Location = new System.Drawing.Point(607, 63);
+            this.txtSearchPharmacist.Name = "txtSearchPharmacist";
+            this.txtSearchPharmacist.Size = new System.Drawing.Size(199, 23);
+            this.txtSearchPharmacist.TabIndex = 13;
+            // 
+            // btnRegisterPharmacist
+            // 
+            this.btnRegisterPharmacist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRegisterPharmacist.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRegisterPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegisterPharmacist.Location = new System.Drawing.Point(674, 518);
+            this.btnRegisterPharmacist.Name = "btnRegisterPharmacist";
+            this.btnRegisterPharmacist.Size = new System.Drawing.Size(132, 30);
+            this.btnRegisterPharmacist.TabIndex = 16;
+            this.btnRegisterPharmacist.Text = "Register Pharmacist";
+            this.btnRegisterPharmacist.UseVisualStyleBackColor = false;
+            this.btnRegisterPharmacist.Click += new System.EventHandler(this.btnRegisterPharmacist_Click);
             // 
             // ucPharmacistData
             // 

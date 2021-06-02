@@ -50,7 +50,7 @@ namespace HospitalManagementSystem
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(356, 31);
+            this.label16.Location = new System.Drawing.Point(361, 10);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(77, 30);
             this.label16.TabIndex = 17;
@@ -60,7 +60,7 @@ namespace HospitalManagementSystem
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(560, 68);
+            this.label1.Location = new System.Drawing.Point(559, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 16;
@@ -69,7 +69,7 @@ namespace HospitalManagementSystem
             // txtSearchNurse
             // 
             this.txtSearchNurse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchNurse.Location = new System.Drawing.Point(606, 64);
+            this.txtSearchNurse.Location = new System.Drawing.Point(607, 63);
             this.txtSearchNurse.Name = "txtSearchNurse";
             this.txtSearchNurse.Size = new System.Drawing.Size(199, 23);
             this.txtSearchNurse.TabIndex = 15;
@@ -79,7 +79,7 @@ namespace HospitalManagementSystem
             this.btnRegisterNurse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegisterNurse.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegisterNurse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterNurse.Location = new System.Drawing.Point(672, 511);
+            this.btnRegisterNurse.Location = new System.Drawing.Point(674, 518);
             this.btnRegisterNurse.Name = "btnRegisterNurse";
             this.btnRegisterNurse.Size = new System.Drawing.Size(132, 30);
             this.btnRegisterNurse.TabIndex = 14;
@@ -102,10 +102,10 @@ namespace HospitalManagementSystem
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dtvNurse.Location = new System.Drawing.Point(13, 93);
+            this.dtvNurse.Location = new System.Drawing.Point(16, 92);
             this.dtvNurse.Name = "dtvNurse";
             this.dtvNurse.RowTemplate.Height = 25;
-            this.dtvNurse.Size = new System.Drawing.Size(791, 408);
+            this.dtvNurse.Size = new System.Drawing.Size(790, 420);
             this.dtvNurse.TabIndex = 18;
             // 
             // Column1

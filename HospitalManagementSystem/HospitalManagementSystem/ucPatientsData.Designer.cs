@@ -52,7 +52,7 @@ namespace HospitalManagementSystem
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(333, 23);
+            this.label16.Location = new System.Drawing.Point(357, 10);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(86, 30);
             this.label16.TabIndex = 23;
@@ -62,7 +62,7 @@ namespace HospitalManagementSystem
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(554, 70);
+            this.label1.Location = new System.Drawing.Point(559, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 25;
@@ -71,7 +71,7 @@ namespace HospitalManagementSystem
             // txtSearchSurgeon
             // 
             this.txtSearchSurgeon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchSurgeon.Location = new System.Drawing.Point(603, 66);
+            this.txtSearchSurgeon.Location = new System.Drawing.Point(607, 63);
             this.txtSearchSurgeon.Name = "txtSearchSurgeon";
             this.txtSearchSurgeon.Size = new System.Drawing.Size(199, 23);
             this.txtSearchSurgeon.TabIndex = 24;
@@ -91,10 +91,10 @@ namespace HospitalManagementSystem
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dtvPatients.Location = new System.Drawing.Point(15, 96);
+            this.dtvPatients.Location = new System.Drawing.Point(16, 92);
             this.dtvPatients.Name = "dtvPatients";
             this.dtvPatients.RowTemplate.Height = 25;
-            this.dtvPatients.Size = new System.Drawing.Size(788, 397);
+            this.dtvPatients.Size = new System.Drawing.Size(790, 420);
             this.dtvPatients.TabIndex = 26;
             // 
             // Column1
@@ -157,7 +157,7 @@ namespace HospitalManagementSystem
             this.btnRegisterPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegisterPatient.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegisterPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterPatient.Location = new System.Drawing.Point(669, 512);
+            this.btnRegisterPatient.Location = new System.Drawing.Point(674, 518);
             this.btnRegisterPatient.Name = "btnRegisterPatient";
             this.btnRegisterPatient.Size = new System.Drawing.Size(132, 30);
             this.btnRegisterPatient.TabIndex = 27;
@@ -167,9 +167,8 @@ namespace HospitalManagementSystem
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 66);
+            this.label2.Location = new System.Drawing.Point(15, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 15);
             this.label2.TabIndex = 25;
@@ -188,7 +187,7 @@ namespace HospitalManagementSystem
             "InPatient",
             "OutPatient",
             "IllPatient"});
-            this.cbPatientType.Location = new System.Drawing.Point(65, 64);
+            this.cbPatientType.Location = new System.Drawing.Point(55, 63);
             this.cbPatientType.Name = "cbPatientType";
             this.cbPatientType.Size = new System.Drawing.Size(185, 23);
             this.cbPatientType.TabIndex = 28;

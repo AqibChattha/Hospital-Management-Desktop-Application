@@ -52,7 +52,7 @@ namespace HospitalManagementSystem
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(362, 20);
+            this.label16.Location = new System.Drawing.Point(355, 10);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(114, 30);
             this.label16.TabIndex = 22;
@@ -62,7 +62,7 @@ namespace HospitalManagementSystem
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(561, 62);
+            this.label1.Location = new System.Drawing.Point(559, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 21;
@@ -71,7 +71,7 @@ namespace HospitalManagementSystem
             // txtSearchOtherStaff
             // 
             this.txtSearchOtherStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchOtherStaff.Location = new System.Drawing.Point(607, 58);
+            this.txtSearchOtherStaff.Location = new System.Drawing.Point(607, 63);
             this.txtSearchOtherStaff.Name = "txtSearchOtherStaff";
             this.txtSearchOtherStaff.Size = new System.Drawing.Size(199, 23);
             this.txtSearchOtherStaff.TabIndex = 20;
@@ -81,7 +81,7 @@ namespace HospitalManagementSystem
             this.btnRegisterOtherStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegisterOtherStaff.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegisterOtherStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterOtherStaff.Location = new System.Drawing.Point(653, 505);
+            this.btnRegisterOtherStaff.Location = new System.Drawing.Point(654, 518);
             this.btnRegisterOtherStaff.Name = "btnRegisterOtherStaff";
             this.btnRegisterOtherStaff.Size = new System.Drawing.Size(152, 30);
             this.btnRegisterOtherStaff.TabIndex = 19;
@@ -105,10 +105,10 @@ namespace HospitalManagementSystem
             this.Column6,
             this.Column7});
             this.dtvOtherStaff.GridColor = System.Drawing.Color.Gainsboro;
-            this.dtvOtherStaff.Location = new System.Drawing.Point(18, 87);
+            this.dtvOtherStaff.Location = new System.Drawing.Point(16, 92);
             this.dtvOtherStaff.Name = "dtvOtherStaff";
             this.dtvOtherStaff.RowTemplate.Height = 25;
-            this.dtvOtherStaff.Size = new System.Drawing.Size(788, 397);
+            this.dtvOtherStaff.Size = new System.Drawing.Size(790, 420);
             this.dtvOtherStaff.TabIndex = 18;
             // 
             // Column1
@@ -179,7 +179,7 @@ namespace HospitalManagementSystem
             "Peon",
             "Security Gaurd",
             "Laundry Man"});
-            this.cbOtherStaffType.Location = new System.Drawing.Point(67, 59);
+            this.cbOtherStaffType.Location = new System.Drawing.Point(57, 63);
             this.cbOtherStaffType.Name = "cbOtherStaffType";
             this.cbOtherStaffType.Size = new System.Drawing.Size(185, 23);
             this.cbOtherStaffType.TabIndex = 30;
@@ -188,7 +188,7 @@ namespace HospitalManagementSystem
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 61);
+            this.label2.Location = new System.Drawing.Point(17, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 15);
             this.label2.TabIndex = 29;

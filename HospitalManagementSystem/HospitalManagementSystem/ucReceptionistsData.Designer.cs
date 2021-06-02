@@ -50,7 +50,7 @@ namespace HospitalManagementSystem
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(345, 25);
+            this.label16.Location = new System.Drawing.Point(338, 10);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(135, 30);
             this.label16.TabIndex = 22;
@@ -60,7 +60,7 @@ namespace HospitalManagementSystem
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(561, 62);
+            this.label1.Location = new System.Drawing.Point(559, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 21;
@@ -69,7 +69,7 @@ namespace HospitalManagementSystem
             // txtSearchReceptionist
             // 
             this.txtSearchReceptionist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchReceptionist.Location = new System.Drawing.Point(607, 58);
+            this.txtSearchReceptionist.Location = new System.Drawing.Point(607, 63);
             this.txtSearchReceptionist.Name = "txtSearchReceptionist";
             this.txtSearchReceptionist.Size = new System.Drawing.Size(199, 23);
             this.txtSearchReceptionist.TabIndex = 20;
@@ -79,7 +79,7 @@ namespace HospitalManagementSystem
             this.btnRegisterReceptionist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegisterReceptionist.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegisterReceptionist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterReceptionist.Location = new System.Drawing.Point(667, 505);
+            this.btnRegisterReceptionist.Location = new System.Drawing.Point(668, 518);
             this.btnRegisterReceptionist.Name = "btnRegisterReceptionist";
             this.btnRegisterReceptionist.Size = new System.Drawing.Size(138, 30);
             this.btnRegisterReceptionist.TabIndex = 19;
@@ -103,10 +103,10 @@ namespace HospitalManagementSystem
             this.Column6,
             this.Column7});
             this.dtvReceptionists.GridColor = System.Drawing.Color.Gainsboro;
-            this.dtvReceptionists.Location = new System.Drawing.Point(18, 87);
+            this.dtvReceptionists.Location = new System.Drawing.Point(16, 92);
             this.dtvReceptionists.Name = "dtvReceptionists";
             this.dtvReceptionists.RowTemplate.Height = 25;
-            this.dtvReceptionists.Size = new System.Drawing.Size(788, 397);
+            this.dtvReceptionists.Size = new System.Drawing.Size(790, 420);
             this.dtvReceptionists.TabIndex = 18;
             // 
             // Column1

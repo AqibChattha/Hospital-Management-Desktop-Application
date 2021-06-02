@@ -50,7 +50,7 @@ namespace HospitalManagementSystem
             this.btnRegisterDoctor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegisterDoctor.BackColor = System.Drawing.Color.Gainsboro;
             this.btnRegisterDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterDoctor.Location = new System.Drawing.Point(672, 511);
+            this.btnRegisterDoctor.Location = new System.Drawing.Point(674, 518);
             this.btnRegisterDoctor.Name = "btnRegisterDoctor";
             this.btnRegisterDoctor.Size = new System.Drawing.Size(132, 30);
             this.btnRegisterDoctor.TabIndex = 9;
@@ -61,7 +61,7 @@ namespace HospitalManagementSystem
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(606, 64);
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(199, 23);
             this.txtSearch.TabIndex = 10;
@@ -70,7 +70,7 @@ namespace HospitalManagementSystem
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(560, 68);
+            this.label1.Location = new System.Drawing.Point(559, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 11;
@@ -81,7 +81,7 @@ namespace HospitalManagementSystem
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(362, 31);
+            this.label16.Location = new System.Drawing.Point(364, 10);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(85, 30);
             this.label16.TabIndex = 12;
@@ -102,10 +102,10 @@ namespace HospitalManagementSystem
             this.colView,
             this.colEdit,
             this.colDelete});
-            this.dtvDoctor.Location = new System.Drawing.Point(14, 94);
+            this.dtvDoctor.Location = new System.Drawing.Point(16, 92);
             this.dtvDoctor.Name = "dtvDoctor";
             this.dtvDoctor.RowTemplate.Height = 25;
-            this.dtvDoctor.Size = new System.Drawing.Size(791, 411);
+            this.dtvDoctor.Size = new System.Drawing.Size(790, 420);
             this.dtvDoctor.TabIndex = 13;
             // 
             // colName
