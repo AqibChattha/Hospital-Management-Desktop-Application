@@ -296,9 +296,20 @@ namespace HospitalManagementSystem
             panelSideSlecectedShow.Top = btnCapital.Top;
         }
         #region CapitalSubMenu
-        private void button9_Click(object sender, EventArgs e)
+        private void btnCapitalRecord_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            if (!panel.Controls.Contains(ucCapitalData.Instence))
+            {
+                panel.Controls.Add(ucCapitalData.Instence);
+                ucCapitalData.Instence.Dock = DockStyle.Fill;
+                ucCapitalData.Instence.BringToFront();
+            }
+            else
+            {
+                ucCapitalData.Instence.BringToFront();
+            }
+            main_Panel = panel;
         }
         #endregion
         private void btnExit_Click(object sender, EventArgs e)
@@ -381,5 +392,7 @@ namespace HospitalManagementSystem
             }
             main_Panel = panel;
         }
+
+        
     }
 }

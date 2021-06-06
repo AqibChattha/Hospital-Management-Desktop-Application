@@ -34,6 +34,9 @@
     <Compile Update="ucAddSurgeon.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucCapitalData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ucDoctorsData.cs">
       <SubType>UserControl</SubType>
     </Compile>

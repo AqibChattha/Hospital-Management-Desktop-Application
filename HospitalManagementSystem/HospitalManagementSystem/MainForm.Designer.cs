@@ -37,7 +37,7 @@ namespace HospitalManagementSystem
             this.btnUnits = new System.Windows.Forms.Button();
             this.panelSideSlecectedShow = new System.Windows.Forms.Panel();
             this.panelCapitalSubMenu = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnCapitalRecord = new System.Windows.Forms.Button();
             this.btnCapital = new System.Windows.Forms.Button();
             this.panelRecordSubMenu = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
@@ -175,29 +175,29 @@ namespace HospitalManagementSystem
             // panelCapitalSubMenu
             // 
             this.panelCapitalSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(208)))));
-            this.panelCapitalSubMenu.Controls.Add(this.button9);
+            this.panelCapitalSubMenu.Controls.Add(this.btnCapitalRecord);
             this.panelCapitalSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCapitalSubMenu.Location = new System.Drawing.Point(0, 1023);
             this.panelCapitalSubMenu.Name = "panelCapitalSubMenu";
             this.panelCapitalSubMenu.Size = new System.Drawing.Size(233, 50);
             this.panelCapitalSubMenu.TabIndex = 24;
             // 
-            // button9
+            // btnCapitalRecord
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(233, 40);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "button9";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.btnCapitalRecord.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapitalRecord.FlatAppearance.BorderSize = 0;
+            this.btnCapitalRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapitalRecord.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCapitalRecord.ForeColor = System.Drawing.Color.White;
+            this.btnCapitalRecord.Location = new System.Drawing.Point(0, 0);
+            this.btnCapitalRecord.Name = "btnCapitalRecord";
+            this.btnCapitalRecord.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCapitalRecord.Size = new System.Drawing.Size(233, 40);
+            this.btnCapitalRecord.TabIndex = 2;
+            this.btnCapitalRecord.Text = "Record";
+            this.btnCapitalRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapitalRecord.UseVisualStyleBackColor = true;
+            this.btnCapitalRecord.Click += new System.EventHandler(this.btnCapitalRecord_Click);
             // 
             // btnCapital
             // 
@@ -689,7 +689,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelSideSlecectedShow;
         private System.Windows.Forms.Panel panelCapitalSubMenu;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnCapitalRecord;
         private System.Windows.Forms.Button btnCapital;
         private System.Windows.Forms.Panel panelRecordSubMenu;
         private System.Windows.Forms.Button button7;
