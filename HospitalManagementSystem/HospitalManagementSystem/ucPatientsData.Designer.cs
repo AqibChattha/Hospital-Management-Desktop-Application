@@ -41,7 +41,6 @@ namespace HospitalManagementSystem
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnRegisterPatient = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbPatientType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPatients)).BeginInit();
@@ -94,7 +93,7 @@ namespace HospitalManagementSystem
             this.dtvPatients.Location = new System.Drawing.Point(16, 92);
             this.dtvPatients.Name = "dtvPatients";
             this.dtvPatients.RowTemplate.Height = 25;
-            this.dtvPatients.Size = new System.Drawing.Size(790, 420);
+            this.dtvPatients.Size = new System.Drawing.Size(790, 452);
             this.dtvPatients.TabIndex = 26;
             // 
             // Column1
@@ -152,19 +151,6 @@ namespace HospitalManagementSystem
             this.Column7.Name = "Column7";
             this.Column7.Width = 21;
             // 
-            // btnRegisterPatient
-            // 
-            this.btnRegisterPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegisterPatient.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRegisterPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterPatient.Location = new System.Drawing.Point(674, 518);
-            this.btnRegisterPatient.Name = "btnRegisterPatient";
-            this.btnRegisterPatient.Size = new System.Drawing.Size(132, 30);
-            this.btnRegisterPatient.TabIndex = 27;
-            this.btnRegisterPatient.Text = "Register Patient";
-            this.btnRegisterPatient.UseVisualStyleBackColor = false;
-            this.btnRegisterPatient.Click += new System.EventHandler(this.btnRegisterPatient_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -197,7 +183,6 @@ namespace HospitalManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbPatientType);
-            this.Controls.Add(this.btnRegisterPatient);
             this.Controls.Add(this.dtvPatients);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -216,7 +201,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearchSurgeon;
-        private System.Windows.Forms.Button btnRegisterPatient;
         private System.Windows.Forms.DataGridView dtvPatients;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

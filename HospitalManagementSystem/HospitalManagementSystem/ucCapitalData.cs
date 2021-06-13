@@ -27,17 +27,17 @@ namespace HospitalManagementSystem
             InitializeComponent();
             cbViewType.SelectedText = "Month";
             lbTime.Text = "Month:";
-            dtpTime.CustomFormat = "MMMM";
+            dtpTime.CustomFormat = "MMMM-yyyy";
         }
 
         private void cbViewType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbViewType.SelectedText.Equals("Month"))
+            if (cbViewType.SelectedItem.ToString().Equals("Month"))
             {
                 lbTime.Text = "Month:";
-                dtpTime.CustomFormat = "MMMM";
+                dtpTime.CustomFormat = "MMMM-yyyy";
             }
-            if (cbViewType.SelectedText.Equals("Year"))
+            if (cbViewType.SelectedItem.ToString().Equals("Year"))
             {
                 lbTime.Text = "Year:";
                 dtpTime.CustomFormat = "yyyy";

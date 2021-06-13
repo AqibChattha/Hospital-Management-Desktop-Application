@@ -7,6 +7,9 @@
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="ucAcknowledgeTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -52,6 +55,9 @@
     <Compile Update="ucOtherStaffData.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucPatientQueue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ucPharmacistData.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -62,6 +68,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ucAddUnits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ucTestsData.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ucUnitsData.cs">

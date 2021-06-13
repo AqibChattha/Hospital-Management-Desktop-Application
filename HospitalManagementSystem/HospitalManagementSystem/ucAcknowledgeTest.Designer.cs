@@ -32,7 +32,9 @@ namespace HospitalManagementSystem
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtpDueDate = new System.Windows.Forms.DateTimePicker();
+            this.cbLaboratory = new System.Windows.Forms.ComboBox();
             this.cbSample = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnGenerateID = new System.Windows.Forms.Button();
@@ -51,8 +53,6 @@ namespace HospitalManagementSystem
             this.dueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.result = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbLaboratory = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -100,6 +100,19 @@ namespace HospitalManagementSystem
             this.dtpDueDate.Size = new System.Drawing.Size(171, 23);
             this.dtpDueDate.TabIndex = 19;
             // 
+            // cbLaboratory
+            // 
+            this.cbLaboratory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbLaboratory.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbLaboratory.FormattingEnabled = true;
+            this.cbLaboratory.Items.AddRange(new object[] {
+            "Department of Neurology",
+            "Department of Cardiology"});
+            this.cbLaboratory.Location = new System.Drawing.Point(532, 102);
+            this.cbLaboratory.Name = "cbLaboratory";
+            this.cbLaboratory.Size = new System.Drawing.Size(213, 23);
+            this.cbLaboratory.TabIndex = 18;
+            // 
             // cbSample
             // 
             this.cbSample.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -111,6 +124,17 @@ namespace HospitalManagementSystem
             this.cbSample.Name = "cbSample";
             this.cbSample.Size = new System.Drawing.Size(199, 23);
             this.cbSample.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(528, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 21);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Laboratory:";
             // 
             // label6
             // 
@@ -223,6 +247,7 @@ namespace HospitalManagementSystem
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.patientName,
@@ -284,30 +309,6 @@ namespace HospitalManagementSystem
             this.label7.Size = new System.Drawing.Size(97, 30);
             this.label7.TabIndex = 8;
             this.label7.Text = "Lab Tests";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(528, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 21);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Laboratory:";
-            // 
-            // cbLaboratory
-            // 
-            this.cbLaboratory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbLaboratory.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbLaboratory.FormattingEnabled = true;
-            this.cbLaboratory.Items.AddRange(new object[] {
-            "Department of Neurology",
-            "Department of Cardiology"});
-            this.cbLaboratory.Location = new System.Drawing.Point(532, 102);
-            this.cbLaboratory.Name = "cbLaboratory";
-            this.cbLaboratory.Size = new System.Drawing.Size(213, 23);
-            this.cbLaboratory.TabIndex = 18;
             // 
             // ucAcknowledgeTest
             // 

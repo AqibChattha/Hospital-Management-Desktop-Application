@@ -64,11 +64,12 @@ namespace HospitalManagementSystem
             // 
             this.dgvHospitalRevenue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvHospitalRevenue.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvHospitalRevenue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHospitalRevenue.Location = new System.Drawing.Point(5, 178);
+            this.dgvHospitalRevenue.Location = new System.Drawing.Point(15, 178);
             this.dgvHospitalRevenue.Name = "dgvHospitalRevenue";
             this.dgvHospitalRevenue.RowTemplate.Height = 25;
-            this.dgvHospitalRevenue.Size = new System.Drawing.Size(814, 170);
+            this.dgvHospitalRevenue.Size = new System.Drawing.Size(791, 170);
             this.dgvHospitalRevenue.TabIndex = 10;
             // 
             // dgvFunds
@@ -76,11 +77,12 @@ namespace HospitalManagementSystem
             this.dgvFunds.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvFunds.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvFunds.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFunds.Location = new System.Drawing.Point(5, 418);
+            this.dgvFunds.Location = new System.Drawing.Point(15, 418);
             this.dgvFunds.Name = "dgvFunds";
             this.dgvFunds.RowTemplate.Height = 25;
-            this.dgvFunds.Size = new System.Drawing.Size(814, 141);
+            this.dgvFunds.Size = new System.Drawing.Size(791, 141);
             this.dgvFunds.TabIndex = 10;
             // 
             // label2
@@ -109,7 +111,7 @@ namespace HospitalManagementSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(5, 362);
+            this.label4.Location = new System.Drawing.Point(11, 365);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 25);
             this.label4.TabIndex = 9;
@@ -119,7 +121,7 @@ namespace HospitalManagementSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(6, 122);
+            this.label5.Location = new System.Drawing.Point(11, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 25);
             this.label5.TabIndex = 9;
@@ -129,7 +131,7 @@ namespace HospitalManagementSystem
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(7, 394);
+            this.label6.Location = new System.Drawing.Point(12, 394);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 21);
             this.label6.TabIndex = 9;
@@ -139,7 +141,7 @@ namespace HospitalManagementSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(7, 154);
+            this.label7.Location = new System.Drawing.Point(12, 154);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 21);
             this.label7.TabIndex = 9;
@@ -150,7 +152,7 @@ namespace HospitalManagementSystem
             this.btnAddFunds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddFunds.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddFunds.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFunds.Location = new System.Drawing.Point(717, 568);
+            this.btnAddFunds.Location = new System.Drawing.Point(704, 565);
             this.btnAddFunds.Name = "btnAddFunds";
             this.btnAddFunds.Size = new System.Drawing.Size(102, 30);
             this.btnAddFunds.TabIndex = 11;
@@ -161,7 +163,7 @@ namespace HospitalManagementSystem
             // 
             this.lbHospitalRevenue.AutoSize = true;
             this.lbHospitalRevenue.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbHospitalRevenue.Location = new System.Drawing.Point(154, 122);
+            this.lbHospitalRevenue.Location = new System.Drawing.Point(161, 125);
             this.lbHospitalRevenue.Name = "lbHospitalRevenue";
             this.lbHospitalRevenue.Size = new System.Drawing.Size(22, 25);
             this.lbHospitalRevenue.TabIndex = 9;
@@ -171,7 +173,7 @@ namespace HospitalManagementSystem
             // 
             this.lbFunds.AutoSize = true;
             this.lbFunds.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbFunds.Location = new System.Drawing.Point(160, 362);
+            this.lbFunds.Location = new System.Drawing.Point(162, 365);
             this.lbFunds.Name = "lbFunds";
             this.lbFunds.Size = new System.Drawing.Size(22, 25);
             this.lbFunds.TabIndex = 9;

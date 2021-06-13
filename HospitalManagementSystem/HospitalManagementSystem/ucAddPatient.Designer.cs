@@ -36,8 +36,8 @@ namespace HospitalManagementSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label29 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.btnAddToQueue = new System.Windows.Forms.Button();
+            this.btnClearOutPatient = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -57,8 +57,8 @@ namespace HospitalManagementSystem
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAddToData = new System.Windows.Forms.Button();
+            this.btnClearInPatient = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -74,8 +74,8 @@ namespace HospitalManagementSystem
             this.panel4 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnAddToData2 = new System.Windows.Forms.Button();
+            this.btnClearIllStaff = new System.Windows.Forms.Button();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
@@ -148,8 +148,8 @@ namespace HospitalManagementSystem
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.dateTimePicker3);
             this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.btnClear);
+            this.panel1.Controls.Add(this.btnAddToQueue);
+            this.panel1.Controls.Add(this.btnClearOutPatient);
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton1);
@@ -194,30 +194,31 @@ namespace HospitalManagementSystem
             this.label29.TabIndex = 1;
             this.label29.Text = "Out Patient";
             // 
-            // btnAdd
+            // btnAddToQueue
             // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(694, 437);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(90, 30);
-            this.btnAdd.TabIndex = 18;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAddToQueue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddToQueue.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddToQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToQueue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddToQueue.Location = new System.Drawing.Point(694, 437);
+            this.btnAddToQueue.Name = "btnAddToQueue";
+            this.btnAddToQueue.Size = new System.Drawing.Size(90, 30);
+            this.btnAddToQueue.TabIndex = 18;
+            this.btnAddToQueue.Text = "Add";
+            this.btnAddToQueue.UseVisualStyleBackColor = false;
+            this.btnAddToQueue.Click += new System.EventHandler(this.btnAddToQueue_Click);
             // 
-            // btnClear
+            // btnClearOutPatient
             // 
-            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClear.Location = new System.Drawing.Point(598, 437);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(90, 30);
-            this.btnClear.TabIndex = 18;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClearOutPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearOutPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearOutPatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearOutPatient.Location = new System.Drawing.Point(598, 437);
+            this.btnClearOutPatient.Name = "btnClearOutPatient";
+            this.btnClearOutPatient.Size = new System.Drawing.Size(90, 30);
+            this.btnClearOutPatient.TabIndex = 18;
+            this.btnClearOutPatient.Text = "Clear";
+            this.btnClearOutPatient.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
@@ -380,8 +381,8 @@ namespace HospitalManagementSystem
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dateTimePicker2);
             this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.btnAddToData);
+            this.panel3.Controls.Add(this.btnClearInPatient);
             this.panel3.Controls.Add(this.richTextBox2);
             this.panel3.Controls.Add(this.radioButton3);
             this.panel3.Controls.Add(this.radioButton4);
@@ -421,30 +422,31 @@ namespace HospitalManagementSystem
             this.label15.TabIndex = 1;
             this.label15.Text = "In Patient";
             // 
-            // button1
+            // btnAddToData
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(694, 437);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 30);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddToData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddToData.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddToData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToData.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddToData.Location = new System.Drawing.Point(694, 437);
+            this.btnAddToData.Name = "btnAddToData";
+            this.btnAddToData.Size = new System.Drawing.Size(90, 30);
+            this.btnAddToData.TabIndex = 18;
+            this.btnAddToData.Text = "Add";
+            this.btnAddToData.UseVisualStyleBackColor = false;
+            this.btnAddToData.Click += new System.EventHandler(this.btnAddToData_Click);
             // 
-            // button3
+            // btnClearInPatient
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(598, 437);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 30);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnClearInPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearInPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearInPatient.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearInPatient.Location = new System.Drawing.Point(598, 437);
+            this.btnClearInPatient.Name = "btnClearInPatient";
+            this.btnClearInPatient.Size = new System.Drawing.Size(90, 30);
+            this.btnClearInPatient.TabIndex = 18;
+            this.btnClearInPatient.Text = "Clear";
+            this.btnClearInPatient.UseVisualStyleBackColor = true;
             // 
             // richTextBox2
             // 
@@ -573,8 +575,8 @@ namespace HospitalManagementSystem
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.dateTimePicker1);
             this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.btnAddToData2);
+            this.panel4.Controls.Add(this.btnClearIllStaff);
             this.panel4.Controls.Add(this.richTextBox3);
             this.panel4.Controls.Add(this.radioButton5);
             this.panel4.Controls.Add(this.radioButton6);
@@ -619,30 +621,31 @@ namespace HospitalManagementSystem
             this.label14.TabIndex = 1;
             this.label14.Text = "Ill Staff";
             // 
-            // button4
+            // btnAddToData2
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(694, 437);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 30);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Add";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAddToData2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddToData2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddToData2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToData2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddToData2.Location = new System.Drawing.Point(694, 437);
+            this.btnAddToData2.Name = "btnAddToData2";
+            this.btnAddToData2.Size = new System.Drawing.Size(90, 30);
+            this.btnAddToData2.TabIndex = 18;
+            this.btnAddToData2.Text = "Add";
+            this.btnAddToData2.UseVisualStyleBackColor = false;
+            this.btnAddToData2.Click += new System.EventHandler(this.btnAddToData2_Click);
             // 
-            // button6
+            // btnClearIllStaff
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(598, 437);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(90, 30);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnClearIllStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearIllStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearIllStaff.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearIllStaff.Location = new System.Drawing.Point(598, 437);
+            this.btnClearIllStaff.Name = "btnClearIllStaff";
+            this.btnClearIllStaff.Size = new System.Drawing.Size(90, 30);
+            this.btnClearIllStaff.TabIndex = 18;
+            this.btnClearIllStaff.Text = "Clear";
+            this.btnClearIllStaff.UseVisualStyleBackColor = true;
             // 
             // richTextBox3
             // 
@@ -829,8 +832,8 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.ComboBox cbPatientType;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnAddToQueue;
+        private System.Windows.Forms.Button btnClearOutPatient;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -849,8 +852,8 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAddToData;
+        private System.Windows.Forms.Button btnClearInPatient;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
@@ -866,8 +869,8 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnAddToData2;
+        private System.Windows.Forms.Button btnClearIllStaff;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;

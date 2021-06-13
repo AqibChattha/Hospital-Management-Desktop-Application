@@ -13,49 +13,124 @@ namespace HospitalManagementSystem
         public LogInForm()
         {
             InitializeComponent();
+
             label3.Text = "";
-            label4.Text = "";
+
+            //for removing the default mouse hover effect
+            rbtnLogin.FlatAppearance.MouseOverBackColor = rbtnLogin.BackColor;
+            rbtnLogin.BackColorChanged += (s, e) => {
+                rbtnLogin.FlatAppearance.MouseOverBackColor = rbtnLogin.BackColor;
+            };
+            rbtnExit.FlatAppearance.MouseOverBackColor = rbtnExit.BackColor;
+            rbtnExit.BackColorChanged += (s, e) => {
+                rbtnExit.FlatAppearance.MouseOverBackColor = rbtnExit.BackColor;
+            };
+
+            btnHidePassword.FlatAppearance.BorderSize = 0;
+            btnShowPassword.FlatAppearance.BorderSize = 0;
+            btnHidePassword.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Login()
         {
-            if (txtEmailField.Text.Equals(""))
+            if (txtEmailField.Text.Equals("admin") && txtPasswordField.Text.Equals("admin"))
             {
-                label3.Text = "Empty Email";
-
+                this.Hide();
+                MainForn mainForn = new MainForn();
+                mainForn.ShowDialog();
+                this.Close();
             }
             else
             {
-                label3.Text = "";
-                
+                label3.Text = "Invalid Credentials";
             }
-            if (txtPasswordField.Text.Equals(""))
-            {
-                label4.Text = "Empty Password";
-            }
-            else
-            {
-               
-                label4.Text = "";
-            }
-            
         }
 
-        private void chboxPass_CheckedChanged(object sender, EventArgs e)
+        private void rbtnLogin_Click(object sender, EventArgs e)
         {
-            if (chboxPass.Checked == true) {
-               
-                txtPasswordField.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                txtPasswordField.UseSystemPasswordChar = true;
-            }
+            label4.Focus();
+            Login();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void rbtnLogin_MouseEnter(object sender, EventArgs e)
+        {
+            rbtnLogin.BorderSize = 0;
+            rbtnLogin.BackColor = Color.FromArgb(0, 156, 208);
+            rbtnLogin.ForeColor = Color.White;
+        }
+
+        private void rbtnLogin_MouseLeave(object sender, EventArgs e)
+        {
+            rbtnLogin.BorderSize = 1;
+            rbtnLogin.BackColor = Color.FromArgb(250, 249, 246);
+            rbtnLogin.ForeColor = Color.FromArgb(0, 156, 208);
+        }
+
+        private void lbExit_Click(object sender, EventArgs e)
+        {
+            label4.Focus();
+            System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void btnShowPassword_Click(object sender, EventArgs e)
+        {
+            label4.Focus();
+            txtPasswordField.UseSystemPasswordChar = false;
+            btnShowPassword.Visible = false;
+            btnHidePassword.Visible = true;
+            SendKeys.Send("{TAB}");
+        }
+
+        private void btnHidePassword_Click(object sender, EventArgs e)
+        {
+            label4.Focus();
+            txtPasswordField.UseSystemPasswordChar = true;
+            btnHidePassword.Visible = false;
+            btnShowPassword.Visible = true;
+            SendKeys.Send("{TAB}");
+        }
+
+        private void rbtnExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.ExitThread();
+        }
+
+        private void rbtnExit_MouseEnter(object sender, EventArgs e)
+        {
+            rbtnExit.BorderSize = 0;
+            rbtnExit.BackColor = Color.FromArgb(0, 156, 208);
+            rbtnExit.ForeColor = Color.White;
+        }
+
+        private void rbtnExit_MouseLeave(object sender, EventArgs e)
+        {
+            rbtnExit.BorderSize = 1;
+            rbtnExit.BackColor = Color.FromArgb(250, 249, 246);
+            rbtnExit.ForeColor = Color.FromArgb(0, 156, 208);
+        }
+
+        private void txtEmailField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");        
+            }
+        }
+
+        private void txtPasswordField_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (txtEmailField.Text.Equals(""))
+                {
+                    SendKeys.Send("+{TAB}");
+                }
+                else
+                {
+                    Login();
+                }
+            }
         }
     }
 }

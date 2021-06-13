@@ -30,8 +30,8 @@ namespace HospitalManagementSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSurgeonsData));
-            this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtSearchSurgeon = new System.Windows.Forms.TextBox();
             this.btnRegisterSurgeon = new System.Windows.Forms.Button();
             this.dtvSurgeons = new System.Windows.Forms.DataGridView();
@@ -45,26 +45,26 @@ namespace HospitalManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.dtvSurgeons)).BeginInit();
             this.SuspendLayout();
             // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(354, 10);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 30);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "Surgeons";
-            // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(559, 67);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(354, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Search";
+            this.label1.Size = new System.Drawing.Size(99, 30);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Surgeons";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(559, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 15);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Search";
             // 
             // txtSearchSurgeon
             // 
@@ -168,8 +168,8 @@ namespace HospitalManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSearchSurgeon);
             this.Controls.Add(this.btnRegisterSurgeon);
             this.Controls.Add(this.dtvSurgeons);
@@ -183,8 +183,8 @@ namespace HospitalManagementSystem
 
         #endregion
 
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSearchSurgeon;
         private System.Windows.Forms.Button btnRegisterSurgeon;
         private System.Windows.Forms.DataGridView dtvSurgeons;

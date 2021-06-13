@@ -28,18 +28,5 @@ namespace HospitalManagementSystem
             dtvPatients.AllowUserToAddRows = false;
         }
 
-        private void btnRegisterPatient_Click(object sender, EventArgs e)
-        {
-            if (!MainForn.main_Panel.Controls.Contains(ucAddPatient.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAddPatient.Instence);
-                ucAddPatient.Instence.Dock = DockStyle.Fill;
-                ucAddPatient.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddPatient.Instence.BringToFront();
-            }
-        }
     }
 }
