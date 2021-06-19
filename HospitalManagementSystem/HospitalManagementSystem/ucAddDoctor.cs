@@ -36,12 +36,12 @@ namespace HospitalManagementSystem
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
             cbDepartment.Text = "";
-            dateTimePicker1.Value = DateTime.Today;
-            dateTimePicker2.Value =DateTime.Today;
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value =DateTime.Today;
             cbDepartment.Text = "";
             cbQualification.Text = "";
             radioButton1.Checked = false;
-            radioButton2.Checked = false;
+            rbtnFemale.Checked = false;
             nupSalary.Value = 0;
             
 
@@ -59,6 +59,32 @@ namespace HospitalManagementSystem
             {
                 ucDoctorsData.Instence.BringToFront();
             }
+        }
+
+        private void btnAddInput_Click(object sender, EventArgs e)
+        {
+            String doctor_Name = txtName.Text;
+            String doctor_Cnic = txtCnic.Text;
+            String doctor_PhoneNumber = txtPhoneNo.Text;
+            String doctor_Email = txtEmail.Text;
+            String doctor_PAssworsd = txtPassword.Text;
+            String doctor_Qualification = cbQualification.SelectedItem.ToString();
+            String doctor_Address = txtAddress.Text;
+            String doctor_Gender;
+            if (rbtnFemale.Checked)
+            {
+                doctor_Gender = "Female";
+            }
+            else
+            {
+                doctor_Gender = "Male";
+            }
+            int doctor_Salary = (int)nudSalary.Value;
+            DateTime doctorDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime doctor_WHstart = dtpWHstart.Value;
+            DateTime doctor_WHend = dtpWHend.Value;
+
+            MessageBox.Show(doctor_Name + "\n" + doctor_Cnic + "\n" + doctor_PhoneNumber + "\n" + doctor_Qualification + "\n" + doctor_Gender + "\n" + doctor_Salary + "\n" + doctor_WHstart + "\n" + doctor_WHend);
         }
     }
 }

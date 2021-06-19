@@ -40,5 +40,29 @@ namespace HospitalManagementSystem
                 ucOtherStaffData.Instence.BringToFront();
             }
         }
+
+        private void btnAddOtherStaffInput_Click(object sender, EventArgs e)
+        {
+            String othEmp_Name = txtName.Text;
+            String othEmp_Cnic = txtCnic.Text;
+            String othEmp_PhoneNumber = txtPhoneNo.Text;
+
+            String othEmp_Address = txtAddress.Text;
+            String othEmp_Gender;
+            if (rbtnFemale.Checked)
+            {
+                othEmp_Gender = "Female";
+            }
+            else
+            {
+                othEmp_Gender = "Male";
+            }
+            int othEmp_Salary = (int)nudSalary.Value;
+            DateTime othEmpDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime othEmp_WHstart = dtpWHstart.Value;
+            DateTime othEmp_WHend = dtpWHend.Value;
+
+            MessageBox.Show(othEmp_Name + "\n" + othEmp_Cnic + "\n" + othEmp_PhoneNumber + "\n" + othEmp_Gender + "\n" + othEmp_Salary + "\n" + othEmp_WHstart + "\n" + othEmp_WHend);
+        }
     }
 }

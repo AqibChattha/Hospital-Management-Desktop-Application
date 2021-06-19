@@ -33,10 +33,10 @@ namespace HospitalManagementSystem
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClearOStaffInput = new System.Windows.Forms.Button();
-            this.btnAddOtherStaffInput = new System.Windows.Forms.Button();
-            this.dtpEndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtpWHstart = new System.Windows.Forms.Button();
+            this.dtpWHend = new System.Windows.Forms.DateTimePicker();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.dtpStartTime = new System.Windows.Forms.DateTimePicker();
+            this.dtpstartTime = new System.Windows.Forms.DateTimePicker();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.nudSalary = new System.Windows.Forms.NumericUpDown();
@@ -72,10 +72,10 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnClearOStaffInput);
-            this.panel1.Controls.Add(this.btnAddOtherStaffInput);
-            this.panel1.Controls.Add(this.dtpEndTime);
+            this.panel1.Controls.Add(this.dtpWHstart);
+            this.panel1.Controls.Add(this.dtpWHend);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
-            this.panel1.Controls.Add(this.dtpStartTime);
+            this.panel1.Controls.Add(this.dtpstartTime);
             this.panel1.Controls.Add(this.rbtnFemale);
             this.panel1.Controls.Add(this.rbtnMale);
             this.panel1.Controls.Add(this.nudSalary);
@@ -141,28 +141,29 @@ namespace HospitalManagementSystem
             this.btnClearOStaffInput.Text = "Clear";
             this.btnClearOStaffInput.UseVisualStyleBackColor = true;
             // 
-            // btnAddOtherStaffInput
+            // dtpWHstart
             // 
-            this.btnAddOtherStaffInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddOtherStaffInput.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddOtherStaffInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddOtherStaffInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddOtherStaffInput.Location = new System.Drawing.Point(680, 436);
-            this.btnAddOtherStaffInput.Name = "btnAddOtherStaffInput";
-            this.btnAddOtherStaffInput.Size = new System.Drawing.Size(90, 30);
-            this.btnAddOtherStaffInput.TabIndex = 14;
-            this.btnAddOtherStaffInput.Text = "Add";
-            this.btnAddOtherStaffInput.UseVisualStyleBackColor = false;
+            this.dtpWHstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpWHstart.BackColor = System.Drawing.Color.Gainsboro;
+            this.dtpWHstart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dtpWHstart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpWHstart.Location = new System.Drawing.Point(680, 436);
+            this.dtpWHstart.Name = "dtpWHstart";
+            this.dtpWHstart.Size = new System.Drawing.Size(90, 30);
+            this.dtpWHstart.TabIndex = 14;
+            this.dtpWHstart.Text = "Add";
+            this.dtpWHstart.UseVisualStyleBackColor = false;
+            this.dtpWHstart.Click += new System.EventHandler(this.btnAddOtherStaffInput_Click);
             // 
-            // dtpEndTime
+            // dtpWHend
             // 
-            this.dtpEndTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpEndTime.Location = new System.Drawing.Point(454, 194);
-            this.dtpEndTime.Name = "dtpEndTime";
-            this.dtpEndTime.Size = new System.Drawing.Size(96, 23);
-            this.dtpEndTime.TabIndex = 0;
-            this.dtpEndTime.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
+            this.dtpWHend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpWHend.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpWHend.Location = new System.Drawing.Point(454, 194);
+            this.dtpWHend.Name = "dtpWHend";
+            this.dtpWHend.Size = new System.Drawing.Size(96, 23);
+            this.dtpWHend.TabIndex = 0;
+            this.dtpWHend.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
             // dtpDateOfBirth
             // 
@@ -174,15 +175,15 @@ namespace HospitalManagementSystem
             this.dtpDateOfBirth.TabIndex = 11;
             this.dtpDateOfBirth.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
-            // dtpStartTime
+            // dtpstartTime
             // 
-            this.dtpStartTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpStartTime.Location = new System.Drawing.Point(330, 194);
-            this.dtpStartTime.Name = "dtpStartTime";
-            this.dtpStartTime.Size = new System.Drawing.Size(94, 23);
-            this.dtpStartTime.TabIndex = 11;
-            this.dtpStartTime.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
+            this.dtpstartTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpstartTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpstartTime.Location = new System.Drawing.Point(330, 194);
+            this.dtpstartTime.Name = "dtpstartTime";
+            this.dtpstartTime.Size = new System.Drawing.Size(94, 23);
+            this.dtpstartTime.TabIndex = 11;
+            this.dtpstartTime.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
             // rbtnFemale
             // 
@@ -437,10 +438,10 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnClearOStaffInput;
-        private System.Windows.Forms.Button btnAddOtherStaffInput;
+        private System.Windows.Forms.Button dtpWHstart;
         private System.Windows.Forms.DateTimePicker dtpEndTime;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
-        private System.Windows.Forms.DateTimePicker dtpStartTime;
+        private System.Windows.Forms.DateTimePicker dtpstartTime;
         private System.Windows.Forms.RadioButton rbtnFemale;
         private System.Windows.Forms.RadioButton rbtnMale;
         private System.Windows.Forms.NumericUpDown nudSalary;
@@ -464,5 +465,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtpWHend;
     }
 }

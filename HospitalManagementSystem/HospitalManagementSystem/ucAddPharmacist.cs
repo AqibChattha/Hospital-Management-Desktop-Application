@@ -40,8 +40,8 @@ namespace HospitalManagementSystem
             txtEmail.Text = "";
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
-            dtpStartTime.Value = DateTime.Today;
-            dtpEndTime.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            dtpWHend.Value = DateTime.Today;
             cbQualification.Text = "";
             rbtnMale.Checked = false;
             rbtnFemale.Checked = false;
@@ -61,6 +61,31 @@ namespace HospitalManagementSystem
             {
                 ucPharmacistData.Instence.BringToFront();
             }
+        }
+
+        private void btnAddPharmacistInput_Click(object sender, EventArgs e)
+        {
+            String pharmacist_Name = txtName.Text;
+            String pharmacist_Cnic = txtCnic.Text;
+            String pharmacist_PhoneNumber = txtPhoneNo.Text;
+            String pharmacist_Email = txtEmail.Text;
+            String pharmacist_PAssworsd = txtPassword.Text;
+            String pharmacist_Qualification = cbQualification.SelectedItem.ToString();
+            String pharmacist_Address = txtAddress.Text;
+            String pharmacist_Gender;
+            if (rbtnFemale.Checked)
+            {
+                pharmacist_Gender = "Female";
+            }
+            else
+            {
+                pharmacist_Gender = "Male";
+            }
+            int pharmacist_Salary = (int)nudSalary.Value;
+            DateTime pharmacistDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime pharmacist_WHstart = dtpWHstart.Value;
+            DateTime pharmacist_WHend = dtpWHend.Value;
+            MessageBox.Show(pharmacist_Name + "\n" + pharmacist_Cnic + "\n" + pharmacist_PhoneNumber + "\n" + pharmacist_Qualification + "\n" + pharmacist_Gender + "\n" + pharmacist_Salary + "\n" + pharmacist_WHstart + "\n" + pharmacist_WHend);
         }
     }
 }

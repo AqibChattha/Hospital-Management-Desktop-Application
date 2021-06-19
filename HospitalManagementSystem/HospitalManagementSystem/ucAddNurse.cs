@@ -49,12 +49,37 @@ namespace HospitalManagementSystem
             txtEmail.Text = "";
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
-            dtpStartTime.Value = DateTime.Today;
-            dtpEndTime.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            dtpWHend.Value = DateTime.Today;
             cbQualification.Text = "";
             rbtnMale.Checked = false;
             rbtnFemale.Checked = false;
             nudSalary.Value = 0;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String nurse_Name = txtName.Text;
+            String nurse_Cnic = txtCnic.Text;
+            String nurse_PhoneNumber = txtPhoneNo.Text;
+            String nurse_Email = txtEmail.Text;
+            String nurse_PAssworsd = txtPassword.Text;
+            String nurse_Qualification = cbQualification.SelectedItem.ToString();
+            String nurse_Address = txtAddress.Text;
+            String nurse_Gender;
+            if (rbtnFemale.Checked)
+            {
+                nurse_Gender = "Female";
+            }
+            else
+            {
+                nurse_Gender = "Male";
+            }
+            int nurse_Salary = (int)nudSalary.Value;
+            DateTime nurseDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime nurse_WHstart = dtpWHstart.Value;
+            DateTime nurse_WHend = dtpWHend.Value;
+            MessageBox.Show(nurse_Name + "\n" + nurse_Cnic + "\n"+nurse_PhoneNumber+"\n"+nurse_Qualification+"\n"+nurse_Gender+"\n"+nurse_Salary+"\n"+nurse_WHstart+"\n"+nurse_WHend);
         }
     }
 }

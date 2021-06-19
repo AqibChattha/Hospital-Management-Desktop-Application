@@ -40,5 +40,30 @@ namespace HospitalManagementSystem
                 ucLaboratoryTechniciansData.Instence.BringToFront();
             }
         }
+
+        private void btnAddLabTechInput_Click(object sender, EventArgs e)
+        {
+            String LabTech_Name = txtName.Text;
+            String LabTech_Cnic = txtCnic.Text;
+            String LabTech_PhoneNumber = txtPhoneNo.Text;
+            String LabTech_Email = txtEmail.Text;
+            String LabTech_PAssworsd = txtPassword.Text;
+            String LabTech_Qualification = cbQualification.SelectedItem.ToString();
+            String LabTech_Address = txtAddress.Text;
+            String LabTech_Gender;
+            if (rbtnFemale.Checked)
+            {
+                LabTech_Gender = "Female";
+            }
+            else
+            {
+                LabTech_Gender = "Male";
+            }
+            int LabTech_Salary = (int)nudSalary.Value;
+            DateTime LabTechDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime LabTech_WHstart = dtpWHstart.Value;
+            DateTime LabTech_WHend = dtpWHend.Value;
+            MessageBox.Show(LabTech_Name + "\n" + LabTech_Cnic + "\n" + LabTech_PhoneNumber + "\n" + LabTech_Qualification + "\n" + LabTech_Gender + "\n" + LabTech_Salary + "\n" + LabTech_WHstart + "\n" + LabTech_WHend);
+        }
     }
 }

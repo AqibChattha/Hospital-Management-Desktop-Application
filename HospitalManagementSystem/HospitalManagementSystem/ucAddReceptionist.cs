@@ -40,5 +40,31 @@ namespace HospitalManagementSystem
                 ucReceptionistsData.Instence.BringToFront();
             }
         }
+
+        private void btnAddReceptionistInput_Click(object sender, EventArgs e)
+        {
+            String receptionist_Name = txtName.Text;
+            String receptionist_Cnic = txtCnic.Text;
+            String receptionist_PhoneNumber = txtPhoneNo.Text;
+            String receptionist_Email = txtEmail.Text;
+            String receptionist_PAssworsd = txtPassword.Text;
+            String receptionist_Qualification = cbQualification.SelectedItem.ToString();
+            String receptionist_Address = txtAddress.Text;
+            String receptionist_Gender;
+            if (rbtnFemale.Checked)
+            {
+                receptionist_Gender = "Female";
+            }
+            else
+            {
+                receptionist_Gender = "Male";
+            }
+            int receptionist_Salary = (int)nudSalary.Value;
+            DateTime receptionistDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime receptionist_WHstart = dtpWHstart.Value;
+            DateTime receptionist_WHend = dtpWHend.Value;
+
+            MessageBox.Show(receptionist_Name + "\n" + receptionist_Cnic + "\n" + receptionist_PhoneNumber + "\n" + receptionist_Qualification + "\n" + receptionist_Gender + "\n" + receptionist_Salary + "\n" + receptionist_WHstart + "\n" + receptionist_WHend);
+        }
     }
 }

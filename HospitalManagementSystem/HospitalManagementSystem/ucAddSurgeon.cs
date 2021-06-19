@@ -40,5 +40,31 @@ namespace HospitalManagementSystem
                 ucSurgeonsData.Instence.BringToFront();
             }
         }
+
+        private void btnAddSurgeonInput_Click(object sender, EventArgs e)
+        {
+            String surgeon_Name = txtName.Text;
+            String surgeon_Cnic = txtCnic.Text;
+            String surgeon_PhoneNumber = txtPhoneNo.Text;
+            String surgeon_Email = txtEmail.Text;
+            String surgeon_PAssworsd = txtPassword.Text;
+            String surgeon_Qualification = cbQualification.SelectedItem.ToString();
+            String surgeon_Address = txtAddress.Text;
+            String surgeon_Gender;
+            if (rbtnFemale.Checked)
+            {
+                surgeon_Gender = "Female";
+            }
+            else
+            {
+                surgeon_Gender = "Male";
+            }
+            int surgeon_Salary = (int)nudSalary.Value;
+            DateTime surgeonDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime surgeon_WHstart = dtpWHstart.Value;
+            DateTime surgeon_WHend = dtpWHend.Value;
+            
+            MessageBox.Show(surgeon_Name + "\n" + surgeon_Cnic + "\n" + surgeon_PhoneNumber + "\n" + surgeon_Qualification + "\n" + surgeon_Gender + "\n" + surgeon_Salary + "\n" + surgeon_WHstart + "\n" + surgeon_WHend);
+        }
     }
 }

@@ -94,7 +94,26 @@ namespace HospitalManagementSystem
 
         private void btnAddToData2_Click(object sender, EventArgs e)
         {
+            String illpatient_Name = txtName.Text;
+            String illpatient_Cnic = txtCnic.Text;
+            String illpatient_PhoneNumber = txtPhoneNo.Text;
+            String illpatient_Email = txtEmail.Text;
+            String illpatient_PAssworsd = txtPassword.Text;
+           
+            String illpatient_Address = txtAddress.Text;
+            String illpatient_Gender;
+            if (rbtnFemale.Checked)
+            {
+                illpatient_Gender = "Female";
+            }
+            else
+            {
+                illpatient_Gender = "Male";
+            }
+           
+            DateTime illpatientDate_OF_Birth = dtpDateOfBirth.Value;
 
+            MessageBox.Show(illpatient_Name + "\n" + illpatient_Cnic + "\n" + illpatient_PhoneNumber + "\n" + illpatient_Gender  + "\n");
 
             //code here...
 
@@ -108,6 +127,7 @@ namespace HospitalManagementSystem
             {
                 ucPatientsData.Instence.BringToFront();
             }
+
         }
     }
 }
