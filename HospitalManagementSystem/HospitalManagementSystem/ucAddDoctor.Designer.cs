@@ -51,7 +51,7 @@ namespace HospitalManagementSystem
             this.label13 = new System.Windows.Forms.Label();
             this.nudSalary = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.dtpWHend = new System.Windows.Forms.DateTimePicker();
@@ -304,16 +304,16 @@ namespace HospitalManagementSystem
             this.label14.TabIndex = 13;
             this.label14.Text = "From";
             // 
-            // radioButton1
+            // rbtnMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(75, 172);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(51, 19);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.Location = new System.Drawing.Point(75, 172);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(51, 19);
+            this.rbtnMale.TabIndex = 10;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Male";
+            this.rbtnMale.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -369,7 +369,7 @@ namespace HospitalManagementSystem
             this.panelAddDoctorInfo.Controls.Add(this.dtpWHend);
             this.panelAddDoctorInfo.Controls.Add(this.rbtnFemale);
             this.panelAddDoctorInfo.Controls.Add(this.label15);
-            this.panelAddDoctorInfo.Controls.Add(this.radioButton1);
+            this.panelAddDoctorInfo.Controls.Add(this.rbtnMale);
             this.panelAddDoctorInfo.Controls.Add(this.label14);
             this.panelAddDoctorInfo.Controls.Add(this.nudSalary);
             this.panelAddDoctorInfo.Controls.Add(this.label13);
@@ -492,7 +492,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown nupSalary;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbtnMale;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.RadioButton rbtnFemale;
         private System.Windows.Forms.DateTimePicker dtpWHend;

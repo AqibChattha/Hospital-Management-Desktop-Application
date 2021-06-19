@@ -41,7 +41,7 @@ namespace HospitalManagementSystem
             }
         }
 
-        private void btnAddOtherStaffInput_Click(object sender, EventArgs e)
+        private void btnAddInput_Click(object sender, EventArgs e)
         {
             String othEmp_Name = txtName.Text;
             String othEmp_Cnic = txtCnic.Text;
@@ -63,6 +63,19 @@ namespace HospitalManagementSystem
             DateTime othEmp_WHend = dtpWHend.Value;
 
             MessageBox.Show(othEmp_Name + "\n" + othEmp_Cnic + "\n" + othEmp_PhoneNumber + "\n" + othEmp_Gender + "\n" + othEmp_Salary + "\n" + othEmp_WHstart + "\n" + othEmp_WHend);
+        }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
         }
     }
 }

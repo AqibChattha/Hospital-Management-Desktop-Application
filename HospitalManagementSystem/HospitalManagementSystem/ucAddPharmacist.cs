@@ -27,27 +27,6 @@ namespace HospitalManagementSystem
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            txtName.Text = "";
-            txtCnic.Text = "";
-            txtPassword.Text = "";
-            txtEmail.Text = "";
-            txtPhoneNo.Text = "";
-            txtAddress.Text = "";
-            dtpWHstart.Value = DateTime.Today;
-            dtpWHend.Value = DateTime.Today;
-            cbQualification.Text = "";
-            rbtnMale.Checked = false;
-            rbtnFemale.Checked = false;
-            nudSalary.Value = 0;
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
 
@@ -63,7 +42,7 @@ namespace HospitalManagementSystem
             }
         }
 
-        private void btnAddPharmacistInput_Click(object sender, EventArgs e)
+        private void btnAddInput_Click(object sender, EventArgs e)
         {
             String pharmacist_Name = txtName.Text;
             String pharmacist_Cnic = txtCnic.Text;
@@ -85,7 +64,24 @@ namespace HospitalManagementSystem
             DateTime pharmacistDate_OF_Birth = dtpDateOfBirth.Value;
             DateTime pharmacist_WHstart = dtpWHstart.Value;
             DateTime pharmacist_WHend = dtpWHend.Value;
+
             MessageBox.Show(pharmacist_Name + "\n" + pharmacist_Cnic + "\n" + pharmacist_PhoneNumber + "\n" + pharmacist_Qualification + "\n" + pharmacist_Gender + "\n" + pharmacist_Salary + "\n" + pharmacist_WHstart + "\n" + pharmacist_WHend);
+        }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            cbQualification.Text = "";
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
         }
     }
 }

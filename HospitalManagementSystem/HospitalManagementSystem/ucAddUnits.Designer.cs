@@ -32,36 +32,40 @@ namespace HospitalManagementSystem
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelWard = new System.Windows.Forms.Panel();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.nudWardNo = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnClearWardData = new System.Windows.Forms.Button();
+            this.btnAddWardData = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbRating = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.btnAddWardData = new System.Windows.Forms.Button();
-            this.btnClearWardData = new System.Windows.Forms.Button();
+            this.txtAddress = new System.Windows.Forms.RichTextBox();
+            this.txtName1 = new System.Windows.Forms.TextBox();
             this.panelLaboratory = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnAddLaboratoryData = new System.Windows.Forms.Button();
             this.btnClearLabortoryData = new System.Windows.Forms.Button();
+            this.btnAddLaboratoryData = new System.Windows.Forms.Button();
+            this.txtAddress2 = new System.Windows.Forms.RichTextBox();
+            this.txtName2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelPharmacy = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnClearPharmacyData = new System.Windows.Forms.Button();
+            this.btnAddPharmacyData = new System.Windows.Forms.Button();
+            this.txtAddress3 = new System.Windows.Forms.RichTextBox();
+            this.txtName3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panelOperationTheatre = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnClearOTData = new System.Windows.Forms.Button();
+            this.btnAddOTData = new System.Windows.Forms.Button();
+            this.txtAddress4 = new System.Windows.Forms.RichTextBox();
+            this.txtName4 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.panelBloodBank = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -69,24 +73,20 @@ namespace HospitalManagementSystem
             this.btnClearBloodBankData = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.btnAddBloodBankData = new System.Windows.Forms.Button();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAddress5 = new System.Windows.Forms.RichTextBox();
+            this.txtName5 = new System.Windows.Forms.TextBox();
             this.panelDepartment = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnClearDepartmentData = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.btnAddDepartmentData = new System.Windows.Forms.Button();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnAddPharmacyData = new System.Windows.Forms.Button();
-            this.btnClearPharmacyData = new System.Windows.Forms.Button();
-            this.btnAddOTData = new System.Windows.Forms.Button();
-            this.btnClearOTData = new System.Windows.Forms.Button();
+            this.txtAddress6 = new System.Windows.Forms.RichTextBox();
+            this.txtName6 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelWard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWardNo)).BeginInit();
             this.panelLaboratory.SuspendLayout();
             this.panelPharmacy.SuspendLayout();
             this.panelOperationTheatre.SuspendLayout();
@@ -118,30 +118,30 @@ namespace HospitalManagementSystem
             // panelWard
             // 
             this.panelWard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelWard.Controls.Add(this.numericUpDown2);
+            this.panelWard.Controls.Add(this.nudWardNo);
             this.panelWard.Controls.Add(this.label12);
             this.panelWard.Controls.Add(this.btnClearWardData);
             this.panelWard.Controls.Add(this.btnAddWardData);
             this.panelWard.Controls.Add(this.label15);
             this.panelWard.Controls.Add(this.label23);
             this.panelWard.Controls.Add(this.label24);
-            this.panelWard.Controls.Add(this.comboBox1);
+            this.panelWard.Controls.Add(this.cbRating);
             this.panelWard.Controls.Add(this.label25);
-            this.panelWard.Controls.Add(this.richTextBox6);
-            this.panelWard.Controls.Add(this.textBox6);
+            this.panelWard.Controls.Add(this.txtAddress);
+            this.panelWard.Controls.Add(this.txtName1);
             this.panelWard.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelWard.Location = new System.Drawing.Point(0, 68);
             this.panelWard.Name = "panelWard";
             this.panelWard.Size = new System.Drawing.Size(824, 187);
             this.panelWard.TabIndex = 5;
             // 
-            // numericUpDown2
+            // nudWardNo
             // 
-            this.numericUpDown2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDown2.Location = new System.Drawing.Point(179, 67);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown2.TabIndex = 9;
+            this.nudWardNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nudWardNo.Location = new System.Drawing.Point(179, 67);
+            this.nudWardNo.Name = "nudWardNo";
+            this.nudWardNo.Size = new System.Drawing.Size(120, 23);
+            this.nudWardNo.TabIndex = 9;
             // 
             // label12
             // 
@@ -153,6 +153,28 @@ namespace HospitalManagementSystem
             this.label12.Size = new System.Drawing.Size(58, 21);
             this.label12.TabIndex = 8;
             this.label12.Text = "Rating:";
+            // 
+            // btnClearWardData
+            // 
+            this.btnClearWardData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearWardData.Location = new System.Drawing.Point(715, 104);
+            this.btnClearWardData.Name = "btnClearWardData";
+            this.btnClearWardData.Size = new System.Drawing.Size(93, 31);
+            this.btnClearWardData.TabIndex = 7;
+            this.btnClearWardData.Text = "Clear...";
+            this.btnClearWardData.UseVisualStyleBackColor = true;
+            this.btnClearWardData.Click += new System.EventHandler(this.btnClearWardData_Click);
+            // 
+            // btnAddWardData
+            // 
+            this.btnAddWardData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddWardData.Location = new System.Drawing.Point(715, 141);
+            this.btnAddWardData.Name = "btnAddWardData";
+            this.btnAddWardData.Size = new System.Drawing.Size(93, 31);
+            this.btnAddWardData.TabIndex = 7;
+            this.btnAddWardData.Text = "Add...";
+            this.btnAddWardData.UseVisualStyleBackColor = true;
+            this.btnAddWardData.Click += new System.EventHandler(this.btnAddWardData_Click);
             // 
             // label15
             // 
@@ -185,14 +207,14 @@ namespace HospitalManagementSystem
             this.label24.TabIndex = 8;
             this.label24.Text = "Address:";
             // 
-            // comboBox1
+            // cbRating
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(325, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(109, 23);
-            this.comboBox1.TabIndex = 6;
+            this.cbRating.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbRating.FormattingEnabled = true;
+            this.cbRating.Location = new System.Drawing.Point(325, 67);
+            this.cbRating.Name = "cbRating";
+            this.cbRating.Size = new System.Drawing.Size(109, 23);
+            this.cbRating.TabIndex = 6;
             // 
             // label25
             // 
@@ -205,42 +227,22 @@ namespace HospitalManagementSystem
             this.label25.TabIndex = 2;
             this.label25.Text = "Ward";
             // 
-            // richTextBox6
+            // txtAddress
             // 
-            this.richTextBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox6.Location = new System.Drawing.Point(17, 120);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(417, 52);
-            this.richTextBox6.TabIndex = 5;
-            this.richTextBox6.Text = "";
+            this.txtAddress.Location = new System.Drawing.Point(17, 120);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(417, 52);
+            this.txtAddress.TabIndex = 5;
+            this.txtAddress.Text = "";
             // 
-            // textBox6
+            // txtName1
             // 
-            this.textBox6.Location = new System.Drawing.Point(17, 67);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(136, 23);
-            this.textBox6.TabIndex = 1;
-            // 
-            // btnAddWardData
-            // 
-            this.btnAddWardData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddWardData.Location = new System.Drawing.Point(715, 141);
-            this.btnAddWardData.Name = "btnAddWardData";
-            this.btnAddWardData.Size = new System.Drawing.Size(93, 31);
-            this.btnAddWardData.TabIndex = 7;
-            this.btnAddWardData.Text = "Add...";
-            this.btnAddWardData.UseVisualStyleBackColor = true;
-            // 
-            // btnClearWardData
-            // 
-            this.btnClearWardData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearWardData.Location = new System.Drawing.Point(715, 104);
-            this.btnClearWardData.Name = "btnClearWardData";
-            this.btnClearWardData.Size = new System.Drawing.Size(93, 31);
-            this.btnClearWardData.TabIndex = 7;
-            this.btnClearWardData.Text = "Clear...";
-            this.btnClearWardData.UseVisualStyleBackColor = true;
+            this.txtName1.Location = new System.Drawing.Point(17, 67);
+            this.txtName1.Name = "txtName1";
+            this.txtName1.Size = new System.Drawing.Size(136, 23);
+            this.txtName1.TabIndex = 1;
             // 
             // panelLaboratory
             // 
@@ -249,8 +251,8 @@ namespace HospitalManagementSystem
             this.panelLaboratory.Controls.Add(this.label3);
             this.panelLaboratory.Controls.Add(this.btnClearLabortoryData);
             this.panelLaboratory.Controls.Add(this.btnAddLaboratoryData);
-            this.panelLaboratory.Controls.Add(this.richTextBox7);
-            this.panelLaboratory.Controls.Add(this.textBox7);
+            this.panelLaboratory.Controls.Add(this.txtAddress2);
+            this.panelLaboratory.Controls.Add(this.txtName2);
             this.panelLaboratory.Controls.Add(this.label4);
             this.panelLaboratory.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLaboratory.Location = new System.Drawing.Point(0, 255);
@@ -278,22 +280,44 @@ namespace HospitalManagementSystem
             this.label3.TabIndex = 8;
             this.label3.Text = "Address:";
             // 
-            // richTextBox7
+            // btnClearLabortoryData
             // 
-            this.richTextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnClearLabortoryData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearLabortoryData.Location = new System.Drawing.Point(715, 104);
+            this.btnClearLabortoryData.Name = "btnClearLabortoryData";
+            this.btnClearLabortoryData.Size = new System.Drawing.Size(93, 31);
+            this.btnClearLabortoryData.TabIndex = 7;
+            this.btnClearLabortoryData.Text = "Clear...";
+            this.btnClearLabortoryData.UseVisualStyleBackColor = true;
+            this.btnClearLabortoryData.Click += new System.EventHandler(this.btnClearLabortoryData_Click);
+            // 
+            // btnAddLaboratoryData
+            // 
+            this.btnAddLaboratoryData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddLaboratoryData.Location = new System.Drawing.Point(715, 141);
+            this.btnAddLaboratoryData.Name = "btnAddLaboratoryData";
+            this.btnAddLaboratoryData.Size = new System.Drawing.Size(93, 31);
+            this.btnAddLaboratoryData.TabIndex = 7;
+            this.btnAddLaboratoryData.Text = "Add...";
+            this.btnAddLaboratoryData.UseVisualStyleBackColor = true;
+            this.btnAddLaboratoryData.Click += new System.EventHandler(this.btnAddLaboratoryData_Click);
+            // 
+            // txtAddress2
+            // 
+            this.txtAddress2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox7.Location = new System.Drawing.Point(17, 120);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(417, 52);
-            this.richTextBox7.TabIndex = 5;
-            this.richTextBox7.Text = "";
+            this.txtAddress2.Location = new System.Drawing.Point(17, 120);
+            this.txtAddress2.Name = "txtAddress2";
+            this.txtAddress2.Size = new System.Drawing.Size(417, 52);
+            this.txtAddress2.TabIndex = 5;
+            this.txtAddress2.Text = "";
             // 
-            // textBox7
+            // txtName2
             // 
-            this.textBox7.Location = new System.Drawing.Point(17, 67);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(215, 23);
-            this.textBox7.TabIndex = 1;
+            this.txtName2.Location = new System.Drawing.Point(17, 67);
+            this.txtName2.Name = "txtName2";
+            this.txtName2.Size = new System.Drawing.Size(215, 23);
+            this.txtName2.TabIndex = 1;
             // 
             // label4
             // 
@@ -306,26 +330,6 @@ namespace HospitalManagementSystem
             this.label4.TabIndex = 2;
             this.label4.Text = "Laboratory";
             // 
-            // btnAddLaboratoryData
-            // 
-            this.btnAddLaboratoryData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddLaboratoryData.Location = new System.Drawing.Point(715, 141);
-            this.btnAddLaboratoryData.Name = "btnAddLaboratoryData";
-            this.btnAddLaboratoryData.Size = new System.Drawing.Size(93, 31);
-            this.btnAddLaboratoryData.TabIndex = 7;
-            this.btnAddLaboratoryData.Text = "Add...";
-            this.btnAddLaboratoryData.UseVisualStyleBackColor = true;
-            // 
-            // btnClearLabortoryData
-            // 
-            this.btnClearLabortoryData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearLabortoryData.Location = new System.Drawing.Point(715, 104);
-            this.btnClearLabortoryData.Name = "btnClearLabortoryData";
-            this.btnClearLabortoryData.Size = new System.Drawing.Size(93, 31);
-            this.btnClearLabortoryData.TabIndex = 7;
-            this.btnClearLabortoryData.Text = "Clear...";
-            this.btnClearLabortoryData.UseVisualStyleBackColor = true;
-            // 
             // panelPharmacy
             // 
             this.panelPharmacy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -333,8 +337,8 @@ namespace HospitalManagementSystem
             this.panelPharmacy.Controls.Add(this.label7);
             this.panelPharmacy.Controls.Add(this.btnClearPharmacyData);
             this.panelPharmacy.Controls.Add(this.btnAddPharmacyData);
-            this.panelPharmacy.Controls.Add(this.richTextBox1);
-            this.panelPharmacy.Controls.Add(this.textBox1);
+            this.panelPharmacy.Controls.Add(this.txtAddress3);
+            this.panelPharmacy.Controls.Add(this.txtName3);
             this.panelPharmacy.Controls.Add(this.label8);
             this.panelPharmacy.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPharmacy.Location = new System.Drawing.Point(0, 442);
@@ -362,22 +366,44 @@ namespace HospitalManagementSystem
             this.label7.TabIndex = 8;
             this.label7.Text = "Address:";
             // 
-            // richTextBox1
+            // btnClearPharmacyData
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnClearPharmacyData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearPharmacyData.Location = new System.Drawing.Point(715, 104);
+            this.btnClearPharmacyData.Name = "btnClearPharmacyData";
+            this.btnClearPharmacyData.Size = new System.Drawing.Size(93, 31);
+            this.btnClearPharmacyData.TabIndex = 7;
+            this.btnClearPharmacyData.Text = "Clear...";
+            this.btnClearPharmacyData.UseVisualStyleBackColor = true;
+            this.btnClearPharmacyData.Click += new System.EventHandler(this.btnClearPharmacyData_Click);
+            // 
+            // btnAddPharmacyData
+            // 
+            this.btnAddPharmacyData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddPharmacyData.Location = new System.Drawing.Point(715, 141);
+            this.btnAddPharmacyData.Name = "btnAddPharmacyData";
+            this.btnAddPharmacyData.Size = new System.Drawing.Size(93, 31);
+            this.btnAddPharmacyData.TabIndex = 7;
+            this.btnAddPharmacyData.Text = "Add...";
+            this.btnAddPharmacyData.UseVisualStyleBackColor = true;
+            this.btnAddPharmacyData.Click += new System.EventHandler(this.btnAddPharmacyData_Click);
+            // 
+            // txtAddress3
+            // 
+            this.txtAddress3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(18, 120);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(417, 52);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.txtAddress3.Location = new System.Drawing.Point(18, 120);
+            this.txtAddress3.Name = "txtAddress3";
+            this.txtAddress3.Size = new System.Drawing.Size(417, 52);
+            this.txtAddress3.TabIndex = 5;
+            this.txtAddress3.Text = "";
             // 
-            // textBox1
+            // txtName3
             // 
-            this.textBox1.Location = new System.Drawing.Point(18, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 23);
-            this.textBox1.TabIndex = 1;
+            this.txtName3.Location = new System.Drawing.Point(18, 70);
+            this.txtName3.Name = "txtName3";
+            this.txtName3.Size = new System.Drawing.Size(215, 23);
+            this.txtName3.TabIndex = 1;
             // 
             // label8
             // 
@@ -397,8 +423,8 @@ namespace HospitalManagementSystem
             this.panelOperationTheatre.Controls.Add(this.label11);
             this.panelOperationTheatre.Controls.Add(this.btnClearOTData);
             this.panelOperationTheatre.Controls.Add(this.btnAddOTData);
-            this.panelOperationTheatre.Controls.Add(this.richTextBox2);
-            this.panelOperationTheatre.Controls.Add(this.textBox2);
+            this.panelOperationTheatre.Controls.Add(this.txtAddress4);
+            this.panelOperationTheatre.Controls.Add(this.txtName4);
             this.panelOperationTheatre.Controls.Add(this.label19);
             this.panelOperationTheatre.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOperationTheatre.Location = new System.Drawing.Point(0, 629);
@@ -426,22 +452,44 @@ namespace HospitalManagementSystem
             this.label11.TabIndex = 8;
             this.label11.Text = "Address:";
             // 
-            // richTextBox2
+            // btnClearOTData
             // 
-            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnClearOTData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearOTData.Location = new System.Drawing.Point(715, 104);
+            this.btnClearOTData.Name = "btnClearOTData";
+            this.btnClearOTData.Size = new System.Drawing.Size(93, 31);
+            this.btnClearOTData.TabIndex = 7;
+            this.btnClearOTData.Text = "Clear...";
+            this.btnClearOTData.UseVisualStyleBackColor = true;
+            this.btnClearOTData.Click += new System.EventHandler(this.btnClearOTData_Click);
+            // 
+            // btnAddOTData
+            // 
+            this.btnAddOTData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddOTData.Location = new System.Drawing.Point(715, 141);
+            this.btnAddOTData.Name = "btnAddOTData";
+            this.btnAddOTData.Size = new System.Drawing.Size(93, 31);
+            this.btnAddOTData.TabIndex = 7;
+            this.btnAddOTData.Text = "Add...";
+            this.btnAddOTData.UseVisualStyleBackColor = true;
+            this.btnAddOTData.Click += new System.EventHandler(this.btnAddOTData_Click);
+            // 
+            // txtAddress4
+            // 
+            this.txtAddress4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox2.Location = new System.Drawing.Point(18, 120);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(417, 52);
-            this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.Text = "";
+            this.txtAddress4.Location = new System.Drawing.Point(18, 120);
+            this.txtAddress4.Name = "txtAddress4";
+            this.txtAddress4.Size = new System.Drawing.Size(417, 52);
+            this.txtAddress4.TabIndex = 5;
+            this.txtAddress4.Text = "";
             // 
-            // textBox2
+            // txtName4
             // 
-            this.textBox2.Location = new System.Drawing.Point(18, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtName4.Location = new System.Drawing.Point(18, 70);
+            this.txtName4.Name = "txtName4";
+            this.txtName4.Size = new System.Drawing.Size(215, 23);
+            this.txtName4.TabIndex = 1;
             // 
             // label19
             // 
@@ -462,8 +510,8 @@ namespace HospitalManagementSystem
             this.panelBloodBank.Controls.Add(this.btnClearBloodBankData);
             this.panelBloodBank.Controls.Add(this.label20);
             this.panelBloodBank.Controls.Add(this.btnAddBloodBankData);
-            this.panelBloodBank.Controls.Add(this.richTextBox3);
-            this.panelBloodBank.Controls.Add(this.textBox3);
+            this.panelBloodBank.Controls.Add(this.txtAddress5);
+            this.panelBloodBank.Controls.Add(this.txtName5);
             this.panelBloodBank.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBloodBank.Location = new System.Drawing.Point(0, 816);
             this.panelBloodBank.Name = "panelBloodBank";
@@ -499,6 +547,7 @@ namespace HospitalManagementSystem
             this.btnClearBloodBankData.TabIndex = 7;
             this.btnClearBloodBankData.Text = "Clear...";
             this.btnClearBloodBankData.UseVisualStyleBackColor = true;
+            this.btnClearBloodBankData.Click += new System.EventHandler(this.btnClearBloodBankData_Click);
             // 
             // label20
             // 
@@ -520,23 +569,24 @@ namespace HospitalManagementSystem
             this.btnAddBloodBankData.TabIndex = 7;
             this.btnAddBloodBankData.Text = "Add...";
             this.btnAddBloodBankData.UseVisualStyleBackColor = true;
+            this.btnAddBloodBankData.Click += new System.EventHandler(this.btnAddBloodBankData_Click);
             // 
-            // richTextBox3
+            // txtAddress5
             // 
-            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtAddress5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox3.Location = new System.Drawing.Point(18, 120);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(417, 52);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "";
+            this.txtAddress5.Location = new System.Drawing.Point(18, 120);
+            this.txtAddress5.Name = "txtAddress5";
+            this.txtAddress5.Size = new System.Drawing.Size(417, 52);
+            this.txtAddress5.TabIndex = 5;
+            this.txtAddress5.Text = "";
             // 
-            // textBox3
+            // txtName5
             // 
-            this.textBox3.Location = new System.Drawing.Point(18, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 23);
-            this.textBox3.TabIndex = 1;
+            this.txtName5.Location = new System.Drawing.Point(18, 70);
+            this.txtName5.Name = "txtName5";
+            this.txtName5.Size = new System.Drawing.Size(215, 23);
+            this.txtName5.TabIndex = 1;
             // 
             // panelDepartment
             // 
@@ -546,8 +596,8 @@ namespace HospitalManagementSystem
             this.panelDepartment.Controls.Add(this.btnClearDepartmentData);
             this.panelDepartment.Controls.Add(this.label16);
             this.panelDepartment.Controls.Add(this.btnAddDepartmentData);
-            this.panelDepartment.Controls.Add(this.richTextBox4);
-            this.panelDepartment.Controls.Add(this.textBox4);
+            this.panelDepartment.Controls.Add(this.txtAddress6);
+            this.panelDepartment.Controls.Add(this.txtName6);
             this.panelDepartment.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDepartment.Location = new System.Drawing.Point(0, 1003);
             this.panelDepartment.Name = "panelDepartment";
@@ -583,6 +633,7 @@ namespace HospitalManagementSystem
             this.btnClearDepartmentData.TabIndex = 7;
             this.btnClearDepartmentData.Text = "Clear...";
             this.btnClearDepartmentData.UseVisualStyleBackColor = true;
+            this.btnClearDepartmentData.Click += new System.EventHandler(this.btnClearDepartmentData_Click);
             // 
             // label16
             // 
@@ -604,63 +655,24 @@ namespace HospitalManagementSystem
             this.btnAddDepartmentData.TabIndex = 7;
             this.btnAddDepartmentData.Text = "Add...";
             this.btnAddDepartmentData.UseVisualStyleBackColor = true;
+            this.btnAddDepartmentData.Click += new System.EventHandler(this.btnAddDepartmentData_Click);
             // 
-            // richTextBox4
+            // txtAddress6
             // 
-            this.richTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtAddress6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox4.Location = new System.Drawing.Point(18, 121);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(417, 52);
-            this.richTextBox4.TabIndex = 5;
-            this.richTextBox4.Text = "";
+            this.txtAddress6.Location = new System.Drawing.Point(18, 121);
+            this.txtAddress6.Name = "txtAddress6";
+            this.txtAddress6.Size = new System.Drawing.Size(417, 52);
+            this.txtAddress6.TabIndex = 5;
+            this.txtAddress6.Text = "";
             // 
-            // textBox4
+            // txtName6
             // 
-            this.textBox4.Location = new System.Drawing.Point(17, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 23);
-            this.textBox4.TabIndex = 1;
-            // 
-            // btnAddPharmacyData
-            // 
-            this.btnAddPharmacyData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddPharmacyData.Location = new System.Drawing.Point(715, 141);
-            this.btnAddPharmacyData.Name = "btnAddPharmacyData";
-            this.btnAddPharmacyData.Size = new System.Drawing.Size(93, 31);
-            this.btnAddPharmacyData.TabIndex = 7;
-            this.btnAddPharmacyData.Text = "Add...";
-            this.btnAddPharmacyData.UseVisualStyleBackColor = true;
-            // 
-            // btnClearPharmacyData
-            // 
-            this.btnClearPharmacyData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearPharmacyData.Location = new System.Drawing.Point(715, 104);
-            this.btnClearPharmacyData.Name = "btnClearPharmacyData";
-            this.btnClearPharmacyData.Size = new System.Drawing.Size(93, 31);
-            this.btnClearPharmacyData.TabIndex = 7;
-            this.btnClearPharmacyData.Text = "Clear...";
-            this.btnClearPharmacyData.UseVisualStyleBackColor = true;
-            // 
-            // btnAddOTData
-            // 
-            this.btnAddOTData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddOTData.Location = new System.Drawing.Point(715, 141);
-            this.btnAddOTData.Name = "btnAddOTData";
-            this.btnAddOTData.Size = new System.Drawing.Size(93, 31);
-            this.btnAddOTData.TabIndex = 7;
-            this.btnAddOTData.Text = "Add...";
-            this.btnAddOTData.UseVisualStyleBackColor = true;
-            // 
-            // btnClearOTData
-            // 
-            this.btnClearOTData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearOTData.Location = new System.Drawing.Point(715, 104);
-            this.btnClearOTData.Name = "btnClearOTData";
-            this.btnClearOTData.Size = new System.Drawing.Size(93, 31);
-            this.btnClearOTData.TabIndex = 7;
-            this.btnClearOTData.Text = "Clear...";
-            this.btnClearOTData.UseVisualStyleBackColor = true;
+            this.txtName6.Location = new System.Drawing.Point(17, 71);
+            this.txtName6.Name = "txtName6";
+            this.txtName6.Size = new System.Drawing.Size(215, 23);
+            this.txtName6.TabIndex = 1;
             // 
             // panel2
             // 
@@ -686,12 +698,11 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.panel1);
             this.Name = "ucAddUnits";
             this.Size = new System.Drawing.Size(824, 1498);
-            this.Load += new System.EventHandler(this.ucAddUnits_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelWard.ResumeLayout(false);
             this.panelWard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWardNo)).EndInit();
             this.panelLaboratory.ResumeLayout(false);
             this.panelLaboratory.PerformLayout();
             this.panelPharmacy.ResumeLayout(false);
@@ -711,40 +722,40 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelWard;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nudWardNo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnClearWardData;
         private System.Windows.Forms.Button btnAddWardData;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbRating;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.RichTextBox txtAddress;
+        private System.Windows.Forms.TextBox txtName1;
         private System.Windows.Forms.Panel panelLaboratory;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnClearLabortoryData;
         private System.Windows.Forms.Button btnAddLaboratoryData;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.RichTextBox txtAddress2;
+        private System.Windows.Forms.TextBox txtName2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panelPharmacy;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnClearPharmacyData;
         private System.Windows.Forms.Button btnAddPharmacyData;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox txtAddress3;
+        private System.Windows.Forms.TextBox txtName3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panelOperationTheatre;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnClearOTData;
         private System.Windows.Forms.Button btnAddOTData;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RichTextBox txtAddress4;
+        private System.Windows.Forms.TextBox txtName4;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panelBloodBank;
         private System.Windows.Forms.Label label13;
@@ -752,16 +763,16 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnClearBloodBankData;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnAddBloodBankData;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.RichTextBox txtAddress5;
+        private System.Windows.Forms.TextBox txtName5;
         private System.Windows.Forms.Panel panelDepartment;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClearDepartmentData;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnAddDepartmentData;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.RichTextBox txtAddress6;
+        private System.Windows.Forms.TextBox txtName6;
         private System.Windows.Forms.Panel panel2;
     }
 }

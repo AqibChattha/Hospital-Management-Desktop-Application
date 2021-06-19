@@ -31,16 +31,14 @@ namespace HospitalManagementSystem
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnClearReceptionistInput = new System.Windows.Forms.Button();
-            this.btnAddReceptionistInput = new System.Windows.Forms.Button();
+            this.btnClearInput = new System.Windows.Forms.Button();
+            this.btnAddInput = new System.Windows.Forms.Button();
             this.dtpWHend = new System.Windows.Forms.DateTimePicker();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.dtpWHstart = new System.Windows.Forms.DateTimePicker();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.nudSalary = new System.Windows.Forms.NumericUpDown();
-            this.btnClearInput = new System.Windows.Forms.Button();
-            this.btnAddInput = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.cbQualification = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
@@ -74,16 +72,14 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.btnClearReceptionistInput);
-            this.panel1.Controls.Add(this.btnAddReceptionistInput);
+            this.panel1.Controls.Add(this.btnClearInput);
+            this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.dtpWHend);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
             this.panel1.Controls.Add(this.dtpWHstart);
             this.panel1.Controls.Add(this.rbtnFemale);
             this.panel1.Controls.Add(this.rbtnMale);
             this.panel1.Controls.Add(this.nudSalary);
-            this.panel1.Controls.Add(this.btnClearInput);
-            this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.cbQualification);
             this.panel1.Controls.Add(this.txtPhoneNo);
@@ -124,32 +120,33 @@ namespace HospitalManagementSystem
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnClearReceptionistInput
+            // btnClearInput
             // 
-            this.btnClearReceptionistInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearReceptionistInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearReceptionistInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClearReceptionistInput.Location = new System.Drawing.Point(584, 436);
-            this.btnClearReceptionistInput.Name = "btnClearReceptionistInput";
-            this.btnClearReceptionistInput.Size = new System.Drawing.Size(90, 30);
-            this.btnClearReceptionistInput.TabIndex = 15;
-            this.btnClearReceptionistInput.Text = "Clear";
-            this.btnClearReceptionistInput.UseVisualStyleBackColor = true;
+            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearInput.Location = new System.Drawing.Point(584, 436);
+            this.btnClearInput.Name = "btnClearInput";
+            this.btnClearInput.Size = new System.Drawing.Size(90, 30);
+            this.btnClearInput.TabIndex = 15;
+            this.btnClearInput.Text = "Clear";
+            this.btnClearInput.UseVisualStyleBackColor = true;
+            this.btnClearInput.Click += new System.EventHandler(this.btnClearInput_Click);
             // 
-            // btnAddReceptionistInput
+            // btnAddInput
             // 
-            this.btnAddReceptionistInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddReceptionistInput.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddReceptionistInput.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddReceptionistInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddReceptionistInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddReceptionistInput.Location = new System.Drawing.Point(680, 436);
-            this.btnAddReceptionistInput.Name = "btnAddReceptionistInput";
-            this.btnAddReceptionistInput.Size = new System.Drawing.Size(90, 30);
-            this.btnAddReceptionistInput.TabIndex = 14;
-            this.btnAddReceptionistInput.Text = "Add";
-            this.btnAddReceptionistInput.UseVisualStyleBackColor = false;
-            this.btnAddReceptionistInput.Click += new System.EventHandler(this.btnAddReceptionistInput_Click);
+            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddInput.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddInput.Location = new System.Drawing.Point(680, 436);
+            this.btnAddInput.Name = "btnAddInput";
+            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
+            this.btnAddInput.TabIndex = 14;
+            this.btnAddInput.Text = "Add";
+            this.btnAddInput.UseVisualStyleBackColor = false;
+            this.btnAddInput.Click += new System.EventHandler(this.btnAddInput_Click);
             // 
             // dtpWHend
             // 
@@ -216,29 +213,6 @@ namespace HospitalManagementSystem
             this.nudSalary.Name = "nudSalary";
             this.nudSalary.Size = new System.Drawing.Size(186, 23);
             this.nudSalary.TabIndex = 9;
-            // 
-            // btnClearInput
-            // 
-            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearInput.Location = new System.Drawing.Point(1949, 1260);
-            this.btnClearInput.Name = "btnClearInput";
-            this.btnClearInput.Size = new System.Drawing.Size(90, 30);
-            this.btnClearInput.TabIndex = 7;
-            this.btnClearInput.Text = "Clear";
-            this.btnClearInput.UseVisualStyleBackColor = true;
-            // 
-            // btnAddInput
-            // 
-            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddInput.Location = new System.Drawing.Point(2045, 1260);
-            this.btnAddInput.Name = "btnAddInput";
-            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
-            this.btnAddInput.TabIndex = 8;
-            this.btnAddInput.Text = "Add";
-            this.btnAddInput.UseVisualStyleBackColor = false;
             // 
             // txtAddress
             // 
@@ -488,7 +462,6 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnClearReceptionistInput;
         private System.Windows.Forms.Button btnAddReceptionistInput;
         private System.Windows.Forms.DateTimePicker dtpWHend;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;

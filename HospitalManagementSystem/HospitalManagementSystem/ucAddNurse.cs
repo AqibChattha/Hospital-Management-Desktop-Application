@@ -41,24 +41,9 @@ namespace HospitalManagementSystem
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAddInput_Click(object sender, EventArgs e)
         {
-            txtName.Text = "";
-            txtCnic.Text = "";
-            txtPassword.Text = "";
-            txtEmail.Text = "";
-            txtPhoneNo.Text = "";
-            txtAddress.Text = "";
-            dtpWHstart.Value = DateTime.Today;
-            dtpWHend.Value = DateTime.Today;
-            cbQualification.Text = "";
-            rbtnMale.Checked = false;
-            rbtnFemale.Checked = false;
-            nudSalary.Value = 0;
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
             String nurse_Name = txtName.Text;
             String nurse_Cnic = txtCnic.Text;
             String nurse_PhoneNumber = txtPhoneNo.Text;
@@ -79,7 +64,24 @@ namespace HospitalManagementSystem
             DateTime nurseDate_OF_Birth = dtpDateOfBirth.Value;
             DateTime nurse_WHstart = dtpWHstart.Value;
             DateTime nurse_WHend = dtpWHend.Value;
-            MessageBox.Show(nurse_Name + "\n" + nurse_Cnic + "\n"+nurse_PhoneNumber+"\n"+nurse_Qualification+"\n"+nurse_Gender+"\n"+nurse_Salary+"\n"+nurse_WHstart+"\n"+nurse_WHend);
+            MessageBox.Show(nurse_Name + "\n" + nurse_Cnic + "\n" + nurse_PhoneNumber + "\n" + nurse_Qualification + "\n" + nurse_Gender + "\n" + nurse_Salary + "\n" + nurse_WHstart + "\n" + nurse_WHend);
+
+        }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHstart.Value = DateTime.Today;
+            dtpWHend.Value = DateTime.Today;
+            cbQualification.Text = "";
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
         }
     }
 }

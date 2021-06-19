@@ -32,20 +32,17 @@ namespace HospitalManagementSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnClearOStaffInput = new System.Windows.Forms.Button();
-            this.dtpWHstart = new System.Windows.Forms.Button();
+            this.btnClearInput = new System.Windows.Forms.Button();
+            this.btnAddInput = new System.Windows.Forms.Button();
             this.dtpWHend = new System.Windows.Forms.DateTimePicker();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
-            this.dtpstartTime = new System.Windows.Forms.DateTimePicker();
+            this.dtpWHstart = new System.Windows.Forms.DateTimePicker();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.nudSalary = new System.Windows.Forms.NumericUpDown();
-            this.btnClearInput = new System.Windows.Forms.Button();
-            this.btnAddInput = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
             this.txtCnic = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -71,20 +68,17 @@ namespace HospitalManagementSystem
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.btnClearOStaffInput);
-            this.panel1.Controls.Add(this.dtpWHstart);
+            this.panel1.Controls.Add(this.btnClearInput);
+            this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.dtpWHend);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
-            this.panel1.Controls.Add(this.dtpstartTime);
+            this.panel1.Controls.Add(this.dtpWHstart);
             this.panel1.Controls.Add(this.rbtnFemale);
             this.panel1.Controls.Add(this.rbtnMale);
             this.panel1.Controls.Add(this.nudSalary);
-            this.panel1.Controls.Add(this.btnClearInput);
-            this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.txtPhoneNo);
             this.panel1.Controls.Add(this.txtCnic);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label14);
@@ -129,31 +123,32 @@ namespace HospitalManagementSystem
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnClearOStaffInput
+            // btnClearInput
             // 
-            this.btnClearOStaffInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearOStaffInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearOStaffInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClearOStaffInput.Location = new System.Drawing.Point(584, 436);
-            this.btnClearOStaffInput.Name = "btnClearOStaffInput";
-            this.btnClearOStaffInput.Size = new System.Drawing.Size(90, 30);
-            this.btnClearOStaffInput.TabIndex = 15;
-            this.btnClearOStaffInput.Text = "Clear";
-            this.btnClearOStaffInput.UseVisualStyleBackColor = true;
+            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearInput.Location = new System.Drawing.Point(584, 436);
+            this.btnClearInput.Name = "btnClearInput";
+            this.btnClearInput.Size = new System.Drawing.Size(90, 30);
+            this.btnClearInput.TabIndex = 15;
+            this.btnClearInput.Text = "Clear";
+            this.btnClearInput.UseVisualStyleBackColor = true;
+            this.btnClearInput.Click += new System.EventHandler(this.btnClearInput_Click);
             // 
-            // dtpWHstart
+            // btnAddInput
             // 
-            this.dtpWHstart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpWHstart.BackColor = System.Drawing.Color.Gainsboro;
-            this.dtpWHstart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dtpWHstart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpWHstart.Location = new System.Drawing.Point(680, 436);
-            this.dtpWHstart.Name = "dtpWHstart";
-            this.dtpWHstart.Size = new System.Drawing.Size(90, 30);
-            this.dtpWHstart.TabIndex = 14;
-            this.dtpWHstart.Text = "Add";
-            this.dtpWHstart.UseVisualStyleBackColor = false;
-            this.dtpWHstart.Click += new System.EventHandler(this.btnAddOtherStaffInput_Click);
+            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddInput.Location = new System.Drawing.Point(680, 436);
+            this.btnAddInput.Name = "btnAddInput";
+            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
+            this.btnAddInput.TabIndex = 14;
+            this.btnAddInput.Text = "Add";
+            this.btnAddInput.UseVisualStyleBackColor = false;
+            this.btnAddInput.Click += new System.EventHandler(this.btnAddInput_Click);
             // 
             // dtpWHend
             // 
@@ -175,15 +170,15 @@ namespace HospitalManagementSystem
             this.dtpDateOfBirth.TabIndex = 11;
             this.dtpDateOfBirth.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
-            // dtpstartTime
+            // dtpWHstart
             // 
-            this.dtpstartTime.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpstartTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpstartTime.Location = new System.Drawing.Point(330, 194);
-            this.dtpstartTime.Name = "dtpstartTime";
-            this.dtpstartTime.Size = new System.Drawing.Size(94, 23);
-            this.dtpstartTime.TabIndex = 11;
-            this.dtpstartTime.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
+            this.dtpWHstart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpWHstart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpWHstart.Location = new System.Drawing.Point(330, 194);
+            this.dtpWHstart.Name = "dtpWHstart";
+            this.dtpWHstart.Size = new System.Drawing.Size(94, 23);
+            this.dtpWHstart.TabIndex = 11;
+            this.dtpWHstart.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
             // rbtnFemale
             // 
@@ -220,29 +215,6 @@ namespace HospitalManagementSystem
             this.nudSalary.Size = new System.Drawing.Size(186, 23);
             this.nudSalary.TabIndex = 9;
             // 
-            // btnClearInput
-            // 
-            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearInput.Location = new System.Drawing.Point(1949, 1260);
-            this.btnClearInput.Name = "btnClearInput";
-            this.btnClearInput.Size = new System.Drawing.Size(90, 30);
-            this.btnClearInput.TabIndex = 7;
-            this.btnClearInput.Text = "Clear";
-            this.btnClearInput.UseVisualStyleBackColor = true;
-            // 
-            // btnAddInput
-            // 
-            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddInput.Location = new System.Drawing.Point(2045, 1260);
-            this.btnAddInput.Name = "btnAddInput";
-            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
-            this.btnAddInput.TabIndex = 8;
-            this.btnAddInput.Text = "Add";
-            this.btnAddInput.UseVisualStyleBackColor = false;
-            // 
             // txtAddress
             // 
             this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -272,16 +244,6 @@ namespace HospitalManagementSystem
             this.txtCnic.Name = "txtCnic";
             this.txtCnic.Size = new System.Drawing.Size(221, 23);
             this.txtCnic.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(1074, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 21);
-            this.label3.TabIndex = 0;
             // 
             // txtName
             // 
@@ -437,20 +399,17 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnClearOStaffInput;
-        private System.Windows.Forms.Button dtpWHstart;
+        private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.DateTimePicker dtpEndTime;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
-        private System.Windows.Forms.DateTimePicker dtpstartTime;
+        private System.Windows.Forms.DateTimePicker dtpWHstart;
         private System.Windows.Forms.RadioButton rbtnFemale;
         private System.Windows.Forms.RadioButton rbtnMale;
         private System.Windows.Forms.NumericUpDown nudSalary;
-        private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.Button btnAddInput;
         private System.Windows.Forms.RichTextBox txtAddress;
         private System.Windows.Forms.MaskedTextBox txtPhoneNo;
         private System.Windows.Forms.MaskedTextBox txtCnic;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

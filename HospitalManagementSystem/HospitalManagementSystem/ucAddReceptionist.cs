@@ -41,7 +41,7 @@ namespace HospitalManagementSystem
             }
         }
 
-        private void btnAddReceptionistInput_Click(object sender, EventArgs e)
+        private void btnAddInput_Click(object sender, EventArgs e)
         {
             String receptionist_Name = txtName.Text;
             String receptionist_Cnic = txtCnic.Text;
@@ -65,6 +65,22 @@ namespace HospitalManagementSystem
             DateTime receptionist_WHend = dtpWHend.Value;
 
             MessageBox.Show(receptionist_Name + "\n" + receptionist_Cnic + "\n" + receptionist_PhoneNumber + "\n" + receptionist_Qualification + "\n" + receptionist_Gender + "\n" + receptionist_Salary + "\n" + receptionist_WHstart + "\n" + receptionist_WHend);
+        }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            cbQualification.Text = "";
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
         }
     }
 }

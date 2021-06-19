@@ -41,7 +41,7 @@ namespace HospitalManagementSystem
             }
         }
 
-        private void btnAddSurgeonInput_Click(object sender, EventArgs e)
+        private void btnAddInput_Click(object sender, EventArgs e)
         {
             String surgeon_Name = txtName.Text;
             String surgeon_Cnic = txtCnic.Text;
@@ -63,8 +63,25 @@ namespace HospitalManagementSystem
             DateTime surgeonDate_OF_Birth = dtpDateOfBirth.Value;
             DateTime surgeon_WHstart = dtpWHstart.Value;
             DateTime surgeon_WHend = dtpWHend.Value;
-            
+
             MessageBox.Show(surgeon_Name + "\n" + surgeon_Cnic + "\n" + surgeon_PhoneNumber + "\n" + surgeon_Qualification + "\n" + surgeon_Gender + "\n" + surgeon_Salary + "\n" + surgeon_WHstart + "\n" + surgeon_WHend);
         }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            cbQualification.Text = "";
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
+        }
+    }
     }
 }

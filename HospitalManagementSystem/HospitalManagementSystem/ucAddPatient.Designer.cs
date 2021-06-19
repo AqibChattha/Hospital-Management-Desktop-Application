@@ -55,42 +55,42 @@ namespace HospitalManagementSystem
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDateOfBirth2 = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.btnAddToData = new System.Windows.Forms.Button();
             this.btnClearInPatient = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.txtAddress2 = new System.Windows.Forms.RichTextBox();
+            this.rbtnFemale2 = new System.Windows.Forms.RadioButton();
+            this.rbtnMale2 = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.txtPhoneNo2 = new System.Windows.Forms.MaskedTextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.txtCnic2 = new System.Windows.Forms.MaskedTextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtName2 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDateOfBirth3 = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.btnAddToData2 = new System.Windows.Forms.Button();
             this.btnClearIllStaff = new System.Windows.Forms.Button();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.txtAddress3 = new System.Windows.Forms.RichTextBox();
+            this.rbtnFemale3 = new System.Windows.Forms.RadioButton();
+            this.rbtnMale3 = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtStaffId = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtStaffType = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.txtPhoneNo3 = new System.Windows.Forms.MaskedTextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.txtCnic3 = new System.Windows.Forms.MaskedTextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtName3 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -219,6 +219,7 @@ namespace HospitalManagementSystem
             this.btnClearOutPatient.TabIndex = 18;
             this.btnClearOutPatient.Text = "Clear";
             this.btnClearOutPatient.UseVisualStyleBackColor = true;
+            this.btnClearOutPatient.Click += new System.EventHandler(this.btnClearOutPatient_Click);
             // 
             // txtAddress
             // 
@@ -379,21 +380,21 @@ namespace HospitalManagementSystem
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.dateTimePicker2);
+            this.panel3.Controls.Add(this.dtpDateOfBirth2);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.btnAddToData);
             this.panel3.Controls.Add(this.btnClearInPatient);
-            this.panel3.Controls.Add(this.richTextBox2);
-            this.panel3.Controls.Add(this.radioButton3);
-            this.panel3.Controls.Add(this.radioButton4);
+            this.panel3.Controls.Add(this.txtAddress2);
+            this.panel3.Controls.Add(this.rbtnFemale2);
+            this.panel3.Controls.Add(this.rbtnMale2);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.maskedTextBox3);
+            this.panel3.Controls.Add(this.txtPhoneNo2);
             this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.maskedTextBox4);
+            this.panel3.Controls.Add(this.txtCnic2);
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.txtName2);
             this.panel3.Controls.Add(this.label19);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -402,14 +403,14 @@ namespace HospitalManagementSystem
             this.panel3.Size = new System.Drawing.Size(824, 488);
             this.panel3.TabIndex = 4;
             // 
-            // dateTimePicker2
+            // dtpDateOfBirth2
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(28, 161);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(201, 23);
-            this.dateTimePicker2.TabIndex = 19;
+            this.dtpDateOfBirth2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateOfBirth2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateOfBirth2.Location = new System.Drawing.Point(28, 161);
+            this.dtpDateOfBirth2.Name = "dtpDateOfBirth2";
+            this.dtpDateOfBirth2.Size = new System.Drawing.Size(201, 23);
+            this.dtpDateOfBirth2.TabIndex = 19;
             // 
             // label15
             // 
@@ -447,43 +448,44 @@ namespace HospitalManagementSystem
             this.btnClearInPatient.TabIndex = 18;
             this.btnClearInPatient.Text = "Clear";
             this.btnClearInPatient.UseVisualStyleBackColor = true;
+            this.btnClearInPatient.Click += new System.EventHandler(this.btnClearInPatient_Click);
             // 
-            // richTextBox2
+            // txtAddress2
             // 
-            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtAddress2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox2.Location = new System.Drawing.Point(28, 267);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(756, 123);
-            this.richTextBox2.TabIndex = 16;
-            this.richTextBox2.Text = "";
+            this.txtAddress2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress2.Location = new System.Drawing.Point(28, 267);
+            this.txtAddress2.Name = "txtAddress2";
+            this.txtAddress2.Size = new System.Drawing.Size(756, 123);
+            this.txtAddress2.TabIndex = 16;
+            this.txtAddress2.Text = "";
             // 
-            // radioButton3
+            // rbtnFemale2
             // 
-            this.radioButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(356, 168);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(63, 19);
-            this.radioButton3.TabIndex = 14;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Female";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbtnFemale2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rbtnFemale2.AutoSize = true;
+            this.rbtnFemale2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnFemale2.Location = new System.Drawing.Point(356, 168);
+            this.rbtnFemale2.Name = "rbtnFemale2";
+            this.rbtnFemale2.Size = new System.Drawing.Size(63, 19);
+            this.rbtnFemale2.TabIndex = 14;
+            this.rbtnFemale2.TabStop = true;
+            this.rbtnFemale2.Text = "Female";
+            this.rbtnFemale2.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbtnMale2
             // 
-            this.radioButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton4.Location = new System.Drawing.Point(299, 168);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(51, 19);
-            this.radioButton4.TabIndex = 13;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Male";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbtnMale2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rbtnMale2.AutoSize = true;
+            this.rbtnMale2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnMale2.Location = new System.Drawing.Point(299, 168);
+            this.rbtnMale2.Name = "rbtnMale2";
+            this.rbtnMale2.Size = new System.Drawing.Size(51, 19);
+            this.rbtnMale2.TabIndex = 13;
+            this.rbtnMale2.TabStop = true;
+            this.rbtnMale2.Text = "Male";
+            this.rbtnMale2.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -513,15 +515,15 @@ namespace HospitalManagementSystem
             this.label13.TabIndex = 8;
             this.label13.Text = "Address:";
             // 
-            // maskedTextBox3
+            // txtPhoneNo2
             // 
-            this.maskedTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox3.Location = new System.Drawing.Point(564, 89);
-            this.maskedTextBox3.Mask = "0000-0000000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(220, 23);
-            this.maskedTextBox3.TabIndex = 5;
+            this.txtPhoneNo2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhoneNo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPhoneNo2.Location = new System.Drawing.Point(564, 89);
+            this.txtPhoneNo2.Mask = "0000-0000000";
+            this.txtPhoneNo2.Name = "txtPhoneNo2";
+            this.txtPhoneNo2.Size = new System.Drawing.Size(220, 23);
+            this.txtPhoneNo2.TabIndex = 5;
             // 
             // label17
             // 
@@ -533,15 +535,15 @@ namespace HospitalManagementSystem
             this.label17.TabIndex = 4;
             this.label17.Text = "Phone No:";
             // 
-            // maskedTextBox4
+            // txtCnic2
             // 
-            this.maskedTextBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.maskedTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox4.Location = new System.Drawing.Point(288, 89);
-            this.maskedTextBox4.Mask = "00000-0000000-0";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(201, 23);
-            this.maskedTextBox4.TabIndex = 3;
+            this.txtCnic2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCnic2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCnic2.Location = new System.Drawing.Point(288, 89);
+            this.txtCnic2.Mask = "00000-0000000-0";
+            this.txtCnic2.Name = "txtCnic2";
+            this.txtCnic2.Size = new System.Drawing.Size(201, 23);
+            this.txtCnic2.TabIndex = 3;
             // 
             // label18
             // 
@@ -553,13 +555,13 @@ namespace HospitalManagementSystem
             this.label18.TabIndex = 2;
             this.label18.Text = "CNIC:";
             // 
-            // textBox5
+            // txtName2
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(28, 89);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(201, 23);
-            this.textBox5.TabIndex = 1;
+            this.txtName2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName2.Location = new System.Drawing.Point(28, 89);
+            this.txtName2.Name = "txtName2";
+            this.txtName2.Size = new System.Drawing.Size(201, 23);
+            this.txtName2.TabIndex = 1;
             // 
             // label19
             // 
@@ -573,25 +575,25 @@ namespace HospitalManagementSystem
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.dateTimePicker1);
+            this.panel4.Controls.Add(this.dtpDateOfBirth3);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.btnAddToData2);
             this.panel4.Controls.Add(this.btnClearIllStaff);
-            this.panel4.Controls.Add(this.richTextBox3);
-            this.panel4.Controls.Add(this.radioButton5);
-            this.panel4.Controls.Add(this.radioButton6);
+            this.panel4.Controls.Add(this.txtAddress3);
+            this.panel4.Controls.Add(this.rbtnFemale3);
+            this.panel4.Controls.Add(this.rbtnMale3);
             this.panel4.Controls.Add(this.label20);
             this.panel4.Controls.Add(this.label21);
-            this.panel4.Controls.Add(this.textBox6);
+            this.panel4.Controls.Add(this.txtStaffId);
             this.panel4.Controls.Add(this.label22);
             this.panel4.Controls.Add(this.label24);
-            this.panel4.Controls.Add(this.textBox7);
+            this.panel4.Controls.Add(this.txtStaffType);
             this.panel4.Controls.Add(this.label25);
-            this.panel4.Controls.Add(this.maskedTextBox5);
+            this.panel4.Controls.Add(this.txtPhoneNo3);
             this.panel4.Controls.Add(this.label26);
-            this.panel4.Controls.Add(this.maskedTextBox6);
+            this.panel4.Controls.Add(this.txtCnic3);
             this.panel4.Controls.Add(this.label27);
-            this.panel4.Controls.Add(this.textBox8);
+            this.panel4.Controls.Add(this.txtName3);
             this.panel4.Controls.Add(this.label28);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -600,15 +602,15 @@ namespace HospitalManagementSystem
             this.panel4.Size = new System.Drawing.Size(824, 488);
             this.panel4.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // dtpDateOfBirth3
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(564, 138);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(220, 23);
-            this.dateTimePicker1.TabIndex = 19;
+            this.dtpDateOfBirth3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpDateOfBirth3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpDateOfBirth3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDateOfBirth3.Location = new System.Drawing.Point(564, 138);
+            this.dtpDateOfBirth3.Name = "dtpDateOfBirth3";
+            this.dtpDateOfBirth3.Size = new System.Drawing.Size(220, 23);
+            this.dtpDateOfBirth3.TabIndex = 19;
             // 
             // label14
             // 
@@ -646,41 +648,42 @@ namespace HospitalManagementSystem
             this.btnClearIllStaff.TabIndex = 18;
             this.btnClearIllStaff.Text = "Clear";
             this.btnClearIllStaff.UseVisualStyleBackColor = true;
+            this.btnClearIllStaff.Click += new System.EventHandler(this.btnClearIllStaff_Click);
             // 
-            // richTextBox3
+            // txtAddress3
             // 
-            this.richTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtAddress3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTextBox3.Location = new System.Drawing.Point(28, 267);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(756, 123);
-            this.richTextBox3.TabIndex = 16;
-            this.richTextBox3.Text = "";
+            this.txtAddress3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAddress3.Location = new System.Drawing.Point(28, 267);
+            this.txtAddress3.Name = "txtAddress3";
+            this.txtAddress3.Size = new System.Drawing.Size(756, 123);
+            this.txtAddress3.TabIndex = 16;
+            this.txtAddress3.Text = "";
             // 
-            // radioButton5
+            // rbtnFemale3
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton5.Location = new System.Drawing.Point(98, 197);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(63, 19);
-            this.radioButton5.TabIndex = 14;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Female";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbtnFemale3.AutoSize = true;
+            this.rbtnFemale3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnFemale3.Location = new System.Drawing.Point(98, 197);
+            this.rbtnFemale3.Name = "rbtnFemale3";
+            this.rbtnFemale3.Size = new System.Drawing.Size(63, 19);
+            this.rbtnFemale3.TabIndex = 14;
+            this.rbtnFemale3.TabStop = true;
+            this.rbtnFemale3.Text = "Female";
+            this.rbtnFemale3.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbtnMale3
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton6.Location = new System.Drawing.Point(41, 197);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(51, 19);
-            this.radioButton6.TabIndex = 13;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Male";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbtnMale3.AutoSize = true;
+            this.rbtnMale3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnMale3.Location = new System.Drawing.Point(41, 197);
+            this.rbtnMale3.Name = "rbtnMale3";
+            this.rbtnMale3.Size = new System.Drawing.Size(51, 19);
+            this.rbtnMale3.TabIndex = 13;
+            this.rbtnMale3.TabStop = true;
+            this.rbtnMale3.Text = "Male";
+            this.rbtnMale3.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -701,14 +704,14 @@ namespace HospitalManagementSystem
             this.label21.TabIndex = 10;
             this.label21.Text = "Age:";
             // 
-            // textBox6
+            // txtStaffId
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(289, 138);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 23);
-            this.textBox6.TabIndex = 9;
+            this.txtStaffId.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtStaffId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtStaffId.Location = new System.Drawing.Point(289, 138);
+            this.txtStaffId.Name = "txtStaffId";
+            this.txtStaffId.Size = new System.Drawing.Size(200, 23);
+            this.txtStaffId.TabIndex = 9;
             // 
             // label22
             // 
@@ -729,13 +732,13 @@ namespace HospitalManagementSystem
             this.label24.TabIndex = 8;
             this.label24.Text = "Staff ID:";
             // 
-            // textBox7
+            // txtStaffType
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(28, 138);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(201, 23);
-            this.textBox7.TabIndex = 7;
+            this.txtStaffType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtStaffType.Location = new System.Drawing.Point(28, 138);
+            this.txtStaffType.Name = "txtStaffType";
+            this.txtStaffType.Size = new System.Drawing.Size(201, 23);
+            this.txtStaffType.TabIndex = 7;
             // 
             // label25
             // 
@@ -746,15 +749,15 @@ namespace HospitalManagementSystem
             this.label25.TabIndex = 6;
             this.label25.Text = "Staff Type:";
             // 
-            // maskedTextBox5
+            // txtPhoneNo3
             // 
-            this.maskedTextBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox5.Location = new System.Drawing.Point(564, 76);
-            this.maskedTextBox5.Mask = "0000-0000000";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(220, 23);
-            this.maskedTextBox5.TabIndex = 5;
+            this.txtPhoneNo3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhoneNo3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPhoneNo3.Location = new System.Drawing.Point(564, 76);
+            this.txtPhoneNo3.Mask = "0000-0000000";
+            this.txtPhoneNo3.Name = "txtPhoneNo3";
+            this.txtPhoneNo3.Size = new System.Drawing.Size(220, 23);
+            this.txtPhoneNo3.TabIndex = 5;
             // 
             // label26
             // 
@@ -766,15 +769,15 @@ namespace HospitalManagementSystem
             this.label26.TabIndex = 4;
             this.label26.Text = "Phone No:";
             // 
-            // maskedTextBox6
+            // txtCnic3
             // 
-            this.maskedTextBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.maskedTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.maskedTextBox6.Location = new System.Drawing.Point(288, 76);
-            this.maskedTextBox6.Mask = "00000-0000000-0";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(201, 23);
-            this.maskedTextBox6.TabIndex = 3;
+            this.txtCnic3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCnic3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCnic3.Location = new System.Drawing.Point(288, 76);
+            this.txtCnic3.Mask = "00000-0000000-0";
+            this.txtCnic3.Name = "txtCnic3";
+            this.txtCnic3.Size = new System.Drawing.Size(201, 23);
+            this.txtCnic3.TabIndex = 3;
             // 
             // label27
             // 
@@ -786,13 +789,13 @@ namespace HospitalManagementSystem
             this.label27.TabIndex = 2;
             this.label27.Text = "CNIC:";
             // 
-            // textBox8
+            // txtName3
             // 
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(28, 76);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(201, 23);
-            this.textBox8.TabIndex = 1;
+            this.txtName3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtName3.Location = new System.Drawing.Point(28, 76);
+            this.txtName3.Name = "txtName3";
+            this.txtName3.Size = new System.Drawing.Size(201, 23);
+            this.txtName3.TabIndex = 1;
             // 
             // label28
             // 
@@ -854,41 +857,41 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button btnAddToData;
         private System.Windows.Forms.Button btnClearInPatient;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RichTextBox txtAddress2;
+        private System.Windows.Forms.RadioButton rbtnFemale2;
+        private System.Windows.Forms.RadioButton rbtnMale2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox txtPhoneNo2;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox txtCnic2;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtName2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDateOfBirth3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnAddToData2;
         private System.Windows.Forms.Button btnClearIllStaff;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RichTextBox txtAddress3;
+        private System.Windows.Forms.RadioButton rbtnFemale3;
+        private System.Windows.Forms.RadioButton rbtnMale3;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtStaffId;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtStaffType;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.MaskedTextBox txtPhoneNo3;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
+        private System.Windows.Forms.MaskedTextBox txtCnic3;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtName3;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpDateOfBirth2;
         private System.Windows.Forms.RadioButton ebtnFemale;
         private System.Windows.Forms.RadioButton rbtnFemale;
     }

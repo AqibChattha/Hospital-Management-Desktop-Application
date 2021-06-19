@@ -60,8 +60,26 @@ namespace HospitalManagementSystem
 
         private void btnAddToQueue_Click(object sender, EventArgs e)
         {
+            String outPatient_Name = txtName.Text;
+            String outPatient_Cnic = txtCnic.Text;
+            String outPatient_PhoneNumber = txtPhoneNo.Text;
+            String outPatient_Email = txtEmail.Text;
+            String outPatient_PAssworsd = txtPassword.Text;
+            String outPatient_Address = txtAddress.Text;
+            String outPatient_Gender;
+            if (rbtnFemale.Checked)
+            {
+                outPatient_Gender = "Female";
+            }
+            else
+            {
+                outPatient_Gender = "Male";
+            }
 
-            //code here...
+            DateTime outPatient_DateOFBirth = dtpDateOfBirth.Value;
+
+            MessageBox.Show(outPatient_Name + "\n" + outPatient_Cnic + "\n" + outPatient_PhoneNumber + "\n" + outPatient_Gender + "\n");
+
 
             if (!MainForn.main_Panel.Controls.Contains(ucPatientQueue.Instence))
             {
@@ -77,8 +95,24 @@ namespace HospitalManagementSystem
 
         private void btnAddToData_Click(object sender, EventArgs e)
         {
+            String inPatient_Name = txtName2.Text;
+            String inPatient_Cnic = txtCnic2.Text;
+            String inPatient_PhoneNumber = txtPhoneNo2.Text;
+            String inPatient_Address = txtAddress2.Text;
+            String inPatient_Gender;
+            if (rbtnFemale2.Checked)
+            {
+                inPatient_Gender = "Female";
+            }
+            else
+            {
+                inPatient_Gender = "Male";
+            }
 
-            //code here...
+            DateTime outPatient_DateOFBirth = dtpDateOfBirth2.Value;
+
+            MessageBox.Show(inPatient_Name + "\n" + inPatient_Cnic + "\n" + inPatient_PhoneNumber + "\n" + inPatient_Gender + "\n");
+
 
             if (!MainForn.main_Panel.Controls.Contains(ucPatientsData.Instence))
             {
@@ -94,15 +128,14 @@ namespace HospitalManagementSystem
 
         private void btnAddToData2_Click(object sender, EventArgs e)
         {
-            String illpatient_Name = txtName.Text;
-            String illpatient_Cnic = txtCnic.Text;
-            String illpatient_PhoneNumber = txtPhoneNo.Text;
-            String illpatient_Email = txtEmail.Text;
-            String illpatient_PAssworsd = txtPassword.Text;
-           
-            String illpatient_Address = txtAddress.Text;
+            String illpatient_Name = txtName3.Text;
+            String illpatient_Cnic = txtCnic3.Text;
+            String illpatient_PhoneNumber = txtPhoneNo3.Text;
+            String illpatient_Address = txtAddress3.Text;
+            String illpatient_StaffType = txtStaffType.Text;
+            String illpatient_StaffId = txtStaffId.Text;
             String illpatient_Gender;
-            if (rbtnFemale.Checked)
+            if (rbtnFemale3.Checked)
             {
                 illpatient_Gender = "Female";
             }
@@ -110,12 +143,10 @@ namespace HospitalManagementSystem
             {
                 illpatient_Gender = "Male";
             }
-           
-            DateTime illpatientDate_OF_Birth = dtpDateOfBirth.Value;
 
-            MessageBox.Show(illpatient_Name + "\n" + illpatient_Cnic + "\n" + illpatient_PhoneNumber + "\n" + illpatient_Gender  + "\n");
+            DateTime outPatient_DateOFBirth = dtpDateOfBirth3.Value;
 
-            //code here...
+            MessageBox.Show(illpatient_Name + "\n" + illpatient_Cnic + "\n" + illpatient_PhoneNumber + "\n" + illpatient_Gender + "\n");
 
             if (!MainForn.main_Panel.Controls.Contains(ucPatientsData.Instence))
             {
@@ -128,6 +159,43 @@ namespace HospitalManagementSystem
                 ucPatientsData.Instence.BringToFront();
             }
 
+        }
+
+        private void btnClearOutPatient_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpDateOfBirth.Value = DateTime.Today;
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+        }
+
+        private void btnClearInPatient_Click(object sender, EventArgs e)
+        {
+            txtName2.Text = "";
+            txtCnic2.Text = "";
+            txtPhoneNo2.Text = "";
+            txtAddress2.Text = "";
+            dtpDateOfBirth2.Value = DateTime.Today;
+            rbtnMale2.Checked = false;
+            rbtnFemale2.Checked = false;
+        }
+
+        private void btnClearIllStaff_Click(object sender, EventArgs e)
+        {
+            txtName3.Text = "";
+            txtCnic3.Text = "";
+            txtPhoneNo3.Text = "";
+            txtAddress3.Text = "";
+            txtStaffType.Text = "";
+            txtStaffId.Text = "";
+            dtpDateOfBirth3.Value = DateTime.Today;
+            rbtnMale3.Checked = false;
+            rbtnFemale3.Checked = false;
         }
     }
 }

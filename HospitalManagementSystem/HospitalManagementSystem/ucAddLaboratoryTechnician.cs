@@ -41,7 +41,7 @@ namespace HospitalManagementSystem
             }
         }
 
-        private void btnAddLabTechInput_Click(object sender, EventArgs e)
+        private void btnAddInput_Click(object sender, EventArgs e)
         {
             String LabTech_Name = txtName.Text;
             String LabTech_Cnic = txtCnic.Text;
@@ -64,6 +64,22 @@ namespace HospitalManagementSystem
             DateTime LabTech_WHstart = dtpWHstart.Value;
             DateTime LabTech_WHend = dtpWHend.Value;
             MessageBox.Show(LabTech_Name + "\n" + LabTech_Cnic + "\n" + LabTech_PhoneNumber + "\n" + LabTech_Qualification + "\n" + LabTech_Gender + "\n" + LabTech_Salary + "\n" + LabTech_WHstart + "\n" + LabTech_WHend);
+        }
+
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            cbQualification.Text = "";
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
         }
     }
 }

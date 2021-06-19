@@ -33,15 +33,12 @@ namespace HospitalManagementSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClearPharmacistInput = new System.Windows.Forms.Button();
-            this.btnAddPharmacistInput = new System.Windows.Forms.Button();
+            this.btnAddInput = new System.Windows.Forms.Button();
             this.dtpWHend = new System.Windows.Forms.DateTimePicker();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.dtpWHstart = new System.Windows.Forms.DateTimePicker();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
-            this.nudSalary = new System.Windows.Forms.NumericUpDown();
-            this.btnClearInput = new System.Windows.Forms.Button();
-            this.btnAddInput = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.cbQualification = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
@@ -63,6 +60,7 @@ namespace HospitalManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.nudSalary = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +75,6 @@ namespace HospitalManagementSystem
             this.label1.Size = new System.Drawing.Size(274, 30);
             this.label1.TabIndex = 8;
             this.label1.Text = "Add Pharmacist Information";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -87,15 +84,13 @@ namespace HospitalManagementSystem
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnClearPharmacistInput);
-            this.panel1.Controls.Add(this.btnAddPharmacistInput);
+            this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.dtpWHend);
             this.panel1.Controls.Add(this.dtpDateOfBirth);
             this.panel1.Controls.Add(this.dtpWHstart);
             this.panel1.Controls.Add(this.rbtnFemale);
             this.panel1.Controls.Add(this.rbtnMale);
             this.panel1.Controls.Add(this.nudSalary);
-            this.panel1.Controls.Add(this.btnClearInput);
-            this.panel1.Controls.Add(this.btnAddInput);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.cbQualification);
             this.panel1.Controls.Add(this.txtPhoneNo);
@@ -147,19 +142,18 @@ namespace HospitalManagementSystem
             this.btnClearPharmacistInput.Text = "Clear";
             this.btnClearPharmacistInput.UseVisualStyleBackColor = true;
             // 
-            // btnAddPharmacistInput
+            // btnAddInput
             // 
-            this.btnAddPharmacistInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddPharmacistInput.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddPharmacistInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddPharmacistInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddPharmacistInput.Location = new System.Drawing.Point(680, 436);
-            this.btnAddPharmacistInput.Name = "btnAddPharmacistInput";
-            this.btnAddPharmacistInput.Size = new System.Drawing.Size(90, 30);
-            this.btnAddPharmacistInput.TabIndex = 14;
-            this.btnAddPharmacistInput.Text = "Add";
-            this.btnAddPharmacistInput.UseVisualStyleBackColor = false;
-            this.btnAddPharmacistInput.Click += new System.EventHandler(this.btnAddPharmacistInput_Click);
+            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAddInput.Location = new System.Drawing.Point(680, 436);
+            this.btnAddInput.Name = "btnAddInput";
+            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
+            this.btnAddInput.TabIndex = 14;
+            this.btnAddInput.Text = "Add";
+            this.btnAddInput.UseVisualStyleBackColor = false;
             // 
             // dtpWHend
             // 
@@ -217,38 +211,6 @@ namespace HospitalManagementSystem
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Male";
             this.rbtnMale.UseVisualStyleBackColor = true;
-            // 
-            // nudSalary
-            // 
-            this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nudSalary.Location = new System.Drawing.Point(584, 119);
-            this.nudSalary.Name = "nudSalary";
-            this.nudSalary.Size = new System.Drawing.Size(186, 23);
-            this.nudSalary.TabIndex = 9;
-            // 
-            // btnClearInput
-            // 
-            this.btnClearInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearInput.Location = new System.Drawing.Point(1949, 1260);
-            this.btnClearInput.Name = "btnClearInput";
-            this.btnClearInput.Size = new System.Drawing.Size(90, 30);
-            this.btnClearInput.TabIndex = 7;
-            this.btnClearInput.Text = "Clear";
-            this.btnClearInput.UseVisualStyleBackColor = true;
-            // 
-            // btnAddInput
-            // 
-            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddInput.Location = new System.Drawing.Point(2045, 1260);
-            this.btnAddInput.Name = "btnAddInput";
-            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
-            this.btnAddInput.TabIndex = 8;
-            this.btnAddInput.Text = "Add";
-            this.btnAddInput.UseVisualStyleBackColor = false;
             // 
             // txtAddress
             // 
@@ -467,6 +429,15 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
+            // nudSalary
+            // 
+            this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudSalary.Location = new System.Drawing.Point(584, 119);
+            this.nudSalary.Name = "nudSalary";
+            this.nudSalary.Size = new System.Drawing.Size(186, 23);
+            this.nudSalary.TabIndex = 9;
+            // 
             // ucAddPharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -488,14 +459,11 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnClearPharmacistInput;
-        private System.Windows.Forms.Button btnAddPharmacistInput;
         private System.Windows.Forms.DateTimePicker dtpWHend;
         private System.Windows.Forms.DateTimePicker dtpDateOfBirth;
         private System.Windows.Forms.DateTimePicker dtpWHstart;
         private System.Windows.Forms.RadioButton rbtnFemale;
         private System.Windows.Forms.RadioButton rbtnMale;
-        private System.Windows.Forms.NumericUpDown nudSalary;
-        private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.Button btnAddInput;
         private System.Windows.Forms.RichTextBox txtAddress;
         private System.Windows.Forms.ComboBox cbQualification;
@@ -518,5 +486,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown nudSalary;
     }
 }

@@ -35,16 +35,13 @@ namespace HospitalManagementSystem
             txtEmail.Text = "";
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
-            cbDepartment.Text = "";
             dtpWHend.Value = DateTime.Today;
             dtpWHstart.Value =DateTime.Today;
             cbDepartment.Text = "";
             cbQualification.Text = "";
-            radioButton1.Checked = false;
+            rbtnMale.Checked = false;
             rbtnFemale.Checked = false;
-            nupSalary.Value = 0;
-            
-
+            nudSalary.Value = 0;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -69,6 +66,7 @@ namespace HospitalManagementSystem
             String doctor_Email = txtEmail.Text;
             String doctor_PAssworsd = txtPassword.Text;
             String doctor_Qualification = cbQualification.SelectedItem.ToString();
+            String doctor_Depaartment = cbDepartment.SelectedItem.ToString();
             String doctor_Address = txtAddress.Text;
             String doctor_Gender;
             if (rbtnFemale.Checked)
