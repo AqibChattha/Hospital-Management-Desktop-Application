@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aqiba\\Documents\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {}
+    "E:\\New Folder\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aqiba\\Documents\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {
+    "E:\\New Folder\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aqiba\\Documents\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+        "projectUniqueName": "E:\\New Folder\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
         "projectName": "HospitalManagementSystem",
-        "projectPath": "C:\\Users\\aqiba\\Documents\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\aqiba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aqiba\\Documents\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\obj\\",
+        "projectPath": "E:\\New Folder\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Ahtisham Ul Haq\\.nuget\\packages\\",
+        "outputPath": "E:\\New Folder\\CS162S21GID06\\HospitalManagementSystem\\HospitalManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aqiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ahtisham Ul Haq\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
