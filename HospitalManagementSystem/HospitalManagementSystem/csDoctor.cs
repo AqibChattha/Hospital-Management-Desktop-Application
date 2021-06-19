@@ -11,7 +11,7 @@ namespace HospitalManagementSystem
         public String Qualification { get; set; }
         public String Specialist { get; set; }
         public String Department { get; set; }
-
+      
         public void ViewPatientProfile() { }
         public void PrescribeMedicine() { }
         public void RecommendTest() { }

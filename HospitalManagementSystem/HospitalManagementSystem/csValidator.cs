@@ -21,6 +21,85 @@ namespace HospitalManagementSystem
             }
             return true;
         }
+        public static bool IsValidCnic(String cnic)
+        {
+            if(cnic.Length == 13)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool IsValidPhoneNumber(String phoneNo)
+        {
+            if (phoneNo.Length == 11)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool IsEqualGender(String cnic , String gender)
+        {
+            if(cnic[12] % 2 == 0 && gender == "Male")
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool IsValidQualification(String qualification, List<String> lis_Of_qualifiction)
+        {
+            if (qualification == "")
+            {
+                return false;
+            }
+            else
+            {
+                for(int i = 0; i < lis_Of_qualifiction.Count; i++) 
+                {
+                  if(qualification == lis_Of_qualifiction[i])
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        }
+        public static bool IsValidDepartment(String department, List<String> lis_Of_department)
+        {
+            if (department == "")
+            {
+                return false;
+            }
+            else
+            {
+                for (int i = 0; i < lis_Of_department.Count; i++)
+                {
+                    if (department == lis_Of_department[i])
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+        }
+        public static bool IsvalidSalary(int salary)
+        {
+            if(salary == 0)
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+        public static bool isValidDateOFBirth(DateTime date)
+        {
+            if(date > DateTime.Now)
+            {
+                return false;
+            }
+            return true;
+
+        }
         public static bool IsValidEmail(string email)
         {
             int dot = -1;

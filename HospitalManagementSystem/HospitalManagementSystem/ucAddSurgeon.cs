@@ -83,5 +83,5 @@ namespace HospitalManagementSystem
             nudSalary.Value = 0;
         }
     }
-    }
+    
 }

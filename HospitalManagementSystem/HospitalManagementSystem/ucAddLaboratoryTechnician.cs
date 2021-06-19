@@ -63,7 +63,9 @@ namespace HospitalManagementSystem
             DateTime LabTechDate_OF_Birth = dtpDateOfBirth.Value;
             DateTime LabTech_WHstart = dtpWHstart.Value;
             DateTime LabTech_WHend = dtpWHend.Value;
+           
             MessageBox.Show(LabTech_Name + "\n" + LabTech_Cnic + "\n" + LabTech_PhoneNumber + "\n" + LabTech_Qualification + "\n" + LabTech_Gender + "\n" + LabTech_Salary + "\n" + LabTech_WHstart + "\n" + LabTech_WHend);
+           
         }
 
         private void btnClearInput_Click(object sender, EventArgs e)
