@@ -13,6 +13,9 @@
     <Compile Update="ucAcknowledgeTest.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ucAddDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ucAddLaboratoryTechnician.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -23,9 +26,6 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ucAddPharmacist.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ucAddDoctor.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ucAddNurse.cs">

@@ -16,7 +16,7 @@ namespace HospitalManagementSystem
         {
             for (int i = 0; i < name.Length; i++)
             {
-                if (!((name[i] >= 'A' && name[i] <= 'Z') || (name[i] >= 'a' && name[i] <= 'z')))
+                if (!((name[i] >= 'A' && name[i] <= 'Z') || (name[i] >= 'a' && name[i] <= 'z') || name[i]==' '))
                 {
                     return false;
                 }
@@ -41,7 +41,11 @@ namespace HospitalManagementSystem
         }
         private static bool IsEqualGender(String cnic, String gender)
         {
-            if (cnic[12] % 2 == 0 && gender == "Female")
+            if (((int)cnic[12]) % 2 == 0 && gender == "Female")
+            {
+                return true;
+            }
+            if (((int)cnic[12]) % 2 != 0 && gender == "Male")
             {
                 return true;
             }
@@ -231,12 +235,12 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString()+ IsValidCnic(cnic).ToString()+
-                IsValidPhoneNumber(phoneno).ToString()+IsValidEmail(email).ToString()+
-                IsValidPassword(pass).ToString()+IsValidQualification(qualification, csHospital.Instence.getQualifications()).ToString());
-            MessageBox.Show(IsValidDepartment(dep, csHospital.Instence.getDepartments()).ToString()+isValidAddress(address).ToString()+
-                IsEqualGender(cnic, gender).ToString()+IsvalidSalary(salary).ToString()+
-                isValidDateOFBirth(dob)+isValidWorkingHours(sTime, eTime).ToString());
+            //MessageBox.Show(IsValidName(name).ToString()+ IsValidCnic(cnic).ToString()+
+            //    IsValidPhoneNumber(phoneno).ToString()+IsValidEmail(email).ToString()+
+            //    IsValidPassword(pass).ToString()+IsValidQualification(qualification, csHospital.Instence.getQualifications()).ToString());
+            //MessageBox.Show(IsValidDepartment(dep, csHospital.Instence.getDepartments()).ToString()+isValidAddress(address).ToString()+
+            //    IsEqualGender(cnic, gender).ToString()+IsvalidSalary(salary).ToString()+
+            //    isValidDateOFBirth(dob)+isValidWorkingHours(sTime, eTime).ToString());
             return false;
         }
     }

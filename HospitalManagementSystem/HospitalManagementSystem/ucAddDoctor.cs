@@ -10,6 +10,8 @@ namespace HospitalManagementSystem
 {
     public partial class ucAddDoctor : UserControl
     {
+        private int update_Index;
+
         private static ucAddDoctor _instence;
         public static ucAddDoctor Instence
         {
@@ -26,6 +28,7 @@ namespace HospitalManagementSystem
         {
             InitializeComponent();
             LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getQualifications());
+            lbInvalidInput.Hide();
         }
 
         private void LoadComboBox(List<String> d , List<String> q)
@@ -75,8 +78,15 @@ namespace HospitalManagementSystem
             String doctor_PhoneNumber = txtPhoneNo.Text;
             String doctor_Email = txtEmail.Text;
             String doctor_PAssworsd = txtPassword.Text;
-            String doctor_Qualification = cbQualification.SelectedItem.ToString();
-            String doctor_Depaartment = cbDepartment.SelectedItem.ToString();
+            String doctor_Qualification = "";
+            String doctor_Depaartment = "";
+            if (cbDepartment.SelectedItem == null || cbQualification.SelectedItem == null)
+            { }
+            else
+            {
+                doctor_Qualification = cbQualification.SelectedItem.ToString();
+                doctor_Depaartment = cbDepartment.SelectedItem.ToString();
+            }
             String doctor_Address = txtAddress.Text;
             int doctor_Salary = (int)nudSalary.Value;
             DateTime doctorDate_OF_Birth = dtpDateOfBirth.Value;
@@ -91,28 +101,71 @@ namespace HospitalManagementSystem
             {
                 doctor_Gender = "Male";
             }
+            if (btnAddInput.Text.Equals("Add")) {
+                if (Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
+                {
+                    csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
 
-            if(Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
-                doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
-                doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
-            {
-                csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
-                doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
-                doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
-                csHospital.Instence.AddDoctor(doctor);
+                    csHospital.Instence.AddDoctor(doctor);
 
-                ChangeUC.To_ucDoctorsData();
+                    ChangeUC.To_ucDoctorsData();
+                }
+                else
+                {
+                    lbInvalidInput.Show();
+                }
             }
             else
             {
+                if (Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
+                {
+                    csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
 
+                    csHospital.Instence.UpdateDoctor(update_Index, doctor);
+
+                    ChangeUC.To_ucDoctorsData();
+                }
+                else
+                {
+                    lbInvalidInput.Show();
+                }
             }
-
         }
         public void RefreshUC()
         {
             LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getQualifications());
             ClearAllFields();
+            lbInvalidInput.Hide();
+            btnAddInput.Text = "Add";
+        }
+        public void UpdateColumnClicked(int index)
+        {
+            update_Index = index;
+            csDoctor doc = csHospital.Instence.getDoctors()[index];
+
+            txtName.Text = doc.Name;
+            txtCnic.Text = doc.Cnic;
+            txtPhoneNo.Text = doc.PhoneNumber;
+            txtEmail.Text = doc.Email;
+            txtPassword.Text = doc.Password;
+            cbQualification.SelectedItem = doc.Qualification;
+            cbDepartment.SelectedItem = doc.Department;
+            txtAddress.Text = doc.Address;
+            nudSalary.Value = doc.Salary;
+            dtpDateOfBirth.Value = doc.DateOfBirth;
+            dtpWHstart.Value = doc.WH_Start_Time;
+            dtpWHend.Value = doc.WH_End_Time;
+
+            btnAddInput.Text = "Update";
+            ;
         }
     }
 }

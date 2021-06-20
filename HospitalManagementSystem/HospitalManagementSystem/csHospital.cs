@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace HospitalManagementSystem
 {
@@ -50,14 +51,38 @@ namespace HospitalManagementSystem
             }
         }
 
-        public void AddDoctor(csDoctor doc)
-        {
-            list_Of_Doctors.Add(doc);
-        }
+        #region Doctor
         public List<csDoctor> getDoctors()
         {
             return list_Of_Doctors;
         }
+        public void AddDoctor(csDoctor doc)
+        {
+            list_Of_Doctors.Add(doc);
+        }
+        public void DeleteDoctor(int index)
+        {
+            list_Of_Doctors.RemoveAt(index);
+        }
+        public void ViewDoctor(int index)
+        {
+            csDoctor doc = list_Of_Doctors[index];
+            String info = "";
+            info += "Name:  " + doc.Name + "\n" + "Staff ID:  " + doc.Staff_Id + "\n" +
+                "CNIC:  " + doc.Cnic + "\n" + "Phone No:  " + doc.PhoneNumber + "\n" +
+                "Date Of Birth:  " + doc.DateOfBirth.Date.ToString() + "\n" + "Email:  " + doc.Email + "\n" +
+                "Password:  " + doc.Password + "\n" + "Qualification:  " + doc.Qualification + "\n" +
+                "Department:  " + doc.Department + "\n" + "Gender:  " + doc.Gender + "\n" +
+                "From:  " + doc.WH_Start_Time.TimeOfDay + "  to  " + doc.WH_End_Time.TimeOfDay + "\n" +
+                "Salary:  " + doc.Salary + "\n" + "Address:  " + doc.Address;
+            DialogResult dr = MessageBox.Show(info, "Doctor Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void UpdateDoctor(int index, csDoctor doc)
+        {
+            list_Of_Doctors[index] = doc;
+        }
+        #endregion
+
         public List<String> getDepartments()
         {
             return list_Of_Departments;

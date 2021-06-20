@@ -45,7 +45,7 @@ namespace HospitalManagementSystem
             this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.cbQualification = new System.Windows.Forms.ComboBox();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.ebtnMale = new System.Windows.Forms.Button();
+            this.btnAddInput = new System.Windows.Forms.Button();
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -57,6 +57,7 @@ namespace HospitalManagementSystem
             this.dtpWHend = new System.Windows.Forms.DateTimePicker();
             this.dtpWHstart = new System.Windows.Forms.DateTimePicker();
             this.panelAddDoctorInfo = new System.Windows.Forms.Panel();
+            this.lbInvalidInput = new System.Windows.Forms.Label();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -145,7 +146,7 @@ namespace HospitalManagementSystem
             this.txtName.Location = new System.Drawing.Point(11, 39);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(158, 23);
-            this.txtName.TabIndex = 17;
+            this.txtName.TabIndex = 1;
             // 
             // label8
             // 
@@ -163,7 +164,7 @@ namespace HospitalManagementSystem
             this.txtEmail.Location = new System.Drawing.Point(11, 118);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(158, 23);
-            this.txtEmail.TabIndex = 0;
+            this.txtEmail.TabIndex = 5;
             // 
             // txtPassword
             // 
@@ -171,7 +172,7 @@ namespace HospitalManagementSystem
             this.txtPassword.Location = new System.Drawing.Point(204, 118);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(126, 23);
-            this.txtPassword.TabIndex = 0;
+            this.txtPassword.TabIndex = 6;
             // 
             // txtCnic
             // 
@@ -180,7 +181,7 @@ namespace HospitalManagementSystem
             this.txtCnic.Mask = "00000-0000000-0";
             this.txtCnic.Name = "txtCnic";
             this.txtCnic.Size = new System.Drawing.Size(125, 23);
-            this.txtCnic.TabIndex = 1;
+            this.txtCnic.TabIndex = 2;
             // 
             // txtPhoneNo
             // 
@@ -189,7 +190,7 @@ namespace HospitalManagementSystem
             this.txtPhoneNo.Mask = "0000-0000000";
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(189, 23);
-            this.txtPhoneNo.TabIndex = 1;
+            this.txtPhoneNo.TabIndex = 3;
             // 
             // cbDepartment
             // 
@@ -199,7 +200,7 @@ namespace HospitalManagementSystem
             this.cbDepartment.Location = new System.Drawing.Point(584, 118);
             this.cbDepartment.Name = "cbDepartment";
             this.cbDepartment.Size = new System.Drawing.Size(186, 23);
-            this.cbDepartment.TabIndex = 2;
+            this.cbDepartment.TabIndex = 8;
             // 
             // cbQualification
             // 
@@ -209,7 +210,7 @@ namespace HospitalManagementSystem
             this.cbQualification.Location = new System.Drawing.Point(366, 118);
             this.cbQualification.Name = "cbQualification";
             this.cbQualification.Size = new System.Drawing.Size(189, 23);
-            this.cbQualification.TabIndex = 2;
+            this.cbQualification.TabIndex = 7;
             // 
             // txtAddress
             // 
@@ -218,21 +219,21 @@ namespace HospitalManagementSystem
             this.txtAddress.Location = new System.Drawing.Point(11, 273);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(762, 123);
-            this.txtAddress.TabIndex = 3;
+            this.txtAddress.TabIndex = 14;
             this.txtAddress.Text = "";
             // 
-            // ebtnMale
+            // btnAddInput
             // 
-            this.ebtnMale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ebtnMale.BackColor = System.Drawing.Color.Gainsboro;
-            this.ebtnMale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ebtnMale.Location = new System.Drawing.Point(680, 436);
-            this.ebtnMale.Name = "ebtnMale";
-            this.ebtnMale.Size = new System.Drawing.Size(90, 30);
-            this.ebtnMale.TabIndex = 8;
-            this.ebtnMale.Text = "Add";
-            this.ebtnMale.UseVisualStyleBackColor = false;
-            this.ebtnMale.Click += new System.EventHandler(this.btnAddInput_Click);
+            this.btnAddInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddInput.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddInput.Location = new System.Drawing.Point(680, 436);
+            this.btnAddInput.Name = "btnAddInput";
+            this.btnAddInput.Size = new System.Drawing.Size(90, 30);
+            this.btnAddInput.TabIndex = 8;
+            this.btnAddInput.Text = "Add";
+            this.btnAddInput.UseVisualStyleBackColor = false;
+            this.btnAddInput.Click += new System.EventHandler(this.btnAddInput_Click);
             // 
             // btnClearInput
             // 
@@ -285,7 +286,7 @@ namespace HospitalManagementSystem
             0});
             this.nudSalary.Name = "nudSalary";
             this.nudSalary.Size = new System.Drawing.Size(186, 23);
-            this.nudSalary.TabIndex = 9;
+            this.nudSalary.TabIndex = 13;
             // 
             // label14
             // 
@@ -304,7 +305,7 @@ namespace HospitalManagementSystem
             this.rbtnMale.Location = new System.Drawing.Point(75, 172);
             this.rbtnMale.Name = "rbtnMale";
             this.rbtnMale.Size = new System.Drawing.Size(51, 19);
-            this.rbtnMale.TabIndex = 10;
+            this.rbtnMale.TabIndex = 9;
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Male";
             this.rbtnMale.UseVisualStyleBackColor = true;
@@ -339,7 +340,7 @@ namespace HospitalManagementSystem
             this.dtpWHend.Location = new System.Drawing.Point(361, 192);
             this.dtpWHend.Name = "dtpWHend";
             this.dtpWHend.Size = new System.Drawing.Size(94, 23);
-            this.dtpWHend.TabIndex = 16;
+            this.dtpWHend.TabIndex = 12;
             // 
             // dtpWHstart
             // 
@@ -349,7 +350,7 @@ namespace HospitalManagementSystem
             this.dtpWHstart.Location = new System.Drawing.Point(242, 192);
             this.dtpWHstart.Name = "dtpWHstart";
             this.dtpWHstart.Size = new System.Drawing.Size(96, 23);
-            this.dtpWHstart.TabIndex = 15;
+            this.dtpWHstart.TabIndex = 11;
             this.dtpWHstart.Value = new System.DateTime(2021, 5, 23, 0, 31, 0, 0);
             // 
             // panelAddDoctorInfo
@@ -358,6 +359,7 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAddDoctorInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAddDoctorInfo.Controls.Add(this.lbInvalidInput);
             this.panelAddDoctorInfo.Controls.Add(this.dtpWHstart);
             this.panelAddDoctorInfo.Controls.Add(this.dtpDateOfBirth);
             this.panelAddDoctorInfo.Controls.Add(this.dtpWHend);
@@ -369,7 +371,7 @@ namespace HospitalManagementSystem
             this.panelAddDoctorInfo.Controls.Add(this.label13);
             this.panelAddDoctorInfo.Controls.Add(this.btnCancel);
             this.panelAddDoctorInfo.Controls.Add(this.btnClearInput);
-            this.panelAddDoctorInfo.Controls.Add(this.ebtnMale);
+            this.panelAddDoctorInfo.Controls.Add(this.btnAddInput);
             this.panelAddDoctorInfo.Controls.Add(this.txtAddress);
             this.panelAddDoctorInfo.Controls.Add(this.cbQualification);
             this.panelAddDoctorInfo.Controls.Add(this.cbDepartment);
@@ -394,6 +396,17 @@ namespace HospitalManagementSystem
             this.panelAddDoctorInfo.Size = new System.Drawing.Size(787, 488);
             this.panelAddDoctorInfo.TabIndex = 5;
             // 
+            // lbInvalidInput
+            // 
+            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbInvalidInput.AutoSize = true;
+            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
+            this.lbInvalidInput.Location = new System.Drawing.Point(687, 418);
+            this.lbInvalidInput.Name = "lbInvalidInput";
+            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
+            this.lbInvalidInput.TabIndex = 8;
+            this.lbInvalidInput.Text = "Invalid Input";
+            // 
             // dtpDateOfBirth
             // 
             this.dtpDateOfBirth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -402,7 +415,7 @@ namespace HospitalManagementSystem
             this.dtpDateOfBirth.Location = new System.Drawing.Point(584, 39);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
             this.dtpDateOfBirth.Size = new System.Drawing.Size(186, 23);
-            this.dtpDateOfBirth.TabIndex = 16;
+            this.dtpDateOfBirth.TabIndex = 4;
             // 
             // label16
             // 
@@ -480,7 +493,7 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.ComboBox cbDepartment;
         private System.Windows.Forms.ComboBox cbQualification;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.Button ebtnMale;
+        private System.Windows.Forms.Button btnAddInput;
         private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label13;
@@ -498,5 +511,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown nudSalary;
+        private System.Windows.Forms.Label lbInvalidInput;
     }
 }

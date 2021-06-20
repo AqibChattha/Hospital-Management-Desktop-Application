@@ -34,7 +34,26 @@ namespace HospitalManagementSystem
         }
         private String GenerateStaffId()
         {
-            String id = "MED" + (csHospital.Instence.getDoctors().Count + 1);
+            String id = "";
+            bool flag = true;
+            for (int i = 0; i <= csHospital.Instence.getDoctors().Count; i++)
+            {
+                id = "MED-" + (i + 1);
+                for (int j = 0; j < csHospital.Instence.getDoctors().Count; j++)
+                {
+                    if (id.Equals(csHospital.Instence.getDoctors()[j].Staff_Id)){
+                        flag = false;
+                    }
+                }
+                if (flag == false)
+                {
+                    flag = true;
+                }
+                else
+                {
+                    return id;
+                }
+            }       
             return id;
         }
 
