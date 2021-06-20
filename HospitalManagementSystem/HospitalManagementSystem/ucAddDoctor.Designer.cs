@@ -196,9 +196,6 @@ namespace HospitalManagementSystem
             this.cbDepartment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbDepartment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbDepartment.FormattingEnabled = true;
-            this.cbDepartment.Items.AddRange(new object[] {
-            "Department of Neurology",
-            "Department of Cardiology"});
             this.cbDepartment.Location = new System.Drawing.Point(584, 118);
             this.cbDepartment.Name = "cbDepartment";
             this.cbDepartment.Size = new System.Drawing.Size(186, 23);
@@ -209,9 +206,6 @@ namespace HospitalManagementSystem
             this.cbQualification.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbQualification.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbQualification.FormattingEnabled = true;
-            this.cbQualification.Items.AddRange(new object[] {
-            "Department of Neurology",
-            "Department of Cardiology"});
             this.cbQualification.Location = new System.Drawing.Point(366, 118);
             this.cbQualification.Name = "cbQualification";
             this.cbQualification.Size = new System.Drawing.Size(189, 23);

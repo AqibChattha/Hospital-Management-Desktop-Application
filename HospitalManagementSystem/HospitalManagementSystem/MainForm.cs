@@ -89,6 +89,7 @@ namespace HospitalManagementSystem
             {
                 panel.Controls.Add(ucDoctorsData.Instence);
                 ucDoctorsData.Instence.Dock = DockStyle.Fill;
+                ucDoctorsData.Instence.RefreshUC();
                 ucDoctorsData.Instence.BringToFront();
             }
             else

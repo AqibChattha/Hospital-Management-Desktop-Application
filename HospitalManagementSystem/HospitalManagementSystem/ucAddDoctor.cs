@@ -25,9 +25,23 @@ namespace HospitalManagementSystem
         public ucAddDoctor()
         {
             InitializeComponent();
+            LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getQualifications());
         }
 
-        private void btnClearInput_Click(object sender, EventArgs e)
+        private void LoadComboBox(List<String> d , List<String> q)
+        {
+            cbDepartment.Items.Clear();
+            cbQualification.Items.Clear();
+            for(int i=0; i<d.Count; i++)
+            {
+                cbDepartment.Items.Add(d[i]);
+            }
+            for (int i = 0; i < d.Count; i++)
+            {
+                cbQualification.Items.Add(q[i]);
+            }
+        }
+        private void ClearAllFields()
         {
             txtName.Text = "";
             txtCnic.Text = "";
@@ -36,7 +50,7 @@ namespace HospitalManagementSystem
             txtPhoneNo.Text = "";
             txtAddress.Text = "";
             dtpWHend.Value = DateTime.Today;
-            dtpWHstart.Value =DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
             cbDepartment.Text = "";
             cbQualification.Text = "";
             rbtnMale.Checked = false;
@@ -44,18 +58,14 @@ namespace HospitalManagementSystem
             nudSalary.Value = 0;
         }
 
+        private void btnClearInput_Click(object sender, EventArgs e)
+        {
+            ClearAllFields();
+        }
+
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if (!MainForn.main_Panel.Controls.Contains(ucDoctorsData.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucDoctorsData.Instence);
-                ucDoctorsData.Instence.Dock = DockStyle.Fill;
-                ucDoctorsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucDoctorsData.Instence.BringToFront();
-            }
+            ChangeUC.To_ucDoctorsData();
         }
 
         private void btnAddInput_Click(object sender, EventArgs e)
@@ -68,6 +78,10 @@ namespace HospitalManagementSystem
             String doctor_Qualification = cbQualification.SelectedItem.ToString();
             String doctor_Depaartment = cbDepartment.SelectedItem.ToString();
             String doctor_Address = txtAddress.Text;
+            int doctor_Salary = (int)nudSalary.Value;
+            DateTime doctorDate_OF_Birth = dtpDateOfBirth.Value;
+            DateTime doctor_WHstart = dtpWHstart.Value;
+            DateTime doctor_WHend = dtpWHend.Value;
             String doctor_Gender;
             if (rbtnFemale.Checked)
             {
@@ -77,12 +91,28 @@ namespace HospitalManagementSystem
             {
                 doctor_Gender = "Male";
             }
-            int doctor_Salary = (int)nudSalary.Value;
-            DateTime doctorDate_OF_Birth = dtpDateOfBirth.Value;
-            DateTime doctor_WHstart = dtpWHstart.Value;
-            DateTime doctor_WHend = dtpWHend.Value;
 
-            MessageBox.Show(doctor_Name + "\n" + doctor_Cnic + "\n" + doctor_PhoneNumber + "\n" + doctor_Qualification + "\n" + doctor_Gender + "\n" + doctor_Salary + "\n" + doctor_WHstart + "\n" + doctor_WHend);
+            if(Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
+            {
+                csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
+                csHospital.Instence.AddDoctor(doctor);
+
+                ChangeUC.To_ucDoctorsData();
+            }
+            else
+            {
+
+            }
+
+        }
+        public void RefreshUC()
+        {
+            LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getQualifications());
+            ClearAllFields();
         }
     }
 }

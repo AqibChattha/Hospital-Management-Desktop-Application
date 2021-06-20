@@ -25,23 +25,35 @@ namespace HospitalManagementSystem
         public ucDoctorsData()
         {
             InitializeComponent();
+            LoadDoctorDataInDtv(csHospital.Instence.getDoctors());
             dtvDoctor.AllowUserToAddRows = false;
+        }
+
+        private void LoadDoctorDataInDtv(List<csDoctor> doctors)
+        {
+            dtvDoctor.Rows.Clear();
+            try
+            {
+                for (int i = 0; i < doctors.Count; i++)
+                {
+                    dtvDoctor.Rows.Add(doctors[i].Name, doctors[i].Cnic, doctors[i].PhoneNumber, doctors[i].Gender);
+                }
+            }catch(NullReferenceException e) { 
+            }
         }
 
         private void btnRegisterDoctor_Click(object sender, EventArgs e)
         {
-            if (!MainForn.main_Panel.Controls.Contains(ucAddDoctor.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAddDoctor.Instence);
-                ucAddDoctor.Instence.Dock = DockStyle.Fill;
-                ucAddDoctor.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddDoctor.Instence.BringToFront();
-            }
+            ChangeUC.To_ucAddDoctor();
         }
 
-       
+        private void ucDoctorsData_Load(object sender, EventArgs e)
+        {
+            LoadDoctorDataInDtv(csHospital.Instence.getDoctors());
+        }
+        public void RefreshUC()
+        {
+            LoadDoctorDataInDtv(csHospital.Instence.getDoctors());
+        }
     }
 }
