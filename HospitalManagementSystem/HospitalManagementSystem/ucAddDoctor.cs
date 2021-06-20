@@ -149,6 +149,7 @@ namespace HospitalManagementSystem
         public void UpdateColumnClicked(int index)
         {
             update_Index = index;
+            lbInvalidInput.Hide();
             csDoctor doc = csHospital.Instence.getDoctors()[index];
 
             txtName.Text = doc.Name;
@@ -165,7 +166,14 @@ namespace HospitalManagementSystem
             dtpWHend.Value = doc.WH_End_Time;
 
             btnAddInput.Text = "Update";
-            ;
+            if (doc.Gender.Equals("Male"))
+            {
+                rbtnMale.Checked = true;
+            }
+            else
+            {
+                rbtnFemale.Checked = true;
+            }
         }
     }
 }

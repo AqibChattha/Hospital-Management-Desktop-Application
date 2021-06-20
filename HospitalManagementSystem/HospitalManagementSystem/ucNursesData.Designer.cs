@@ -32,7 +32,7 @@ namespace HospitalManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucNursesData));
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearchNurse = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRegisterNurse = new System.Windows.Forms.Button();
             this.dtvNurse = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,13 +66,15 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 16;
             this.label1.Text = "Search";
             // 
-            // txtSearchNurse
+            // txtSearch
             // 
-            this.txtSearchNurse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchNurse.Location = new System.Drawing.Point(607, 63);
-            this.txtSearchNurse.Name = "txtSearchNurse";
-            this.txtSearchNurse.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchNurse.TabIndex = 15;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search Nurse...";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 15;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnRegisterNurse
             // 
@@ -107,6 +109,7 @@ namespace HospitalManagementSystem
             this.dtvNurse.RowTemplate.Height = 25;
             this.dtvNurse.Size = new System.Drawing.Size(790, 420);
             this.dtvNurse.TabIndex = 18;
+            this.dtvNurse.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvNurse_CellContentClick);
             // 
             // Column1
             // 
@@ -173,7 +176,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.dtvNurse);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSearchNurse);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnRegisterNurse);
             this.Name = "ucNursesData";
             this.Size = new System.Drawing.Size(824, 561);
@@ -187,7 +190,7 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSearchNurse;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnRegisterNurse;
         private System.Windows.Forms.DataGridView dtvNurse;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

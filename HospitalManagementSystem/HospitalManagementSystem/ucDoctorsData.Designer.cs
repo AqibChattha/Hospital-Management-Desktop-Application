@@ -180,7 +180,6 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.btnRegisterDoctor);
             this.Name = "ucDoctorsData";
             this.Size = new System.Drawing.Size(824, 561);
-            this.Load += new System.EventHandler(this.ucDoctorsData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtvDoctor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

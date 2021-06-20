@@ -83,6 +83,38 @@ namespace HospitalManagementSystem
         }
         #endregion
 
+        #region Nurse
+        public List<csNurse> getNurses()
+        {
+            return list_Of_Nurses;
+        }
+        public void AddNurse(csNurse nurse)
+        {
+            list_Of_Nurses.Add(nurse);
+        }
+        public void DeleteNurse(int index)
+        {
+            list_Of_Nurses.RemoveAt(index);
+        }
+        public void ViewNurse(int index)
+        {
+            csNurse nurse = list_Of_Nurses[index];
+            String info = "";
+            info += "Name:  " + nurse.Name + "\n" + "Staff ID:  " + nurse.Staff_Id + "\n" +
+                "CNIC:  " + nurse.Cnic + "\n" + "Phone No:  " + nurse.PhoneNumber + "\n" +
+                "Date Of Birth:  " + nurse.DateOfBirth.Date.ToString() + "\n" + "Email:  " + nurse.Email + "\n" +
+                "Password:  " + nurse.Password + "\n" +
+                "Duty:  " + nurse.Duty + "\n" + "Gender:  " + nurse.Gender + "\n" +
+                "From:  " + nurse.WH_Start_Time.TimeOfDay + "  to  " + nurse.WH_End_Time.TimeOfDay + "\n" +
+                "Salary:  " + nurse.Salary + "\n" + "Address:  " + nurse.Address;
+            DialogResult dr = MessageBox.Show(info, "Nurse Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void UpdateNurse(int index, csNurse nurse)
+        {
+            list_Of_Nurses[index] = nurse;
+        }
+        #endregion
+
         public List<String> getDepartments()
         {
             return list_Of_Departments;

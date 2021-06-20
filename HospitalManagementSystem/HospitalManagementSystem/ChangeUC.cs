@@ -35,5 +35,33 @@ namespace HospitalManagementSystem
                 ucAddDoctor.Instence.BringToFront();
             }
         }
+        public static void To_ucAddNurse()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddNurse.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddNurse.Instence);
+                ucAddNurse.Instence.Dock = DockStyle.Fill;
+                ucAddNurse.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddNurse.Instence.RefreshUC();
+                ucAddNurse.Instence.BringToFront();
+            }
+        }
+        public static void To_ucNursesData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucNursesData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucNursesData.Instence);
+                ucNursesData.Instence.Dock = DockStyle.Fill;
+                ucNursesData.Instence.BringToFront();
+            }
+            else
+            {
+                ucNursesData.Instence.RefreshUC();
+                ucNursesData.Instence.BringToFront();
+            }
+        }
     }
 }

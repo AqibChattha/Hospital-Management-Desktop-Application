@@ -37,12 +37,12 @@ namespace HospitalManagementSystem
                 dtvDoctor.Rows.Add(doctors[i].Staff_Id, doctors[i].Name, doctors[i].Cnic, doctors[i].PhoneNumber);
             }
         }
-        private void LoadSearchedDataInDtv(List<csDoctor>doctors, String searchedValue)
+        private void LoadSearchedDataInDtv(List<csDoctor> doctors, String searchedValue)
         {
             dtvDoctor.Rows.Clear();
             for (int i = 0; i < doctors.Count; i++)
             {
-                if(doctors[i].Name.Contains(searchedValue, StringComparison.CurrentCultureIgnoreCase)==true || doctors[i].Staff_Id.Contains(searchedValue, StringComparison.CurrentCultureIgnoreCase)==true)
+                if (doctors[i].Name.Contains(searchedValue, StringComparison.CurrentCultureIgnoreCase) == true || doctors[i].Staff_Id.Contains(searchedValue, StringComparison.CurrentCultureIgnoreCase) == true)
                 {
                     dtvDoctor.Rows.Add(doctors[i].Staff_Id, doctors[i].Name, doctors[i].Cnic, doctors[i].PhoneNumber);
                 }
@@ -71,11 +71,6 @@ namespace HospitalManagementSystem
         private void btnRegisterDoctor_Click(object sender, EventArgs e)
         {
             ChangeUC.To_ucAddDoctor();
-        }
-
-        private void ucDoctorsData_Load(object sender, EventArgs e)
-        {
-            LoadDoctorDataInDtv(csHospital.Instence.getDoctors());
         }
         public void RefreshUC()
         {
