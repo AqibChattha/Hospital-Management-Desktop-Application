@@ -62,7 +62,7 @@ namespace HospitalManagementSystem
         }
         private void DeleteNurseRow(int index)
         {
-            csHospital.Instence.DeleteDoctor(getNurseIndex(index));
+            csHospital.Instence.DeleteNurse(getNurseIndex(index));
             dtvNurse.Rows.RemoveAt(index);
             txtSearch.Text = "";
         }
@@ -88,7 +88,7 @@ namespace HospitalManagementSystem
             {
                 if (e.ColumnIndex == 6)
                 {
-                    DialogResult dr = MessageBox.Show("Are you sure you want to delete this doctor.", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult dr = MessageBox.Show("Are you sure you want to delete this Nurse.", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (dr == DialogResult.Yes)
                     {
                         DeleteNurseRow(e.RowIndex);
@@ -97,23 +97,23 @@ namespace HospitalManagementSystem
 
                 if (e.ColumnIndex == 5)
                 {
-                    if (!MainForn.main_Panel.Controls.Contains(ucAddDoctor.Instence))
+                    if (!MainForn.main_Panel.Controls.Contains(ucAddNurse.Instence))
                     {
-                        MainForn.main_Panel.Controls.Add(ucAddDoctor.Instence);
-                        ucAddDoctor.Instence.Dock = DockStyle.Fill;
-                        ucAddDoctor.Instence.UpdateColumnClicked(e.RowIndex);
-                        ucAddDoctor.Instence.BringToFront();
+                        MainForn.main_Panel.Controls.Add(ucAddNurse.Instence);
+                        ucAddNurse.Instence.Dock = DockStyle.Fill;
+                        ucAddNurse.Instence.UpdateColumnClicked(e.RowIndex);
+                        ucAddNurse.Instence.BringToFront();
                     }
                     else
                     {
-                        ucAddDoctor.Instence.UpdateColumnClicked(getNurseIndex(e.RowIndex));
-                        ucAddDoctor.Instence.BringToFront();
+                        ucAddNurse.Instence.UpdateColumnClicked(getNurseIndex(e.RowIndex));
+                        ucAddNurse.Instence.BringToFront();
                     }
                 }
 
                 if (e.ColumnIndex == 4)
                 {
-                    csHospital.Instence.ViewDoctor(getNurseIndex(e.RowIndex));
+                    csHospital.Instence.ViewNurse(getNurseIndex(e.RowIndex));
                     txtSearch.Text = "";
                 }
             }

@@ -35,6 +35,8 @@ namespace HospitalManagementSystem
             this.txtSearchOtherStaff = new System.Windows.Forms.TextBox();
             this.btnRegisterOtherStaff = new System.Windows.Forms.Button();
             this.dtvOtherStaff = new System.Windows.Forms.DataGridView();
+            this.cbOtherStaffType = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,8 +44,6 @@ namespace HospitalManagementSystem
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cbOtherStaffType = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtvOtherStaff)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,6 +111,34 @@ namespace HospitalManagementSystem
             this.dtvOtherStaff.Size = new System.Drawing.Size(790, 420);
             this.dtvOtherStaff.TabIndex = 18;
             // 
+            // cbOtherStaffType
+            // 
+            this.cbOtherStaffType.AutoCompleteCustomSource.AddRange(new string[] {
+            "Peon",
+            "Security Gaurd",
+            "Laundry Man"});
+            this.cbOtherStaffType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbOtherStaffType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cbOtherStaffType.FormattingEnabled = true;
+            this.cbOtherStaffType.Items.AddRange(new object[] {
+            "Peon",
+            "Security Gaurd",
+            "Laundry Man"});
+            this.cbOtherStaffType.Location = new System.Drawing.Point(57, 63);
+            this.cbOtherStaffType.Name = "cbOtherStaffType";
+            this.cbOtherStaffType.Size = new System.Drawing.Size(185, 23);
+            this.cbOtherStaffType.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 15);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Type:";
+            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -166,34 +194,6 @@ namespace HospitalManagementSystem
             this.Column7.Name = "Column7";
             this.Column7.Width = 21;
             // 
-            // cbOtherStaffType
-            // 
-            this.cbOtherStaffType.AutoCompleteCustomSource.AddRange(new string[] {
-            "Peon",
-            "Security Gaurd",
-            "Laundry Man"});
-            this.cbOtherStaffType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbOtherStaffType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.cbOtherStaffType.FormattingEnabled = true;
-            this.cbOtherStaffType.Items.AddRange(new object[] {
-            "Peon",
-            "Security Gaurd",
-            "Laundry Man"});
-            this.cbOtherStaffType.Location = new System.Drawing.Point(57, 63);
-            this.cbOtherStaffType.Name = "cbOtherStaffType";
-            this.cbOtherStaffType.Size = new System.Drawing.Size(185, 23);
-            this.cbOtherStaffType.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 15);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Type:";
-            // 
             // ucOtherStaffData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -220,6 +220,8 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.TextBox txtSearchOtherStaff;
         private System.Windows.Forms.Button btnRegisterOtherStaff;
         private System.Windows.Forms.DataGridView dtvOtherStaff;
+        private System.Windows.Forms.ComboBox cbOtherStaffType;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -227,7 +229,5 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.DataGridViewImageColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Column6;
         private System.Windows.Forms.DataGridViewImageColumn Column7;
-        private System.Windows.Forms.ComboBox cbOtherStaffType;
-        private System.Windows.Forms.Label label2;
     }
 }

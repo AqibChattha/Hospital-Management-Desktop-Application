@@ -29,8 +29,12 @@ namespace HospitalManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucTestsData));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAddTest = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearchTest = new System.Windows.Forms.TextBox();
             this.testID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,9 +42,6 @@ namespace HospitalManagementSystem
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.view = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnAddTest = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSearchTest = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,51 +76,6 @@ namespace HospitalManagementSystem
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(791, 408);
             this.dataGridView1.TabIndex = 24;
-            // 
-            // testID
-            // 
-            this.testID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.testID.HeaderText = "Test ID";
-            this.testID.Name = "testID";
-            // 
-            // patientID
-            // 
-            this.patientID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.patientID.HeaderText = "Patient ID";
-            this.patientID.Name = "patientID";
-            // 
-            // name
-            // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // date
-            // 
-            this.date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.HeaderText = "";
-            this.edit.Name = "edit";
-            this.edit.Width = 21;
-            // 
-            // view
-            // 
-            this.view.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.view.HeaderText = "";
-            this.view.Name = "view";
-            this.view.Width = 21;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.HeaderText = "";
-            this.delete.Name = "delete";
-            this.delete.Width = 21;
             // 
             // btnAddTest
             // 
@@ -160,6 +116,57 @@ namespace HospitalManagementSystem
             this.txtSearchTest.PlaceholderText = "Search Tests...";
             this.txtSearchTest.Size = new System.Drawing.Size(199, 23);
             this.txtSearchTest.TabIndex = 26;
+            // 
+            // testID
+            // 
+            this.testID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.testID.HeaderText = "Test ID";
+            this.testID.Name = "testID";
+            // 
+            // patientID
+            // 
+            this.patientID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.patientID.HeaderText = "Patient ID";
+            this.patientID.Name = "patientID";
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            // 
+            // date
+            // 
+            this.date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            // 
+            // edit
+            // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.edit.HeaderText = "";
+            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
+            this.edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.edit.Name = "edit";
+            this.edit.Width = 21;
+            // 
+            // view
+            // 
+            this.view.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.view.HeaderText = "";
+            this.view.Image = ((System.Drawing.Image)(resources.GetObject("view.Image")));
+            this.view.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.view.Name = "view";
+            this.view.Width = 21;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.delete.HeaderText = "";
+            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
+            this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.delete.Name = "delete";
+            this.delete.Width = 21;
             // 
             // ucTestsData
             // 

@@ -34,6 +34,8 @@ namespace HospitalManagementSystem
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearchSurgeon = new System.Windows.Forms.TextBox();
             this.dtvPatients = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbPatientType = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,8 +43,6 @@ namespace HospitalManagementSystem
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbPatientType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPatients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,6 +95,33 @@ namespace HospitalManagementSystem
             this.dtvPatients.RowTemplate.Height = 25;
             this.dtvPatients.Size = new System.Drawing.Size(790, 452);
             this.dtvPatients.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 15);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Type:";
+            // 
+            // cbPatientType
+            // 
+            this.cbPatientType.AutoCompleteCustomSource.AddRange(new string[] {
+            "InPatient",
+            "OutPatient",
+            "IllPatient"});
+            this.cbPatientType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbPatientType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cbPatientType.FormattingEnabled = true;
+            this.cbPatientType.Items.AddRange(new object[] {
+            "InPatient",
+            "OutPatient",
+            "IllPatient"});
+            this.cbPatientType.Location = new System.Drawing.Point(55, 63);
+            this.cbPatientType.Name = "cbPatientType";
+            this.cbPatientType.Size = new System.Drawing.Size(185, 23);
+            this.cbPatientType.TabIndex = 28;
             // 
             // Column1
             // 
@@ -151,33 +178,6 @@ namespace HospitalManagementSystem
             this.Column7.Name = "Column7";
             this.Column7.Width = 21;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 15);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Type:";
-            // 
-            // cbPatientType
-            // 
-            this.cbPatientType.AutoCompleteCustomSource.AddRange(new string[] {
-            "InPatient",
-            "OutPatient",
-            "IllPatient"});
-            this.cbPatientType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbPatientType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.cbPatientType.FormattingEnabled = true;
-            this.cbPatientType.Items.AddRange(new object[] {
-            "InPatient",
-            "OutPatient",
-            "IllPatient"});
-            this.cbPatientType.Location = new System.Drawing.Point(55, 63);
-            this.cbPatientType.Name = "cbPatientType";
-            this.cbPatientType.Size = new System.Drawing.Size(185, 23);
-            this.cbPatientType.TabIndex = 28;
-            // 
             // ucPatientsData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -202,6 +202,8 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearchSurgeon;
         private System.Windows.Forms.DataGridView dtvPatients;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbPatientType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -209,7 +211,5 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.DataGridViewImageColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Column6;
         private System.Windows.Forms.DataGridViewImageColumn Column7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbPatientType;
     }
 }
