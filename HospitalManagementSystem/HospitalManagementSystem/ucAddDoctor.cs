@@ -27,7 +27,7 @@ namespace HospitalManagementSystem
         public ucAddDoctor()
         {
             InitializeComponent();
-            LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getQualifications());
+            LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getDoctorQualifications());
             lbInvalidInput.Hide();
         }
 
@@ -141,7 +141,7 @@ namespace HospitalManagementSystem
         }
         public void RefreshUC()
         {
-            LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getQualifications());
+            LoadComboBox(csHospital.Instence.getDepartments(), csHospital.Instence.getDoctorQualifications());
             ClearAllFields();
             lbInvalidInput.Hide();
             btnAddInput.Text = "Add";

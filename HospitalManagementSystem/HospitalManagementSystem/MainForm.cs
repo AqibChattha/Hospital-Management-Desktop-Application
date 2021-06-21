@@ -85,17 +85,7 @@ namespace HospitalManagementSystem
         private void btnDoctor_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucDoctorsData.Instence))
-            {
-                panel.Controls.Add(ucDoctorsData.Instence);
-                ucDoctorsData.Instence.Dock = DockStyle.Fill;
-                ucDoctorsData.Instence.RefreshUC();
-                ucDoctorsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucDoctorsData.Instence.BringToFront();
-            }
+            ChangeUC.To_ucDoctorsData();
             main_Panel = panel;
 
         }
@@ -103,16 +93,7 @@ namespace HospitalManagementSystem
         private void btnNurse_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucNursesData.Instence))
-            {
-                panel.Controls.Add(ucNursesData.Instence);
-                ucNursesData.Instence.Dock = DockStyle.Fill;
-                ucNursesData.Instence.BringToFront();
-            }
-            else
-            {
-                ucNursesData.Instence.BringToFront();
-            }
+            ChangeUC.To_ucNursesData();
             main_Panel = panel;
 
         }

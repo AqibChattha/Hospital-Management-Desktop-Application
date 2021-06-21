@@ -237,7 +237,7 @@ namespace HospitalManagementSystem
         {
             if (IsValidName(name) == true && IsValidCnic(cnic) == true
                 && IsValidPhoneNumber(phoneno) == true && IsValidEmail(email) == true
-                && IsValidPassword(pass) == true && IsValidQualification(qualification, csHospital.Instence.getQualifications()) == true
+                && IsValidPassword(pass) == true && IsValidQualification(qualification, csHospital.Instence.getDoctorQualifications()) == true
                 && IsValidDepartment(dep, csHospital.Instence.getDepartments()) == true && isValidAddress(address) == true
                 && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
                 && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
@@ -271,7 +271,25 @@ namespace HospitalManagementSystem
             //    isValidDateOFBirth(dob)+isValidWorkingHours(sTime, eTime).ToString());
             return false;
         }
-
+        public static bool LabTech(string name, string cnic, string phoneno, string email, string pass, string qualification, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
+        {
+            if (IsValidName(name) == true && IsValidCnic(cnic) == true
+                && IsValidPhoneNumber(phoneno) == true && IsValidEmail(email) == true
+                && IsValidPassword(pass) == true && IsValidQualification(qualification, csHospital.Instence.getLabTechrQualifications()) == true
+                && isValidAddress(address) == true
+                && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
+                && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
+            {
+                return true;
+            }
+            //MessageBox.Show(IsValidName(name).ToString()+ IsValidCnic(cnic).ToString()+
+            //    IsValidPhoneNumber(phoneno).ToString()+IsValidEmail(email).ToString()+
+            //    IsValidPassword(pass).ToString()+IsValidQualification(qualification, csHospital.Instence.getQualifications()).ToString());
+            //MessageBox.Show(isValidAddress(address).ToString()+
+            //    IsEqualGender(cnic, gender).ToString()+IsvalidSalary(salary).ToString()+
+            //    isValidDateOFBirth(dob)+isValidWorkingHours(sTime, eTime).ToString());
+            return false;
+        }
 
     }
 }

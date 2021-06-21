@@ -32,7 +32,7 @@ namespace HospitalManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucLaboratoryTechniciansData));
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearchLabTech = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRegisterLabTech = new System.Windows.Forms.Button();
             this.dtvLabTechnician = new System.Windows.Forms.DataGridView();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,13 +66,15 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 21;
             this.label1.Text = "Search";
             // 
-            // txtSearchLabTech
+            // txtSearch
             // 
-            this.txtSearchLabTech.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchLabTech.Location = new System.Drawing.Point(607, 63);
-            this.txtSearchLabTech.Name = "txtSearchLabTech";
-            this.txtSearchLabTech.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchLabTech.TabIndex = 20;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search here...";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 20;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnRegisterLabTech
             // 
@@ -107,6 +109,7 @@ namespace HospitalManagementSystem
             this.dtvLabTechnician.RowTemplate.Height = 25;
             this.dtvLabTechnician.Size = new System.Drawing.Size(790, 420);
             this.dtvLabTechnician.TabIndex = 23;
+            this.dtvLabTechnician.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvLabTechnician_CellContentClick);
             // 
             // colName
             // 
@@ -170,7 +173,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.dtvLabTechnician);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSearchLabTech);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnRegisterLabTech);
             this.Name = "ucLaboratoryTechniciansData";
             this.Size = new System.Drawing.Size(824, 561);
@@ -184,7 +187,7 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSearchLabTech;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnRegisterLabTech;
         private System.Windows.Forms.DataGridView dtvLabTechnician;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;

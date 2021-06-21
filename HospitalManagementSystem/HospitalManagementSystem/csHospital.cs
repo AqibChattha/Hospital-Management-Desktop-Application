@@ -37,6 +37,7 @@ namespace HospitalManagementSystem
             list_Of_Patient_record = new List<csPatientRecord>();
             list_Of_Departments = new List<string>();
             list_Of_DoctorQualifications = new List<string>();
+            list_Of_LabTechQualifications = new List<string>();
             list_Of_Departments.Add("department of neurology");
             list_Of_DoctorQualifications.Add("mmbs");
             list_Of_LabTechQualifications.Add("BSCE");

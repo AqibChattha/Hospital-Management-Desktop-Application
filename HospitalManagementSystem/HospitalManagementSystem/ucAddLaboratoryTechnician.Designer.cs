@@ -60,6 +60,7 @@ namespace HospitalManagementSystem
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbInvalidInput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -399,6 +400,7 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbInvalidInput);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnClearInput);
             this.panel1.Controls.Add(this.btnAddInput);
@@ -428,11 +430,23 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(19, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(787, 488);
             this.panel1.TabIndex = 8;
+            // 
+            // lbInvalidInput
+            // 
+            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbInvalidInput.AutoSize = true;
+            this.lbInvalidInput.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
+            this.lbInvalidInput.Location = new System.Drawing.Point(688, 418);
+            this.lbInvalidInput.Name = "lbInvalidInput";
+            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
+            this.lbInvalidInput.TabIndex = 16;
+            this.lbInvalidInput.Text = "Invalid Input";
             // 
             // ucAddLaboratoryTechnician
             // 
@@ -484,5 +498,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dtpWHend;
+        private System.Windows.Forms.Label lbInvalidInput;
     }
 }

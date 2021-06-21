@@ -73,7 +73,22 @@ namespace HospitalManagementSystem
             }
             else
             {
+                ucLaboratoryTechniciansData.Instence.RefreshUC();
                 ucLaboratoryTechniciansData.Instence.BringToFront();
+            }
+        }
+        public static void To_ucAddLaboratoryTechnician()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddLaboratoryTechnician.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddLaboratoryTechnician.Instence);
+                ucAddLaboratoryTechnician.Instence.Dock = DockStyle.Fill;
+                ucAddLaboratoryTechnician.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddLaboratoryTechnician.Instence.RefreshUC();
+                ucAddLaboratoryTechnician.Instence.BringToFront();
             }
         }
     }

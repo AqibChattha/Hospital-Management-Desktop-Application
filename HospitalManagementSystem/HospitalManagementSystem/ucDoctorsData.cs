@@ -97,7 +97,7 @@ namespace HospitalManagementSystem
                     {
                         MainForn.main_Panel.Controls.Add(ucAddDoctor.Instence);
                         ucAddDoctor.Instence.Dock = DockStyle.Fill;
-                        ucAddDoctor.Instence.UpdateColumnClicked(e.RowIndex);
+                        ucAddDoctor.Instence.UpdateColumnClicked(getDoctorIndex(e.RowIndex));
                         ucAddDoctor.Instence.BringToFront();
                     }
                     else
