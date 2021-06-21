@@ -31,6 +31,7 @@ namespace HospitalManagementSystem
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbInvalidInput = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClearPharmacistInput = new System.Windows.Forms.Button();
             this.btnAddInput = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@ namespace HospitalManagementSystem
             this.dtpWHstart = new System.Windows.Forms.DateTimePicker();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
+            this.nudSalary = new System.Windows.Forms.NumericUpDown();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.cbQualification = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
@@ -60,7 +62,6 @@ namespace HospitalManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.nudSalary = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +83,7 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbInvalidInput);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnClearPharmacistInput);
             this.panel1.Controls.Add(this.btnAddInput);
@@ -116,6 +118,17 @@ namespace HospitalManagementSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(787, 488);
             this.panel1.TabIndex = 9;
+            // 
+            // lbInvalidInput
+            // 
+            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbInvalidInput.AutoSize = true;
+            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
+            this.lbInvalidInput.Location = new System.Drawing.Point(687, 418);
+            this.lbInvalidInput.Name = "lbInvalidInput";
+            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
+            this.lbInvalidInput.TabIndex = 16;
+            this.lbInvalidInput.Text = "Invalid Input";
             // 
             // btnCancel
             // 
@@ -154,6 +167,7 @@ namespace HospitalManagementSystem
             this.btnAddInput.TabIndex = 14;
             this.btnAddInput.Text = "Add";
             this.btnAddInput.UseVisualStyleBackColor = false;
+            this.btnAddInput.Click += new System.EventHandler(this.btnAddInput_Click);
             // 
             // dtpWHend
             // 
@@ -211,6 +225,25 @@ namespace HospitalManagementSystem
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Male";
             this.rbtnMale.UseVisualStyleBackColor = true;
+            // 
+            // nudSalary
+            // 
+            this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudSalary.Increment = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.nudSalary.Location = new System.Drawing.Point(584, 119);
+            this.nudSalary.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.nudSalary.Name = "nudSalary";
+            this.nudSalary.Size = new System.Drawing.Size(186, 23);
+            this.nudSalary.TabIndex = 9;
             // 
             // txtAddress
             // 
@@ -429,15 +462,6 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
             // 
-            // nudSalary
-            // 
-            this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nudSalary.Location = new System.Drawing.Point(584, 119);
-            this.nudSalary.Name = "nudSalary";
-            this.nudSalary.Size = new System.Drawing.Size(186, 23);
-            this.nudSalary.TabIndex = 9;
-            // 
             // ucAddPharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -487,5 +511,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown nudSalary;
+        private System.Windows.Forms.Label lbInvalidInput;
     }
 }

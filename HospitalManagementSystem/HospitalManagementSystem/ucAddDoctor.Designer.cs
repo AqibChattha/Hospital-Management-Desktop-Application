@@ -274,7 +274,7 @@ namespace HospitalManagementSystem
             // 
             this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSalary.Increment = new decimal(new int[] {
-            10000,
+            5000,
             0,
             0,
             0});

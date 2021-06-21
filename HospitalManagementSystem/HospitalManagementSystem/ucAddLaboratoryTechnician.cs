@@ -88,8 +88,8 @@ namespace HospitalManagementSystem
             }
             if (btnAddInput.Text.Equals("Add"))
             {
-                if (Validat.LabTech(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
-                    LabTech_Qualification, LabTech_Address, LabTech_Gender, LabTech_Salary,
+                if (Validat.LabTech_Pharmacist(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
+                    LabTech_Qualification, csHospital.Instence.getLabTechrQualifications(), LabTech_Address, LabTech_Gender, LabTech_Salary,
                     LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend))
                 {
                     csLabTechnician LabTech = new csLabTechnician(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
@@ -107,8 +107,8 @@ namespace HospitalManagementSystem
             }
             else
             {
-                if (Validat.LabTech(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
-                    LabTech_Qualification, LabTech_Address, LabTech_Gender, LabTech_Salary,
+                if (Validat.LabTech_Pharmacist(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
+                    LabTech_Qualification, csHospital.Instence.getLabTechrQualifications(), LabTech_Address, LabTech_Gender, LabTech_Salary,
                     LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend))
                 {
                     csLabTechnician LabTech = new csLabTechnician(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
@@ -136,7 +136,6 @@ namespace HospitalManagementSystem
             LoadComboBox(csHospital.Instence.getLabTechrQualifications());
             lbInvalidInput.Hide();
             btnAddInput.Text = "Add";
-
         }
 
         public void UpdateColumnClicked(int index)

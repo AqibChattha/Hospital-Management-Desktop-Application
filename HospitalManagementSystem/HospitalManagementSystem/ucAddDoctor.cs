@@ -39,7 +39,7 @@ namespace HospitalManagementSystem
             {
                 cbDepartment.Items.Add(d[i]);
             }
-            for (int i = 0; i < d.Count; i++)
+            for (int i = 0; i < q.Count; i++)
             {
                 cbQualification.Items.Add(q[i]);
             }

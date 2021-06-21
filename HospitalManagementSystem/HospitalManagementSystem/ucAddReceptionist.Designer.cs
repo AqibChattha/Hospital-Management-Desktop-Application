@@ -209,7 +209,17 @@ namespace HospitalManagementSystem
             // 
             this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudSalary.Increment = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.nudSalary.Location = new System.Drawing.Point(584, 119);
+            this.nudSalary.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
             this.nudSalary.Name = "nudSalary";
             this.nudSalary.Size = new System.Drawing.Size(186, 23);
             this.nudSalary.TabIndex = 9;

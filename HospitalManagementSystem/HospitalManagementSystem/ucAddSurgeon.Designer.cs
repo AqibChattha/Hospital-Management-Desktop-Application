@@ -42,7 +42,6 @@ namespace HospitalManagementSystem
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.cbQualification = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
-            this.txtCnic = new System.Windows.Forms.MaskedTextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@ namespace HospitalManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtCnic = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
@@ -208,7 +208,17 @@ namespace HospitalManagementSystem
             // 
             this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSalary.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudSalary.Increment = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.nudSalary.Location = new System.Drawing.Point(614, 119);
+            this.nudSalary.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
             this.nudSalary.Name = "nudSalary";
             this.nudSalary.Size = new System.Drawing.Size(156, 23);
             this.nudSalary.TabIndex = 9;
@@ -245,16 +255,6 @@ namespace HospitalManagementSystem
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(174, 23);
             this.txtPhoneNo.TabIndex = 1;
-            // 
-            // txtCnic
-            // 
-            this.txtCnic.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCnic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCnic.Location = new System.Drawing.Point(204, 39);
-            this.txtCnic.Mask = "00000-0000000-0";
-            this.txtCnic.Name = "txtCnic";
-            this.txtCnic.Size = new System.Drawing.Size(159, 23);
-            this.txtCnic.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -429,6 +429,16 @@ namespace HospitalManagementSystem
             this.label2.Size = new System.Drawing.Size(55, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "Name:";
+            // 
+            // txtCnic
+            // 
+            this.txtCnic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCnic.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCnic.Location = new System.Drawing.Point(204, 39);
+            this.txtCnic.Mask = "00000-0000000-0";
+            this.txtCnic.Name = "txtCnic";
+            this.txtCnic.Size = new System.Drawing.Size(159, 23);
+            this.txtCnic.TabIndex = 1;
             // 
             // label1
             // 

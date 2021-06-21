@@ -22,6 +22,7 @@ namespace HospitalManagementSystem
         private List<String> list_Of_Departments { get; set; }
         private List<String> list_Of_DoctorQualifications { get; set; }
         private List<String> list_Of_LabTechQualifications { get; set; }
+        private List<String> list_Of_PharmacistQualifications { get; set; }
         private csHospital()
         {
             list_Of_Rooms = new List<csRoom>();
@@ -38,9 +39,12 @@ namespace HospitalManagementSystem
             list_Of_Departments = new List<string>();
             list_Of_DoctorQualifications = new List<string>();
             list_Of_LabTechQualifications = new List<string>();
+            list_Of_PharmacistQualifications = new List<string>();
+
             list_Of_Departments.Add("department of neurology");
             list_Of_DoctorQualifications.Add("mmbs");
             list_Of_LabTechQualifications.Add("BSCE");
+            list_Of_PharmacistQualifications.Add("Chemist");
         }
         public static csHospital Instence
         {
@@ -54,7 +58,7 @@ namespace HospitalManagementSystem
             }
         }
 
-        #region Doctor
+        #region -----Doctor
         public List<csDoctor> getDoctors()
         {
             return list_Of_Doctors;
@@ -66,6 +70,14 @@ namespace HospitalManagementSystem
         public void DeleteDoctor(int index)
         {
             list_Of_Doctors.RemoveAt(index);
+        }
+        public List<String> getDoctorQualifications()
+        {
+            return list_Of_DoctorQualifications;
+        }
+        public void UpdateDoctor(int index, csDoctor doc)
+        {
+            list_Of_Doctors[index] = doc;
         }
         public void ViewDoctor(int index)
         {
@@ -80,13 +92,9 @@ namespace HospitalManagementSystem
                 "Salary:  " + doc.Salary + "\n" + "Address:  " + doc.Address;
             MessageBox.Show(info, "Doctor Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        public void UpdateDoctor(int index, csDoctor doc)
-        {
-            list_Of_Doctors[index] = doc;
-        }
         #endregion
 
-        #region Nurse
+        #region -----Nurse
         public List<csNurse> getNurses()
         {
             return list_Of_Nurses;
@@ -118,7 +126,7 @@ namespace HospitalManagementSystem
         }
         #endregion
 
-        #region LabTechnician
+        #region -----LabTechnician
         public List<csLabTechnician> getLabTech()
         {
             return list_Of_LabTechnecians;
@@ -130,6 +138,14 @@ namespace HospitalManagementSystem
         public void DeleteLabTech(int index)
         {
             list_Of_LabTechnecians.RemoveAt(index);
+        }
+        public List<String> getLabTechrQualifications()
+        {
+            return list_Of_LabTechQualifications;
+        }
+        public void UpdateLabTech(int index, csLabTechnician LabTech)
+        {
+            list_Of_LabTechnecians[index] = LabTech;
         }
         public void ViewLabTech(int index)
         {
@@ -144,22 +160,48 @@ namespace HospitalManagementSystem
                 "Salary:  " + LabTech.Salary + "\n" + "Address:  " + LabTech.Address;
              MessageBox.Show(info, "Lab Technician Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        public void UpdateLabTech(int index, csLabTechnician LabTech)
+        #endregion
+
+        #region -----Pharmacist
+        public List<csPharmacist> getPharmacist()
         {
-           list_Of_LabTechnecians[index] = LabTech;
+            return list_Of_Pharmacists;
+        }
+        public void AddPharmacist(csPharmacist Pharmacist)
+        {
+            list_Of_Pharmacists.Add(Pharmacist);
+        }
+        public void DeletePharmacist(int index)
+        {
+            list_Of_Pharmacists.RemoveAt(index);
+        }
+        public List<String> getPharmacistrQualifications()
+        {
+            return list_Of_PharmacistQualifications;
+        }
+        public void UpdatePharmacist(int index, csPharmacist Pharmacist)
+        {
+            list_Of_Pharmacists[index] = Pharmacist;
+        }
+        public void ViewPharmacist(int index)
+        {
+            csPharmacist Pharmacist = list_Of_Pharmacists[index];
+            String info = "";
+            info += "Name:  " + Pharmacist.Name + "\n" + "Staff ID:  " + Pharmacist.Staff_Id + "\n" +
+                "CNIC:  " + Pharmacist.Cnic + "\n" + "Phone No:  " + Pharmacist.PhoneNumber + "\n" +
+                "Date Of Birth:  " + Pharmacist.DateOfBirth.Date.ToString() + "\n" + "Email:  " + Pharmacist.Email + "\n" +
+                "Password:  " + Pharmacist.Password + "\n" +
+                "Qualification:  " + Pharmacist.Qualification + "\n" + "Gender:  " + Pharmacist.Gender + "\n" +
+                "From:  " + Pharmacist.WH_Start_Time.TimeOfDay + "  to  " + Pharmacist.WH_End_Time.TimeOfDay + "\n" +
+                "Salary:  " + Pharmacist.Salary + "\n" + "Address:  " + Pharmacist.Address;
+            MessageBox.Show(info, "Pharmacist Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
+
+
         public List<String> getDepartments()
         {
             return list_Of_Departments;
-        }
-        public List<String> getDoctorQualifications()
-        {
-            return list_Of_DoctorQualifications;
-        }
-        public List<String> getLabTechrQualifications()
-        {
-            return list_Of_LabTechQualifications;
         }
     }
 }

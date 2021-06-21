@@ -91,5 +91,33 @@ namespace HospitalManagementSystem
                 ucAddLaboratoryTechnician.Instence.BringToFront();
             }
         }
+        public static void To_ucPharmacistData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucPharmacistData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucPharmacistData.Instence);
+                ucPharmacistData.Instence.Dock = DockStyle.Fill;
+                ucPharmacistData.Instence.BringToFront();
+            }
+            else
+            {
+                ucPharmacistData.Instence.RefreshUC();
+                ucPharmacistData.Instence.BringToFront();
+            }
+        }
+        public static void To_ucAddPharmacist()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddPharmacist.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddPharmacist.Instence);
+                ucAddPharmacist.Instence.Dock = DockStyle.Fill;
+                ucAddPharmacist.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddDoctor.Instence.RefreshUC();
+                ucAddPharmacist.Instence.BringToFront();
+            }
+        }
     }
 }
