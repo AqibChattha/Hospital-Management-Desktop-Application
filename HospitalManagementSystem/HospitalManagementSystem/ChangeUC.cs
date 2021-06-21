@@ -63,5 +63,18 @@ namespace HospitalManagementSystem
                 ucNursesData.Instence.BringToFront();
             }
         }
+        public static void To_ucLaboratoryTechniciansData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucLaboratoryTechniciansData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucLaboratoryTechniciansData.Instence);
+                ucLaboratoryTechniciansData.Instence.Dock = DockStyle.Fill;
+                ucLaboratoryTechniciansData.Instence.BringToFront();
+            }
+            else
+            {
+                ucLaboratoryTechniciansData.Instence.BringToFront();
+            }
+        }
     }
 }

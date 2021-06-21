@@ -25,22 +25,37 @@ namespace HospitalManagementSystem
         public ucAddLaboratoryTechnician()
         {
             InitializeComponent();
+            LoadComboBox(csHospital.Instence.getLabTechrQualifications());
         }
-
+        private void LoadComboBox(List<String> d)
+        {
+           
+            cbQualification.Items.Clear();
+            for (int i = 0; i < d.Count; i++)
+            {
+                cbQualification.Items.Add(d[i]);
+            }
+        }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if (!MainForn.main_Panel.Controls.Contains(ucLaboratoryTechniciansData.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucLaboratoryTechniciansData.Instence);
-                ucLaboratoryTechniciansData.Instence.Dock = DockStyle.Fill;
-                ucLaboratoryTechniciansData.Instence.BringToFront();
-            }
-            else
-            {
-                ucLaboratoryTechniciansData.Instence.BringToFront();
-            }
+            ChangeUC.To_ucLaboratoryTechniciansData();
         }
 
+        private void ClearAllFields()
+        {
+            txtName.Text = "";
+            txtCnic.Text = "";
+            txtPassword.Text = "";
+            txtEmail.Text = "";
+            txtPhoneNo.Text = "";
+            txtAddress.Text = "";
+            dtpWHend.Value = DateTime.Today;
+            dtpWHstart.Value = DateTime.Today;
+            cbQualification.Text = "";
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
+            nudSalary.Value = 0;
+        }
         private void btnAddInput_Click(object sender, EventArgs e)
         {
             String LabTech_Name = txtName.Text;
@@ -70,18 +85,13 @@ namespace HospitalManagementSystem
 
         private void btnClearInput_Click(object sender, EventArgs e)
         {
-            txtName.Text = "";
-            txtCnic.Text = "";
-            txtPassword.Text = "";
-            txtEmail.Text = "";
-            txtPhoneNo.Text = "";
-            txtAddress.Text = "";
-            dtpWHend.Value = DateTime.Today;
-            dtpWHstart.Value = DateTime.Today;
-            cbQualification.Text = "";
-            rbtnMale.Checked = false;
-            rbtnFemale.Checked = false;
-            nudSalary.Value = 0;
+            ClearAllFields();
+        }
+        public void RefreshUC()
+        {
+            ClearAllFields();
+            LoadComboBox(csHospital.Instence.getLabTechrQualifications());
+
         }
     }
 }

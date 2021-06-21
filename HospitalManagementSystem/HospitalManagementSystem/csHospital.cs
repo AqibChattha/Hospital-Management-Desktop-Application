@@ -20,7 +20,8 @@ namespace HospitalManagementSystem
         private List<csSurgeon> list_Of_Surgeons { get; set; }
         private List<csPatientRecord> list_Of_Patient_record { get; set; }
         private List<String> list_Of_Departments { get; set; }
-        private List<String> list_Of_Qualifications { get; set; }
+        private List<String> list_Of_DoctorQualifications { get; set; }
+        private List<String> list_Of_LabTechQualifications { get; set; }
         private csHospital()
         {
             list_Of_Rooms = new List<csRoom>();
@@ -35,9 +36,10 @@ namespace HospitalManagementSystem
             list_Of_Surgeons = new List<csSurgeon>();
             list_Of_Patient_record = new List<csPatientRecord>();
             list_Of_Departments = new List<string>();
-            list_Of_Qualifications = new List<string>();
+            list_Of_DoctorQualifications = new List<string>();
             list_Of_Departments.Add("department of neurology");
-            list_Of_Qualifications.Add("mmbs");
+            list_Of_DoctorQualifications.Add("mmbs");
+            list_Of_LabTechQualifications.Add("BSCE");
         }
         public static csHospital Instence
         {
@@ -75,7 +77,7 @@ namespace HospitalManagementSystem
                 "Department:  " + doc.Department + "\n" + "Gender:  " + doc.Gender + "\n" +
                 "From:  " + doc.WH_Start_Time.TimeOfDay + "  to  " + doc.WH_End_Time.TimeOfDay + "\n" +
                 "Salary:  " + doc.Salary + "\n" + "Address:  " + doc.Address;
-            DialogResult dr = MessageBox.Show(info, "Doctor Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(info, "Doctor Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void UpdateDoctor(int index, csDoctor doc)
         {
@@ -107,7 +109,7 @@ namespace HospitalManagementSystem
                 "Duty:  " + nurse.Duty + "\n" + "Gender:  " + nurse.Gender + "\n" +
                 "From:  " + nurse.WH_Start_Time.TimeOfDay + "  to  " + nurse.WH_End_Time.TimeOfDay + "\n" +
                 "Salary:  " + nurse.Salary + "\n" + "Address:  " + nurse.Address;
-            DialogResult dr = MessageBox.Show(info, "Nurse Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             MessageBox.Show(info, "Nurse Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void UpdateNurse(int index, csNurse nurse)
         {
@@ -115,13 +117,48 @@ namespace HospitalManagementSystem
         }
         #endregion
 
+        #region LabTechnician
+        public List<csLabTechnician> getLabTech()
+        {
+            return list_Of_LabTechnecians;
+        }
+        public void AddLabTech(csLabTechnician LabTech)
+        {
+            list_Of_LabTechnecians.Add(LabTech);
+        }
+        public void DeleteLabTech(int index)
+        {
+            list_Of_LabTechnecians.RemoveAt(index);
+        }
+        public void ViewLabTech(int index)
+        {
+           csLabTechnician LabTech = list_Of_LabTechnecians[index];
+            String info = "";
+            info += "Name:  " + LabTech.Name + "\n" + "Staff ID:  " + LabTech.Staff_Id + "\n" +
+                "CNIC:  " + LabTech.Cnic + "\n" + "Phone No:  " + LabTech.PhoneNumber + "\n" +
+                "Date Of Birth:  " + LabTech.DateOfBirth.Date.ToString() + "\n" + "Email:  " + LabTech.Email + "\n" +
+                "Password:  " + LabTech.Password + "\n" +
+                "Qualification:  " + LabTech.Qualification + "\n" + "Gender:  " + LabTech.Gender + "\n" +
+                "From:  " + LabTech.WH_Start_Time.TimeOfDay + "  to  " + LabTech.WH_End_Time.TimeOfDay + "\n" +
+                "Salary:  " + LabTech.Salary + "\n" + "Address:  " + LabTech.Address;
+             MessageBox.Show(info, "Lab Technician Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void UpdateLabTech(int index, csLabTechnician LabTech)
+        {
+           list_Of_LabTechnecians[index] = LabTech;
+        }
+        #endregion
         public List<String> getDepartments()
         {
             return list_Of_Departments;
         }
-        public List<String> getQualifications()
+        public List<String> getDoctorQualifications()
         {
-            return list_Of_Qualifications;
+            return list_Of_DoctorQualifications;
+        }
+        public List<String> getLabTechrQualifications()
+        {
+            return list_Of_LabTechQualifications;
         }
     }
 }
