@@ -81,16 +81,7 @@ namespace HospitalManagementSystem
             MessageBox.Show(outPatient_Name + "\n" + outPatient_Cnic + "\n" + outPatient_PhoneNumber + "\n" + outPatient_Gender + "\n");
 
 
-            if (!MainForn.main_Panel.Controls.Contains(ucPatientQueue.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucPatientQueue.Instence);
-                ucPatientQueue.Instence.Dock = DockStyle.Fill;
-                ucPatientQueue.Instence.BringToFront();
-            }
-            else
-            {
-                ucPatientQueue.Instence.BringToFront();
-            }
+            ChangeUC.To_ucPatientQueue();
         }
 
         private void btnAddToData_Click(object sender, EventArgs e)

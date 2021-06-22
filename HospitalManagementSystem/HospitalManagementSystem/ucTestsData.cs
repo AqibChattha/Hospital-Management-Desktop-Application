@@ -29,16 +29,7 @@ namespace HospitalManagementSystem
 
         private void btnAddTest_Click(object sender, EventArgs e)
         {
-            if (!MainForn.main_Panel.Controls.Contains(ucAcknowledgeTest.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAcknowledgeTest.Instence);
-                ucAcknowledgeTest.Instence.Dock = DockStyle.Fill;
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
-            else
-            {
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
+            ChangeUC.To_ucAcknowledgeTest();
         }
     }
 }

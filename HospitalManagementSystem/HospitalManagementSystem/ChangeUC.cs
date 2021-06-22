@@ -163,7 +163,7 @@ namespace HospitalManagementSystem
                 ucReceptionistsData.Instence.BringToFront();
             }
         }
-        
+
         public static void To_ucAddReceptionist()
         {
             if (!MainForn.main_Panel.Controls.Contains(ucAddReceptionist.Instence))
@@ -208,5 +208,141 @@ namespace HospitalManagementSystem
                 ucAddOtherEmployee.Instence.BringToFront();
             }
         }
+
+
+
+
+
+
+
+
+
+        public static void To_ucPatientQueue()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucPatientQueue.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucPatientQueue.Instence);
+                ucPatientQueue.Instence.Dock = DockStyle.Fill;
+                ucPatientQueue.Instence.BringToFront();
+            }
+            else
+            {
+                ucPatientQueue.Instence.BringToFront();
+            }
+        }
+        public static void To_ucAddPatient()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddPatient.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddPatient.Instence);
+                ucAddPatient.Instence.Dock = DockStyle.Fill;
+                ucAddPatient.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddPatient.Instence.BringToFront();
+            }
+        }
+        public static void To_ucPatientsData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucPatientsData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucPatientsData.Instence);
+                ucPatientsData.Instence.Dock = DockStyle.Fill;
+                ucPatientsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucPatientsData.Instence.BringToFront();
+            }
+        }
+        public static void To_ucAcknowledgeTest()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAcknowledgeTest.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAcknowledgeTest.Instence);
+                ucAcknowledgeTest.Instence.Dock = DockStyle.Fill;
+                ucAcknowledgeTest.Instence.BringToFront();
+            }
+            else
+            {
+                ucAcknowledgeTest.Instence.BringToFront();
+            }
+        }
+        public static void To_ucTestsData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucTestsData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucTestsData.Instence);
+                ucTestsData.Instence.Dock = DockStyle.Fill;
+                ucTestsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucTestsData.Instence.BringToFront();
+            }
+        }
+        public static void To_ucCapitalData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucCapitalData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucCapitalData.Instence);
+                ucCapitalData.Instence.Dock = DockStyle.Fill;
+                ucCapitalData.Instence.BringToFront();
+            }
+            else
+            {
+                ucCapitalData.Instence.BringToFront();
+            }
+        }
+        public static void To_ucAddUnits()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddUnits.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddUnits.Instence);
+                ucAddUnits.Instence.Dock = DockStyle.Fill;
+                ucAddUnits.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddUnits.Instence.BringToFront();
+            }
+        }
+        public static void To_ucUnitsData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucUnitsData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucUnitsData.Instence);
+                ucUnitsData.Instence.Dock = DockStyle.Fill;
+                ucUnitsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucUnitsData.Instence.BringToFront();
+            }
+        }
+        public static void To_ucHome()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucHome.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucHome.Instence);
+                ucHome.Instence.Dock = DockStyle.Fill;
+                ucHome.Instence.BringToFront();
+            }
+            else
+            {
+                ucHome.Instence.BringToFront();
+            }
+        }
+        public static void To_()
+        {
+
+        }
+        public static void To_()
+        {
+
+        }
+
+
     }
 }

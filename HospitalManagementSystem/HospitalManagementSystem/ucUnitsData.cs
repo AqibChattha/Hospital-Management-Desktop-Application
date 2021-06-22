@@ -37,16 +37,7 @@ namespace HospitalManagementSystem
 
         private void btnAddUnit_Click(object sender, EventArgs e)
         {
-            if (!MainForn.main_Panel.Controls.Contains(ucAddUnits.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAddUnits.Instence);
-                ucAddUnits.Instence.Dock = DockStyle.Fill;
-                ucAddUnits.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddUnits.Instence.BringToFront();
-            }
+            ChangeUC.To_ucAddUnits();
         }
     }
 }

@@ -28,7 +28,6 @@ namespace HospitalManagementSystem
             panelDoctorsSubMenu.Visible = false;
             panelPatientsSubMenu.Visible = false;
             panelLabSubMenu.Visible = false;
-            panelRecordSubMenu.Visible = false;
             panelCapitalSubMenu.Visible = false;
             panelUnitsSubMenu.Visible = false;
         }
@@ -46,10 +45,6 @@ namespace HospitalManagementSystem
             if (panelLabSubMenu.Visible == true)
             {
                 panelLabSubMenu.Visible = false;
-            }
-            if (panelRecordSubMenu.Visible == true)
-            {
-                panelRecordSubMenu.Visible = false;
             }
             if (panelCapitalSubMenu.Visible == true)
             {
@@ -148,34 +143,19 @@ namespace HospitalManagementSystem
         private void btnPatientQueue_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucPatientQueue.Instence))
-            {
-                panel.Controls.Add(ucPatientQueue.Instence);
-                ucPatientQueue.Instence.Dock = DockStyle.Fill;
-                ucPatientQueue.Instence.BringToFront();
-            }
-            else
-            {
-                ucPatientQueue.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucPatientQueue();
         }
 
         private void btnAddPatient_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAddPatient.Instence))
-            {
-                panel.Controls.Add(ucAddPatient.Instence);
-                ucAddPatient.Instence.Dock = DockStyle.Fill;
-                ucAddPatient.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddPatient.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucAddPatient();
 
+        }
+        private void btnPatientRecord_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            ChangeUC.To_ucPatientsData();
         }
         #endregion
 
@@ -189,78 +169,12 @@ namespace HospitalManagementSystem
         private void btnAddTest_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAcknowledgeTest.Instence))
-            {
-                panel.Controls.Add(ucAcknowledgeTest.Instence);
-                ucAcknowledgeTest.Instence.Dock = DockStyle.Fill;
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
-            else
-            {
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucAcknowledgeTest();
         }
-
-        private void btnViewTests_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-            if (!panel.Controls.Contains(ucTestsData.Instence))
-            {
-                panel.Controls.Add(ucTestsData.Instence);
-                ucTestsData.Instence.Dock = DockStyle.Fill;
-                ucTestsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
-            main_Panel = panel;
-        }
-
-        private void btnStaffAtLab_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-        }
-        #endregion
-
-        private void btnRecord_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelRecordSubMenu);
-            panelSideSlecectedShow.Height = btnRecord.Height;
-            panelSideSlecectedShow.Top = btnRecord.Top;
-        }
-        #region RecordsSubMenu
-        private void btnPatientRecord_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-            if (!panel.Controls.Contains(ucPatientsData.Instence))
-            {
-                panel.Controls.Add(ucPatientsData.Instence);
-                ucPatientsData.Instence.Dock = DockStyle.Fill;
-                ucPatientsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucPatientsData.Instence.BringToFront();
-            }
-            main_Panel = panel;
-        }
-
         private void btnTestsHistory_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucTestsData.Instence))
-            {
-                panel.Controls.Add(ucTestsData.Instence);
-                ucTestsData.Instence.Dock = DockStyle.Fill;
-                ucTestsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucTestsData.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucTestsData();
         }
         #endregion
 
@@ -274,17 +188,7 @@ namespace HospitalManagementSystem
         private void btnCapitalRecord_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucCapitalData.Instence))
-            {
-                panel.Controls.Add(ucCapitalData.Instence);
-                ucCapitalData.Instence.Dock = DockStyle.Fill;
-                ucCapitalData.Instence.BringToFront();
-            }
-            else
-            {
-                ucCapitalData.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucCapitalData();
         }
         #endregion
 
@@ -298,33 +202,13 @@ namespace HospitalManagementSystem
         private void btnAddUnit_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucAddUnits.Instence))
-            {
-                panel.Controls.Add(ucAddUnits.Instence);
-                ucAddUnits.Instence.Dock = DockStyle.Fill;
-                ucAddUnits.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddUnits.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucAddUnits();
         }
 
         private void btnViewUnit_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            if (!panel.Controls.Contains(ucUnitsData.Instence))
-            {
-                panel.Controls.Add(ucUnitsData.Instence);
-                ucUnitsData.Instence.Dock = DockStyle.Fill;
-                ucUnitsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucUnitsData.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucUnitsData();
 
         }
 #endregion
@@ -334,17 +218,7 @@ namespace HospitalManagementSystem
             hideSubMenu();
             panelSideSlecectedShow.Height = btnHome.Height;
             panelSideSlecectedShow.Top = btnHome.Top;
-            if (!panel.Controls.Contains(ucHome.Instence))
-            {
-                panel.Controls.Add(ucHome.Instence);
-                ucHome.Instence.Dock = DockStyle.Fill;
-                ucHome.Instence.BringToFront();
-            }
-            else
-            {
-                ucHome.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucHome();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -357,17 +231,7 @@ namespace HospitalManagementSystem
             hideSubMenu();
             panelSideSlecectedShow.Height = btnHome.Height;
             panelSideSlecectedShow.Top = btnHome.Top;
-            if (!panel.Controls.Contains(ucHome.Instence))
-            {
-                panel.Controls.Add(ucHome.Instence);
-                ucHome.Instence.Dock = DockStyle.Fill;
-                ucHome.Instence.BringToFront();
-            }
-            else
-            {
-                ucHome.Instence.BringToFront();
-            }
-            main_Panel = panel;
+            ChangeUC.To_ucHome();
         }
 
     }
