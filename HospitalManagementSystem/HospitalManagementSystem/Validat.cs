@@ -51,35 +51,17 @@ namespace HospitalManagementSystem
             }
             return false;
         }
-        private static bool IsValidQualification(String qualification, List<String> lis_Of_qualifiction)
+        private static bool ListContainElement(String element, List<String> list)
         {
-            if (qualification == "")
+            if (element == "")
             {
                 return false;
             }
             else
             {
-                for (int i = 0; i < lis_Of_qualifiction.Count; i++)
+                for (int i = 0; i < list.Count; i++)
                 {
-                    if (qualification == lis_Of_qualifiction[i])
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
-        private static bool IsValidDepartment(String department, List<String> lis_Of_department)
-        {
-            if (department == "")
-            {
-                return false;
-            }
-            else
-            {
-                for (int i = 0; i < lis_Of_department.Count; i++)
-                {
-                    if (department == lis_Of_department[i])
+                    if (element == list[i])
                     {
                         return true;
                     }
@@ -237,8 +219,8 @@ namespace HospitalManagementSystem
         {
             if (IsValidName(name) == true && IsValidCnic(cnic) == true
                 && IsValidPhoneNumber(phoneno) == true && IsValidEmail(email) == true
-                && IsValidPassword(pass) == true && IsValidQualification(qualification, csHospital.Instence.getDoctorQualifications()) == true
-                && IsValidDepartment(dep, csHospital.Instence.getDepartments()) == true && isValidAddress(address) == true
+                && IsValidPassword(pass) == true && ListContainElement(qualification, csHospital.Instence.getDoctorQualifications()) == true
+                && ListContainElement(dep, csHospital.Instence.getDepartments()) == true && isValidAddress(address) == true
                 && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
                 && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
             {
@@ -246,8 +228,8 @@ namespace HospitalManagementSystem
             }
             MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
                 IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) + IsValidQualification(qualification, csHospital.Instence.getDoctorQualifications()) +
-                IsValidDepartment(dep, csHospital.Instence.getDepartments()) + IsEqualGender(cnic, gender) + 
+                IsValidPassword(pass) + ListContainElement(qualification, csHospital.Instence.getDoctorQualifications()) +
+                ListContainElement(dep, csHospital.Instence.getDepartments()) + IsEqualGender(cnic, gender) + 
                 isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
             return false;
         }
@@ -272,7 +254,7 @@ namespace HospitalManagementSystem
         {
             if (IsValidName(name) == true && IsValidCnic(cnic) == true
                 && IsValidPhoneNumber(phoneno) == true && IsValidEmail(email) == true
-                && IsValidPassword(pass) == true && IsValidQualification(qualification, qualificationList) == true
+                && IsValidPassword(pass) == true && ListContainElement(qualification, qualificationList) == true
                 && isValidAddress(address) == true
                 && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
                 && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
@@ -281,8 +263,57 @@ namespace HospitalManagementSystem
             }
             MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
                 IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) + IsValidQualification(qualification, qualificationList) + IsvalidSalary(salary) +
+                IsValidPassword(pass) + ListContainElement(qualification, qualificationList) + IsvalidSalary(salary) +
                 IsEqualGender(cnic, gender) + isValidWorkingHours(sTime, eTime) + isValidAddress(address));
+            return false;
+        }
+        public static bool Surgeon(string name, string cnic, string phoneno, string email, string pass, string qualification, string dep, String Specialization, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
+        {
+            if (IsValidName(name) == true && IsValidCnic(cnic) == true
+                && IsValidPhoneNumber(phoneno) == true && IsValidEmail(email) == true
+                && IsValidPassword(pass) == true && ListContainElement(qualification, csHospital.Instence.getSurgeonQualifications()) == true
+                && ListContainElement(dep, csHospital.Instence.getDepartments()) == true && isValidAddress(address) == true
+                && ListContainElement(Specialization, csHospital.Instence.getSurgeonSpecializations()) == true
+                && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
+                && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
+            {
+                return true;
+            }
+            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+                IsValidPassword(pass) + ListContainElement(qualification, csHospital.Instence.getSurgeonQualifications()) +
+                ListContainElement(dep, csHospital.Instence.getDepartments()) + ListContainElement(Specialization, csHospital.Instence.getSurgeonSpecializations()) +
+                IsEqualGender(cnic, gender) + isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            return false;
+        }
+        public static bool Receptionist(string name, string cnic, string phoneno, string email, string pass, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
+        {
+            if (IsValidName(name) == true && IsValidCnic(cnic) == true
+                && IsValidPhoneNumber(phoneno) == true && IsValidEmail(email) == true
+                && IsValidPassword(pass) == true && isValidAddress(address) == true
+                && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
+                && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
+            {
+                return true;
+            }
+            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+                IsValidPassword(pass) +
+                isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            return false;
+        }
+        public static bool OtherStaff(string name, string cnic, string phoneno, String type, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
+        {
+            if (IsValidName(name) == true && IsValidCnic(cnic) == true && ListContainElement(type, csHospital.Instence.getOtherStaffTypes()) == true
+                && IsValidPhoneNumber(phoneno) == true && isValidAddress(address) == true
+                && IsEqualGender(cnic, gender) == true && IsvalidSalary(salary) == true
+                && isValidDateOFBirth(dob) == true && isValidWorkingHours(sTime, eTime) == true)
+            {
+                return true;
+            }
+            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) +
+                isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
             return false;
         }
 

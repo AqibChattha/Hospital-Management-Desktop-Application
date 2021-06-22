@@ -32,7 +32,7 @@ namespace HospitalManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSurgeonsData));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtSearchSurgeon = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRegisterSurgeon = new System.Windows.Forms.Button();
             this.dtvSurgeons = new System.Windows.Forms.DataGridView();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,13 +66,15 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 21;
             this.label2.Text = "Search";
             // 
-            // txtSearchSurgeon
+            // txtSearch
             // 
-            this.txtSearchSurgeon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchSurgeon.Location = new System.Drawing.Point(607, 63);
-            this.txtSearchSurgeon.Name = "txtSearchSurgeon";
-            this.txtSearchSurgeon.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchSurgeon.TabIndex = 20;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search here...";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 20;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearchSurgeon_TextChanged);
             // 
             // btnRegisterSurgeon
             // 
@@ -108,6 +110,7 @@ namespace HospitalManagementSystem
             this.dtvSurgeons.RowTemplate.Height = 25;
             this.dtvSurgeons.Size = new System.Drawing.Size(790, 420);
             this.dtvSurgeons.TabIndex = 18;
+            this.dtvSurgeons.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvSurgeons_CellContentClick);
             // 
             // colName
             // 
@@ -170,7 +173,7 @@ namespace HospitalManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtSearchSurgeon);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnRegisterSurgeon);
             this.Controls.Add(this.dtvSurgeons);
             this.Name = "ucSurgeonsData";
@@ -185,7 +188,7 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSearchSurgeon;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnRegisterSurgeon;
         private System.Windows.Forms.DataGridView dtvSurgeons;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;

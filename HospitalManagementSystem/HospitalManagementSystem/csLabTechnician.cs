@@ -35,12 +35,12 @@ namespace HospitalManagementSystem
         {
             String id = "";
             bool flag = true;
-            for (int i = 0; i <= csHospital.Instence.getDoctors().Count; i++)
+            for (int i = 0; i <= csHospital.Instence.getLabTech().Count; i++)
             {
                 id = "TEC-" + (i + 1);
-                for (int j = 0; j < csHospital.Instence.getDoctors().Count; j++)
+                for (int j = 0; j < csHospital.Instence.getLabTech().Count; j++)
                 {
-                    if (id.Equals(csHospital.Instence.getDoctors()[j].Staff_Id))
+                    if (id.Equals(csHospital.Instence.getLabTech()[j].Staff_Id))
                     {
                         flag = false;
                     }

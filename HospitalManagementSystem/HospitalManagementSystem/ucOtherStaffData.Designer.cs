@@ -32,11 +32,9 @@ namespace HospitalManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucOtherStaffData));
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearchOtherStaff = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRegisterOtherStaff = new System.Windows.Forms.Button();
             this.dtvOtherStaff = new System.Windows.Forms.DataGridView();
-            this.cbOtherStaffType = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +42,8 @@ namespace HospitalManagementSystem
             this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cbOtherStaffType = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtvOtherStaff)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,13 +68,15 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 21;
             this.label1.Text = "Search";
             // 
-            // txtSearchOtherStaff
+            // txtSearch
             // 
-            this.txtSearchOtherStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchOtherStaff.Location = new System.Drawing.Point(607, 63);
-            this.txtSearchOtherStaff.Name = "txtSearchOtherStaff";
-            this.txtSearchOtherStaff.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchOtherStaff.TabIndex = 20;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search here...";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 20;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnRegisterOtherStaff
             // 
@@ -110,34 +112,7 @@ namespace HospitalManagementSystem
             this.dtvOtherStaff.RowTemplate.Height = 25;
             this.dtvOtherStaff.Size = new System.Drawing.Size(790, 420);
             this.dtvOtherStaff.TabIndex = 18;
-            // 
-            // cbOtherStaffType
-            // 
-            this.cbOtherStaffType.AutoCompleteCustomSource.AddRange(new string[] {
-            "Peon",
-            "Security Gaurd",
-            "Laundry Man"});
-            this.cbOtherStaffType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cbOtherStaffType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.cbOtherStaffType.FormattingEnabled = true;
-            this.cbOtherStaffType.Items.AddRange(new object[] {
-            "Peon",
-            "Security Gaurd",
-            "Laundry Man"});
-            this.cbOtherStaffType.Location = new System.Drawing.Point(57, 63);
-            this.cbOtherStaffType.Name = "cbOtherStaffType";
-            this.cbOtherStaffType.Size = new System.Drawing.Size(185, 23);
-            this.cbOtherStaffType.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 15);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Type:";
+            this.dtvOtherStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvOtherStaff_CellContentClick);
             // 
             // Column1
             // 
@@ -194,6 +169,30 @@ namespace HospitalManagementSystem
             this.Column7.Name = "Column7";
             this.Column7.Width = 21;
             // 
+            // cbOtherStaffType
+            // 
+            this.cbOtherStaffType.AutoCompleteCustomSource.AddRange(new string[] {
+            "Peon",
+            "Security Gaurd",
+            "Laundry Man"});
+            this.cbOtherStaffType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbOtherStaffType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.cbOtherStaffType.FormattingEnabled = true;
+            this.cbOtherStaffType.Location = new System.Drawing.Point(55, 63);
+            this.cbOtherStaffType.Name = "cbOtherStaffType";
+            this.cbOtherStaffType.Size = new System.Drawing.Size(185, 23);
+            this.cbOtherStaffType.TabIndex = 30;
+            this.cbOtherStaffType.SelectedIndexChanged += new System.EventHandler(this.cbOtherStaffType_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 15);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Type:";
+            // 
             // ucOtherStaffData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -202,7 +201,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSearchOtherStaff);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnRegisterOtherStaff);
             this.Controls.Add(this.dtvOtherStaff);
             this.Name = "ucOtherStaffData";
@@ -217,7 +216,7 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSearchOtherStaff;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnRegisterOtherStaff;
         private System.Windows.Forms.DataGridView dtvOtherStaff;
         private System.Windows.Forms.ComboBox cbOtherStaffType;

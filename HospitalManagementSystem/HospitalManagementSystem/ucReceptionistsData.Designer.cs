@@ -32,7 +32,7 @@ namespace HospitalManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucReceptionistsData));
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearchReceptionist = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnRegisterReceptionist = new System.Windows.Forms.Button();
             this.dtvReceptionists = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,13 +66,15 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 21;
             this.label1.Text = "Search";
             // 
-            // txtSearchReceptionist
+            // txtSearch
             // 
-            this.txtSearchReceptionist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchReceptionist.Location = new System.Drawing.Point(607, 63);
-            this.txtSearchReceptionist.Name = "txtSearchReceptionist";
-            this.txtSearchReceptionist.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchReceptionist.TabIndex = 20;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search here...";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 20;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnRegisterReceptionist
             // 
@@ -108,6 +110,7 @@ namespace HospitalManagementSystem
             this.dtvReceptionists.RowTemplate.Height = 25;
             this.dtvReceptionists.Size = new System.Drawing.Size(790, 420);
             this.dtvReceptionists.TabIndex = 18;
+            this.dtvReceptionists.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvReceptionists_CellContentClick);
             // 
             // Column1
             // 
@@ -170,7 +173,7 @@ namespace HospitalManagementSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSearchReceptionist);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnRegisterReceptionist);
             this.Controls.Add(this.dtvReceptionists);
             this.Name = "ucReceptionistsData";
@@ -185,7 +188,7 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSearchReceptionist;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnRegisterReceptionist;
         private System.Windows.Forms.DataGridView dtvReceptionists;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

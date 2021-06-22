@@ -73,45 +73,27 @@ namespace HospitalManagementSystem
             {
                 nurse_Gender = "Male";
             }
-            if (btnAddInput.Text.Equals("Add"))
+            if (Validat.Nurse(nurse_Name, nurse_Cnic, nurse_PhoneNumber, nurse_Email, nurse_PAssworsd,
+                nurse_Duty, nurse_Address, nurse_Gender, nurse_Salary,
+                nurseDate_OF_Birth, nurse_WHstart, nurse_WHend))
             {
-                if (Validat.Nurse(nurse_Name, nurse_Cnic, nurse_PhoneNumber, nurse_Email, nurse_PAssworsd,
-                    nurse_Duty, nurse_Address, nurse_Gender, nurse_Salary,
-                    nurseDate_OF_Birth, nurse_WHstart, nurse_WHend))
+                csNurse nurse = new csNurse(nurse_Name, nurse_Cnic, nurse_PhoneNumber, nurse_Email, nurse_PAssworsd,
+                nurse_Duty, nurse_Address, nurse_Gender, nurse_Salary,
+                nurseDate_OF_Birth, nurse_WHstart, nurse_WHend);
+                if (btnAddInput.Text.Equals("Add"))
                 {
-                    csNurse nurse = new csNurse(nurse_Name, nurse_Cnic, nurse_PhoneNumber, nurse_Email, nurse_PAssworsd,
-                    nurse_Duty, nurse_Address, nurse_Gender, nurse_Salary,
-                    nurseDate_OF_Birth, nurse_WHstart, nurse_WHend);
-
                     csHospital.Instence.AddNurse(nurse);
-
-                    ChangeUC.To_ucNursesData();
                 }
                 else
                 {
-                    lbInvalidInput.Show();
+                    csHospital.Instence.UpdateNurse(update_Index, nurse);
                 }
+                ChangeUC.To_ucNursesData();
             }
             else
             {
-                if (Validat.Nurse(nurse_Name, nurse_Cnic, nurse_PhoneNumber, nurse_Email, nurse_PAssworsd,
-                    nurse_Duty, nurse_Address, nurse_Gender, nurse_Salary,
-                    nurseDate_OF_Birth, nurse_WHstart, nurse_WHend))
-                {
-                    csNurse nurse = new csNurse(nurse_Name, nurse_Cnic, nurse_PhoneNumber, nurse_Email, nurse_PAssworsd,
-                    nurse_Duty, nurse_Address, nurse_Gender, nurse_Salary,
-                    nurseDate_OF_Birth, nurse_WHstart, nurse_WHend);
-
-                    csHospital.Instence.UpdateNurse(update_Index, nurse);
-
-                    ChangeUC.To_ucNursesData();
-                }
-                else
-                {
-                    lbInvalidInput.Show();
-                }
+                lbInvalidInput.Show();
             }
-
         }
 
         private void btnClearInput_Click(object sender, EventArgs e)

@@ -31,11 +31,11 @@ namespace HospitalManagementSystem
             lbInvalidInput.Hide();
         }
 
-        private void LoadComboBox(List<String> d , List<String> q)
+        private void LoadComboBox(List<String> d, List<String> q)
         {
             cbDepartment.Items.Clear();
             cbQualification.Items.Clear();
-            for(int i=0; i<d.Count; i++)
+            for (int i = 0; i < d.Count; i++)
             {
                 cbDepartment.Items.Add(d[i]);
             }
@@ -101,42 +101,26 @@ namespace HospitalManagementSystem
             {
                 doctor_Gender = "Male";
             }
-            if (btnAddInput.Text.Equals("Add")) {
-                if (Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
-                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
-                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
+            if (Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
+            {
+                csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
+                doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
+                doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
+                if (btnAddInput.Text.Equals("Add"))
                 {
-                    csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
-                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
-                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
-
                     csHospital.Instence.AddDoctor(doctor);
-
-                    ChangeUC.To_ucDoctorsData();
                 }
                 else
                 {
-                    lbInvalidInput.Show();
+                    csHospital.Instence.UpdateDoctor(update_Index, doctor);
                 }
+                ChangeUC.To_ucDoctorsData();
             }
             else
             {
-                if (Validat.Doctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
-                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
-                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend))
-                {
-                    csDoctor doctor = new csDoctor(doctor_Name, doctor_Cnic, doctor_PhoneNumber, doctor_Email, doctor_PAssworsd,
-                    doctor_Qualification, doctor_Depaartment, doctor_Address, doctor_Gender, doctor_Salary,
-                    doctorDate_OF_Birth, doctor_WHstart, doctor_WHend);
-
-                    csHospital.Instence.UpdateDoctor(update_Index, doctor);
-
-                    ChangeUC.To_ucDoctorsData();
-                }
-                else
-                {
-                    lbInvalidInput.Show();
-                }
+                lbInvalidInput.Show();
             }
         }
         public void RefreshUC()
@@ -150,8 +134,9 @@ namespace HospitalManagementSystem
         {
             update_Index = index;
             lbInvalidInput.Hide();
-            csDoctor doc = csHospital.Instence.getDoctors()[index];
+            btnAddInput.Text = "Update";
 
+            csDoctor doc = csHospital.Instence.getDoctors()[index];
             txtName.Text = doc.Name;
             txtCnic.Text = doc.Cnic;
             txtPhoneNo.Text = doc.PhoneNumber;
@@ -164,8 +149,6 @@ namespace HospitalManagementSystem
             dtpDateOfBirth.Value = doc.DateOfBirth;
             dtpWHstart.Value = doc.WH_Start_Time;
             dtpWHend.Value = doc.WH_End_Time;
-
-            btnAddInput.Text = "Update";
             if (doc.Gender.Equals("Male"))
             {
                 rbtnMale.Checked = true;

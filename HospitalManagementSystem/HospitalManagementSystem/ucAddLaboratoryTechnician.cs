@@ -31,7 +31,7 @@ namespace HospitalManagementSystem
         }
         private void LoadComboBox(List<String> d)
         {
-           
+
             cbQualification.Items.Clear();
             for (int i = 0; i < d.Count; i++)
             {
@@ -86,43 +86,26 @@ namespace HospitalManagementSystem
             {
                 LabTech_Gender = "Male";
             }
-            if (btnAddInput.Text.Equals("Add"))
+            if (Validat.LabTech_Pharmacist(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
+                LabTech_Qualification, csHospital.Instence.getLabTechrQualifications(), LabTech_Address, LabTech_Gender, LabTech_Salary,
+                LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend))
             {
-                if (Validat.LabTech_Pharmacist(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
-                    LabTech_Qualification, csHospital.Instence.getLabTechrQualifications(), LabTech_Address, LabTech_Gender, LabTech_Salary,
-                    LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend))
+                csLabTechnician LabTech = new csLabTechnician(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
+                LabTech_Qualification, LabTech_Address, LabTech_Gender, LabTech_Salary,
+                LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend);
+                if (btnAddInput.Text.Equals("Add"))
                 {
-                    csLabTechnician LabTech = new csLabTechnician(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
-                    LabTech_Qualification, LabTech_Address, LabTech_Gender, LabTech_Salary,
-                    LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend);
-
                     csHospital.Instence.AddLabTech(LabTech);
-
-                    ChangeUC.To_ucLaboratoryTechniciansData();
                 }
                 else
                 {
-                    lbInvalidInput.Show();
+                    csHospital.Instence.UpdateLabTech(update_Index, LabTech);
                 }
+                ChangeUC.To_ucLaboratoryTechniciansData();
             }
             else
             {
-                if (Validat.LabTech_Pharmacist(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
-                    LabTech_Qualification, csHospital.Instence.getLabTechrQualifications(), LabTech_Address, LabTech_Gender, LabTech_Salary,
-                    LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend))
-                {
-                    csLabTechnician LabTech = new csLabTechnician(LabTech_Name, LabTech_Cnic, LabTech_PhoneNumber, LabTech_Email, LabTech_PAssworsd,
-                    LabTech_Qualification, LabTech_Address, LabTech_Gender, LabTech_Salary,
-                    LabTechDate_OF_Birth, LabTech_WHstart, LabTech_WHend);
-
-                    csHospital.Instence.UpdateLabTech(update_Index, LabTech);
-
-                    ChangeUC.To_ucLaboratoryTechniciansData();
-                }
-                else
-                {
-                    lbInvalidInput.Show();
-                }
+                lbInvalidInput.Show();
             }
         }
 

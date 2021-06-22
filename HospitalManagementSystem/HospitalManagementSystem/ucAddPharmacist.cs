@@ -85,43 +85,26 @@ namespace HospitalManagementSystem
             {
                 pharmacist_Gender = "Male";
             }
-            if (btnAddInput.Text.Equals("Add"))
+            if (Validat.LabTech_Pharmacist(pharmacist_Name, pharmacist_Cnic, pharmacist_PhoneNumber, pharmacist_Email, pharmacist_PAssworsd,
+                pharmacist_Qualification, csHospital.Instence.getPharmacistrQualifications(), pharmacist_Address, pharmacist_Gender, pharmacist_Salary,
+                pharmacistDate_OF_Birth, pharmacist_WHstart, pharmacist_WHend))
             {
-                if (Validat.LabTech_Pharmacist(pharmacist_Name, pharmacist_Cnic, pharmacist_PhoneNumber, pharmacist_Email, pharmacist_PAssworsd,
-                    pharmacist_Qualification, csHospital.Instence.getPharmacistrQualifications(), pharmacist_Address, pharmacist_Gender, pharmacist_Salary,
-                    pharmacistDate_OF_Birth, pharmacist_WHstart, pharmacist_WHend))
+                csPharmacist Pharmacist = new csPharmacist(pharmacist_Name, pharmacist_Cnic, pharmacist_PhoneNumber, pharmacist_Email, pharmacist_PAssworsd,
+                pharmacist_Qualification, pharmacist_Address, pharmacist_Gender, pharmacist_Salary,
+                pharmacistDate_OF_Birth, pharmacist_WHstart, pharmacist_WHend);
+                if (btnAddInput.Text.Equals("Add"))
                 {
-                    csPharmacist Pharmacist = new csPharmacist(pharmacist_Name, pharmacist_Cnic, pharmacist_PhoneNumber, pharmacist_Email, pharmacist_PAssworsd,
-                    pharmacist_Qualification, pharmacist_Address, pharmacist_Gender, pharmacist_Salary,
-                    pharmacistDate_OF_Birth, pharmacist_WHstart, pharmacist_WHend);
-
                     csHospital.Instence.AddPharmacist(Pharmacist);
-
-                    ChangeUC.To_ucPharmacistData();
                 }
                 else
                 {
-                    lbInvalidInput.Show();
+                    csHospital.Instence.UpdatePharmacist(update_Index, Pharmacist);
                 }
+                ChangeUC.To_ucPharmacistData();
             }
             else
             {
-                if (Validat.LabTech_Pharmacist(pharmacist_Name, pharmacist_Cnic, pharmacist_PhoneNumber, pharmacist_Email, pharmacist_PAssworsd,
-                    pharmacist_Qualification, csHospital.Instence.getPharmacistrQualifications(), pharmacist_Address, pharmacist_Gender, pharmacist_Salary,
-                    pharmacistDate_OF_Birth, pharmacist_WHstart, pharmacist_WHend))
-                {
-                    csPharmacist Pharmacist = new csPharmacist(pharmacist_Name, pharmacist_Cnic, pharmacist_PhoneNumber, pharmacist_Email, pharmacist_PAssworsd,
-                    pharmacist_Qualification, pharmacist_Address, pharmacist_Gender, pharmacist_Salary,
-                    pharmacistDate_OF_Birth, pharmacist_WHstart, pharmacist_WHend);
-
-                    csHospital.Instence.UpdatePharmacist(update_Index, Pharmacist);
-
-                    ChangeUC.To_ucPharmacistData();
-                }
-                else
-                {
-                    lbInvalidInput.Show();
-                }
+                lbInvalidInput.Show();
             }
         }
 

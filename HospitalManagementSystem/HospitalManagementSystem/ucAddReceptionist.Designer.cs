@@ -40,7 +40,6 @@ namespace HospitalManagementSystem
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.nudSalary = new System.Windows.Forms.NumericUpDown();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
-            this.cbQualification = new System.Windows.Forms.ComboBox();
             this.txtPhoneNo = new System.Windows.Forms.MaskedTextBox();
             this.txtCnic = new System.Windows.Forms.MaskedTextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -54,13 +53,13 @@ namespace HospitalManagementSystem
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbInvalidInput = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +70,7 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lbInvalidInput);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnClearInput);
             this.panel1.Controls.Add(this.btnAddInput);
@@ -81,7 +81,6 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.rbtnMale);
             this.panel1.Controls.Add(this.nudSalary);
             this.panel1.Controls.Add(this.txtAddress);
-            this.panel1.Controls.Add(this.cbQualification);
             this.panel1.Controls.Add(this.txtPhoneNo);
             this.panel1.Controls.Add(this.txtCnic);
             this.panel1.Controls.Add(this.txtPassword);
@@ -95,13 +94,12 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(19, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(787, 488);
@@ -150,12 +148,11 @@ namespace HospitalManagementSystem
             // 
             // dtpWHend
             // 
-            this.dtpWHend.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpWHend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpWHend.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpWHend.Location = new System.Drawing.Point(369, 199);
+            this.dtpWHend.Location = new System.Drawing.Point(166, 201);
             this.dtpWHend.Name = "dtpWHend";
-            this.dtpWHend.Size = new System.Drawing.Size(96, 23);
+            this.dtpWHend.Size = new System.Drawing.Size(87, 23);
             this.dtpWHend.TabIndex = 0;
             this.dtpWHend.Value = new System.DateTime(2021, 5, 22, 0, 0, 0, 0);
             // 
@@ -172,10 +169,9 @@ namespace HospitalManagementSystem
             // 
             // dtpWHstart
             // 
-            this.dtpWHstart.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpWHstart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpWHstart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpWHstart.Location = new System.Drawing.Point(245, 199);
+            this.dtpWHstart.Location = new System.Drawing.Point(48, 201);
             this.dtpWHstart.Name = "dtpWHstart";
             this.dtpWHstart.Size = new System.Drawing.Size(94, 23);
             this.dtpWHstart.TabIndex = 11;
@@ -183,9 +179,10 @@ namespace HospitalManagementSystem
             // 
             // rbtnFemale
             // 
+            this.rbtnFemale.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rbtnFemale.AutoSize = true;
             this.rbtnFemale.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnFemale.Location = new System.Drawing.Point(76, 199);
+            this.rbtnFemale.Location = new System.Drawing.Point(441, 120);
             this.rbtnFemale.Name = "rbtnFemale";
             this.rbtnFemale.Size = new System.Drawing.Size(63, 19);
             this.rbtnFemale.TabIndex = 10;
@@ -195,9 +192,10 @@ namespace HospitalManagementSystem
             // 
             // rbtnMale
             // 
+            this.rbtnMale.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rbtnMale.AutoSize = true;
             this.rbtnMale.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnMale.Location = new System.Drawing.Point(76, 173);
+            this.rbtnMale.Location = new System.Drawing.Point(441, 94);
             this.rbtnMale.Name = "rbtnMale";
             this.rbtnMale.Size = new System.Drawing.Size(51, 19);
             this.rbtnMale.TabIndex = 10;
@@ -233,19 +231,6 @@ namespace HospitalManagementSystem
             this.txtAddress.Size = new System.Drawing.Size(759, 123);
             this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "";
-            // 
-            // cbQualification
-            // 
-            this.cbQualification.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbQualification.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbQualification.FormattingEnabled = true;
-            this.cbQualification.Items.AddRange(new object[] {
-            "Department of Neurology",
-            "Department of Cardiology"});
-            this.cbQualification.Location = new System.Drawing.Point(366, 118);
-            this.cbQualification.Name = "cbQualification";
-            this.cbQualification.Size = new System.Drawing.Size(189, 23);
-            this.cbQualification.TabIndex = 2;
             // 
             // txtPhoneNo
             // 
@@ -315,10 +300,9 @@ namespace HospitalManagementSystem
             // 
             // label15
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(345, 201);
+            this.label15.Location = new System.Drawing.Point(146, 206);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(18, 15);
             this.label15.TabIndex = 0;
@@ -326,10 +310,9 @@ namespace HospitalManagementSystem
             // 
             // label14
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(204, 203);
+            this.label14.Location = new System.Drawing.Point(10, 206);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(35, 15);
             this.label14.TabIndex = 0;
@@ -337,10 +320,9 @@ namespace HospitalManagementSystem
             // 
             // label13
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(200, 170);
+            this.label13.Location = new System.Drawing.Point(6, 172);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(118, 21);
             this.label13.TabIndex = 0;
@@ -348,9 +330,10 @@ namespace HospitalManagementSystem
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(6, 184);
+            this.label10.Location = new System.Drawing.Point(371, 105);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 21);
             this.label10.TabIndex = 0;
@@ -375,17 +358,6 @@ namespace HospitalManagementSystem
             this.label4.Size = new System.Drawing.Size(51, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "Email:";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(362, 90);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 21);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Qualification:";
             // 
             // label7
             // 
@@ -452,6 +424,17 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 7;
             this.label1.Text = "Add Receptionist Information";
             // 
+            // lbInvalidInput
+            // 
+            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbInvalidInput.AutoSize = true;
+            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
+            this.lbInvalidInput.Location = new System.Drawing.Point(687, 418);
+            this.lbInvalidInput.Name = "lbInvalidInput";
+            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
+            this.lbInvalidInput.TabIndex = 16;
+            this.lbInvalidInput.Text = "Invalid Input";
+            // 
             // ucAddReceptionist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -482,7 +465,6 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Button btnClearInput;
         private System.Windows.Forms.Button btnAddInput;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.ComboBox cbQualification;
         private System.Windows.Forms.MaskedTextBox txtPhoneNo;
         private System.Windows.Forms.MaskedTextBox txtCnic;
         private System.Windows.Forms.TextBox txtPassword;
@@ -496,12 +478,12 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbInvalidInput;
     }
 }

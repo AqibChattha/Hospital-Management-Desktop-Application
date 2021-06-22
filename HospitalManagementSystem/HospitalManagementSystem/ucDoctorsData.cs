@@ -90,7 +90,6 @@ namespace HospitalManagementSystem
                         DeleteDoctorRow(e.RowIndex);
                     }
                 }
-
                 if (e.ColumnIndex == 5)
                 {
                     if (!MainForn.main_Panel.Controls.Contains(ucAddDoctor.Instence))

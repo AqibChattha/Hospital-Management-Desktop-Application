@@ -30,7 +30,8 @@ namespace HospitalManagementSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbInvalidInput = new System.Windows.Forms.Label();
+            this.cbType = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnAddInput = new System.Windows.Forms.Button();
@@ -66,7 +67,8 @@ namespace HospitalManagementSystem
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.lbInvalidInput);
+            this.panel1.Controls.Add(this.cbType);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnClearInput);
             this.panel1.Controls.Add(this.btnAddInput);
@@ -91,24 +93,35 @@ namespace HospitalManagementSystem
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(19, 58);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(787, 488);
             this.panel1.TabIndex = 8;
             // 
-            // comboBox1
+            // lbInvalidInput
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbInvalidInput.AutoSize = true;
+            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
+            this.lbInvalidInput.Location = new System.Drawing.Point(688, 418);
+            this.lbInvalidInput.Name = "lbInvalidInput";
+            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
+            this.lbInvalidInput.TabIndex = 17;
+            this.lbInvalidInput.Text = "Invalid Input";
+            // 
+            // cbType
+            // 
+            this.cbType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
             "Ward Boy",
             "Peon"});
-            this.comboBox1.Location = new System.Drawing.Point(285, 115);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(221, 23);
-            this.comboBox1.TabIndex = 16;
+            this.cbType.Location = new System.Drawing.Point(285, 115);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(221, 23);
+            this.cbType.TabIndex = 16;
             // 
             // btnCancel
             // 
@@ -152,6 +165,7 @@ namespace HospitalManagementSystem
             // 
             // dtpWHend
             // 
+            this.dtpWHend.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpWHend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpWHend.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpWHend.Location = new System.Drawing.Point(454, 194);
@@ -172,6 +186,7 @@ namespace HospitalManagementSystem
             // 
             // dtpWHstart
             // 
+            this.dtpWHstart.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpWHstart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpWHstart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpWHstart.Location = new System.Drawing.Point(330, 194);
@@ -182,7 +197,6 @@ namespace HospitalManagementSystem
             // 
             // rbtnFemale
             // 
-            this.rbtnFemale.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rbtnFemale.AutoSize = true;
             this.rbtnFemale.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rbtnFemale.Location = new System.Drawing.Point(78, 195);
@@ -195,7 +209,6 @@ namespace HospitalManagementSystem
             // 
             // rbtnMale
             // 
-            this.rbtnMale.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rbtnMale.AutoSize = true;
             this.rbtnMale.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rbtnMale.Location = new System.Drawing.Point(20, 196);
@@ -265,6 +278,7 @@ namespace HospitalManagementSystem
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.Location = new System.Drawing.Point(430, 196);
@@ -275,6 +289,7 @@ namespace HospitalManagementSystem
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(289, 198);
@@ -285,6 +300,7 @@ namespace HospitalManagementSystem
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(285, 165);
@@ -295,7 +311,6 @@ namespace HospitalManagementSystem
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(11, 160);
@@ -327,7 +342,7 @@ namespace HospitalManagementSystem
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(285, 90);
@@ -432,8 +447,9 @@ namespace HospitalManagementSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbType;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dtpWHend;
+        private System.Windows.Forms.Label lbInvalidInput;
     }
 }
