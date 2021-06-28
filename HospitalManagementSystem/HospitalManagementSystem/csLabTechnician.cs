@@ -35,9 +35,9 @@ namespace HospitalManagementSystem
         {
             String id = "";
             bool flag = true;
-            for (int i = 0; i <= csHospital.Instence.getLabTech().Count; i++)
+            for (int i = 1; i <= csHospital.Instence.getLabTech().Count+10; i++)
             {
-                id = "TEC-" + (i + 1);
+                id = "TEC-" + i;
                 for (int j = 0; j < csHospital.Instence.getLabTech().Count; j++)
                 {
                     if (id.Equals(csHospital.Instence.getLabTech()[j].Staff_Id))

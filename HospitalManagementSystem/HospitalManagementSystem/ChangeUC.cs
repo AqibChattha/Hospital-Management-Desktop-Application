@@ -334,15 +334,5 @@ namespace HospitalManagementSystem
                 ucHome.Instence.BringToFront();
             }
         }
-        public static void To_()
-        {
-
-        }
-        public static void To_()
-        {
-
-        }
-
-
     }
 }

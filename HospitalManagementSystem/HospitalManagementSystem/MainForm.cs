@@ -223,6 +223,7 @@ namespace HospitalManagementSystem
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            csHospital.SaveData();
             Application.Exit();
         }
 

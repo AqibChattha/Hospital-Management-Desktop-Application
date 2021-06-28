@@ -26,6 +26,7 @@ namespace HospitalManagementSystem
         {
             InitializeComponent();
             dtvPharmacist.AllowUserToAddRows = false;
+            LoadPharmacistDataInDtv(csHospital.Instence.getPharmacist());
         }
 
         private void LoadPharmacistDataInDtv(List<csPharmacist> Pharmacists)

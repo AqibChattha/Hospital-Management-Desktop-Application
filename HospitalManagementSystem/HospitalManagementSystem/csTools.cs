@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csTools
+    public class csTools
     {
         public String Name { get; set; }
         public String Description { get; set; }

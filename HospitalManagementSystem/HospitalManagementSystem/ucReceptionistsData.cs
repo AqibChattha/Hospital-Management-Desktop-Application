@@ -102,7 +102,7 @@ namespace HospitalManagementSystem
                 {
                     if (!MainForn.main_Panel.Controls.Contains(ucAddReceptionist.Instence))
                     {
-                        MainForn.main_Panel.Controls.Add(ucAddDoctor.Instence);
+                        MainForn.main_Panel.Controls.Add(ucAddReceptionist.Instence);
                         ucAddReceptionist.Instence.Dock = DockStyle.Fill;
                         ucAddReceptionist.Instence.UpdateColumnClicked(getReceptionistIndex(e.RowIndex));
                         ucAddReceptionist.Instence.BringToFront();

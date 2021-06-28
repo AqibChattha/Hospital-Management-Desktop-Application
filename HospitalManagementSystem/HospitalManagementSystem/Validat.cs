@@ -8,10 +8,48 @@ using System.Windows.Forms;
 
 namespace HospitalManagementSystem
 {
-    class Validat
+    public abstract class Validat
     {
 
         #region individual_Validators
+
+
+        private static bool isValidTestID(String id)
+        {
+            String idt = "";
+            for (int i = 0; i < csHospital.Instence.getLabTests().Count+2; i++)
+            {
+                idt = "TST-" + i;
+                if (idt.Equals(id))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        private static bool isValidSample(csSample sample, List<csSample> samples)
+        {
+            for(int i=0; i<samples.Count; i++)
+            {
+                if(sample.Name.Equals(samples[i].Name))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        private static bool isValidLaboratories(String labID, List<csLaboratory> laboratories)
+        {
+            for (int i = 0; i < laboratories.Count; i++)
+            {
+                if (labID.Equals(laboratories[i].Id))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         private static bool IsValidName(String name)
         {
             for (int i = 0; i < name.Length; i++)
@@ -41,13 +79,16 @@ namespace HospitalManagementSystem
         }
         private static bool IsEqualGender(String cnic, String gender)
         {
-            if ((((int)cnic[14])-48) % 2 == 0 && gender == "Female")
+            if (cnic.Length == 15)
             {
-                return true;
-            }
-            if ((((int)cnic[14])-48) % 2 != 0 && gender == "Male")
-            {
-                return true;
+                if ((((int)cnic[14]) - 48) % 2 == 0 && gender == "Female")
+                {
+                    return true;
+                }
+                if ((((int)cnic[14]) - 48) % 2 != 0 && gender == "Male")
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -226,11 +267,11 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
-                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) + ListContainElement(qualification, csHospital.Instence.getDoctorQualifications()) +
-                ListContainElement(dep, csHospital.Instence.getDepartments()) + IsEqualGender(cnic, gender) + 
-                isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            //MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+            //    IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+            //    IsValidPassword(pass) + ListContainElement(qualification, csHospital.Instence.getDoctorQualifications()) +
+            //    ListContainElement(dep, csHospital.Instence.getDepartments()) + IsEqualGender(cnic, gender) + 
+            //    isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
             return false;
         }
         public static bool Nurse(string name, string cnic, string phoneno, string email, string pass, string duty, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
@@ -244,10 +285,10 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
-                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) + IsvalidSalary(salary) + IsEqualGender(cnic, gender) +
-                isValidWorkingHours(sTime, eTime) + IsValidDuty(duty) + isValidAddress(address));
+            //MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+            //    IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+            //    IsValidPassword(pass) + IsvalidSalary(salary) + IsEqualGender(cnic, gender) +
+            //    isValidWorkingHours(sTime, eTime) + IsValidDuty(duty) + isValidAddress(address));
             return false;
         }
         public static bool LabTech_Pharmacist(string name, string cnic, string phoneno, string email, string pass, string qualification, List<String> qualificationList, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
@@ -261,10 +302,10 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
-                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) + ListContainElement(qualification, qualificationList) + IsvalidSalary(salary) +
-                IsEqualGender(cnic, gender) + isValidWorkingHours(sTime, eTime) + isValidAddress(address));
+            //MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+            //    IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+            //    IsValidPassword(pass) + ListContainElement(qualification, qualificationList) + IsvalidSalary(salary) +
+            //    IsEqualGender(cnic, gender) + isValidWorkingHours(sTime, eTime) + isValidAddress(address));
             return false;
         }
         public static bool Surgeon(string name, string cnic, string phoneno, string email, string pass, string qualification, string dep, String Specialization, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
@@ -279,11 +320,11 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
-                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) + ListContainElement(qualification, csHospital.Instence.getSurgeonQualifications()) +
-                ListContainElement(dep, csHospital.Instence.getDepartments()) + ListContainElement(Specialization, csHospital.Instence.getSurgeonSpecializations()) +
-                IsEqualGender(cnic, gender) + isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            //MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+            //    IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+            //    IsValidPassword(pass) + ListContainElement(qualification, csHospital.Instence.getSurgeonQualifications()) +
+            //    ListContainElement(dep, csHospital.Instence.getDepartments()) + ListContainElement(Specialization, csHospital.Instence.getSurgeonSpecializations()) +
+            //    IsEqualGender(cnic, gender) + isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
             return false;
         }
         public static bool Receptionist(string name, string cnic, string phoneno, string email, string pass, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
@@ -296,10 +337,10 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
-                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
-                IsValidPassword(pass) +
-                isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            //MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+            //    IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) + IsValidEmail(email) +
+            //    IsValidPassword(pass) +
+            //    isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
             return false;
         }
         public static bool OtherStaff(string name, string cnic, string phoneno, String type, string address, string gender, int salary, DateTime dob, DateTime sTime, DateTime eTime)
@@ -311,9 +352,20 @@ namespace HospitalManagementSystem
             {
                 return true;
             }
-            MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
-                IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) +
-                isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            //MessageBox.Show(IsValidName(name).ToString() + IsValidCnic(cnic) +
+            //    IsValidPhoneNumber(phoneno) + isValidDateOFBirth(dob) +
+            //    isValidWorkingHours(sTime, eTime) + IsvalidSalary(salary) + isValidAddress(address));
+            return false;
+        }
+
+        //Incomplete and will be completed after patient portion is done
+        public static bool LabTest(string pname, string pID, String tID, String lab, DateTime due, csSample sample)
+        {
+            if(IsValidName(pname) && isValidSample(sample, csHospital.Instence.getSamples()) &&
+                isValidLaboratories(lab, csHospital.Instence.getLaboratories()) && isValidTestID(tID))
+            {
+                return true;
+            }
             return false;
         }
 

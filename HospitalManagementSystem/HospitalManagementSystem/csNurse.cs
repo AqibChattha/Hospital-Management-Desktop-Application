@@ -30,9 +30,9 @@ namespace HospitalManagementSystem
         {
             String id = "";
             bool flag = true;
-            for (int i = 0; i <= csHospital.Instence.getNurses().Count; i++)
+            for (int i = 1; i <= csHospital.Instence.getNurses().Count+10; i++)
             {
-                id = "NUT-" + (i + 1);
+                id = "NUT-" + i;
                 for (int j = 0; j < csHospital.Instence.getNurses().Count; j++)
                 {
                     if (id.Equals(csHospital.Instence.getNurses()[j].Staff_Id))

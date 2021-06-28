@@ -30,6 +30,7 @@ namespace HospitalManagementSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbInvalidInput = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnClearInput = new System.Windows.Forms.Button();
             this.btnAddInput = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@ namespace HospitalManagementSystem
             this.dtpWHstart = new System.Windows.Forms.DateTimePicker();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
+            this.nudEcperiance = new System.Windows.Forms.NumericUpDown();
             this.nudSalary = new System.Windows.Forms.NumericUpDown();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.cbQualification = new System.Windows.Forms.ComboBox();
@@ -58,6 +60,7 @@ namespace HospitalManagementSystem
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,12 +68,9 @@ namespace HospitalManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.txtCnic = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.nudEcperiance = new System.Windows.Forms.NumericUpDown();
-            this.lbInvalidInput = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEcperiance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,6 +122,17 @@ namespace HospitalManagementSystem
             this.panel1.Size = new System.Drawing.Size(787, 488);
             this.panel1.TabIndex = 8;
             // 
+            // lbInvalidInput
+            // 
+            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbInvalidInput.AutoSize = true;
+            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
+            this.lbInvalidInput.Location = new System.Drawing.Point(686, 418);
+            this.lbInvalidInput.Name = "lbInvalidInput";
+            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
+            this.lbInvalidInput.TabIndex = 16;
+            this.lbInvalidInput.Text = "Invalid Input";
+            // 
             // btnCancel
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -164,7 +175,6 @@ namespace HospitalManagementSystem
             // 
             // dtpWHend
             // 
-            this.dtpWHend.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpWHend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpWHend.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpWHend.Location = new System.Drawing.Point(275, 218);
@@ -186,7 +196,6 @@ namespace HospitalManagementSystem
             // 
             // dtpWHstart
             // 
-            this.dtpWHstart.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpWHstart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpWHstart.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpWHstart.Location = new System.Drawing.Point(169, 218);
@@ -221,6 +230,15 @@ namespace HospitalManagementSystem
             this.rbtnMale.Text = "Male";
             this.rbtnMale.UseVisualStyleBackColor = true;
             // 
+            // nudEcperiance
+            // 
+            this.nudEcperiance.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nudEcperiance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nudEcperiance.Location = new System.Drawing.Point(290, 159);
+            this.nudEcperiance.Name = "nudEcperiance";
+            this.nudEcperiance.Size = new System.Drawing.Size(73, 23);
+            this.nudEcperiance.TabIndex = 9;
+            // 
             // nudSalary
             // 
             this.nudSalary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -239,11 +257,6 @@ namespace HospitalManagementSystem
             this.nudSalary.Name = "nudSalary";
             this.nudSalary.Size = new System.Drawing.Size(116, 23);
             this.nudSalary.TabIndex = 9;
-            this.nudSalary.Value = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
             // 
             // txtAddress
             // 
@@ -351,7 +364,6 @@ namespace HospitalManagementSystem
             // 
             // label15
             // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.Location = new System.Drawing.Point(255, 223);
@@ -362,7 +374,6 @@ namespace HospitalManagementSystem
             // 
             // label14
             // 
-            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(132, 223);
@@ -373,7 +384,6 @@ namespace HospitalManagementSystem
             // 
             // label13
             // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(8, 218);
@@ -444,6 +454,17 @@ namespace HospitalManagementSystem
             this.label12.Size = new System.Drawing.Size(90, 21);
             this.label12.TabIndex = 0;
             this.label12.Text = "Depatment:";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(200, 160);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(87, 21);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Experiance:";
             // 
             // label7
             // 
@@ -520,37 +541,6 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 7;
             this.label1.Text = "Add Surgeon Information";
             // 
-            // label18
-            // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(200, 160);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(87, 21);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Experiance:";
-            // 
-            // nudEcperiance
-            // 
-            this.nudEcperiance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudEcperiance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nudEcperiance.Location = new System.Drawing.Point(290, 159);
-            this.nudEcperiance.Name = "nudEcperiance";
-            this.nudEcperiance.Size = new System.Drawing.Size(73, 23);
-            this.nudEcperiance.TabIndex = 9;
-            // 
-            // lbInvalidInput
-            // 
-            this.lbInvalidInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbInvalidInput.AutoSize = true;
-            this.lbInvalidInput.ForeColor = System.Drawing.Color.Red;
-            this.lbInvalidInput.Location = new System.Drawing.Point(686, 418);
-            this.lbInvalidInput.Name = "lbInvalidInput";
-            this.lbInvalidInput.Size = new System.Drawing.Size(73, 15);
-            this.lbInvalidInput.TabIndex = 16;
-            this.lbInvalidInput.Text = "Invalid Input";
-            // 
             // ucAddSurgeon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -561,8 +551,8 @@ namespace HospitalManagementSystem
             this.Size = new System.Drawing.Size(824, 561);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEcperiance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSalary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

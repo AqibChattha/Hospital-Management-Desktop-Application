@@ -35,9 +35,9 @@ namespace HospitalManagementSystem
         {
             String id = "";
             bool flag = true;
-            for (int i = 0; i <= csHospital.Instence.getPharmacist().Count; i++)
+            for (int i = 1; i <= csHospital.Instence.getPharmacist().Count+10; i++)
             {
-                id = "PHR-" + (i + 1);
+                id = "PHR-" + i;
                 for (int j = 0; j < csHospital.Instence.getPharmacist().Count; j++)
                 {
                     if (id.Equals(csHospital.Instence.getPharmacist()[j].Staff_Id))

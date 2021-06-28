@@ -341,6 +341,7 @@ namespace HospitalManagementSystem
             this.dtpWHend.Name = "dtpWHend";
             this.dtpWHend.Size = new System.Drawing.Size(94, 23);
             this.dtpWHend.TabIndex = 12;
+            this.dtpWHend.Value = new System.DateTime(2021, 5, 23, 0, 0, 0, 0);
             // 
             // dtpWHstart
             // 
@@ -351,7 +352,7 @@ namespace HospitalManagementSystem
             this.dtpWHstart.Name = "dtpWHstart";
             this.dtpWHstart.Size = new System.Drawing.Size(96, 23);
             this.dtpWHstart.TabIndex = 11;
-            this.dtpWHstart.Value = new System.DateTime(2021, 5, 23, 0, 31, 0, 0);
+            this.dtpWHstart.Value = new System.DateTime(2021, 5, 23, 0, 0, 0, 0);
             // 
             // panelAddDoctorInfo
             // 

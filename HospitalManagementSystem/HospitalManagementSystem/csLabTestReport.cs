@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HospitalManagementSystem
 {
-    class csLabTestReport
+    public class csLabTestReport
     {
         public String Name { get; set; }
         public String Lab_Technician_Name { get; set; }

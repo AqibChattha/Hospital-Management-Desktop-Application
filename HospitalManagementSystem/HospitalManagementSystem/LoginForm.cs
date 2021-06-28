@@ -37,7 +37,9 @@ namespace HospitalManagementSystem
             {
                 this.Hide();
                 MainForn mainForn = new MainForn();
+                csHospital c = csHospital.Instence;
                 mainForn.ShowDialog();
+                csHospital.SaveData();
                 this.Close();
             }
             else
@@ -114,6 +116,9 @@ namespace HospitalManagementSystem
             if(e.KeyCode == Keys.Enter)
             {
                 SendKeys.Send("{TAB}");        
+            }else if (!label3.Equals(""))
+            {
+                label3.Text = "";
             }
         }
 
@@ -130,6 +135,9 @@ namespace HospitalManagementSystem
                 {
                     Login();
                 }
+            }else if (!label3.Equals(""))
+            {
+                label3.Text = "";
             }
         }
     }
