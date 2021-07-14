@@ -31,10 +31,7 @@ namespace HospitalManagementSystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucTestsData));
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAddTest = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSearchTest = new System.Windows.Forms.TextBox();
+            this.dtvLabTests = new System.Windows.Forms.DataGridView();
             this.testID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,7 +39,10 @@ namespace HospitalManagementSystem
             this.edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.view = new System.Windows.Forms.DataGridViewImageColumn();
             this.delete = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnAddTest = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTests)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,14 +56,16 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 23;
             this.label1.Text = "Laboratory Tests";
             // 
-            // dataGridView1
+            // dtvLabTests
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtvLabTests.AllowUserToAddRows = false;
+            this.dtvLabTests.AllowUserToDeleteRows = false;
+            this.dtvLabTests.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtvLabTests.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtvLabTests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvLabTests.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.testID,
             this.patientID,
             this.name,
@@ -71,11 +73,71 @@ namespace HospitalManagementSystem
             this.edit,
             this.view,
             this.delete});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(791, 408);
-            this.dataGridView1.TabIndex = 24;
+            this.dtvLabTests.Location = new System.Drawing.Point(16, 92);
+            this.dtvLabTests.Name = "dtvLabTests";
+            this.dtvLabTests.ReadOnly = true;
+            this.dtvLabTests.RowTemplate.Height = 25;
+            this.dtvLabTests.Size = new System.Drawing.Size(791, 408);
+            this.dtvLabTests.TabIndex = 24;
+            this.dtvLabTests.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvLabTests_CellContentClick);
+            // 
+            // testID
+            // 
+            this.testID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.testID.HeaderText = "Test ID";
+            this.testID.Name = "testID";
+            this.testID.ReadOnly = true;
+            // 
+            // patientID
+            // 
+            this.patientID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.patientID.HeaderText = "Patient ID";
+            this.patientID.Name = "patientID";
+            this.patientID.ReadOnly = true;
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.HeaderText = "Patient Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // date
+            // 
+            this.date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // edit
+            // 
+            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.edit.HeaderText = "";
+            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
+            this.edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.edit.Name = "edit";
+            this.edit.ReadOnly = true;
+            this.edit.Width = 5;
+            // 
+            // view
+            // 
+            this.view.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.view.HeaderText = "";
+            this.view.Image = ((System.Drawing.Image)(resources.GetObject("view.Image")));
+            this.view.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.view.Name = "view";
+            this.view.ReadOnly = true;
+            this.view.Width = 5;
+            // 
+            // delete
+            // 
+            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.delete.HeaderText = "";
+            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
+            this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Width = 5;
             // 
             // btnAddTest
             // 
@@ -100,86 +162,35 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 27;
             this.label2.Text = "Search";
             // 
-            // txtSearchTest
+            // txtSearch
             // 
-            this.txtSearchTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchTest.AutoCompleteCustomSource.AddRange(new string[] {
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.AutoCompleteCustomSource.AddRange(new string[] {
             "Ward",
             "Pharmacy",
             "Laboratory",
             "Operation Theater",
             "Department"});
-            this.txtSearchTest.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtSearchTest.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtSearchTest.Location = new System.Drawing.Point(608, 63);
-            this.txtSearchTest.Name = "txtSearchTest";
-            this.txtSearchTest.PlaceholderText = "Search Tests...";
-            this.txtSearchTest.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchTest.TabIndex = 26;
-            // 
-            // testID
-            // 
-            this.testID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.testID.HeaderText = "Test ID";
-            this.testID.Name = "testID";
-            // 
-            // patientID
-            // 
-            this.patientID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.patientID.HeaderText = "Patient ID";
-            this.patientID.Name = "patientID";
-            // 
-            // name
-            // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // date
-            // 
-            this.date.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.date.HeaderText = "Date";
-            this.date.Name = "date";
-            // 
-            // edit
-            // 
-            this.edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.edit.HeaderText = "";
-            this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
-            this.edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.edit.Name = "edit";
-            this.edit.Width = 21;
-            // 
-            // view
-            // 
-            this.view.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.view.HeaderText = "";
-            this.view.Image = ((System.Drawing.Image)(resources.GetObject("view.Image")));
-            this.view.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.view.Name = "view";
-            this.view.Width = 21;
-            // 
-            // delete
-            // 
-            this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.delete.HeaderText = "";
-            this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
-            this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.delete.Name = "delete";
-            this.delete.Width = 21;
+            this.txtSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtSearch.Location = new System.Drawing.Point(608, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search Tests...";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 26;
             // 
             // ucTestsData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtSearchTest);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnAddTest);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtvLabTests);
             this.Controls.Add(this.label1);
             this.Name = "ucTestsData";
             this.Size = new System.Drawing.Size(824, 561);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLabTests)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,10 +199,10 @@ namespace HospitalManagementSystem
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtvLabTests;
         private System.Windows.Forms.Button btnAddTest;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSearchTest;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn testID;
         private System.Windows.Forms.DataGridViewTextBoxColumn patientID;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;

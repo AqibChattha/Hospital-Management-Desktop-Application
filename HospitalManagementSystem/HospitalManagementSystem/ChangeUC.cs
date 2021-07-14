@@ -209,8 +209,50 @@ namespace HospitalManagementSystem
             }
         }
 
+        public static void To_ucAcknowledgeTest()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAcknowledgeTest.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAcknowledgeTest.Instence);
+                ucAcknowledgeTest.Instence.Dock = DockStyle.Fill;
+                ucAcknowledgeTest.Instence.BringToFront();
+            }
+            else
+            {
+                ucAcknowledgeTest.Instence.RefreshUC();
+                ucAcknowledgeTest.Instence.BringToFront();
+            }
+        }
 
+        public static void To_ucTestsData()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucTestsData.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucTestsData.Instence);
+                ucTestsData.Instence.Dock = DockStyle.Fill;
+                ucTestsData.Instence.BringToFront();
+            }
+            else
+            {
+                ucTestsData.Instence.RefreshUC();
+                ucTestsData.Instence.BringToFront();
+            }
+        }
 
+        public static void To_ucAddPatient()
+        {
+            if (!MainForn.main_Panel.Controls.Contains(ucAddPatient.Instence))
+            {
+                MainForn.main_Panel.Controls.Add(ucAddPatient.Instence);
+                ucAddPatient.Instence.Dock = DockStyle.Fill;
+                ucAddPatient.Instence.BringToFront();
+            }
+            else
+            {
+                ucAddPatient.Instence.RefreshUC();
+                ucAddPatient.Instence.BringToFront();
+            }
+        }
 
 
 
@@ -230,19 +272,7 @@ namespace HospitalManagementSystem
                 ucPatientQueue.Instence.BringToFront();
             }
         }
-        public static void To_ucAddPatient()
-        {
-            if (!MainForn.main_Panel.Controls.Contains(ucAddPatient.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAddPatient.Instence);
-                ucAddPatient.Instence.Dock = DockStyle.Fill;
-                ucAddPatient.Instence.BringToFront();
-            }
-            else
-            {
-                ucAddPatient.Instence.BringToFront();
-            }
-        }
+
         public static void To_ucPatientsData()
         {
             if (!MainForn.main_Panel.Controls.Contains(ucPatientsData.Instence))
@@ -256,32 +286,7 @@ namespace HospitalManagementSystem
                 ucPatientsData.Instence.BringToFront();
             }
         }
-        public static void To_ucAcknowledgeTest()
-        {
-            if (!MainForn.main_Panel.Controls.Contains(ucAcknowledgeTest.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucAcknowledgeTest.Instence);
-                ucAcknowledgeTest.Instence.Dock = DockStyle.Fill;
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
-            else
-            {
-                ucAcknowledgeTest.Instence.BringToFront();
-            }
-        }
-        public static void To_ucTestsData()
-        {
-            if (!MainForn.main_Panel.Controls.Contains(ucTestsData.Instence))
-            {
-                MainForn.main_Panel.Controls.Add(ucTestsData.Instence);
-                ucTestsData.Instence.Dock = DockStyle.Fill;
-                ucTestsData.Instence.BringToFront();
-            }
-            else
-            {
-                ucTestsData.Instence.BringToFront();
-            }
-        }
+
         public static void To_ucCapitalData()
         {
             if (!MainForn.main_Panel.Controls.Contains(ucCapitalData.Instence))

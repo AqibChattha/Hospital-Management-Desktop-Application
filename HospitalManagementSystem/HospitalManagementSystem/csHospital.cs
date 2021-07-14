@@ -67,10 +67,12 @@ namespace HospitalManagementSystem
             list_Of_SurgeonQualifications.Add("sadd");
             list_Of_SurgeonSpecialization.Add("sdasdad");
             list_Of_OtherStaffTypes.Add("Security");
+            list_Of_Rooms.Add(new csWard("WRD-1","first floor", "3 Star"));
 
 
             LoadData();
         }
+        public void Initialize() { }
         public static csHospital Instence
         {
             get
@@ -110,10 +112,10 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + doc.Name + "\n" + "Staff ID:  " + doc.Staff_Id + "\n" +
                 "CNIC:  " + doc.Cnic + "\n" + "Phone No:  " + doc.PhoneNumber + "\n" +
-                "Date Of Birth:  " + doc.DateOfBirth.Date.ToString() + "\n" + "Email:  " + doc.Email + "\n" +
+                "Date Of Birth:  " + doc.DateOfBirth.Date.ToShortDateString() + "\n" + "Email:  " + doc.Email + "\n" +
                 "Password:  " + doc.Password + "\n" + "Qualification:  " + doc.Qualification + "\n" +
                 "Department:  " + doc.Department + "\n" + "Gender:  " + doc.Gender + "\n" +
-                "From:  " + doc.WH_Start_Time.TimeOfDay + "  to  " + doc.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + doc.WH_Start_Time.ToShortTimeString() + "  to  " + doc.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + doc.Salary + "\n" + "Address:  " + doc.Address;
             MessageBox.Show(info, "Doctor Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -138,10 +140,10 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + nurse.Name + "\n" + "Staff ID:  " + nurse.Staff_Id + "\n" +
                 "CNIC:  " + nurse.Cnic + "\n" + "Phone No:  " + nurse.PhoneNumber + "\n" +
-                "Date Of Birth:  " + nurse.DateOfBirth.Date.ToString() + "\n" + "Email:  " + nurse.Email + "\n" +
+                "Date Of Birth:  " + nurse.DateOfBirth.Date.ToShortDateString() + "\n" + "Email:  " + nurse.Email + "\n" +
                 "Password:  " + nurse.Password + "\n" +
                 "Duty:  " + nurse.Duty + "\n" + "Gender:  " + nurse.Gender + "\n" +
-                "From:  " + nurse.WH_Start_Time.TimeOfDay + "  to  " + nurse.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + nurse.WH_Start_Time.ToShortTimeString() + "  to  " + nurse.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + nurse.Salary + "\n" + "Address:  " + nurse.Address;
              MessageBox.Show(info, "Nurse Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -178,10 +180,10 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + LabTech.Name + "\n" + "Staff ID:  " + LabTech.Staff_Id + "\n" +
                 "CNIC:  " + LabTech.Cnic + "\n" + "Phone No:  " + LabTech.PhoneNumber + "\n" +
-                "Date Of Birth:  " + LabTech.DateOfBirth.Date.ToString() + "\n" + "Email:  " + LabTech.Email + "\n" +
+                "Date Of Birth:  " + LabTech.DateOfBirth.Date.ToShortDateString() + "\n" + "Email:  " + LabTech.Email + "\n" +
                 "Password:  " + LabTech.Password + "\n" +
                 "Qualification:  " + LabTech.Qualification + "\n" + "Gender:  " + LabTech.Gender + "\n" +
-                "From:  " + LabTech.WH_Start_Time.TimeOfDay + "  to  " + LabTech.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + LabTech.WH_Start_Time.ToShortTimeString() + "  to  " + LabTech.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + LabTech.Salary + "\n" + "Address:  " + LabTech.Address;
              MessageBox.Show(info, "Lab Technician Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -214,10 +216,10 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + Pharmacist.Name + "\n" + "Staff ID:  " + Pharmacist.Staff_Id + "\n" +
                 "CNIC:  " + Pharmacist.Cnic + "\n" + "Phone No:  " + Pharmacist.PhoneNumber + "\n" +
-                "Date Of Birth:  " + Pharmacist.DateOfBirth.Date.ToString() + "\n" + "Email:  " + Pharmacist.Email + "\n" +
+                "Date Of Birth:  " + Pharmacist.DateOfBirth.Date.ToShortDateString() + "\n" + "Email:  " + Pharmacist.Email + "\n" +
                 "Password:  " + Pharmacist.Password + "\n" +
                 "Qualification:  " + Pharmacist.Qualification + "\n" + "Gender:  " + Pharmacist.Gender + "\n" +
-                "From:  " + Pharmacist.WH_Start_Time.TimeOfDay + "  to  " + Pharmacist.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + Pharmacist.WH_Start_Time.ToShortTimeString() + "  to  " + Pharmacist.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + Pharmacist.Salary + "\n" + "Address:  " + Pharmacist.Address;
             MessageBox.Show(info, "Pharmacist Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -254,11 +256,11 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + surgeon.Name + "\n" + "Staff ID:  " + surgeon.Staff_Id + "\n" +
                 "CNIC:  " + surgeon.Cnic + "\n" + "Phone No:  " + surgeon.PhoneNumber + "\n" +
-                "Date Of Birth:  " + surgeon.DateOfBirth.Date.ToString() + "\n" + "Email:  " + surgeon.Email + "\n" +
+                "Date Of Birth:  " + surgeon.DateOfBirth.Date.ToShortDateString() + "\n" + "Email:  " + surgeon.Email + "\n" +
                 "Password:  " + surgeon.Password + "\n" + "Qualification:  " + surgeon.Qualification + "\n" +
                 "Department:  " + surgeon.Department + "\n" + "Gender:  " + surgeon.Gender + "\n" +
                 "Specialization:  " + surgeon.Specialization + "\n" + "Experiance:  " +surgeon.Experience + " Years\n" +
-                "From:  " + surgeon.WH_Start_Time.TimeOfDay + "  to  " + surgeon.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + surgeon.WH_Start_Time.ToShortTimeString() + "  to  " + surgeon.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + surgeon.Salary + "\n" + "Address:  " + surgeon.Address;
             MessageBox.Show(info, "Surgeon Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -287,10 +289,10 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + receptionist.Name + "\n" + "Staff ID:  " + receptionist.Staff_Id + "\n" +
                 "CNIC:  " + receptionist.Cnic + "\n" + "Phone No:  " + receptionist.PhoneNumber + "\n" +
-                "Date Of Birth:  " + receptionist.DateOfBirth.Date.ToString() + "\n" + "Email:  " + receptionist.Email + "\n" +
+                "Date Of Birth:  " + receptionist.DateOfBirth.Date.ToShortDateString() + "\n" + "Email:  " + receptionist.Email + "\n" +
                 "Password:  " + receptionist.Password + "\n" + 
                 "Gender:  " + receptionist.Gender + "\n" +
-                "From:  " + receptionist.WH_Start_Time.TimeOfDay + "  to  " + receptionist.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + receptionist.WH_Start_Time.ToShortTimeString() + "  to  " + receptionist.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + receptionist.Salary + "\n" + "Address:  " + receptionist.Address;
             MessageBox.Show(info, "Receptionist Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -323,9 +325,9 @@ namespace HospitalManagementSystem
             String info = "";
             info += "Name:  " + otherStaff.Name + "\n" + "Staff ID:  " + otherStaff.Staff_Id + "\n" +
                 "CNIC:  " + otherStaff.Cnic + "\n" + "Phone No:  " + otherStaff.PhoneNumber + "\n" +
-                "Date Of Birth:  " + otherStaff.DateOfBirth.Date.ToString() + "\n" +
+                "Date Of Birth:  " + otherStaff.DateOfBirth.Date.ToShortDateString() + "\n" +
                 "Gender:  " + otherStaff.Gender + "\n" +
-                "From:  " + otherStaff.WH_Start_Time.TimeOfDay + "  to  " + otherStaff.WH_End_Time.TimeOfDay + "\n" +
+                "From:  " + otherStaff.WH_Start_Time.ToShortTimeString() + "  to  " + otherStaff.WH_End_Time.ToShortTimeString() + "\n" +
                 "Salary:  " + otherStaff.Salary + "\n" + "Address:  " + otherStaff.Address;
             MessageBox.Show(info, "OtherStaff Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -350,10 +352,179 @@ namespace HospitalManagementSystem
         {
             return list_of_Laboratories;
         }
+        public void AddLabTest(csLabTest ltest)
+        {
+            list_Of_LabTests.Add(ltest);
+        }
+        public void DeleteLabTest(int index)
+        {
+            list_Of_LabTests.RemoveAt(index);
+        }
+        public void UpdateLabTest(int index, csLabTest ltest)
+        {
+            list_Of_LabTests[index] = ltest;
+        }
+        public void ViewLabTest(int index)
+        {
+            csLabTest ltest = list_Of_LabTests[index];
+            String info = "";
+            info += "Patient Name:  " + ltest.PatientName + "\n" + "Patient ID:  " + ltest.PatientId + "\n" +
+                "Lab ID:  " + ltest.labID + "\n" + "Test ID:  " + ltest.TestId + "\n" +
+                "Sample Type:  " + ltest.Sample.Name + "\n" + "Test Cost:  " + ltest.Sample.Cost + "\n" +
+                "Due Date:  " + ltest.DueDate.ToShortDateString();
+            if (!ltest.Result.Equals(""))
+            {
+                info += "\n" + "Test Result:  " + ltest.Result;
+            }
+            MessageBox.Show(info, "Test Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        public void AddLabTesResult(int index, String result)
+        {
+            list_Of_LabTests[index].AddResult(result);
+        }
+        #endregion
 
 
+        #region Patients
+
+
+        public List<csPatient> getPatients()
+        {
+            return list_Of_Patients;
+        }
+
+        public void AddPatient(csPatient p)
+        {
+            list_Of_Patients.Add(p);
+        }
 
         #endregion
+
+        #region Rooms
+
+
+        public List<csRoom> getRooms()
+        {
+            return list_Of_Rooms;
+        }
+
+        #endregion
+        
+
+
+
+        public List<csStaff> getStaff()
+        {
+            list_Of_Staff.AddRange(list_Of_Doctors);
+            list_Of_Staff.AddRange(list_Of_Nurses);
+            list_Of_Staff.AddRange(list_Of_Surgeons);
+            list_Of_Staff.AddRange(list_Of_Pharmacists);
+            list_Of_Staff.AddRange(list_Of_LabTechnecians);
+            list_Of_Staff.AddRange(list_Of_Receptionists);
+            list_Of_Staff.AddRange(list_Of_OtherStaff);
+            return list_Of_Staff;
+        }
+        public List<String> getStaffTypes()
+        {
+            List<String> types = new List<string>();
+            types.Add("Doctor");
+            types.Add("Surgeons");
+            types.Add("Nurses");
+            types.Add("Pharmacist");
+            types.Add("Lab Technecian");
+            types.Add("Receptionist");
+            types.AddRange(list_Of_OtherStaffTypes);
+            return types;
+        }
+        public List<String> getStaffIdsByType(String type)
+        {
+            List<csStaff> typeStaff = new List<csStaff>();
+            List<String> ids = new List<string>();
+            switch (type)
+            {
+                case "Doctor":
+                    typeStaff.AddRange(list_Of_Doctors);
+                    break;
+                case "Surgeons":
+                    typeStaff.AddRange(list_Of_Surgeons);
+                    break;
+                case "Nurses":
+                    typeStaff.AddRange(list_Of_Nurses);
+                    break;
+                case "Pharmacist":
+                    typeStaff.AddRange(list_Of_Pharmacists);
+                    break;
+                case "Lab Technecian":
+                    typeStaff.AddRange(list_Of_LabTechnecians);
+                    break;
+                case "Receptionist":
+                    typeStaff.AddRange(list_Of_Receptionists);
+                    break;
+
+                default:
+                    for(int i=0; i< list_Of_OtherStaffTypes.Count; i++)
+                    {
+                        if (list_Of_OtherStaffTypes[i].Equals(type))
+                        {
+                            typeStaff.AddRange(list_Of_OtherStaff);
+                        }
+                    }
+                    break;
+            }
+            if (typeStaff.Count > 0)
+            {
+                if (typeStaff[0].GetType() == new csOtherStaff().GetType())
+                {
+                    for (int i = 0; i < typeStaff.Count; i++)
+                    {
+                        if (((csOtherStaff)typeStaff[i]).Type.Equals(type))
+                        {
+                            ids.Add(typeStaff[i].Staff_Id);
+                        }
+                    }
+                    return ids;
+                }
+                else
+                {
+                    for (int i = 0; i < typeStaff.Count; i++)
+                    {
+                        ids.Add(typeStaff[i].Staff_Id);
+                    }
+                    return ids;
+                }
+            }
+            return null;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public static void SaveData()
@@ -367,6 +538,7 @@ namespace HospitalManagementSystem
             SaveOhterStaffData();
 
         }
+
         #region Individual Save_Data
 
         private static void SaveDoctorsData()
@@ -379,8 +551,8 @@ namespace HospitalManagementSystem
                     csDoctor d = list_Of_Doctors[i];
                     writer.WriteLine(d.Name + ":;" + d.Cnic + ":;" + d.PhoneNumber + ":;" + d.DateOfBirth + ":;" + d.Email + ":;" + d.Password + ":;" + d.Qualification +
                         ":;" + d.Department + ":;" + d.Gender + ":;" + d.WH_Start_Time + ":;" + d.WH_End_Time + ":;" + d.Salary + ":;" + d.Address + ":;" + d.Staff_Id);
-                    writer.Flush();
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -397,8 +569,8 @@ namespace HospitalManagementSystem
                     csNurse n = list_Of_Nurses[i];
                     writer.WriteLine(n.Name + ":;" + n.Cnic + ":;" + n.PhoneNumber + ":;" + n.DateOfBirth + ":;" + n.Email + ":;" + n.Password +
                        ":;" + n.Gender + ":;" + n.WH_Start_Time + ":;" + n.WH_End_Time + ":;" + n.Salary + ":;" + n.Address + ":;" + n.Duty + ":;" + n.Staff_Id);
-                    writer.Flush();
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -414,9 +586,9 @@ namespace HospitalManagementSystem
                 {
                     csPharmacist p = list_Of_Pharmacists[i];
                     writer.WriteLine(p.Name + ":;" + p.Cnic + ":;" + p.PhoneNumber + ":;" + p.DateOfBirth + ":;" + p.Email + ":;" + p.Password + ":;" + p.Qualification +
-                        ":;" + p.Gender + ":;" + p.WH_Start_Time + ":;" + p.WH_End_Time + ":;" + p.Salary + ":;" + p.Address + ":;" + p.Staff_Id);
-                    writer.Flush();
+                        ":;" + p.Gender + ":;" + p.WH_Start_Time + ":;" + p.WH_End_Time + ":;" + p.Salary + ":;" + p.Address + ":;" + p.Staff_Id);                    
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -432,9 +604,9 @@ namespace HospitalManagementSystem
                 {
                     csLabTechnician lt = list_Of_LabTechnecians[i];
                     writer.WriteLine(lt.Name + ":;" + lt.Cnic + ":;" + lt.PhoneNumber + ":;" + lt.DateOfBirth + ":;" + lt.Email + ":;" + lt.Password + ":;" + lt.Qualification +
-                        ":;" + lt.Gender + ":;" + lt.WH_Start_Time + ":;" + lt.WH_End_Time + ":;" + lt.Salary + ":;" + lt.Address + ":;" + lt.Staff_Id);
-                    writer.Flush();
+                        ":;" + lt.Gender + ":;" + lt.WH_Start_Time + ":;" + lt.WH_End_Time + ":;" + lt.Salary + ":;" + lt.Address + ":;" + lt.Staff_Id);                    
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -451,9 +623,9 @@ namespace HospitalManagementSystem
                     csSurgeon s = list_Of_Surgeons[i];
                     writer.WriteLine(s.Name + ":;" + s.Cnic + ":;" + s.PhoneNumber + ":;" + s.DateOfBirth + ":;" + s.Email + ":;" + s.Password + ":;" + s.Qualification +
                         ":;" + s.Department + ":;" + s.Specialization + ":;" + s.Experience + ":;" + s.Gender + ":;" + s.WH_Start_Time + ":;" + s.WH_End_Time +
-                        ":;" + s.Salary + ":;" + s.Address + ":;" + s.Staff_Id);
-                    writer.Flush();
+                        ":;" + s.Salary + ":;" + s.Address + ":;" + s.Staff_Id);                    
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -469,9 +641,9 @@ namespace HospitalManagementSystem
                 {
                     csReceptionist r = list_Of_Receptionists[i];
                     writer.WriteLine(r.Name + ":;" + r.Cnic + ":;" + r.PhoneNumber + ":;" + r.DateOfBirth + ":;" + r.Email + ":;" + r.Password +
-                        ":;" + r.Gender + ":;" + r.WH_Start_Time + ":;" + r.WH_End_Time + ":;" + r.Salary + ":;" + r.Address + ":;" + r.Staff_Id);
-                    writer.Flush();
+                        ":;" + r.Gender + ":;" + r.WH_Start_Time + ":;" + r.WH_End_Time + ":;" + r.Salary + ":;" + r.Address + ":;" + r.Staff_Id);                    
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -487,9 +659,9 @@ namespace HospitalManagementSystem
                 {
                     csOtherStaff os = list_Of_OtherStaff[i];
                     writer.WriteLine(os.Name + ":;" + os.Cnic + ":;" + os.PhoneNumber + ":;" + os.DateOfBirth + ":;" + os.Type +
-                        ":;" + os.Gender + ":;" + os.WH_Start_Time + ":;" + os.WH_End_Time + ":;" + os.Salary + ":;" + os.Address + ":;" + os.Staff_Id);
-                    writer.Flush();
+                        ":;" + os.Gender + ":;" + os.WH_Start_Time + ":;" + os.WH_End_Time + ":;" + os.Salary + ":;" + os.Address + ":;" + os.Staff_Id);                    
                 }
+                writer.Flush();
                 writer.Close();
             }
             catch (Exception ex)
@@ -498,8 +670,6 @@ namespace HospitalManagementSystem
         }
 
         #endregion
-
-
 
         public static void LoadData()
         {
@@ -511,6 +681,7 @@ namespace HospitalManagementSystem
             LoadReceptionistsData();
             LoadOhterStaffData();
         }
+
         #region Individual Load_Data
         private static void LoadDoctorsData()
         {
@@ -740,5 +911,6 @@ namespace HospitalManagementSystem
         }
 
         #endregion
+
     }
 }

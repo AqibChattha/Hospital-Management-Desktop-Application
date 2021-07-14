@@ -31,8 +31,28 @@ namespace HospitalManagementSystem
             panel1.Dock = DockStyle.Fill;
             panel3.Visible = false;
             panel4.Visible = false;
+            LoadComboBoxes();
         }
 
+        private void LoadComboBoxes()
+        {
+            cbRoomId.Items.Clear();
+            cbStaffType.Items.Clear();
+            cbStaffId.Items.Clear();
+            
+            List<csRoom> rooms = csHospital.Instence.getRooms();
+            List<String> wardsids = new List<String>();
+            for(int i=0; i<rooms.Count; i++)
+            {
+                if(rooms[i].GetType() == new csWard().GetType())
+                {
+                    wardsids.Add(rooms[i].Id);
+                }
+            }
+            cbRoomId.DataSource = wardsids;
+            cbStaffType.DataSource = csHospital.Instence.getStaffTypes();
+            cbStaffId.DataSource = csHospital.Instence.getStaffIdsByType(cbStaffType.Text);
+        }
         private void cbPatientType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbPatientType.SelectedIndex == 0)
@@ -56,6 +76,9 @@ namespace HospitalManagementSystem
                 panel1.Visible = false;
                 panel3.Visible = false;
             }
+            ClearOutPatientEntries();
+            ClearInPatientEntries();
+            ClearIllStaffEntries();
         }
 
         private void btnAddToQueue_Click(object sender, EventArgs e)
@@ -66,7 +89,8 @@ namespace HospitalManagementSystem
             String outPatient_Email = txtEmail.Text;
             String outPatient_PAssworsd = txtPassword.Text;
             String outPatient_Address = txtAddress.Text;
-            String outPatient_Gender;
+            DateTime outPatient_DateOFBirth = dtpDateOfBirth.Value;
+            string outPatient_Gender= "";
             if (rbtnFemale.Checked)
             {
                 outPatient_Gender = "Female";
@@ -76,12 +100,17 @@ namespace HospitalManagementSystem
                 outPatient_Gender = "Male";
             }
 
-            DateTime outPatient_DateOFBirth = dtpDateOfBirth.Value;
-
-            MessageBox.Show(outPatient_Name + "\n" + outPatient_Cnic + "\n" + outPatient_PhoneNumber + "\n" + outPatient_Gender + "\n");
-
-
-            ChangeUC.To_ucPatientQueue();
+            if (txtName.Text!="" && txtCnic.Text!="" && txtPhoneNo.Text != "" && txtEmail.Text != "" && txtPassword.Text != "" && outPatient_Gender != "")
+            {
+                if (Validat.OutPatient(outPatient_Name, outPatient_Cnic, outPatient_PhoneNumber, outPatient_DateOFBirth, outPatient_Address, outPatient_Email, outPatient_PAssworsd))
+                {
+                    csOutPatient outPatient = new csOutPatient(outPatient_Name, outPatient_Cnic, outPatient_PhoneNumber, outPatient_Gender, outPatient_DateOFBirth, outPatient_Address, outPatient_Email, outPatient_PAssworsd);
+                    csHospital.Instence.AddPatient(outPatient);
+                    ChangeUC.To_ucPatientQueue();
+                    return;
+                }
+            }
+            MessageBox.Show("Invalid information, try again.");
         }
 
         private void btnAddToData_Click(object sender, EventArgs e)
@@ -90,7 +119,13 @@ namespace HospitalManagementSystem
             String inPatient_Cnic = txtCnic2.Text;
             String inPatient_PhoneNumber = txtPhoneNo2.Text;
             String inPatient_Address = txtAddress2.Text;
-            String inPatient_Gender;
+            string inPatient_Gender = "";
+            string room_id = "";
+            if (cbRoomId.SelectedItem != null)
+            {
+                room_id = cbRoomId.SelectedItem.ToString();
+            }
+            DateTime inPatient_DateOFBirth = dtpDateOfBirth2.Value;
             if (rbtnFemale2.Checked)
             {
                 inPatient_Gender = "Female";
@@ -99,22 +134,16 @@ namespace HospitalManagementSystem
             {
                 inPatient_Gender = "Male";
             }
-
-            DateTime outPatient_DateOFBirth = dtpDateOfBirth2.Value;
-
-            MessageBox.Show(inPatient_Name + "\n" + inPatient_Cnic + "\n" + inPatient_PhoneNumber + "\n" + inPatient_Gender + "\n");
-
-
-            if (!MainForn.main_Panel.Controls.Contains(ucPatientsData.Instence))
+            if (inPatient_Gender != "" && room_id!="")
             {
-                MainForn.main_Panel.Controls.Add(ucPatientsData.Instence);
-                ucPatientsData.Instence.Dock = DockStyle.Fill;
-                ucPatientsData.Instence.BringToFront();
+                if(Validat.InPatient(inPatient_Name, inPatient_Cnic, inPatient_PhoneNumber, inPatient_DateOFBirth, inPatient_Address, room_id)) {
+                    csInPatient inPatient = new csInPatient(inPatient_Name, inPatient_Cnic, inPatient_PhoneNumber, inPatient_Gender , inPatient_DateOFBirth, inPatient_Address, room_id);
+                    csHospital.Instence.AddPatient(inPatient);
+                    ChangeUC.To_ucPatientsData();
+                    return;
+                }
             }
-            else
-            {
-                ucPatientsData.Instence.BringToFront();
-            }
+            MessageBox.Show("Invalid information, try again.");
         }
 
         private void btnAddToData2_Click(object sender, EventArgs e)
@@ -123,9 +152,16 @@ namespace HospitalManagementSystem
             String illpatient_Cnic = txtCnic3.Text;
             String illpatient_PhoneNumber = txtPhoneNo3.Text;
             String illpatient_Address = txtAddress3.Text;
-            String illpatient_StaffType = txtStaffType.Text;
-            String illpatient_StaffId = txtStaffId.Text;
-            String illpatient_Gender;
+            DateTime illpatient_DateOFBirth = dtpDateOfBirth3.Value;
+            string illpatient_StaffType = "";
+            string illpatient_StaffId = "";
+            string illpatient_Gender = "";
+
+            if (cbStaffType.SelectedItem!=null && cbStaffId.SelectedItem != null)
+            {
+                illpatient_StaffType = cbStaffType.SelectedItem.ToString();
+                illpatient_StaffId = cbStaffId.SelectedItem.ToString();
+            }
             if (rbtnFemale3.Checked)
             {
                 illpatient_Gender = "Female";
@@ -134,25 +170,20 @@ namespace HospitalManagementSystem
             {
                 illpatient_Gender = "Male";
             }
-
-            DateTime outPatient_DateOFBirth = dtpDateOfBirth3.Value;
-
-            MessageBox.Show(illpatient_Name + "\n" + illpatient_Cnic + "\n" + illpatient_PhoneNumber + "\n" + illpatient_Gender + "\n");
-
-            if (!MainForn.main_Panel.Controls.Contains(ucPatientsData.Instence))
+            if(illpatient_Gender!="" && illpatient_StaffId!="" && illpatient_StaffType != "")
             {
-                MainForn.main_Panel.Controls.Add(ucPatientsData.Instence);
-                ucPatientsData.Instence.Dock = DockStyle.Fill;
-                ucPatientsData.Instence.BringToFront();
+                if (Validat.IllStaff(illpatient_Name, illpatient_Cnic, illpatient_PhoneNumber, illpatient_DateOFBirth, illpatient_Address, illpatient_StaffType, illpatient_StaffId))
+                {
+                    csIllStaff illStaff = new csIllStaff(illpatient_Name, illpatient_Cnic, illpatient_PhoneNumber, illpatient_Gender, illpatient_DateOFBirth, illpatient_Address, illpatient_StaffType, illpatient_StaffId);
+                    csHospital.Instence.AddPatient(illStaff);
+                    ChangeUC.To_ucPatientsData();
+                    return;
+                }
             }
-            else
-            {
-                ucPatientsData.Instence.BringToFront();
-            }
-
+            MessageBox.Show("Invalid information, try again.");
         }
 
-        private void btnClearOutPatient_Click(object sender, EventArgs e)
+        public void ClearOutPatientEntries()
         {
             txtName.Text = "";
             txtCnic.Text = "";
@@ -164,8 +195,11 @@ namespace HospitalManagementSystem
             rbtnMale.Checked = false;
             rbtnFemale.Checked = false;
         }
-
-        private void btnClearInPatient_Click(object sender, EventArgs e)
+        private void btnClearOutPatient_Click(object sender, EventArgs e)
+        {
+            ClearOutPatientEntries();
+        }
+        public void ClearInPatientEntries()
         {
             txtName2.Text = "";
             txtCnic2.Text = "";
@@ -175,18 +209,38 @@ namespace HospitalManagementSystem
             rbtnMale2.Checked = false;
             rbtnFemale2.Checked = false;
         }
-
-        private void btnClearIllStaff_Click(object sender, EventArgs e)
+        private void btnClearInPatient_Click(object sender, EventArgs e)
+        {
+            ClearInPatientEntries();
+        }
+        public void ClearIllStaffEntries()
         {
             txtName3.Text = "";
             txtCnic3.Text = "";
             txtPhoneNo3.Text = "";
             txtAddress3.Text = "";
-            txtStaffType.Text = "";
-            txtStaffId.Text = "";
+            cbStaffType.Text = "";
+            cbStaffId.Text = "";
             dtpDateOfBirth3.Value = DateTime.Today;
             rbtnMale3.Checked = false;
             rbtnFemale3.Checked = false;
+        }
+        private void btnClearIllStaff_Click(object sender, EventArgs e)
+        {
+            ClearIllStaffEntries();
+        }
+
+        public void RefreshUC()
+        {
+            LoadComboBoxes();
+            ClearOutPatientEntries();
+            ClearInPatientEntries();
+            ClearIllStaffEntries();
+        }
+
+        private void cbStaffType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbStaffId.DataSource = csHospital.Instence.getStaffIdsByType(cbStaffType.Text);
         }
     }
 }

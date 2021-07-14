@@ -17,7 +17,8 @@ namespace HospitalManagementSystem
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogInForm());
+            csHospital.Instence.Initialize();
+            Application.Run(new MainForn());
         }
     }
 }

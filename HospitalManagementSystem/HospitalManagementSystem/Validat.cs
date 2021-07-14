@@ -13,6 +13,18 @@ namespace HospitalManagementSystem
 
         #region individual_Validators
 
+        private static bool isValidRoomId(String id)
+        {
+            List<csRoom> rooms = csHospital.Instence.getRooms();
+            for (int i = 0; i < rooms.Count; i++)
+            {
+                if (rooms[i].Id.Equals(id))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         private static bool isValidTestID(String id)
         {
@@ -359,10 +371,40 @@ namespace HospitalManagementSystem
         }
 
         //Incomplete and will be completed after patient portion is done
-        public static bool LabTest(string pname, string pID, String tID, String lab, DateTime due, csSample sample)
+        public static bool LabTest(string pname, string pID, String lab, DateTime due, csSample sample)
         {
             if(IsValidName(pname) && isValidSample(sample, csHospital.Instence.getSamples()) &&
-                isValidLaboratories(lab, csHospital.Instence.getLaboratories()) && isValidTestID(tID))
+                isValidLaboratories(lab, csHospital.Instence.getLaboratories()))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool OutPatient(string name, string cnic, string phoneNo, DateTime dob, string address, string email, string password)
+        {
+            if(IsValidName(name) && IsValidCnic(cnic) && IsValidPhoneNumber(phoneNo) && isValidDateOFBirth(dob) &&
+                isValidAddress(address) && isValidAddress(email) && IsValidPassword(password))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool InPatient(string name, string cnic, string phoneNo, DateTime dob, string address, string roomId)
+        {
+            if (IsValidName(name) && IsValidCnic(cnic) && IsValidPhoneNumber(phoneNo) && isValidDateOFBirth(dob) &&
+                isValidAddress(address) && isValidRoomId(roomId))
+            {
+                return true;
+            }
+            return false;
+        }
+        // incomplete......
+        public static bool IllStaff(string name, string cnic, string phoneNo, DateTime dob, string address, string type, string id)
+        {
+            if (IsValidName(name) && IsValidCnic(cnic) && IsValidPhoneNumber(phoneNo) && isValidDateOFBirth(dob) &&
+                isValidAddress(address))
             {
                 return true;
             }

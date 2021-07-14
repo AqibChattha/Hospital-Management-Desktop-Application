@@ -101,7 +101,7 @@ namespace HospitalManagementSystem
                     {
                         MainForn.main_Panel.Controls.Add(ucAddNurse.Instence);
                         ucAddNurse.Instence.Dock = DockStyle.Fill;
-                        ucAddNurse.Instence.UpdateColumnClicked(e.RowIndex);
+                        ucAddNurse.Instence.UpdateColumnClicked(getNurseIndex(e.RowIndex));
                         ucAddNurse.Instence.BringToFront();
                     }
                     else

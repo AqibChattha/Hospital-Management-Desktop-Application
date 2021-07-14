@@ -37,7 +37,6 @@ namespace HospitalManagementSystem
             {
                 this.Hide();
                 MainForn mainForn = new MainForn();
-                csHospital c = csHospital.Instence;
                 mainForn.ShowDialog();
                 csHospital.SaveData();
                 this.Close();
