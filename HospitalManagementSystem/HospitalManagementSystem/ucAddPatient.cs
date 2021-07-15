@@ -36,15 +36,11 @@ namespace HospitalManagementSystem
 
         private void LoadComboBoxes()
         {
-            cbRoomId.Items.Clear();
-            cbStaffType.Items.Clear();
-            cbStaffId.Items.Clear();
-            
             List<csRoom> rooms = csHospital.Instence.getRooms();
             List<String> wardsids = new List<String>();
-            for(int i=0; i<rooms.Count; i++)
+            for (int i = 0; i < rooms.Count; i++)
             {
-                if(rooms[i].GetType() == new csWard().GetType())
+                if (rooms[i].GetType() == new csWard().GetType())
                 {
                     wardsids.Add(rooms[i].Id);
                 }
@@ -90,7 +86,7 @@ namespace HospitalManagementSystem
             String outPatient_PAssworsd = txtPassword.Text;
             String outPatient_Address = txtAddress.Text;
             DateTime outPatient_DateOFBirth = dtpDateOfBirth.Value;
-            string outPatient_Gender= "";
+            string outPatient_Gender = "";
             if (rbtnFemale.Checked)
             {
                 outPatient_Gender = "Female";
@@ -100,12 +96,13 @@ namespace HospitalManagementSystem
                 outPatient_Gender = "Male";
             }
 
-            if (txtName.Text!="" && txtCnic.Text!="" && txtPhoneNo.Text != "" && txtEmail.Text != "" && txtPassword.Text != "" && outPatient_Gender != "")
+            if (txtName.Text != "" && txtCnic.Text != "" && txtPhoneNo.Text != "" && txtEmail.Text != "" && txtPassword.Text != "" && outPatient_Gender != "")
             {
                 if (Validat.OutPatient(outPatient_Name, outPatient_Cnic, outPatient_PhoneNumber, outPatient_DateOFBirth, outPatient_Address, outPatient_Email, outPatient_PAssworsd))
                 {
                     csOutPatient outPatient = new csOutPatient(outPatient_Name, outPatient_Cnic, outPatient_PhoneNumber, outPatient_Gender, outPatient_DateOFBirth, outPatient_Address, outPatient_Email, outPatient_PAssworsd);
                     csHospital.Instence.AddPatient(outPatient);
+                    csHospital.Instence.AddPatientInQueue(outPatient);
                     ChangeUC.To_ucPatientQueue();
                     return;
                 }
@@ -134,10 +131,10 @@ namespace HospitalManagementSystem
             {
                 inPatient_Gender = "Male";
             }
-            if (inPatient_Gender != "" && room_id!="")
+            if (inPatient_Gender != "" && room_id != "")
             {
-                if(Validat.InPatient(inPatient_Name, inPatient_Cnic, inPatient_PhoneNumber, inPatient_DateOFBirth, inPatient_Address, room_id)) {
-                    csInPatient inPatient = new csInPatient(inPatient_Name, inPatient_Cnic, inPatient_PhoneNumber, inPatient_Gender , inPatient_DateOFBirth, inPatient_Address, room_id);
+                if (Validat.InPatient(inPatient_Name, inPatient_Cnic, inPatient_PhoneNumber, inPatient_DateOFBirth, inPatient_Address, room_id)) {
+                    csInPatient inPatient = new csInPatient(inPatient_Name, inPatient_Cnic, inPatient_PhoneNumber, inPatient_Gender, inPatient_DateOFBirth, inPatient_Address, room_id);
                     csHospital.Instence.AddPatient(inPatient);
                     ChangeUC.To_ucPatientsData();
                     return;
@@ -157,7 +154,7 @@ namespace HospitalManagementSystem
             string illpatient_StaffId = "";
             string illpatient_Gender = "";
 
-            if (cbStaffType.SelectedItem!=null && cbStaffId.SelectedItem != null)
+            if (cbStaffType.SelectedItem != null && cbStaffId.SelectedItem != null)
             {
                 illpatient_StaffType = cbStaffType.SelectedItem.ToString();
                 illpatient_StaffId = cbStaffId.SelectedItem.ToString();
@@ -170,7 +167,7 @@ namespace HospitalManagementSystem
             {
                 illpatient_Gender = "Male";
             }
-            if(illpatient_Gender!="" && illpatient_StaffId!="" && illpatient_StaffType != "")
+            if (illpatient_Gender != "" && illpatient_StaffId != "" && illpatient_StaffType != "")
             {
                 if (Validat.IllStaff(illpatient_Name, illpatient_Cnic, illpatient_PhoneNumber, illpatient_DateOFBirth, illpatient_Address, illpatient_StaffType, illpatient_StaffId))
                 {
@@ -242,5 +239,73 @@ namespace HospitalManagementSystem
         {
             cbStaffId.DataSource = csHospital.Instence.getStaffIdsByType(cbStaffType.Text);
         }
+
+        public void UpdateColumnClicked(int index)
+        {
+            csPatient patient = csHospital.Instence.getPatients()[index];
+            if (patient.GetType() == new csOutPatient().GetType())
+            {
+                cbPatientType.SelectedIndex = 0;
+                csOutPatient outPatient = (csOutPatient)patient;
+                txtName.Text = outPatient.Name;
+                txtCnic.Text = outPatient.Cnic;
+                txtPassword.Text = outPatient.Password;
+                txtEmail.Text = outPatient.Email;
+                txtPhoneNo.Text = outPatient.PhoneNumber;
+                txtAddress.Text = outPatient.Address;
+                dtpDateOfBirth.Value = outPatient.DateOfBirth;
+                if (outPatient.Gender.Equals("Male"))
+                {
+                    rbtnMale.Checked = true;
+                }
+                else
+                {
+                    rbtnFemale.Checked = true;
+                }
+
+            }
+            else if (csHospital.Instence.getPatients()[index].GetType() == new csInPatient().GetType())
+            {
+                cbPatientType.SelectedIndex = 1;
+                csInPatient inPatient = (csInPatient)patient;
+                txtName2.Text = inPatient.Name;
+                txtCnic2.Text = inPatient.Cnic;
+                txtPhoneNo2.Text = inPatient.PhoneNumber;
+                txtAddress2.Text = inPatient.Address;
+                dtpDateOfBirth2.Value = inPatient.DateOfBirth;
+                if (inPatient.Gender.Equals("Male"))
+                {
+                    rbtnMale2.Checked = true;
+                }
+                else
+                {
+                    rbtnFemale2.Checked = true;
+                }
+            }
+            else if (csHospital.Instence.getPatients()[index].GetType() == new csIllStaff().GetType())
+            {
+                cbPatientType.SelectedIndex = 2;
+                csIllStaff illStaff = (csIllStaff)patient;
+                txtName3.Text = illStaff.Name;
+                txtCnic3.Text = illStaff.Cnic;
+                txtPhoneNo3.Text = illStaff.PhoneNumber;
+                txtAddress3.Text = illStaff.Address;
+                cbStaffType.Text = illStaff.Staff_Type;
+                cbStaffId.Text = illStaff.Staff_Id;
+                dtpDateOfBirth3.Value = illStaff.DateOfBirth;
+                if (illStaff.Gender.Equals("Male"))
+                {
+                    rbtnMale3.Checked = true;
+                }
+                else
+                {
+                    rbtnFemale3.Checked = true;
+                }
+            }
+        }
+        public void select_OutPatient() {
+            cbPatientType.SelectedIndex = 0;
+        }
+
     }
 }

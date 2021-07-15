@@ -32,7 +32,7 @@ namespace HospitalManagementSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPatientsData));
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearchSurgeon = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.dtvPatients = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.cbPatientType = new System.Windows.Forms.ComboBox();
@@ -67,13 +67,13 @@ namespace HospitalManagementSystem
             this.label1.TabIndex = 25;
             this.label1.Text = "Search";
             // 
-            // txtSearchSurgeon
+            // txtSearch
             // 
-            this.txtSearchSurgeon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchSurgeon.Location = new System.Drawing.Point(607, 63);
-            this.txtSearchSurgeon.Name = "txtSearchSurgeon";
-            this.txtSearchSurgeon.Size = new System.Drawing.Size(199, 23);
-            this.txtSearchSurgeon.TabIndex = 24;
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.Location = new System.Drawing.Point(607, 63);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(199, 23);
+            this.txtSearch.TabIndex = 24;
             // 
             // dtvPatients
             // 
@@ -95,6 +95,7 @@ namespace HospitalManagementSystem
             this.dtvPatients.RowTemplate.Height = 25;
             this.dtvPatients.Size = new System.Drawing.Size(790, 452);
             this.dtvPatients.TabIndex = 26;
+            this.dtvPatients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvPatients_CellContentClick);
             // 
             // label2
             // 
@@ -133,21 +134,21 @@ namespace HospitalManagementSystem
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Cnic";
+            this.Column2.HeaderText = "Patient ID";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "Phone Number";
+            this.Column3.HeaderText = "CNIC";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Gender";
+            this.Column4.HeaderText = "Phone Number";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
@@ -186,7 +187,7 @@ namespace HospitalManagementSystem
             this.Controls.Add(this.dtvPatients);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtSearchSurgeon);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label16);
             this.Name = "ucPatientsData";
             this.Size = new System.Drawing.Size(824, 561);
@@ -200,7 +201,7 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtSearchSurgeon;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dtvPatients;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbPatientType;

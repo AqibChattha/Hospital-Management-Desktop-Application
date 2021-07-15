@@ -24,6 +24,9 @@ namespace HospitalManagementSystem
         private static List<csLaboratory> list_of_Laboratories { get; set; }
 
 
+        private static Queue<csOutPatient> patientQueue { get; set; }
+
+
         //required for combo box
         private static List<String> list_Of_Departments { get; set; }
         private static List<String> list_Of_DoctorQualifications { get; set; }
@@ -49,6 +52,8 @@ namespace HospitalManagementSystem
             list_Of_LabTests = new List<csLabTest>();
             list_Of_Samples = new List<csSample>();
             list_of_Laboratories = new List<csLaboratory>();
+
+            patientQueue = new Queue<csOutPatient>();
 
             list_Of_Departments = new List<string>();
             list_Of_DoctorQualifications = new List<string>();
@@ -396,6 +401,36 @@ namespace HospitalManagementSystem
         public void AddPatient(csPatient p)
         {
             list_Of_Patients.Add(p);
+        }
+
+        public Queue<csOutPatient> getPatientQueue()
+        {
+            return patientQueue;
+        }
+
+        public void AddPatientInQueue(csOutPatient p)
+        {
+            patientQueue.Enqueue(p);
+        }
+        public void RempvePatientFrpmQueue()
+        {
+            patientQueue.Dequeue();
+        }
+
+        public void RemovePatient(int index)
+        {
+            list_Of_Patients.RemoveAt(index);
+        }
+        public void ViewPatient(int index)
+        {
+            csPatient patient = list_Of_Patients[index];
+            String info = "";
+            info += "Name:  " + patient.Name + "\n" + "Patient ID:  " + patient.Patient_Id + "\n" +
+                "CNIC:  " + patient.Cnic + "\n" + "Phone No:  " + patient.PhoneNumber + "\n" +
+                "Date Of Birth:  " + patient.DateOfBirth.Date.ToShortDateString() + "\n" +
+                "Gender:  " + patient.Gender + "\n" +
+                "Address:  " + patient.Address;
+            MessageBox.Show(info, "OtherStaff Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         #endregion

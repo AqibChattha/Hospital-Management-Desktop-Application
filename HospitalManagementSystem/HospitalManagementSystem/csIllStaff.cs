@@ -11,6 +11,11 @@ namespace HospitalManagementSystem
         public List<String> Disease { get; set; }
 
 
+        public csIllStaff()
+        {
+
+        }
+
         public csIllStaff(string name, string cnic, string phoneNo, string gender, DateTime dob, string address, string type, string id)
         {
             Name = name;

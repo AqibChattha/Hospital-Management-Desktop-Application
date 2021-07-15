@@ -10,6 +10,11 @@ namespace HospitalManagementSystem
         public String Password { get; set; }
         public List<String> Disease { get; set; }
 
+        public csOutPatient()
+        {
+
+        }
+
         public csOutPatient(string name, string cnic, string phoneNo, string gender, DateTime dob, string address, string email, string password)
         {
             Name = name;

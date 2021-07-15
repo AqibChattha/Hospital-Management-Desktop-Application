@@ -269,6 +269,7 @@ namespace HospitalManagementSystem
             }
             else
             {
+                ucPatientQueue.Instence.RefreshUC();
                 ucPatientQueue.Instence.BringToFront();
             }
         }
@@ -283,6 +284,7 @@ namespace HospitalManagementSystem
             }
             else
             {
+                ucPatientsData.Instence.RefreshUC();
                 ucPatientsData.Instence.BringToFront();
             }
         }

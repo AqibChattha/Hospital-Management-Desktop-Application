@@ -31,14 +31,13 @@ namespace HospitalManagementSystem
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dtvPatientQueue = new System.Windows.Forms.DataGridView();
+            this.btnAddPatient = new System.Windows.Forms.Button();
+            this.cbDoctors = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tokenNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remove = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnAddPatient = new System.Windows.Forms.Button();
-            this.cbDoctors = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtvPatientQueue)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,44 +63,12 @@ namespace HospitalManagementSystem
             this.tokenNo,
             this.patientID,
             this.name,
-            this.gender,
-            this.remove});
+            this.gender});
             this.dtvPatientQueue.Location = new System.Drawing.Point(16, 113);
             this.dtvPatientQueue.Name = "dtvPatientQueue";
             this.dtvPatientQueue.RowTemplate.Height = 25;
             this.dtvPatientQueue.Size = new System.Drawing.Size(790, 431);
             this.dtvPatientQueue.TabIndex = 25;
-            // 
-            // tokenNo
-            // 
-            this.tokenNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tokenNo.HeaderText = "Token No.";
-            this.tokenNo.Name = "tokenNo";
-            // 
-            // patientID
-            // 
-            this.patientID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.patientID.HeaderText = "Patient ID";
-            this.patientID.Name = "patientID";
-            // 
-            // name
-            // 
-            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.name.HeaderText = "Name";
-            this.name.Name = "name";
-            // 
-            // gender
-            // 
-            this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.gender.HeaderText = "Gender";
-            this.gender.Name = "gender";
-            // 
-            // remove
-            // 
-            this.remove.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.remove.HeaderText = "";
-            this.remove.Name = "remove";
-            this.remove.Width = 21;
             // 
             // btnAddPatient
             // 
@@ -133,6 +100,30 @@ namespace HospitalManagementSystem
             this.label2.TabIndex = 30;
             this.label2.Text = "Doctor: ";
             // 
+            // tokenNo
+            // 
+            this.tokenNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tokenNo.HeaderText = "Token No.";
+            this.tokenNo.Name = "tokenNo";
+            // 
+            // patientID
+            // 
+            this.patientID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.patientID.HeaderText = "Patient ID";
+            this.patientID.Name = "patientID";
+            // 
+            // name
+            // 
+            this.name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.name.HeaderText = "Name";
+            this.name.Name = "name";
+            // 
+            // gender
+            // 
+            this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.gender.HeaderText = "Gender";
+            this.gender.Name = "gender";
+            // 
             // ucPatientQueue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -154,13 +145,12 @@ namespace HospitalManagementSystem
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dtvPatientQueue;
+        private System.Windows.Forms.Button btnAddPatient;
+        private System.Windows.Forms.ComboBox cbDoctors;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn tokenNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn patientID;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn gender;
-        private System.Windows.Forms.DataGridViewButtonColumn remove;
-        private System.Windows.Forms.Button btnAddPatient;
-        private System.Windows.Forms.ComboBox cbDoctors;
-        private System.Windows.Forms.Label label2;
     }
 }

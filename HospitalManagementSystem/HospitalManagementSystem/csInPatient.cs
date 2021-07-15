@@ -11,6 +11,11 @@ namespace HospitalManagementSystem
         public String Room_Id { get; set; }
 
 
+        public csInPatient()
+        {
+
+        }
+
         public csInPatient(string name, string cnic, string phoneNo, string gender, DateTime dob, string address, string roomId)
         {
             Name = name;
