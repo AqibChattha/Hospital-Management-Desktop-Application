@@ -3,6 +3,13 @@
 
 ---
 
+### 🤝 Developer Note
+
+We highly encourage developers to contribute to this project. Whether it's fixing bugs, improving the UI/UX, or implementing new features — **your help matters**.
+If you come across any issues or have ideas for improvement, please don't hesitate to [**open an issue**](../../issues) or [**submit a pull request**](../../pulls).
+
+Let's collaborate to bring this hospital management system closer to its full potential. Every small contribution makes a difference!
+
 <br>
 
 ## Project Description
